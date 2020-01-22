@@ -1,0 +1,325 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Andika Triwidada <andika@gmail.com>, 2017. #zanata
+# Andika Triwidada <andika@gmail.com>, 2018. #zanata
+# Andika Triwidada <andika@gmail.com>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
+"Report-Msgid-Bugs-To: https://github.com/abrt/gnome-abrt/issues\n"
+"POT-Creation-Date: 2020-01-09 10:16+0100\n"
+"PO-Revision-Date: 2019-05-13 01:10+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/gnome-abrt/"
+"language/id/)\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: data/ui/oops-menus.ui:8 data/ui/oops-window.ui:59
+msgid "_Report"
+msgstr "Lapo_rkan"
+
+#: data/ui/oops-menus.ui:12 data/ui/oops-menus.ui:36 data/ui/oops-window.ui:76
+msgid "_Delete"
+msgstr "_Hapus"
+
+#: data/ui/oops-menus.ui:16 data/ui/oops-window.ui:321
+msgid "D_etails"
+msgstr "Rin_cian"
+
+#: data/ui/oops-menus.ui:20
+msgid "_Open the problem data directory"
+msgstr "Buka direkt_ori data masalah"
+
+#: data/ui/oops-menus.ui:24
+msgid "_Copy the problem ID to Clipboard"
+msgstr "_Salin ID masalah ke Papan klip"
+
+#: data/ui/oops-menus.ui:28
+msgid "_Filter"
+msgstr "_Penyaring"
+
+#: data/ui/oops-menus.ui:43
+msgid "_Preferences"
+msgstr "_Preferensi"
+
+#. Translators: This is the menu item which displays the About box. Note that "Problem Reporting" is the name of this application.
+#: data/ui/oops-menus.ui:49
+msgid "_About Problem Reporting"
+msgstr ""
+
+#: data/ui/oops-window.ui:10 src/gnome-abrt:271
+#: src/org.freedesktop.GnomeAbrt.desktop.in:3
+#: src/org.freedesktop.GnomeAbrt.appdata.xml.in:6
+msgid "Problem Reporting"
+msgstr "Pelaporan Masalah"
+
+#: data/ui/oops-window.ui:30
+msgid "Select multiple problems"
+msgstr "Pilih beberapa masalah"
+
+#: data/ui/oops-window.ui:60
+msgid "Submit selected problem"
+msgstr "Kirim masalah yang dipilih"
+
+#: data/ui/oops-window.ui:77
+msgid "Delete selected problems"
+msgstr "Hapus masalah yang dipilih"
+
+#: data/ui/oops-window.ui:108
+msgid "Type to search"
+msgstr ""
+
+#: data/ui/oops-window.ui:206
+msgid "Name"
+msgstr "Nama"
+
+#: data/ui/oops-window.ui:226
+msgid "Version"
+msgstr "Versi"
+
+#. Translators: A label for a date when the bug happened for the first time. Please keep this label short, below 156px if possible.
+#: data/ui/oops-window.ui:253
+msgid "First Detected"
+msgstr "Pertama Terdeteksi"
+
+#: data/ui/oops-window.ui:280 src/gnome_abrt/views.py:836
+msgid "Reported"
+msgstr "Dilaporkan"
+
+#: data/ui/oops-window.ui:322
+msgid "Show problem details"
+msgstr "Tampilkan rincian masalah"
+
+#: data/ui/oops-window.ui:342
+msgid "No problems detected!"
+msgstr "Tidak ada masalah yang terdeteksi!"
+
+#: data/ui/oops-window.ui:368
+msgid "No source selected!"
+msgstr "Tidak ada sumber yang dipilih!"
+
+#. Translators: This is a description of --verbose command line option
+#. displayed when a user runs: `gnome-abrt --help'
+#: src/gnome-abrt:101
+msgid "Be verbose"
+msgstr "Lebih cerewet"
+
+#. Translators: This is a description of --problem command line option
+#. displayed when a user runs: `gnome-abrt --help'
+#: src/gnome-abrt:113
+msgid "Selected problem ID"
+msgstr "Pilih ID masalah"
+
+#. Translators: a list header, "My" is a shortcut for "My bugs"
+#: src/gnome-abrt:210 src/gnome-abrt:212
+msgid "My"
+msgstr "Aku"
+
+#. Translators: a list header, a shortcut for "System
+#. bugs". In this context "System" may be an adjective
+#. or a genitive noun, as required by your language.
+#: src/gnome-abrt:221 src/gnome-abrt:223
+msgctxt "bugs"
+msgid "System"
+msgstr "Sistem"
+
+#: src/org.freedesktop.GnomeAbrt.desktop.in:4
+#: src/org.freedesktop.GnomeAbrt.appdata.xml.in:7
+msgid "View and report application crashes"
+msgstr "Lihat dan laporkan crash aplikasi"
+
+#: src/org.freedesktop.GnomeAbrt.desktop.in:5
+msgid "abrt;bug reporting;crash logger;"
+msgstr "abrt;pelaporan bug;crash logger;"
+
+#. Translators: while it is possible to have localized icons, this should *not* be translated in any way, shape or form.
+#: src/org.freedesktop.GnomeAbrt.desktop.in:7
+msgid "org.freedesktop.GnomeAbrt"
+msgstr ""
+
+#: src/org.freedesktop.GnomeAbrt.appdata.xml.in:10
+msgid ""
+"Collection of software tools designed for collecting, analyzing and "
+"reporting of software issues."
+msgstr ""
+"Kumpulan perkakas perangkat lunak yang dirancang untuk mengumpulkan, "
+"menganalisis, dan melaporkan masalah-masalah perangkat lunak."
+
+#: src/org.freedesktop.GnomeAbrt.appdata.xml.in:14
+msgid ""
+"Its main purpose is to ease the process of reporting an issue and finding a "
+"solution."
+msgstr ""
+"Tujuan utamanya adalah untuk memudahkan proses melaporkan masalah dan "
+"menemukan suatu solusi."
+
+#: src/gnome_abrt/dbus_problems.py:107
+#, python-brace-format
+msgid "Can't get interface '{0}' on path '{1}' in bus '{2}': {3}"
+msgstr ""
+"Tak bisa mendapat antar muka '{0}' pada path '{1}' dalam bus '{2}': {3}"
+
+#: src/gnome_abrt/tools.py:42
+msgid "Future"
+msgstr "Masa Depan"
+
+#: src/gnome_abrt/tools.py:49
+msgid "Yesterday"
+msgstr "Kemarin"
+
+#: src/gnome_abrt/tools.py:63
+msgid "Last week"
+msgstr "Minggu lalu"
+
+#. Translators: This message will never be used for less than
+#. 2 weeks ago nor for more than one month ago. However, the singular
+#. form is necessary for some languages which do not have plural.
+#: src/gnome_abrt/tools.py:67
+#, python-brace-format
+msgid "{0:d} week ago"
+msgid_plural "{0:d} weeks ago"
+msgstr[0] "{0:d} minggu yang lalu"
+
+#: src/gnome_abrt/tools.py:72
+msgid "Last month"
+msgstr "Bulan lalu"
+
+#. Translators: This message will never be used for less than
+#. 2 months ago nor for more than one year ago. See the comment above.
+#: src/gnome_abrt/tools.py:75
+#, python-brace-format
+msgid "{0:d} month ago"
+msgid_plural "{0:d} months ago"
+msgstr[0] "{0:d} bulan yang lalu"
+
+#: src/gnome_abrt/tools.py:80
+msgid "Last year"
+msgstr "Tahun lalu"
+
+#. Translators: This message will never be used for less than
+#. 2 years ago. However, the singular form is necessary for some
+#. languages which do not have plural (Chinese, Japanese, Korean)
+#. or reuse the singular form for some plural cases (21 in Russian).
+#: src/gnome_abrt/tools.py:85
+#, python-brace-format
+msgid "{0:d} year ago"
+msgid_plural "{0:d} years ago"
+msgstr[0] "{0:d} tahun yang lalu"
+
+#. Translators: if the kernel crashed we display the word "System"
+#. instead of "kernel". In this context "System" is like a proper
+#. package name, probably a nominative noun.
+#: src/gnome_abrt/views.py:133
+msgctxt "package name"
+msgid "System"
+msgstr "Sistem"
+
+#. Translators: These are the problem types displayed in the problem
+#. list under the application name
+#: src/gnome_abrt/views.py:139
+msgid "Application Crash"
+msgstr "Aplikasi Kres"
+
+#: src/gnome_abrt/views.py:141
+msgid "System Crash"
+msgstr "Sistem Kres"
+
+#: src/gnome_abrt/views.py:143
+msgid "System Failure"
+msgstr "Kegagalan Sistem"
+
+#: src/gnome_abrt/views.py:145
+msgid "Misbehavior"
+msgstr "Kelakuan Buruk"
+
+#: src/gnome_abrt/views.py:777
+msgid "Unexpected system error"
+msgstr "Kesalahan sistem yang tidak diduga"
+
+#: src/gnome_abrt/views.py:779
+msgid "The system has encountered a problem and recovered."
+msgstr "Sistem telah menemui suatu masalah dan pulih."
+
+#: src/gnome_abrt/views.py:782
+msgid "Fatal system failure"
+msgstr "Kegagalan sistem yang fatal"
+
+#: src/gnome_abrt/views.py:784
+msgid "The system has encountered a problem and could not continue."
+msgstr "Sistem menemui suatu masalah dan tidak dapat melanjutkan."
+
+#. Translators: If Application's name is unknown,
+#. display neutral header
+#. "'Type' problem has been detected". Examples:
+#. Kerneloops problem has been detected
+#. C/C++ problem has been detected
+#. Python problem has been detected
+#. Ruby problem has been detected
+#. VMCore problem has been detected
+#. AVC problem has been detected
+#. Java problem has been detected
+#: src/gnome_abrt/views.py:798
+#, python-brace-format
+msgid "{0} problem has been detected"
+msgstr "{0} masalah telah terdeteksi"
+
+#: src/gnome_abrt/views.py:802
+#, python-brace-format
+msgid "{0} quit unexpectedly"
+msgstr "{0} keluar secara tak terduga"
+
+#: src/gnome_abrt/views.py:805
+msgid "The application encountered a problem and could not continue."
+msgstr "Aplikasi menemui suatu masalah dan tidak dapat melanjutkan."
+
+#. Translators: package name not available
+#. Translators: package version not available
+#: src/gnome_abrt/views.py:809 src/gnome_abrt/views.py:812
+msgid "N/A"
+msgstr "T/T"
+
+#: src/gnome_abrt/views.py:839
+msgid "cannot be reported"
+msgstr "tidak bisa dilaporkan"
+
+#: src/gnome_abrt/views.py:844
+msgid "Reports"
+msgstr "Laporan"
+
+#: src/gnome_abrt/views.py:850
+msgid ""
+"This problem has been reported, but a <i>Bugzilla</i> ticket has not been "
+"opened. Our developers may need more information to fix the problem.\n"
+"Please consider also <b>reporting it</b> to Bugzilla in order to provide "
+"that. Thank you."
+msgstr ""
+"Masalah ini telah dilaporkan, tapi tiket <i>Bugzilla</i> belum dibuka. Para "
+"pengembang kami mungkin perlu lebih banyak informasi untuk memperbaiki "
+"masalah.\n"
+"Harap pertimbangkan juga untuk <b>melaporkannya</b> ke Bugzilla untuk "
+"menyediakan itu. Terima kasih."
+
+#. Translators: Displayed after 'Reported' if a problem
+#. has been reported but we don't know where and when.
+#. Probably a rare situation, usually if a problem is
+#. reported we display a list of reports here.
+#: src/gnome_abrt/views.py:859
+msgid "yes"
+msgstr "ya"
+
+#. Translators: Displayed after 'Reported' if a problem
+#. has not been reported.
+#: src/gnome_abrt/views.py:863
+msgid "no"
+msgstr "tidak"
+
+#~ msgid "Show filter box"
+#~ msgstr "Tampilkan kotak saringan"
