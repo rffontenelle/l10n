@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-01-23 15:07+0000\n"
+"PO-Revision-Date: 2020-01-24 21:28+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/nl/>\n"
@@ -922,7 +922,7 @@ msgstr "Beschrijf uitgebreid"
 #: ../src/plugins/reporter-systemd-journal.c:250
 #: ../src/plugins/reporter-upload.c:186 ../src/plugins/reporter-mantisbt.c:283
 msgid "Problem directory"
-msgstr "Probleem map"
+msgstr "Probleemmap"
 
 #: ../src/lib/abrt_sock.c:161
 #, c-format
