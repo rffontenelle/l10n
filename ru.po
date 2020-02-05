@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: retrace-server 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-02 11:31+0100\n"
-"PO-Revision-Date: 2020-02-05 20:16+0000\n"
+"PO-Revision-Date: 2020-02-07 20:16+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/ru/>\n"
@@ -168,6 +168,14 @@ msgid ""
 "(including backtrace) is deleted after %d hours of inactivity. No possibly "
 "private data are kept on the server any longer."
 msgstr ""
+"Ваш аварийный дамп памяти хранится на сервере только на время работы задания "
+"трассировки. Как только это задание завершается, сервер хранит журнал "
+"трассировки и обратную трассировку. Все другие данные (включая дамп памяти) "
+"удаляются. К журналу трассировки и обратной трассировке можно получить "
+"доступ только через уникальный ID задачи и пароль, поэтому никому (кроме "
+"автора) не разрешается просмотр. Все информация о сбое (включая обратную "
+"трассировку) удаляется после %d часов бездействия. Дальше никакие, вероятно, "
+"личные данные не хранятся на сервере."
 
 #: ../src/index.wsgi:33
 msgid ""
@@ -177,83 +185,88 @@ msgid ""
 "administrators are not responsible for the problems related to the usage of "
 "an insecure channel (such as HTTP)."
 msgstr ""
+"Ваш дамп памяти используется только для трассировки. Администраторы сервера "
+"не пытаются получить ваши личные данные из дампов памяти или обратных "
+"трассировок. Использование безопасного канала связи (HTTPS) строго "
+"рекомендуется. Администраторы сервера не несут ответственность за проблемы, "
+"связанные с использованием небезопасного канала (например, HTTP)."
 
 #: ../src/log.wsgi:30
 msgid "There is no log for the specified task"
-msgstr ""
+msgstr "Нет журнала для указанной задачи"
 
 #: ../src/stats.wsgi:10
 msgid "Architecture"
-msgstr ""
+msgstr "Архитектура"
 
 #: ../src/stats.wsgi:11
 msgid "Architectures"
-msgstr ""
+msgstr "Архитектуры"
 
 #: ../src/stats.wsgi:12
 msgid "Build-id"
-msgstr ""
+msgstr "ID сборки"
 
 #: ../src/stats.wsgi:13
 msgid "Count"
-msgstr ""
+msgstr "Счет"
 
 #: ../src/stats.wsgi:14
 msgid "Denied jobs"
-msgstr ""
+msgstr "Отклоненные задания"
 
 #: ../src/stats.wsgi:15
 msgid "Failed"
-msgstr ""
+msgstr "Сбой"
 
 #: ../src/stats.wsgi:16
 msgid "First retrace"
-msgstr ""
+msgstr "Первая трассировка"
 
 #: ../src/stats.wsgi:17
 msgid "Global statistics"
-msgstr ""
+msgstr "Глобальная статистика"
 
 #: ../src/stats.wsgi:18
 msgid "Missing build-ids"
-msgstr ""
+msgstr "Идентификаторы отсутствующих сборок"
 
 #: ../src/stats.wsgi:19
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #: ../src/stats.wsgi:20
 msgid "Release"
-msgstr ""
+msgstr "Выпуск"
 
 #: ../src/stats.wsgi:21
 msgid "Releases"
-msgstr ""
+msgstr "Выпуски"
 
 #: ../src/stats.wsgi:22
 msgid "Required packages"
-msgstr ""
+msgstr "Требуемые пакеты"
 
 #: ../src/stats.wsgi:23
 msgid "Retraced packages"
-msgstr ""
+msgstr "Трассированные пакеты"
 
 #: ../src/stats.wsgi:24
 msgid "Retrace Server statistics"
-msgstr ""
+msgstr "Статистика сервера трассировки"
 
 #: ../src/stats.wsgi:25
 msgid "Shared object name"
-msgstr ""
+msgstr "Имя общего объекта"
 
 #: ../src/stats.wsgi:26
 msgid "Successful"
-msgstr ""
+msgstr "Успешно"
 
 #: ../src/stats.wsgi:27
 msgid "Total"
-msgstr ""
+msgstr "Всего"
 
 #: ../src/stats.wsgi:28
 msgid "Versions"
-msgstr ""
+msgstr "Версии"
