@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-02-05 04:16+0000\n"
+"PO-Revision-Date: 2020-02-08 07:16+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fr/>\n"
@@ -1653,11 +1653,11 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-xorg.c:306
 #, c-format
 msgid "Failed to start watch from cursor '%s'"
-msgstr "Impossible de démarrer watch à partir du curseur '%s'"
+msgstr "Impossible de démarrer watch à partir du curseur « %s »"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:62
 msgid "Failed to parse Backtrace from journal"
-msgstr "impossible d'analyser la trace inverse à partir du journal"
+msgstr "impossible d’analyser la trace inverse à partir du journal"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:145
 #, c-format
@@ -1701,13 +1701,13 @@ msgstr "Afficher les incidents trouvés sur la sortie standard"
 #: ../src/plugins/abrt-dump-journal-xorg.c:193
 msgid "Create new problem directory in DIR for every crash found"
 msgstr ""
-"Créer un nouveau répertoire d'incidents dans DIR pour chaque incident "
+"Créer un nouveau répertoire d’incidents dans DIR pour chaque incident "
 "découvert"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:202
 msgid "Journal filter e.g. '_COMM=gdm-x-session' (may be given many times)"
 msgstr ""
-"Filtre du journal, par exemple '_COMM=gdm-x-session' (peut être donné "
+"Filtre du journal, par exemple « _COMM=gdm-x-session » (peut être donné "
 "plusieurs fois)"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:273
@@ -1730,7 +1730,7 @@ msgid ""
 msgstr ""
 "& [-vsoxm] [-d DIR]/[-D] [FILE]\n"
 "\n"
-"Extraire les données de plantage de Xorg de FILE (ou de l'entrée standard)"
+"Extraire les données de plantage de Xorg de FILE (ou de l’entrée standard)"
 
 #: ../src/plugins/abrt-dump-xorg.c:53
 msgid "Print found crash data on standard output"
@@ -1738,13 +1738,12 @@ msgstr "Afficher les données de plantage sur la sortie standard"
 
 #: ../src/plugins/abrt-dump-xorg.c:54
 msgid "Create problem directory in DIR for every crash found"
-msgstr ""
-"Créer un répertoire d'incidents dans DIR pour chaque incident découvert"
+msgstr "Créer un répertoire d’incidents dans DIR pour chaque incident découvert"
 
 #: ../src/plugins/abrt-dump-xorg.c:108
 msgid "Failed to parse Backtrace from log file"
 msgstr ""
-"Impossible d'analyser la trace inverse depuis le fichier de journalisation"
+"Impossible d’analyser la trace inverse depuis le fichier de journalisation"
 
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:274
@@ -1754,25 +1753,27 @@ msgstr "Impossible de sauvegarder la position watch du journal"
 #: ../src/plugins/abrt-journal.c:284
 #, c-format
 msgid "Cannot save journal watch's position: open('%s')"
-msgstr "Impossible de sauvegarder la position watch du journal : open('%s')"
+msgstr "Impossible de sauvegarder la position watch du journal : open(« %s »)"
 
 #. Only notice because this is expected
 #: ../src/plugins/abrt-journal.c:302
 #, c-format
 msgid "Not restoring journal watch's position: file '%s' does not exist"
-msgstr "Position watch du journal non restaurée : le fichier '%s' n'existe pas"
+msgstr ""
+"Position watch du journal non restaurée : le fichier « %s » n’existe pas"
 
 #: ../src/plugins/abrt-journal.c:304
 #, c-format
 msgid "Cannot restore journal watch's position form file '%s'"
 msgstr ""
-"Impossible de restaurer la position watch du journal à partir du fichier '%s'"
+"Impossible de restaurer la position watch du journal à partir du fichier « %"
+"s »"
 
 #: ../src/plugins/abrt-journal.c:311
 #, c-format
 msgid "Cannot restore journal watch's position: path '%s' is not regular file"
 msgstr ""
-"Impossible de restaurer la position watch du journal : '%s' n'est pas un "
+"Impossible de restaurer la position watch du journal : « %s » n’est pas un "
 "fichier régulier"
 
 #: ../src/plugins/abrt-journal.c:317
@@ -1780,35 +1781,35 @@ msgstr ""
 msgid ""
 "Cannot restore journal watch's position: file '%s' exceeds %dB size limit"
 msgstr ""
-"Impossible de restaurer la position watch du journal : '%s' dépasse la "
+"Impossible de restaurer la position watch du journal : « %s » dépasse la "
 "taille limite de %dB"
 
 #: ../src/plugins/abrt-journal.c:325
 #, c-format
 msgid "Cannot restore journal watch's position: open('%s')"
-msgstr "Impossible de restaurer la position watch du journal : open('%s')"
+msgstr "Impossible de restaurer la position watch du journal : ouvrir (« %s »)"
 
 #: ../src/plugins/abrt-journal.c:334
 #, c-format
 msgid "Cannot restore journal watch's position: cannot read entire file '%s'"
 msgstr ""
 "Impossible de restaurer la position watch du journal : impossible de lire le "
-"fichier entier '%s'"
+"fichier entier « %s »"
 
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:346
 #, c-format
 msgid "Failed to move the journal to a cursor from file '%s'"
 msgstr ""
-"Impossible de déplacer le journal vers un curseur à partir du fichier '%s'"
+"Impossible de déplacer le journal vers un curseur à partir du fichier « %s »"
 
 #: ../src/plugins/abrt-retrace-client.c:79
 msgid ""
 "Retrace server can not be used, because the crash is too large. Try local "
 "retracing."
 msgstr ""
-"Le serveur retrace ne peut pas être utilisé car l'incident a une taille trop "
-"importante. Veuillez essayer d'utiliser un traçage local."
+"Le serveur retrace ne peut pas être utilisé car l’incident a une taille trop "
+"importante. Veuillez essayer d’utiliser un traçage local."
 
 #. Hopefully, by this time child emitted more meaningful
 #. * error message. But just in case it didn't:
@@ -1883,11 +1884,11 @@ msgstr "Le serveur ne prend pas en charge les archives tar compressés avec xz."
 #: ../src/plugins/abrt-retrace-client.c:689
 #, c-format
 msgid "The release '%s' is not supported by the Retrace server."
-msgstr "La révision « %s » n'est pas prise en charge par le serveur Retrace."
+msgstr "La révision « %s » n’est pas prise en charge par le serveur Retrace."
 
 #: ../src/plugins/abrt-retrace-client.c:693
 msgid "The server is not able to handle your request."
-msgstr "Le serveur n'est pas en mesure de gérer votre requête."
+msgstr "Le serveur n’est pas en mesure de gérer votre requête."
 
 #: ../src/plugins/abrt-retrace-client.c:712
 msgid "Unknown package sent to Retrace server."
@@ -1895,7 +1896,7 @@ msgstr "Paquet inconnu envoyé au serveur Retrace."
 
 #: ../src/plugins/abrt-retrace-client.c:721
 msgid "Preparing an archive to upload"
-msgstr "Préparation d'une archive au téléversement"
+msgstr "Préparation d’une archive au téléversement"
 
 #: ../src/plugins/abrt-retrace-client.c:740
 #, c-format
@@ -1903,7 +1904,7 @@ msgid ""
 "The size of your archive is %s, but the retrace server only accepts archives "
 "smaller or equal to %s."
 msgstr ""
-"La taille de l'archive est de %s, mais le serveur retrace accepte uniquement "
+"La taille de l’archive est de %s, mais le serveur retrace accepte uniquement "
 "des archives de taille inférieure ou égale à %s."
 
 #: ../src/plugins/abrt-retrace-client.c:752
@@ -1913,7 +1914,7 @@ msgstr "Vous êtes sur le point de téléverser %s. Continuer ?"
 
 #: ../src/plugins/abrt-retrace-client.c:761
 msgid "Cancelled by user"
-msgstr "Annulé par l'utilisateur"
+msgstr "Annulé par l’utilisateur"
 
 #: ../src/plugins/abrt-retrace-client.c:789
 #, c-format
@@ -1937,7 +1938,7 @@ msgid ""
 "The archive contains malicious files (such as symlinks) and thus can not be "
 "processed."
 msgstr ""
-"L'archive contient des fichiers malveillants (comme des liens symboliques) "
+"L’archive contient des fichiers malveillants (comme des liens symboliques) "
 "et ne peut donc pas être traitée."
 
 #: ../src/plugins/abrt-retrace-client.c:848
@@ -1979,7 +1980,7 @@ msgid ""
 "Retrace failed. Try again later and if the problem persists report this "
 "issue please."
 msgstr ""
-"Le retraçage a échoué. Veuillez réessayer ultérieurement. Si l'incident "
+"Le retraçage a échoué. Veuillez réessayer ultérieurement. Si l’incident "
 "persiste, veuillez le signaler."
 
 #: ../src/plugins/abrt-retrace-client.c:1254
@@ -1996,7 +1997,7 @@ msgid ""
 "uploading the archive"
 msgstr ""
 "ne pas vérifier si le serveur Retrace est capable de traiter un paquet donné "
-"avant de téléverser l'archive"
+"avant de téléverser l’archive"
 
 #: ../src/plugins/abrt-retrace-client.c:1261
 msgid "retrace server URI"
@@ -2020,17 +2021,17 @@ msgstr "lire les données depuis un vidage de processus"
 
 #: ../src/plugins/abrt-retrace-client.c:1270
 msgid "Delay for polling operations"
-msgstr "Retarder les opérations d'analyse"
+msgstr "Retarder les opérations d’analyse"
 
 #: ../src/plugins/abrt-retrace-client.c:1272
 msgid "(debug) do not delete temporary archive created from dump dir in "
 msgstr ""
-"(debug) ne pas supprimer l'archive temporaire créée depuis le répertoire dir "
+"(debug) ne pas supprimer l’archive temporaire créée depuis le répertoire dir "
 "dans "
 
 #: ../src/plugins/abrt-retrace-client.c:1274
 msgid "For status, backtrace, and log operations"
-msgstr "Pour les opérations d'état, de trace arrière et de journalisation"
+msgstr "Pour les opérations d’état, de trace arrière et de journalisation"
 
 #: ../src/plugins/abrt-retrace-client.c:1276
 msgid "id of your task on server"
@@ -2059,7 +2060,7 @@ msgstr ""
 #: ../src/plugins/abrt-retrace-client.c:1352
 #: ../src/plugins/abrt-retrace-client.c:1360
 msgid "Task id is needed."
-msgstr "L'ID de la tâche est nécessaire."
+msgstr "L’ID de la tâche est nécessaire."
 
 #: ../src/plugins/abrt-retrace-client.c:1338
 #: ../src/plugins/abrt-retrace-client.c:1346
@@ -2098,7 +2099,7 @@ msgstr "Débogueur GNU local"
 msgid "Download debuginfo packages and generate backtrace locally using GDB"
 msgstr ""
 "Télécharger les paquets debuginfo et générer une trace arrière localement à "
-"l'aide de GDB"
+"l’aide de GDB"
 
 #: ../src/plugins/analyze_LocalGDB.xml.in.h:3
 msgid ""
@@ -2107,7 +2108,7 @@ msgid ""
 "to remote machines."
 msgstr ""
 "Le téléchargement des paquets debuginfo est nécessaire, celui-ci peut "
-"prendre longtemps et utiliser de l'espace disque. Cependant, contrairement à "
+"prendre longtemps et utiliser de l’espace disque. Cependant, contrairement à "
 "RetraceServer, le vidage mémoire ne sera pas envoyé sur des machines "
 "distantes."
 
@@ -2124,11 +2125,11 @@ msgid ""
 "including your private data, if any."
 msgstr ""
 "Téléverse le vidage du processus sur un serveur, ce qui génère une trace "
-"arrière et la renvoie. Avantages : télécharger debuginfo n'est plus "
+"arrière et la renvoie. Avantages : télécharger debuginfo n’est plus "
 "nécessaire, la base de données de debuginfo du serveur Retrace est plus "
 "complète. Le serveur Retrace peut aussi générer de meilleures traces "
-"arrières. Défauts : le vidage du processus téléchargé contient toutes les "
-"données du programme en échec, y compris vos données personnelles s'il y en "
+"arrière. Défauts : le vidage du processus téléchargé contient toutes les "
+"données du programme en échec, y compris vos données personnelles s’il y en "
 "a."
 
 #: ../src/plugins/analyze_RetraceServer.xml.in.h:3
@@ -2171,8 +2172,8 @@ msgid ""
 "executable's name. The result is saved as 'xsession_errors' element."
 msgstr ""
 "Récole le fichier ~/.xsession-errors et enregistre les lignes contenant le "
-"nom de l'exécutable. Le résultat est enregistré en tant qu'élément "
-"« xsession_errors »."
+"nom de l’exécutable. Le résultat est enregistré en tant qu’élément « "
+"xsession_errors »."
 
 #: ../src/plugins/https-utils.c:53
 msgid "An error occurred on the server side."
@@ -2202,7 +2203,7 @@ msgid ""
 "A kernel problem occurred because of broken BIOS. Unfortunately, such "
 "problems are not fixable by kernel maintainers."
 msgstr ""
-"Un incident de noyau s'est produit dû à une rupture du BIOS. "
+"Un incident de noyau s’est produit dû à une rupture du BIOS. "
 "Malheureusement, de tels incidents ne peuvent pas être corrigés par les "
 "mainteneurs du noyau."
 
@@ -2211,7 +2212,7 @@ msgid ""
 "A kernel problem occurred, but your hardware is unsupported, therefore "
 "kernel maintainers are unable to fix this problem."
 msgstr ""
-"Un incident de noyau s'est produit, mais votre matériel n'est pas pris en "
+"Un incident de noyau s’est produit, mais votre matériel n’est pas pris en "
 "charge, les mainteneurs du noyau ne sont donc pas en mesure de corriger cet "
 "incident."
 
@@ -2234,11 +2235,11 @@ msgstr " Modules teintés : %s."
 
 #: ../src/plugins/bodhi.c:498
 msgid "List of bug ids"
-msgstr "Liste des identifiants d'anomalies"
+msgstr "Liste des identifiants d’anomalies"
 
 #: ../src/plugins/bodhi.c:499
 msgid "Specify a bodhi server url"
-msgstr "Spécifier l'URL d'un serveur bodhi"
+msgstr "Spécifier l’URL d’un serveur bodhi"
 
 #: ../src/plugins/bodhi.c:500
 msgid "Specify a release"
@@ -2275,8 +2276,8 @@ msgid ""
 "running: %s. Do you want to continue with reporting the bug?"
 msgstr ""
 "Il existe une mise à jour qui pourrait peut-être corriger votre incident. "
-"Vous pouvez l'installer en exécutant : %s. Souhaitez-vous continuer avec le "
-"signalement de l'anomalie ?"
+"Vous pouvez l’installer en exécutant : %s. Souhaitez-vous continuer avec le "
+"signalement de l’anomalie ?"
 
 #: ../src/hooks/abrt-merge-pstoreoops.c:85
 msgid ""
@@ -2353,7 +2354,7 @@ msgstr ""
 
 #: ../src/cli/abrtcli/cli/backtrace.py:35
 msgid "Problem has no backtrace"
-msgstr "L'incident n'a aucune trace inverse"
+msgstr "L’incident n’a aucune trace inverse"
 
 #: ../src/cli/abrtcli/cli/backtrace.py:37
 msgid "Start retracing process?"
@@ -2373,8 +2374,8 @@ msgid ""
 "Permission denied: '{}'\n"
 "If this is a system problem try running this command as root"
 msgstr ""
-"Permission refusée : '{}'\n"
-"Si cet incident concerne le système, essayez d'exécuter cette commande en "
+"Permission refusée : « {} »\n"
+"Si cet incident concerne le système, essayez d’exécuter cette commande en "
 "tant que root"
 
 #: ../src/cli/abrtcli/cli/install_debuginfo.py:36
@@ -2442,7 +2443,7 @@ msgstr "Afficher la trace inverse ?"
 
 #: ../src/cli/abrtcli/cli/retrace.py:52
 msgid "No retracing possible for this problem type"
-msgstr "Aucun retraçage possible pour ce type d'incident"
+msgstr "Aucun retraçage possible pour ce type d’incident"
 
 #: ../src/cli/abrtcli/cli/retrace.py:56
 msgid ""
@@ -2451,8 +2452,8 @@ msgid ""
 "Local retracing requires downloading potentially large amount of debuginfo "
 "data"
 msgstr ""
-"Téléverser core dump et retracer à distance ? (Peut contenir des données "
-"sensibles). Si votre réponse est Non, une trace d'appels sera générée "
+"Téléverser core dump et retracer à distance ? (Peut contenir des données "
+"sensibles) Si votre réponse est Non, une trace d’appels sera générée "
 "localement. Le retraçage local peut nécessiter de télécharger un grand "
 "nombre de données debuginfo"
 
@@ -2484,7 +2485,7 @@ msgid ""
 "analysis if the remote analysis fails"
 msgstr ""
 "Envoyer le vidage mémoire au serveur retrace distant pour analyse ou "
-"effectuer une analyse locale si l'analyse distante échoue"
+"effectuer une analyse locale si l’analyse distante échoue"
 
 #: ../src/plugins/analyze_CCpp.xml.in.h:2
 msgid ""
@@ -2497,14 +2498,14 @@ msgid ""
 "private data, if any."
 msgstr ""
 "Téléverse le vidage mémoire sur un serveur, qui génère une trace arrière et "
-"la retourne. Si l'utilisateur ne souhaite pas téléverser le vidage mémoire "
-"où que ce soit, l'événement effectuera une analyse locale. L'analyse locale "
-"est exécutée même si l'analyse distante échoue. Avantages : il n'est pas "
-"nécessaire d'effectuer des téléchargements de fichiers debuginfo. La base de "
+"la retourne. Si l’utilisateur ne souhaite pas téléverser le vidage mémoire "
+"où que ce soit, l’évènement effectuera une analyse locale. L’analyse locale "
+"est exécutée même si l’analyse distante échoue. Avantages : il n’est pas "
+"nécessaire d’effectuer des téléchargements de fichiers debuginfo. La base de "
 "données du serveur Retrace des debuginfos est plus complète. Le serveur "
-"Retrace peut générer de meilleures traces arrières. Inconvénients : les "
+"Retrace peut générer de meilleures traces arrière. Inconvénients : les "
 "vidages mémoire téléchargés contiennent toutes les données du programme en "
-"panne, y compris les données privées s'il y en a."
+"panne, y compris les données privées s’il y en a."
 
 #: ../src/plugins/analyze_VMcore.xml.in.h:1
 msgid "Analyze VM core"
@@ -2521,8 +2522,8 @@ msgid ""
 "Needs to install kernel debuginfo packages, which might take significant "
 "time, and take up disk space."
 msgstr ""
-"Nécessite l'installation de paquets debuginfo du noyau, celle-ci peut "
-"prendre un temps important et occuper de l'espace disque."
+"Nécessite l’installation de paquets debuginfo du noyau, celle-ci peut "
+"prendre un temps important et occuper de l’espace disque."
 
 #: ../src/plugins/collect_GConf.xml.in.h:1
 msgid "Collect GConf configuration"
@@ -2530,16 +2531,15 @@ msgstr "Collecter la configuration GConf"
 
 #: ../src/plugins/collect_GConf.xml.in.h:2
 msgid "Save configuration from application's GConf directory"
-msgstr ""
-"Enregistre la configuration depuis le répertoire GConf de l'application"
+msgstr "Enregistre la configuration depuis le répertoire GConf de l’application"
 
 #: ../src/plugins/collect_GConf.xml.in.h:3
 msgid ""
 "Runs gconftool-2 --recursive-list /apps/executable and saves it as "
 "'gconf_subtree' element."
 msgstr ""
-"Exécute gconftool-2 --recursive-list /apps/executable et l'enregistre en "
-"tant qu'élément 'gconf_subtree'."
+"Exécute gconftool-2 --recursive-list /apps/executable et l’enregistre en "
+"tant qu’élément « gconf_subtree »."
 
 #: ../src/plugins/collect_vimrc_system.xml.in.h:1
 msgid "Collect system-wide vim configuration files"
@@ -2554,7 +2554,7 @@ msgid ""
 "Checks if there are vimrc and gvimrc files in /etc and saves them as "
 "system_vimrc and system_gvimrc, respectively."
 msgstr ""
-"Vérifie s'il y a des fichiers vimrc et gvimrc dans /etc puis les enregistre "
+"Vérifie s’il y a des fichiers vimrc et gvimrc dans /etc puis les enregistre "
 "respectivement sous system_vimrc et system_gvimrc."
 
 #: ../src/plugins/collect_vimrc_user.xml.in.h:1
