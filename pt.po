@@ -18,13 +18,14 @@
 # Ricardo Pinto <ricardo.bigote@gmail.com>, 2018. #zanata
 # Manuela Silva <mmsrs@sky.com>, 2019. #zanata
 # Tiago João Mateus de Almeida <tjamadeira@gmail.com>, 2020.
+# Diego Lima Novaes <diegonovaes@hotmail.com.br>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-03-16 13:38+0000\n"
-"Last-Translator: Tiago João Mateus de Almeida <tjamadeira@gmail.com>\n"
+"PO-Revision-Date: 2020-03-24 19:38+0000\n"
+"Last-Translator: Diego Lima Novaes <diegonovaes@hotmail.com.br>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/pt/>\n"
 "Language: pt\n"
@@ -235,13 +236,12 @@ msgstr ""
 "relatório completo."
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:9
-#, fuzzy
 msgid ""
 " With this option enabled ABRT never shows notifications of reported "
 "problems. Takes effect only if Shortened reporting is enabled."
 msgstr ""
-" Com esta opção ativa, a ABRT nunca mostrará notificações dos problemas "
-"reportados. Tem efeito só se a opção Shortened reporting estiver ativa."
+" Com essa opção habilitada, o ABRT nunca mostra notificações de problemas "
+"relatados. Só entra em vigor se o relatório encurtado estiver ativado."
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:10
 msgid ""
@@ -513,9 +513,8 @@ msgid "Daemonize"
 msgstr "Segundo plano"
 
 #: ../src/daemon/abrt-upload-watch.c:282
-#, fuzzy
 msgid "Number of concurrent workers. Default is "
-msgstr "Number of concurrent workers. Default is "
+msgstr "Número de trabalhos simultâneos. Padrão é "
 
 #: ../src/daemon/abrt-upload-watch.c:283
 msgid "Maximal cache size in MiB. Default is "
@@ -547,14 +546,12 @@ msgid "uReport SSL certificate paths or certificate type"
 msgstr "uReport reporta o caminho do certificado SSL ou o tipo do certificado"
 
 #: ../src/daemon/abrt-auto-reporting.c:252
-#, fuzzy
 msgid "You also need to specify --username for --password"
-msgstr "É necessário que defina também o --username para a --password"
+msgstr "Você também precisa especificar --nome de usuário para --senha"
 
 #: ../src/daemon/abrt-auto-reporting.c:258
-#, fuzzy
 msgid "You can use either --username or --certificate"
-msgstr "Pode usar o --username ou o --certificate"
+msgstr "Você pode usar o --nome de usuário ou --certificado"
 
 #: ../src/daemon/abrt-auto-reporting.c:264
 #, fuzzy
@@ -562,9 +559,8 @@ msgid "You can use either --username or --anonymous"
 msgstr "Pode usar o --username ou --anonymous"
 
 #: ../src/daemon/abrt-auto-reporting.c:270
-#, fuzzy
 msgid "You can use either --anonymous or --certificate"
-msgstr "Pode usar --anonymous ou o --certificate"
+msgstr "Você pode usar um certificado ou anônimo"
 
 #: ../src/daemon/abrt-auto-reporting.c:277
 msgid "Invalid number of arguments"
@@ -987,9 +983,10 @@ msgid "{0} of debuginfo files are not installed"
 msgstr "{0} ficheiros de depuração não estão instalados"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:114
-#, c-format, fuzzy
+#, c-format
 msgid "Invalid configuration of CCpp addon, unsupported Package manager: '%s'"
-msgstr "Invalid configuration of CCpp addon, unsupported Package manager: '%s'"
+msgstr ""
+"Configuração inválida do addon CCpp, gerenciador de pacotes sem suporte: '%s'"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:168
 msgid "Missing requested file: {0}"
@@ -1069,7 +1066,6 @@ msgid "Exiting on user command"
 msgstr "A sair por comando do utilizador"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:43
-#, fuzzy
 msgid ""
 "& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
 "\t[-r REPO]\n"
@@ -1080,8 +1076,9 @@ msgstr ""
 "& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
 "\t[-r REPO]\n"
 "\n"
-"Installs debuginfo packages for all build-ids listed in BUILD_IDS_FILE to\n"
-"ABRT system cache."
+"Instala pacotes de depuração de informações para todos os ids de compilação "
+"listados em BUILD_IDS_FILE para\n"
+"Cache do sistema ABRT."
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:68
 msgid "Noninteractive, assume 'Yes' to all questions"
