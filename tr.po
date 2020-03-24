@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-03-24 19:38+0000\n"
+"PO-Revision-Date: 2020-03-26 16:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/tr/>\n"
@@ -375,7 +375,7 @@ msgstr "Program adlarını günlüğe ekle"
 #: ../src/dbus/abrt-dbus.c:135
 #, c-format
 msgid "'%s' is not a valid element name"
-msgstr "'%s' geçerli bir öge adı değil"
+msgstr "'%s' geçerli bir eleman adı değil"
 
 #: ../src/dbus/abrt-dbus.c:187
 #, c-format
@@ -473,7 +473,7 @@ msgstr "Öncelik değerini ARTIŞ kadar arttır"
 #: ../src/daemon/abrt-upload-watch.c:118
 #, c-format
 msgid "No free workers and full buffer. Omitting archive '%s'"
-msgstr ""
+msgstr "Boşta işçi yok ve arabellek dolu. '%s' dosyası atlanıyor"
 
 #: ../src/daemon/abrt-upload-watch.c:258
 msgid ""
@@ -486,6 +486,15 @@ msgid ""
 "If UPLOAD_DIRECTORY is not provided, uses a value of\n"
 "WatchCrashdumpArchiveDir option from abrt.conf"
 msgstr ""
+"& [-vs] [-w SAYI] [-c MiB] [YÜKLEME_DİZİNİ]\n"
+"\n"
+"\n"
+"YÜKLEME_DİZİNİ'ni izler ve gelen arşivleri abrt.conf dosyasında belirtilen\n"
+"DumpLocation konumuna çıkarır\n"
+"\n"
+"YÜKLEME_DİZİNİ sağlanmamışsa, abrt.conf dosyasından "
+"WatchCrashdumpArchiveDir\n"
+"seçeneğinin değerini kullanır"
 
 #: ../src/daemon/abrt-upload-watch.c:281
 msgid "Daemonize"
@@ -493,11 +502,11 @@ msgstr "Arka planda çalıştır"
 
 #: ../src/daemon/abrt-upload-watch.c:282
 msgid "Number of concurrent workers. Default is "
-msgstr "Eşzamanlı çalışan sayısı. Varsayılan: "
+msgstr "Eş zamanlı çalışan işçi sayısı. Varsayılan: "
 
 #: ../src/daemon/abrt-upload-watch.c:283
 msgid "Maximal cache size in MiB. Default is "
-msgstr "MiB'de azami önbellek boyutu. Varsayılan: "
+msgstr "MiB olarak azami önbellek boyutu. Varsayılan: "
 
 #: ../src/daemon/abrt-auto-reporting.c:198
 #: ../src/daemon/abrt-auto-reporting.c:206
@@ -518,23 +527,27 @@ msgstr "Red Hat destek parolası, verilmezse, bunun için bir istem verilecek"
 
 #: ../src/daemon/abrt-auto-reporting.c:236
 msgid "uReport SSL certificate paths or certificate type"
-msgstr ""
+msgstr "uReport SSL sertifika yolları veya sertifika türü"
 
 #: ../src/daemon/abrt-auto-reporting.c:252
 msgid "You also need to specify --username for --password"
-msgstr ""
+msgstr "Ayrıca --password için --username belirtmeniz gerekmektedir"
 
 #: ../src/daemon/abrt-auto-reporting.c:258
 msgid "You can use either --username or --certificate"
 msgstr ""
+"--username veya --certificate seçeneklerinden sadece birini kullanabilirsiniz"
 
 #: ../src/daemon/abrt-auto-reporting.c:264
 msgid "You can use either --username or --anonymous"
 msgstr ""
+"--username veya --anonymous seçeneklerinden sadece birini kullanabilirsiniz"
 
 #: ../src/daemon/abrt-auto-reporting.c:270
 msgid "You can use either --anonymous or --certificate"
 msgstr ""
+"--anonymous veya --certificate seçeneklerinden sadece birini "
+"kullanabilirsiniz"
 
 #: ../src/daemon/abrt-auto-reporting.c:277
 msgid "Invalid number of arguments"
@@ -577,6 +590,13 @@ msgid ""
 "   UPLOAD_DIR     - Directory where uploaded archives are stored\n"
 "   FILENAME       - Uploaded archive file name\n"
 msgstr ""
+"Kullanım: %s [-vd] ABRT_BİRİKTİRME_DİZİNİ YÜKLEME_DİZİNİ DOSYA_ADI\n"
+"\n"
+"   -v             - Ayrıntılı\n"
+"   -d             - Yüklenen arşivi sil\n"
+"   ABRT_BİRİKTİRME_DİZİNİ - Yüklenen geçerli arşivlerin çıkarıldığı dizin\n"
+"   YÜKLEME_DİZİNİ - Yüklenen arşivlerin depolandığı dizin\n"
+"   DOSYA_ADI      - Yüklenen arşiv dosyasının adı\n"
 
 #: ../src/daemon/abrt-handle-upload.in:166
 #: ../src/daemon/abrt-handle-upload.in:169
@@ -656,7 +676,7 @@ msgstr "DBus sistemine bağlanılamıyor: %s"
 #: ../src/lib/problem_api_dbus.c:68
 #, c-format
 msgid "Can't chown '%s': %s"
-msgstr ""
+msgstr "'%s' sahibi değiştirilemiyor: %s"
 
 #: ../src/lib/problem_api_dbus.c:97
 #, c-format
@@ -666,31 +686,31 @@ msgstr "Sorunlu dizini silme başarısız oldu: %s"
 #: ../src/lib/problem_api_dbus.c:131
 #, c-format
 msgid "D-Bus GetInfo method call failed: %s"
-msgstr ""
+msgstr "D-Bus GetInfo yöntemi çağrısı başarısız oldu: %s"
 
 #: ../src/lib/problem_api_dbus.c:166
 msgid "Can't get problem data from abrt-dbus"
-msgstr ""
+msgstr "abrt-dbus'tan sorun verisi alınamıyor"
 
 #: ../src/lib/problem_api_dbus.c:193
 #, c-format
 msgid "Can't get problem list from abrt-dbus: %s"
-msgstr ""
+msgstr "abrt-dbus'tan sorun listesi alınamıyor: %s"
 
 #: ../src/lib/problem_api_dbus.c:230 ../src/lib/problem_api_dbus.c:315
 #, c-format
 msgid "Can't get problem data from abrt-dbus: %s"
-msgstr ""
+msgstr "abrt-dbus'tan sorun verisi alınamıyor: %s"
 
 #: ../src/lib/problem_api_dbus.c:274
 #, c-format
 msgid "Can't test whether the element exists over abrt-dbus: %s"
-msgstr ""
+msgstr "Elemanın var olup olmadığı abrt-dbus üzerinden test edilemiyor: %s"
 
 #: ../src/lib/ignored_problems.c:233
 #, c-format
 msgid "Can't create temporary file '%s'"
-msgstr ""
+msgstr "'%s' geçici dosyası oluşturulamıyor"
 
 #: ../src/lib/ignored_problems.c:250
 #, c-format
@@ -698,12 +718,14 @@ msgid ""
 "Can't write to '%s'. Problem '%s' will not be removed from the ignored "
 "problems '%s'"
 msgstr ""
+"'%s' dosyasına yazılamıyor. '%s' sorunu, yok sayılan '%s' sorunlarından "
+"kaldırılmayacak"
 
 #. Something nefarious happened
 #: ../src/lib/ignored_problems.c:264
 #, c-format
 msgid "Can't rename '%s' to '%s'. Failed to remove problem '%s'"
-msgstr ""
+msgstr "'%s', '%s' olarak yeniden adlandırılamıyor. '%s' sorunu kaldırılamadı"
 
 #: ../src/plugins/abrt-action-analyze-backtrace.c:41
 msgid ""
@@ -738,11 +760,14 @@ msgid ""
 "\n"
 "Calculates and saves UUID of coredump in problem directory DIR"
 msgstr ""
+"& [-v] -d DİZİN\n"
+"\n"
+"Bellek dökümü UUID'sini hesaplar ve DİZİN sorun dizinine kaydeder"
 
 #: ../src/plugins/abrt-action-analyze-core.in:67
 #, c-format
 msgid "Analyzing coredump '%s'"
-msgstr ""
+msgstr "'%s' bellek dökümü analiz ediliyor"
 
 #: ../src/plugins/abrt-action-analyze-core.in:105
 #, c-format
@@ -752,11 +777,11 @@ msgstr "Eksik inşa kimliği: %s"
 #: ../src/plugins/abrt-action-analyze-core.in:137
 #, c-format
 msgid "Usage: %s [-v] [-o OUTFILE] -c COREFILE"
-msgstr ""
+msgstr "Kullanım: %s [-v] [-o ÇIKTI_DOSYASI] -c BELLEK_DÖKÜMÜ_DOSYASI"
 
 #: ../src/plugins/abrt-action-analyze-core.in:159
 msgid "COREFILE is not specified"
-msgstr ""
+msgstr "BELLEK_DÖKÜMÜ_DOSYASI belirtilmedi"
 
 #: ../src/plugins/abrt-action-analyze-oops.c:37
 msgid ""
@@ -764,6 +789,9 @@ msgid ""
 "\n"
 "Calculates and saves UUID and DUPHASH for oops problem directory DIR"
 msgstr ""
+"& [-v] -d DİZİN\n"
+"\n"
+"DİZİN oops sorun dizini için UUID ve DUPHASH değerlerini hesaplar ve kaydeder"
 
 #: ../src/plugins/abrt-action-analyze-oops.c:78
 msgid ""
@@ -784,6 +812,9 @@ msgid ""
 "\n"
 "Calculates and saves UUID and DUPHASH for xorg problem directory DIR"
 msgstr ""
+"& [-v] -d DİZİN\n"
+"\n"
+"DİZİN xorg sorun dizini için UUID ve DUPHASH değerlerini hesaplar ve kaydeder"
 
 #: ../src/plugins/abrt-action-analyze-xorg.c:143
 #, c-format
@@ -796,10 +827,13 @@ msgid ""
 "\n"
 "Calculates and saves UUID and DUPHASH of python crash dumps"
 msgstr ""
+"& [-v] -d DİZİN\n"
+"\n"
+"Python çökme dökümlerinin UUID ve DUPHASH değerlerini hesaplar ve kaydeder"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:47
 msgid "Usage: {0} [-v[v]] [--core=VMCORE]"
-msgstr ""
+msgstr "Kullanım: {0} [-v[v]] [--core=VMCORE]"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:74
 msgid "File {0} doesn't exist"
@@ -807,7 +841,7 @@ msgstr "{0} dosyası mevcut değil"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:77
 msgid "Extracting the oops text from core"
-msgstr ""
+msgstr "Bellek dökümünden oops metni çıkarılıyor"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:82
 msgid ""
@@ -819,17 +853,19 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:90
 msgid "Can't extract the oops message: '{0}'"
-msgstr ""
+msgstr "Oops mesajı çıkarılamıyor: '{0}'"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:93
 msgid "Oops text extracted successfully"
-msgstr ""
+msgstr "Oops metni başarıyla çıkarıldı"
 
 #: ../src/plugins/abrt-action-check-oops-for-hw-error.in:100
 msgid ""
 "The kernel log indicates that hardware errors were detected.\n"
 "This is most likely not a software problem.\n"
 msgstr ""
+"Çekirdek günlük kaydı, donanım hatalarının tespit edildiğini gösterir.\n"
+"Bu büyük olasılıkla bir yazılım sorunu değil.\n"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:73
 #: ../src/plugins/abrt-action-find-bodhi-update:106
@@ -838,31 +874,31 @@ msgstr "Sorun dizini hatası: {0}"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:92
 msgid "cannot open problem directory '{0}'"
-msgstr ""
+msgstr "'{0}' sorun dizini açılamıyor"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:121
 msgid "Using product '{0}' from /etc/os-release."
-msgstr ""
+msgstr "/etc/os-release dosyasından '{0}' ürünü kullanılıyor."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:123
 msgid "Using product {0}."
-msgstr ""
+msgstr "{0} ürünü kullanılıyor."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:125
 msgid "Using product version {0}."
-msgstr ""
+msgstr "{0} ürün sürümü kullanılıyor."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:137
 msgid "Duplicate bugzilla bug '#{0}' was found"
-msgstr ""
+msgstr "Yinelenen bugzilla hatası '#{0}' bulundu"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:139
 msgid "There is no bugzilla bug with 'abrt_hash:{0}'"
-msgstr ""
+msgstr "'abrt_hash:{0}' ile bir bugzilla hatası yok"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:144
 msgid "Warning: abrt-bodhi do not support Product version 'Rawhide'"
-msgstr ""
+msgstr "Uyarı: abrt-bodhi, 'Rawhide' ürün sürümünü desteklememektedir"
 
 #: ../src/plugins/abrt-action-generate-backtrace.c:42
 msgid ""
@@ -904,7 +940,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:53
 msgid "Do not hash fingerprints"
-msgstr ""
+msgstr "Parmak izlerinin sağlama (hash) kodunu hesaplama"
 
 #. Let user know what's going on
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:64
@@ -927,27 +963,30 @@ msgstr "{0}: {1} açılmıyor"
 #: ../src/plugins/abrt-action-install-debuginfo.in:101
 msgid "Coredump references {0} debuginfo files, {1} of them are not installed"
 msgstr ""
+"Bellek dökümü {0} debuginfo dosyasına referans gösteriyor, bunların {1} "
+"tanesi yüklü değil"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:104
 msgid "{0} of debuginfo files are not installed"
-msgstr ""
+msgstr "debuginfo dosyalarının {0} tanesi yüklü değil"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:114
 #, c-format
 msgid "Invalid configuration of CCpp addon, unsupported Package manager: '%s'"
 msgstr ""
+"Geçersiz CCpp eklentisi yapılandırması, desteklenmeyen paket yöneticisi: '%s'"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:168
 msgid "Missing requested file: {0}"
-msgstr ""
+msgstr "İstenen dosya eksik: {0}"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:173
 msgid "Missing debuginfo file: {0}"
-msgstr ""
+msgstr "debuginfo dosyası eksik: {0}"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:176
 msgid "All debuginfo files are available"
-msgstr ""
+msgstr "Tüm debuginfo dosyaları mevcut"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:190
 #, c-format
