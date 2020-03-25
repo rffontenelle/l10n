@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-03-02 13:38+0000\n"
+"PO-Revision-Date: 2020-03-26 16:38+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/es/>\n"
@@ -50,7 +50,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -1324,9 +1324,6 @@ msgid "Jump to an invalid address"
 msgstr "Salto a una dirección no válida"
 
 #: ../src/plugins/abrt-gdb-exploitable:669
-#, fuzzy
-#| msgid ""
-#| "Access past the end of mapped file, invalid address, unaligned access, etc"
 msgid ""
 "Access past the end of mapped file, invalid address, unaligned access, etc."
 msgstr ""
@@ -2265,17 +2262,15 @@ msgstr "No se puede informar"
 
 #: ../src/cli/abrtcli/cli/__init__.py:30
 msgid "increase output verbosity"
-msgstr ""
+msgstr "incrementar la verbosidad de la salida"
 
 #: ../src/cli/abrtcli/cli/__init__.py:50
 msgid "positive non-zero integer expected"
-msgstr ""
+msgstr "se espera un entero positivo distinto de cero"
 
 #: ../src/cli/abrtcli/cli/__init__.py:54
-#, fuzzy
-#| msgid "List problems"
 msgid "filter last N problems"
-msgstr "Listar problemas"
+msgstr "Filtrar los últimos N problemas"
 
 #: ../src/cli/abrtcli/cli/__init__.py:57
 msgid "filter problems with matching component"
