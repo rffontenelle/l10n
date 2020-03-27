@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-01-28 12:16+0000\n"
+"PO-Revision-Date: 2020-03-29 09:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/tr/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -30,6 +30,10 @@ msgid ""
 "   or: & [-vspy] -d PROBLEM_DIR\n"
 "   or: & [-vspy] -x PROBLEM_DIR"
 msgstr ""
+"& [-vsp] -L[ÖN_EK] [SORUN_DİZİNİ]\n"
+"   veya: & [-vspy] -e OLAY SORUN_DİZİNİ\n"
+"   veya: & [-vspy] -d SORUN_DİZİNİ\n"
+"   veya: & [-vspy] -x SORUN_DİZİNİ"
 
 #. short_name long_name  value    parameter_name  help
 #: ../src/cli/cli.c:89
@@ -42,7 +46,7 @@ msgstr "Yalnızca bu olayları çalıştır"
 
 #: ../src/cli/cli.c:91 ../src/gui-wizard-gtk/main.c:169
 msgid "Remove PROBLEM_DIR after reporting"
-msgstr ""
+msgstr "Bildirdikten sonra SORUN_DİZİNİ'ni kaldır"
 
 #: ../src/cli/cli.c:92
 msgid "Expert mode"
@@ -54,7 +58,7 @@ msgstr "Sürümü göster ve çık"
 
 #: ../src/cli/cli.c:94
 msgid "Noninteractive: don't ask questions, assume 'yes'"
-msgstr ""
+msgstr "Etkileşimsiz: soru sorma, 'evet' olarak cevaplandığını varsay"
 
 #: ../src/cli/cli.c:96
 msgid "Log to syslog"
@@ -115,19 +119,19 @@ msgstr "#Çökmenin nedeni"
 
 #: ../src/cli/cli-report.c:170
 msgid "# os-release configuration file from root dir"
-msgstr ""
+msgstr "# Kök dizinden os-release yapılandırma dosyası"
 
 #: ../src/cli/cli-report.c:175
 msgid "# Release string of the operating system from root dir"
-msgstr ""
+msgstr "# Kök dizinden işletim sisteminin sürüm dizesi"
 
 #: ../src/cli/cli-report.c:183
 msgid "# os-release configuration file"
-msgstr ""
+msgstr "# os-release yapılandırma dosyası"
 
 #: ../src/cli/cli-report.c:188
 msgid "# Release string of the operating system"
-msgstr ""
+msgstr "# İşletim sisteminin sürüm dizesi"
 
 #: ../src/cli/cli-report.c:319
 msgid "Cannot run vi: $TERM, $VISUAL and $EDITOR are not set"
@@ -164,6 +168,8 @@ msgid ""
 "Event '%s' requires permission to send possibly sensitive data. Do you want "
 "to continue?"
 msgstr ""
+"'%s' olayı, hassas olma ihtimali bulunan veriler gönderme izni "
+"gerektirmektedir. Devam etmek istiyor musunuz?"
 
 #: ../src/cli/cli-report.c:718
 msgid "You have chosen number out of range"
@@ -171,7 +177,7 @@ msgstr "Aralık dışında bir değer seçtin"
 
 #: ../src/cli/cli-report.c:723
 msgid "Invalid input, exiting."
-msgstr ""
+msgstr "Geçersiz girdi, program sonlandırılıyor."
 
 #: ../src/cli/cli-report.c:744
 msgid "Select an event to run: "
@@ -1887,7 +1893,7 @@ msgstr "Sıkıştırılmış veri"
 
 #: ../src/plugins/reporter-rhtsupport.c:869
 msgid "Can't create temporary file in "
-msgstr ""
+msgstr "Şurada geçici dosya oluşturulamıyor: "
 
 #. Check for hints and show them if we have something
 #: ../src/plugins/reporter-rhtsupport.c:880
