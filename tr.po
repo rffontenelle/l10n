@@ -7,13 +7,14 @@
 # drstrangelove <sosyalhizmetler@gmail.com>, 2013
 # Serdar Sağlam <teknomobil@msn.com>, 2019. #zanata
 # Oğuz Ersen <oguzersen@protonmail.com>, 2020.
+# Anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
 "PO-Revision-Date: 2020-03-29 09:38+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/tr/>\n"
 "Language: tr\n"
@@ -1277,7 +1278,7 @@ msgstr ""
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:10
 msgid "Groups"
-msgstr ""
+msgstr "Gruplar"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:11
 msgid ""
