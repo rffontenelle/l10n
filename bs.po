@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-03-13 20:38+0000\n"
+"PO-Revision-Date: 2020-04-01 19:38+0000\n"
 "Last-Translator: Michal Fabik <mfabik@redhat.com>\n"
 "Language-Team: Bosnian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/bs/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -385,7 +385,7 @@ msgstr ""
 
 #: ../src/gtk-helpers/config_dialog.c:368 ../src/gui-wizard-gtk/wizard.c:3206
 msgid "_Close"
-msgstr ""
+msgstr "_Zatvori"
 
 #: ../src/gtk-helpers/event_config_dialog.c:140
 msgid "Show password"
@@ -475,7 +475,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/main.c:109
 msgid "Quit"
-msgstr ""
+msgstr "Izlaz"
 
 #: ../src/gui-wizard-gtk/main.c:153
 msgid ""
@@ -849,7 +849,7 @@ msgstr "Detaljnije informacije"
 #: ../src/plugins/reporter-systemd-journal.c:250
 #: ../src/plugins/reporter-upload.c:186 ../src/plugins/reporter-mantisbt.c:283
 msgid "Problem directory"
-msgstr ""
+msgstr "Direktorij problema"
 
 #: ../src/lib/abrt_sock.c:161
 #, c-format
@@ -1667,7 +1667,7 @@ msgstr ""
 #: ../src/plugins/reporter-kerneloops.c:174
 #: ../src/plugins/reporter-ureport.c:81
 msgid "Configuration file"
-msgstr ""
+msgstr "Konfiguracijska datoteka"
 
 #: ../src/plugins/reporter-mailx.c:83
 #, c-format
