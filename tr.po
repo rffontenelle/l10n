@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-03-29 08:39+0000\n"
+"PO-Revision-Date: 2020-04-01 11:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/tr/>\n"
@@ -1056,7 +1056,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:290
 msgid "Exiting on user command"
-msgstr "Kullanıcı komutuyla çıkılıyor"
+msgstr "Kullanıcının isteği üzerine çıkılıyor"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:43
 msgid ""
@@ -1224,7 +1224,7 @@ msgstr "Bozuk veri kanalına (pipe) yazma nedeniyle alınan sinyal"
 
 #: ../src/plugins/abrt-gdb-exploitable:602
 msgid "ABRT signal (abort() was called?)"
-msgstr "ABRT sinyali (abort() çağrıldı?)"
+msgstr "ABRT sinyali (abort() mu çağrıldı?)"
 
 #: ../src/plugins/abrt-gdb-exploitable:611
 msgid "XCPU signal (over CPU time limit)"
