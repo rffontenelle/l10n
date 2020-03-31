@@ -22,13 +22,14 @@
 # yuliya <ypoyarko@redhat.com>, 2015. #zanata
 # yuliya <ypoyarko@redhat.com>, 2016. #zanata
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020.
+# Petr Molodyk <pamolodyk@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-03-13 20:38+0000\n"
-"Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
+"PO-Revision-Date: 2020-04-01 19:38+0000\n"
+"Last-Translator: Petr Molodyk <pamolodyk@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ru/>\n"
 "Language: ru\n"
@@ -37,7 +38,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -1205,7 +1206,7 @@ msgstr "Отправлено:"
 
 #: ../src/lib/make_descr.c:149
 msgid "cannot be reported"
-msgstr "не может быть добавлен в отчет"
+msgstr "невозможно создать отчет"
 
 #: ../src/lib/parse_options.c:63
 msgid "Usage: "
