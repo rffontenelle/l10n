@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/abrt/gnome-abrt/issues\n"
 "POT-Creation-Date: 2020-01-09 10:16+0100\n"
 "PO-Revision-Date: 2020-04-08 12:40+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Alireza Baloochi <alirezab806@gmail.com>\n"
 "Language-Team: Persian <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/fa/>\n"
 "Language: fa\n"
@@ -66,44 +66,44 @@ msgstr "انتخاب مشکلات متعدد"
 
 #: data/ui/oops-window.ui:60
 msgid "Submit selected problem"
-msgstr ""
+msgstr "ثبت مشکل انتخاب شده"
 
 #: data/ui/oops-window.ui:77
 msgid "Delete selected problems"
-msgstr ""
+msgstr "حذف مشکلات انتخاب شده"
 
 #: data/ui/oops-window.ui:108
 msgid "Type to search"
-msgstr ""
+msgstr "تایپ برای جست و جو"
 
 #: data/ui/oops-window.ui:206
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #: data/ui/oops-window.ui:226
 msgid "Version"
-msgstr ""
+msgstr "نسخه"
 
 #. Translators: A label for a date when the bug happened for the first time. Please keep this label short, below 156px if possible.
 #: data/ui/oops-window.ui:253
 msgid "First Detected"
-msgstr ""
+msgstr "اول شناسایی شده"
 
 #: data/ui/oops-window.ui:280 src/gnome_abrt/views.py:836
 msgid "Reported"
-msgstr ""
+msgstr "گزارش شد"
 
 #: data/ui/oops-window.ui:322
 msgid "Show problem details"
-msgstr ""
+msgstr "نشان دادن جزئیات مشکل"
 
 #: data/ui/oops-window.ui:342
 msgid "No problems detected!"
-msgstr ""
+msgstr "هیچ مشکلی پیدا نشد!"
 
 #: data/ui/oops-window.ui:368
 msgid "No source selected!"
-msgstr ""
+msgstr "هیچ منبعی انتخاب نشد!"
 
 #. Translators: This is a description of --verbose command line option
 #. displayed when a user runs: `gnome-abrt --help'
@@ -115,12 +115,12 @@ msgstr "پر حرف باشید"
 #. displayed when a user runs: `gnome-abrt --help'
 #: src/gnome-abrt:113
 msgid "Selected problem ID"
-msgstr ""
+msgstr "ای دی اشکال انتخاب شده"
 
 #. Translators: a list header, "My" is a shortcut for "My bugs"
 #: src/gnome-abrt:210 src/gnome-abrt:212
 msgid "My"
-msgstr ""
+msgstr "من"
 
 #. Translators: a list header, a shortcut for "System
 #. bugs". In this context "System" may be an adjective
@@ -128,27 +128,31 @@ msgstr ""
 #: src/gnome-abrt:221 src/gnome-abrt:223
 msgctxt "bugs"
 msgid "System"
-msgstr ""
+msgstr "سیستم"
 
 #: src/org.freedesktop.GnomeAbrt.desktop.in:4
 #: src/org.freedesktop.GnomeAbrt.appdata.xml.in:7
 msgid "View and report application crashes"
-msgstr "دیدن و گزارش شکستهای برنامه"
+msgstr "دیدن و گزارش کرش های برنامه"
 
 #: src/org.freedesktop.GnomeAbrt.desktop.in:5
+#, fuzzy
 msgid "abrt;bug reporting;crash logger;"
-msgstr ""
+msgstr "abrt;bug reporting;crash logger;"
 
 #. Translators: while it is possible to have localized icons, this should *not* be translated in any way, shape or form.
 #: src/org.freedesktop.GnomeAbrt.desktop.in:7
+#, fuzzy
 msgid "org.freedesktop.GnomeAbrt"
-msgstr ""
+msgstr "org.freedesktop.GnomeAbrt"
 
 #: src/org.freedesktop.GnomeAbrt.appdata.xml.in:10
 msgid ""
 "Collection of software tools designed for collecting, analyzing and "
 "reporting of software issues."
 msgstr ""
+"مجموعه ای از ابزار های نرم افزار که برای جمع آوری, آنالیز و گزارش مشکلات نرم "
+"افزاری."
 
 #: src/org.freedesktop.GnomeAbrt.appdata.xml.in:14
 msgid ""
