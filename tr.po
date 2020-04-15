@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-04-14 17:40+0000\n"
+"PO-Revision-Date: 2020-04-16 18:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/tr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.0.1\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -124,7 +124,7 @@ msgstr "# Kök dizinden os-release yapılandırma dosyası"
 
 #: ../src/cli/cli-report.c:175
 msgid "# Release string of the operating system from root dir"
-msgstr "# Kök dizinden işletim sisteminin sürüm dizgisi"
+msgstr "# Kök dizinden işletim sisteminin sürüm dizgesi"
 
 #: ../src/cli/cli-report.c:183
 msgid "# os-release configuration file"
@@ -132,7 +132,7 @@ msgstr "# os-release yapılandırma dosyası"
 
 #: ../src/cli/cli-report.c:188
 msgid "# Release string of the operating system"
-msgstr "# İşletim sisteminin sürüm dizgisi"
+msgstr "# İşletim sisteminin sürüm dizgesi"
 
 #: ../src/cli/cli-report.c:319
 msgid "Cannot run vi: $TERM, $VISUAL and $EDITOR are not set"
@@ -425,7 +425,7 @@ msgstr "Gelişmiş"
 
 #: ../src/gtk-helpers/event_config_dialog.c:297
 msgid "Secret Service is not available, your settings won't be saved!"
-msgstr "Secret Service mevcut değil, ayarlarınız kaydedilmeyecek!"
+msgstr "Secret Service kullanılamıyor, ayarlarınız kaydedilmeyecek!"
 
 #: ../src/gtk-helpers/event_config_dialog.c:340
 #: ../src/gtk-helpers/workflow_config_dialog.c:90
