@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
 "PO-Revision-Date: 2020-04-19 17:50+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
+"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/hu/>\n"
 "Language: hu\n"
@@ -2232,12 +2232,8 @@ msgid "filter unreported problems"
 msgstr "szűrés a nem jelentett problémákra"
 
 #: ../src/cli/abrtcli/cli/__init__.py:61
-#, fuzzy
-#| msgid "List only the problems older than specified timestamp"
 msgid "filter problems older than the specified timestamp"
-msgstr ""
-"Csak azokat a megadott eseteket jelenítse meg, amelyek régebbiek mint a "
-"megadott időbélyeg"
+msgstr "szűrés a megadott időbélyegzőnél régebbi  problémákra"
 
 #: ../src/cli/abrtcli/cli/__init__.py:63
 #, fuzzy
