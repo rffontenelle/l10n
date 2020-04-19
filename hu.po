@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
 "PO-Revision-Date: 2020-04-19 17:49+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
+"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/hu/>\n"
 "Language: hu\n"
@@ -1096,7 +1096,7 @@ msgstr "Figyelmen kívül hagyott beállítás"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:73
 msgid "OS release version"
-msgstr ""
+msgstr "OS kiadási verziója"
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:62
 msgid ""
@@ -2205,7 +2205,7 @@ msgstr "Oops üzeneteket tartalmazó fájlok törlése"
 
 #: ../src/cli/abrtcli/match.py:117
 msgid "No matching problems found"
-msgstr ""
+msgstr "Nincs egyezés a talált problémákra"
 
 #: ../src/cli/abrtcli/utils.py:79
 msgid "Not reportable"
