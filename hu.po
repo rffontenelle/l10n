@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-04-19 17:49+0000\n"
-"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
+"PO-Revision-Date: 2020-04-19 17:50+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/hu/>\n"
 "Language: hu\n"
@@ -2205,7 +2205,7 @@ msgstr "Oops üzeneteket tartalmazó fájlok törlése"
 
 #: ../src/cli/abrtcli/match.py:117
 msgid "No matching problems found"
-msgstr "Nincs egyezés a talált problémákra"
+msgstr "Nem található egyező probléma"
 
 #: ../src/cli/abrtcli/utils.py:79
 msgid "Not reportable"
@@ -2213,7 +2213,7 @@ msgstr "Nem jelenthető"
 
 #: ../src/cli/abrtcli/cli/__init__.py:30
 msgid "increase output verbosity"
-msgstr ""
+msgstr "kimenet részletességének növelése"
 
 #: ../src/cli/abrtcli/cli/__init__.py:50
 msgid "positive non-zero integer expected"
@@ -2225,7 +2225,7 @@ msgstr "szűrés az utolsó N problémákra"
 
 #: ../src/cli/abrtcli/cli/__init__.py:57
 msgid "filter problems with matching component"
-msgstr ""
+msgstr "egyező összetevővel rendelkező problémák szűrése"
 
 #: ../src/cli/abrtcli/cli/__init__.py:59
 msgid "filter unreported problems"
