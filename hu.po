@@ -17,13 +17,14 @@
 # Meskó Balázs <meskobalazs@gmail.com>, 2018. #zanata
 # Balázs Meskó <meskobalazs@gmail.com>, 2020.
 # Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020.
+# Balázs Meskó <meskobalazs@mailbox.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-04-19 16:58+0000\n"
-"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
+"PO-Revision-Date: 2020-04-19 17:49+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/hu/>\n"
 "Language: hu\n"
@@ -499,7 +500,7 @@ msgstr ""
 
 #: ../src/daemon/abrt-upload-watch.c:281
 msgid "Daemonize"
-msgstr "Démonként futtatás"
+msgstr "Futtatás démonként"
 
 #: ../src/daemon/abrt-upload-watch.c:282
 msgid "Number of concurrent workers. Default is "
@@ -992,33 +993,7 @@ msgid "All debuginfo files are available"
 msgstr "Minden debuginfo fájl elérhető"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:190
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [-vy] [--ids=BUILD_IDS_FILE] [--pkgmgr=(yum|dnf)]\n"
-#| "       [--tmpdir=TMPDIR] [--cache=CACHEDIR[:DEBUGINFODIR1:"
-#| "DEBUGINFODIR2...]] [--size_mb=SIZE]\n"
-#| "       [-e, --exact=PATH[:PATH]...]\n"
-#| "\n"
-#| "Installs debuginfos for all build-ids listed in BUILD_IDS_FILE\n"
-#| "to CACHEDIR, using TMPDIR as temporary staging area.\n"
-#| "Old files in CACHEDIR are deleted until it is smaller than SIZE.\n"
-#| "\n"
-#| "Reads configuration from /etc/abrt/plugins/CCpp.conf\n"
-#| "\n"
-#| "    -v          Be verbose\n"
-#| "    -y          Noninteractive, assume 'Yes' to all questions\n"
-#| "    --ids       Default: build_ids\n"
-#| "    --tmpdir    Default: @LARGE_DATA_TMP_DIR@/abrt-tmp-debuginfo-"
-#| "RANDOM_SUFFIX\n"
-#| "    --cache     Colon separated list of directories. The first one is "
-#| "used for\n"
-#| "                saving installed debuginfos.\n"
-#| "                Default: /var/cache/abrt-dir\n"
-#| "    --size_mb   Default: 4096\n"
-#| "    --pkgmgr   Default: PackageManager from CCpp.conf or 'dnf'\n"
-#| "    -e,--exact  Download only specified files\n"
-#| "    --repo      Pattern to use when searching for repos.\n"
-#| "                Default: *debug*\n"
+#, c-format
 msgid ""
 "Usage: %s [-vy] [--ids=BUILD_IDS_FILE] [--pkgmgr=(yum|dnf)]\n"
 "       [--tmpdir=TMPDIR] [--cache=CACHEDIR[:DEBUGINFODIR1:DEBUGINFODIR2...]] "
@@ -1051,8 +1026,8 @@ msgid ""
 msgstr ""
 "Használat: %s [-vy] [--ids=AZONOSÍTÓ_FÁJL] [--pkgmgr=(yum|dnf)]\n"
 "       [--tmpdir=IDEIGLENES_KÖNYVTÁR]\n"
-"       [--cache=GYORSÍTÓR_KÖNYVTÁR[:DEBUGINFO_KÖNYVTÁR1:"
-"DEBUGINFO_KÖNYVTÁR2…]]\n"
+"       "
+"[--cache=GYORSÍTÓR_KÖNYVTÁR[:DEBUGINFO_KÖNYVTÁR1:DEBUGINFO_KÖNYVTÁR2…]]\n"
 "       [--size_mb=MÉRET] [-e, --exact=ÚTVONAL[:ÚTVONAL]…]\n"
 "\n"
 "Telepíti a debuginfo csomagokat a GYORSÍTÓTÁR_KÖNYVTÁRba minden az\n"
@@ -1077,6 +1052,9 @@ msgstr ""
 "    -e,--exact  Csak a megadott fájlok letöltése\n"
 "    --repo      A tárolók keresésére használt minta.\n"
 "                Alapértelmezett: *debug*\n"
+"    --releasever KIADÁSI_VERZIÓ\n"
+"                Az operációs rendszer verziójának átadása a csomagkezelőknek."
+"\n"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:290
 msgid "Exiting on user command"
@@ -1197,6 +1175,8 @@ msgstr "Az uReport már el lett küldve, nem lesz még egyszer elküldve"
 #: ../src/plugins/abrt-action-ureport:174
 msgid "Problem comes from unpackaged executable. Unable to create uReport."
 msgstr ""
+"A probléma egy nem csomagolt végrehajtható fájlból fakad. Az uReport nem "
+"hozható létre."
 
 #: ../src/plugins/abrt-action-ureport:189
 msgid "Adding you to CC List of the existing bugzilla bug"
@@ -1301,14 +1281,11 @@ msgid "Jump to an invalid address"
 msgstr "Ugrás egy érvénytelen címre"
 
 #: ../src/plugins/abrt-gdb-exploitable:669
-#, fuzzy
-#| msgid ""
-#| "Access past the end of mapped file, invalid address, unaligned access, etc"
 msgid ""
 "Access past the end of mapped file, invalid address, unaligned access, etc."
 msgstr ""
-"Adjon hozzáférést a hozzárendelt fájl végén túl, helytelen címzésekhez, "
-"rendezetlen hozzáférésekhez, stb."
+"Hozzáférés a hozzárendelt fájl végén túl, helytelen címzés, rendezetlen "
+"hozzáférés, stb."
 
 #: ../src/plugins/abrt-gdb-exploitable:688
 msgid "Can't get signal no and do exploitability analysis\n"
@@ -1421,7 +1398,7 @@ msgid "More oopses found: process only the first one"
 msgstr "Több oops találva: csak az első feldolgozása"
 
 #: ../src/plugins/abrt-dump-journal-core.c:378
-#, c-format, fuzzy
+#, c-format
 msgid "UID=%9i; SIG=%2i (%4s); EXE=%s\n"
 msgstr "UID=%9i; SIG=%2i (%4s); EXE=%s\n"
 
@@ -1437,10 +1414,8 @@ msgid "Not saving repeating crash after %ds (limit is %ds)"
 msgstr "Nem menti az ismétlődő összeomlásokat %d mp után (a korlát %d mp)"
 
 #: ../src/plugins/abrt-dump-journal-core.c:478
-#, fuzzy
-#| msgid "Failed to save detect problem data in abrt database"
 msgid "Failed to print detect problem data to stdout"
-msgstr "Nem sikerült menteni az érzékelt problémákat az abrt adatbázisban"
+msgstr "Nem sikerült kiírni az érzékelt problémákat a szabványos kimenetre"
 
 #: ../src/plugins/abrt-dump-journal-core.c:486
 msgid "Failed to save detect problem data in abrt database"
