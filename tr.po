@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-04-18 18:40+0000\n"
+"PO-Revision-Date: 2020-04-23 00:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/tr/>\n"
@@ -422,7 +422,7 @@ msgid ""
 "is not running.\n"
 msgstr ""
 "'%s' ismi kaybedildi, lütfen ismin sahibi başka bir hizmetin çalışıp "
-"çalışmadığını kontrol edin.\n"
+"çalışmadığını denetleyin.\n"
 
 #: ../src/dbus/abrt-dbus.c:1023 ../src/daemon/abrtd.c:753
 msgid "Exit after NUM seconds of inactivity"
@@ -1206,7 +1206,7 @@ msgstr "Klavye ile gönderilen sinyal"
 #: ../src/plugins/abrt-gdb-exploitable:549
 #: ../src/plugins/abrt-gdb-exploitable:574
 msgid "Job control signal sent by kernel"
-msgstr "Çekirdek (kernel) tarafından gönderilen iş kontrol sinyali"
+msgstr "Çekirdek (kernel) tarafından gönderilen iş denetim sinyali"
 
 #: ../src/plugins/abrt-gdb-exploitable:553
 #: ../src/plugins/abrt-gdb-exploitable:582
@@ -2437,8 +2437,8 @@ msgid ""
 "Checks if there are vimrc and gvimrc files in /etc and saves them as "
 "system_vimrc and system_gvimrc, respectively."
 msgstr ""
-"/etc dizininde vimrc ve gvimrc dosyalarını kontrol et ve onları sırasıyla "
-"system_vimrc ve system_gvimrc olarak kaydet."
+"/etc dizininde vimrc ve gvimrc dosyaları olup olmadığını denetler ve onları "
+"sırasıyla system_vimrc ve system_gvimrc olarak kaydeder."
 
 #: ../src/plugins/collect_vimrc_user.xml.in.h:1
 msgid "Collect yours vim configuration files"
@@ -2453,8 +2453,8 @@ msgid ""
 "Checks if there are .vimrc and .gvimrc in your home directory and saves them "
 "as user_vimrc and user_gvimrc, respectively."
 msgstr ""
-"Ana dizinde .vimrc ve .gvimrc dosyalarını kontrol et ve onları sırasıyla "
-"user_vimrc ve user_gvimrc olarak kaydet."
+"Ev dizininde .vimrc ve .gvimrc dosyalarının olup olmadığını denetler ve "
+"onları sırasıyla user_vimrc ve user_gvimrc olarak kaydeder."
 
 #: ../src/plugins/post_report.xml.in.h:1
 msgid "Post report"
