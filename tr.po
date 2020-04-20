@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-04-16 18:40+0000\n"
+"PO-Revision-Date: 2020-04-21 18:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/tr/>\n"
@@ -647,8 +647,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.c:1968
 msgid "Cannot check backtrace rating because of invalid event name"
-msgstr ""
-"Geçersiz olay adı nedeniyle yığın geri izlemesi derecesi kontrol edilemiyor"
+msgstr "Geçersiz olay adı nedeniyle yığın geri izlemesi derecesi denetlenemiyor"
 
 #: ../src/gui-wizard-gtk/wizard.c:2418
 #, c-format
@@ -1344,7 +1343,7 @@ msgstr "SSL'i doğrula"
 #: ../src/plugins/report_RHTSupport.xml.in.h:12
 #: ../src/plugins/report_uReport.xml.in.h:12
 msgid "Check SSL key validity"
-msgstr "SSL anahtarının geçerliliğini kontrol et"
+msgstr "SSL anahtarının geçerliliğini denetle"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:16
 msgid "Bugzilla product"
@@ -1635,7 +1634,7 @@ msgstr ""
 #: ../src/plugins/reporter-bugzilla.c:671
 #: ../src/plugins/reporter-mantisbt.c:506
 msgid "Checking for duplicates"
-msgstr "Benzerleri kontrol ediliyor"
+msgstr "Benzerleri için denetleniyor"
 
 #: ../src/plugins/reporter-bugzilla.c:728
 #, c-format
