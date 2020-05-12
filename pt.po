@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Miguel Sousa <migueljorgesousa@sapo.pt>, 2011
 # Pedro Marques Daniel <danielthpro@gmail.com>, 2013
 # Rui Gouveia <rui.gouveia@gmail.com>, 2011, 2012
 # Tiago João Mateus de Almeida <tjamadeira@gmail.com>, 2020.
+# Manuela Silva <mmsrs@sky.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-02-25 17:38+0000\n"
-"Last-Translator: Tiago João Mateus de Almeida <tjamadeira@gmail.com>\n"
+"PO-Revision-Date: 2020-05-13 13:40+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -58,7 +59,7 @@ msgstr "Não interactivo: não perguntar, assumir 'sim'"
 
 #: ../src/cli/cli.c:96
 msgid "Log to syslog"
-msgstr "Registar no syslog"
+msgstr "Registar no \"syslog\""
 
 #: ../src/cli/cli.c:97 ../src/gui-wizard-gtk/main.c:168
 msgid "Add program names to log"
@@ -863,7 +864,7 @@ msgstr "Ser detalhado"
 #: ../src/plugins/reporter-systemd-journal.c:250
 #: ../src/plugins/reporter-upload.c:186 ../src/plugins/reporter-mantisbt.c:283
 msgid "Problem directory"
-msgstr "Pasta de problemas"
+msgstr "Diretoria de problemas"
 
 #: ../src/lib/abrt_sock.c:161
 #, c-format
