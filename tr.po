@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-05-22 11:40+0000\n"
+"PO-Revision-Date: 2020-05-27 17:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/tr/>\n"
@@ -523,7 +523,8 @@ msgstr "Red Hat Support kullanıcı adı"
 
 #: ../src/daemon/abrt-auto-reporting.c:235
 msgid "Red Hat Support password, if not given, a prompt for it will be issued"
-msgstr "Red Hat destek parolası, verilmezse, bunun için bir istem verilecek"
+msgstr ""
+"Red Hat Support parolası, belirtilmemişse, bunun için bir istem verilecek"
 
 #: ../src/daemon/abrt-auto-reporting.c:236
 msgid "uReport SSL certificate paths or certificate type"
@@ -1091,7 +1092,7 @@ msgstr "Depolar aranırken kullanılacak kalıp, öntanımlı olarak: *debug*"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:72
 msgid "Ignored option"
-msgstr "Yoksayılan seçenek"
+msgstr "Yok sayılan seçenek"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:73
 msgid "OS release version"
@@ -1176,7 +1177,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-ureport:189
 msgid "Adding you to CC List of the existing bugzilla bug"
-msgstr "Mevcut bugzilla hatasının CC listesine ekleniyorsunuz"
+msgstr "Var olan bugzilla hatasının CC listesine ekleniyorsunuz"
 
 #: ../src/plugins/abrt-action-ureport:203
 #, c-format
@@ -1338,7 +1339,7 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-core.c:572
 #: ../src/plugins/abrt-dump-journal-oops.c:223
 msgid "Print found oopses on standard output"
-msgstr "Standart çıktı üzerinde bulunan oops ları yazdır"
+msgstr "Bulunan oops'ları standart çıktıya yazdır"
 
 #. oopses don't contain any sensitive info, and even
 #. * the old koops app was showing the oopses to all users
@@ -1783,7 +1784,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-retrace-client.c:652
 msgid "The server does not support xz-compressed tarballs."
-msgstr "Sunucu sıkıştırılmış-xz tarball'ları desteklemiyor."
+msgstr "Sunucu, xz ile sıkıştırılmış tar arşivlerini desteklemiyor."
 
 #: ../src/plugins/abrt-retrace-client.c:689
 #, c-format
@@ -2398,19 +2399,20 @@ msgstr "VM çekirdeğini çözümle"
 
 #: ../src/plugins/analyze_VMcore.xml.in.h:2
 msgid "Install kernel debuginfo packages, generate kernel log and oops message"
-msgstr "kernel debuginfo paketlerini kur , kernel günlüğü ve oops mesajı üret"
+msgstr ""
+"Çekirdek debuginfo paketlerini kur , çekirdek günlüğü ve oops mesajı oluştur"
 
 #: ../src/plugins/analyze_VMcore.xml.in.h:3
 msgid ""
 "Needs to install kernel debuginfo packages, which might take significant "
 "time, and take up disk space."
 msgstr ""
-"Önemli zaman alabilir ve disk alanı kaplayan çekirdek hata ayıklama "
-"paketlerini kurmanız gerekir."
+"Önemli zaman alan ve disk alanı kaplayan çekirdek debuginfo paketlerini "
+"kurması gerekir."
 
 #: ../src/plugins/collect_GConf.xml.in.h:1
 msgid "Collect GConf configuration"
-msgstr "GConf yapılandırması toplanıyor"
+msgstr "GConf yapılandırmasını topla"
 
 #: ../src/plugins/collect_GConf.xml.in.h:2
 msgid "Save configuration from application's GConf directory"
@@ -2421,16 +2423,16 @@ msgid ""
 "Runs gconftool-2 --recursive-list /apps/executable and saves it as "
 "'gconf_subtree' element."
 msgstr ""
-"gconftool-2 --recursive-list /apps/executable komutunu çalıştır ve onu "
+"gconftool-2 --recursive-list /apps/executable komutunu çalıştırır ve onu "
 "'gconf_subtree' elemanı olarak kaydeder."
 
 #: ../src/plugins/collect_vimrc_system.xml.in.h:1
 msgid "Collect system-wide vim configuration files"
-msgstr "Sistem genelindeki vim yapılandırma dosyalarını toplayın"
+msgstr "Sistem genelindeki vim yapılandırma dosyalarını topla"
 
 #: ../src/plugins/collect_vimrc_system.xml.in.h:2
 msgid "Save /etc/vimrc and /etc/gvimrc"
-msgstr "/etc/vimrc ve /etc/gvimrc kaydet"
+msgstr "/etc/vimrc ve /etc/gvimrc dosyalarını kaydet"
 
 #: ../src/plugins/collect_vimrc_system.xml.in.h:3
 msgid ""
