@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-05-13 13:40+0000\n"
+"PO-Revision-Date: 2020-05-27 17:40+0000\n"
 "Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/pt/>\n"
@@ -984,7 +984,7 @@ msgstr "{0} ficheiros de depuração não estão instalados"
 #, c-format
 msgid "Invalid configuration of CCpp addon, unsupported Package manager: '%s'"
 msgstr ""
-"Configuração inválida do addon CCpp, gerenciador de pacotes sem suporte: '%s'"
+"Configuração inválida do extra CCpp, gestor de Pacotes não suportados: '%s'"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:168
 msgid "Missing requested file: {0}"
@@ -996,7 +996,7 @@ msgstr "Ficheiro de depuração em falta: {0}"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:176
 msgid "All debuginfo files are available"
-msgstr "Estão disponíveis todos os ficheiros de depuração"
+msgstr "Estão disponíveis todos os ficheiros de ''debuginfo''"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:190
 #, c-format
@@ -1036,11 +1036,10 @@ msgstr ""
 "       [-e, --exact=PATH[:PATH...]]\n"
 "       [--releasever=RELEASEVER] [--repo=PATTERN]\n"
 "\n"
-"Instala \"debuginfos\" para todas ids. de compilação listadas em "
-"BUILD_IDS_FILE \n"
+"Instala \"debuginfos\" para todas ids. de compilação no BUILD_IDS_FILE \n"
 "para CACHEDIR, utilizando TMPDIR como área de encenação temporária.\n"
-"Os ficheiros antigos em CACHEDIR são eliminados até que fique menor  que "
-"SIZE.\n"
+"Os ficheiros antigos no CACHEDIR são eliminados até que fique menor que SIZE."
+"\n"
 "\n"
 "Lê a configuração de /etc/abrt/plugins/CCpp.conf\n"
 "\n"
@@ -1076,25 +1075,26 @@ msgstr ""
 "& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
 "\t[-r REPO]\n"
 "\n"
-"Instala pacotes de depuração de informações para todos os ids de compilação "
-"listados em BUILD_IDS_FILE para\n"
-"Cache do sistema ABRT."
+"Instala pacotes de ''debuginfo'' para todos as ids. de compilação no "
+"BUILD_IDS_FILE para\n"
+"a cache do sistema ABRT."
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:68
 msgid "Noninteractive, assume 'Yes' to all questions"
-msgstr "Não-interactivo, assume 'Sim' a todas as questões"
+msgstr "Não interativo, assume 'Sim' a todas as questões"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:69
 msgid "- means STDIN, default: build_ids"
-msgstr "- significa STDIN, padrão: build_ids"
+msgstr "- significa STDIN, predefinição: build_ids"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:70
 msgid "Download only specified files"
-msgstr "Descarrega apenas os ficheiros especificados"
+msgstr "Transferir apenas os ficheiros especificados"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:71
 msgid "Pattern to use when searching for repos, default: *debug*"
-msgstr "Expressão usada na procura pelos repositórios, padrão: *debug*"
+msgstr ""
+"Padrão a utilizar quando procurar pelos repositórios, predefinição: *debug*"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:72
 msgid "Ignored option"
@@ -1127,21 +1127,21 @@ msgid ""
 msgstr ""
 "& [-v] [-d TAMANHO:DIR]... [-f TAMANHO:DIR]... [-p DIR] [FICHEIRO]...\n"
 "\n"
-"Elimina pastas de problemas (-d) ou ficheiros (-f) em DIRs até que estes "
-"sejam menores que TAMANHO.\n"
+"Elimina as diretorias de problemas (-d) ou os ficheiros (-f) nas DIRs até "
+"que estes sejam menores que TAMANHO.\n"
 "Os FICHEIROS são preservados (nunca eliminados)."
 
 #: ../src/plugins/abrt-action-trim-files.c:236
 msgid "Delete whole problem directories"
-msgstr "Eliminar todos as pastas de problemas"
+msgstr "Eliminar todas as diretorias de problemas"
 
 #: ../src/plugins/abrt-action-trim-files.c:237
 msgid "Delete files inside this directory"
-msgstr "Eliminar os ficheiros dentro desta pasta"
+msgstr "Eliminar os ficheiros dentro desta diretoria"
 
 #: ../src/plugins/abrt-action-trim-files.c:238
 msgid "Preserve this directory"
-msgstr "Preservar esta pasta"
+msgstr "Preservar esta diretoria"
 
 #: ../src/plugins/abrt-action-ureport:54
 #, c-format
@@ -1156,7 +1156,7 @@ msgstr ""
 #: ../src/plugins/abrt-action-ureport:93
 #, c-format
 msgid "Usage: %s [-v]"
-msgstr "Uso: %s [-v]"
+msgstr "Utilização: %s [-v]"
 
 #: ../src/plugins/abrt-action-ureport:114
 msgid "Unable to get current working directory as it was probably deleted"
@@ -1952,7 +1952,6 @@ msgid "Send core dump to remote retrace server for analysis"
 msgstr "Enviar core dump para o servidor retrace remoto para análise"
 
 #: ../src/plugins/analyze_RetraceServer.xml.in.h:2
-#, fuzzy
 msgid ""
 "Uploads coredump to a server, which generates backtrace and returns it. "
 "Pros: no need for debuginfo downloads. Retrace server's database of "
@@ -1960,12 +1959,12 @@ msgid ""
 "Cons: coredump you upload contains all the data from the crashed program, "
 "including your private data, if any."
 msgstr ""
-"Envia \"coredump\" para um servidor, que gera uma traçagem inversa e a "
-"devolva. Vantagens: não precisa de transferências de \"debuginfos\". A base "
-"de dados de \"debuginfos\" do servidor \"retrace\" é mais completa. O "
-"servidor de \"retrace\" pode gerar melhores traçagens inversas. Desvantagens:"
-" o \"coredump\" que envia contém todos os dados do programa que crachou, "
-"incluindo, se existirem, dados privados."
+"Envia \"coredump\" para um servidor, que gera um ''backtrace'' e devolve-o. "
+"Vantagens: não precisa de transferências de \"debuginfos\". A base de dados "
+"de \"debuginfos\" do servidor \"retrace\" é mais completa. O servidor de \""
+"retrace\" pode gerar melhores ''backtraces''. Desvantagens: o \"coredump\" "
+"que envia contém todos os dados do programa que crachou, incluindo, se "
+"existirem, os dados privados."
 
 #: ../src/plugins/analyze_RetraceServer.xml.in.h:3
 msgid "Retrace server URI"
