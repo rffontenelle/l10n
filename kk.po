@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2020-07-01 19:40+0000\n"
+"PO-Revision-Date: 2020-07-05 10:53+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/kk/>\n"
@@ -25,11 +25,11 @@ msgstr "Ө_шіру"
 
 #: data/ui/oops-menus.ui:16 data/ui/oops-window.ui:321
 msgid "D_etails"
-msgstr ""
+msgstr "Көбір_ек ақпарат"
 
 #: data/ui/oops-menus.ui:20
 msgid "_Open the problem data directory"
-msgstr ""
+msgstr "Ақаулық деректері бар буманы а_шу"
 
 #: data/ui/oops-menus.ui:24
 msgid "_Copy the problem ID to Clipboard"
