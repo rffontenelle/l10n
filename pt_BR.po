@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
 "PO-Revision-Date: 2020-07-12 11:33+0000\n"
-"Last-Translator: José Lemos Neto <lemosjosex@protonmail.com>\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/abrt/libreport/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -1992,13 +1992,11 @@ msgstr "Usuário ou senha inválidos. Por favor digite seu login Red Hat:"
 
 #: ../src/plugins/reporter-rhtsupport.c:473
 msgid "Please enter customer case number to which you want to attach the data:"
-msgstr ""
+msgstr "Digite o número do caso do cliente ao qual você deseja anexar os dados:"
 
 #: ../src/plugins/reporter-rhtsupport.c:479
-#, fuzzy
-#| msgid "Can't continue without password"
 msgid "Can't continue without Red Hat Support case number"
-msgstr "Não é possível continuar sem senha"
+msgstr "Não é possível continuar sem o número do caso do Red Hat Support"
 
 #: ../src/plugins/reporter-rhtsupport.c:506
 msgid ""
