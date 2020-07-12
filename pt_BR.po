@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-07-12 11:33+0000\n"
+"PO-Revision-Date: 2020-07-13 12:28+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/abrt/libreport/pt_BR/>\n"
@@ -3402,10 +3402,8 @@ msgstr "Anexe dados de falha a um caso de suporte existente da Red Hat"
 #: ../src/workflows/workflow_RHELAddDatavmcore.xml.in.h:2
 #: ../src/workflows/workflow_RHELAddDataxorg.xml.in.h:2
 #: ../src/workflows/workflow_RHELAddDataJavaScript.xml.in.h:2
-#, fuzzy
-#| msgid "Ask Red Hat Support for help"
 msgid "Provide Red Hat Support with crash details"
-msgstr "Peça ajuda ao Suporte Red Hat"
+msgstr "Solicite suporte à Red Hat com detalhes da falha"
 
 #: ../src/workflows/workflow_RHELBugzillaCCpp.xml.in.h:1
 #: ../src/workflows/workflow_RHELBugzillaKerneloops.xml.in.h:1
