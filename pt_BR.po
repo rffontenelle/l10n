@@ -18,13 +18,15 @@
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
+# Flávio Moisés Dalla Porta Schefer <flavio.schefer@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-07-13 12:28+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2020-07-16 20:28+0000\n"
+"Last-Translator: Flávio Moisés Dalla Porta Schefer <flavio.schefer@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/abrt/libreport/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -645,7 +647,7 @@ msgstr ""
 "permissão de escrita."
 
 #: ../src/gui-wizard-gtk/wizard.c:1808
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "--- Skipping %s ---\n"
 "No matching actions found for this event.\n"
@@ -2041,7 +2043,7 @@ msgstr ""
 "BHTS:"
 
 #: ../src/plugins/reporter-rhtsupport.c:647
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "We found a similar Red Hat support case %s. Do you want to attach the data "
 "to the case? Otherwise, you will have to enter the existing Red Hat support "
@@ -2049,7 +2051,7 @@ msgid ""
 msgstr ""
 "Encontramos um caso de suporte %s semelhante da Red Hat. Deseja anexar os "
 "dados ao caso? Caso contrário, você terá que inserir o número do caso de "
-"suporte existente da Red Hat."
+"suporte da Red Hat já existente."
 
 #: ../src/plugins/reporter-rhtsupport.c:676
 #, c-format
