@@ -30,13 +30,14 @@
 # Hongqiao Chen <harrychen0314@gmail.com>, 2020.
 # Tian Shixiong <tiansworld@gmail.com>, 2020.
 # Harry Chen <harrychen0314@gmail.com>, 2020.
+# Charles Lee <lchopn@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-07-17 14:29+0000\n"
-"Last-Translator: Harry Chen <harrychen0314@gmail.com>\n"
+"PO-Revision-Date: 2020-07-18 15:28+0000\n"
+"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/abrt/abrt/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -60,7 +61,7 @@ msgstr "详细显示"
 
 #: ../src/applet/abrt-applet-application.c:167
 msgid "Applet which notifies user when new problems are detected by ABRT"
-msgstr "当ABRT检测到新问题后通知用户的小程序"
+msgstr "当 ABRT 检测到新问题后通知用户的小程序"
 
 #: ../src/applet/abrt-applet-application.c:534
 msgid "Oops!"
@@ -440,7 +441,7 @@ msgstr "& [-v -i -n 递增] -e|--event 事件 目录..."
 
 #: ../src/daemon/abrt-handle-event.c:371
 msgid "Run EVENT on DIR"
-msgstr "在 DIR 中运行 EVENT "
+msgstr "在 DIR 中运行 EVENT"
 
 #: ../src/daemon/abrt-handle-event.c:372
 msgid "Communicate directly to the user"
@@ -481,11 +482,11 @@ msgstr "在后台运行"
 
 #: ../src/daemon/abrt-upload-watch.c:282
 msgid "Number of concurrent workers. Default is "
-msgstr "并行工作者数量。 默认为"
+msgstr "并行工作者数量。 默认为 "
 
 #: ../src/daemon/abrt-upload-watch.c:283
 msgid "Maximal cache size in MiB. Default is "
-msgstr "以 MiB 计最大缓存尺寸。默认为"
+msgstr "以 MiB 计最大缓存尺寸。默认为 "
 
 #: ../src/daemon/abrt-auto-reporting.c:198
 #: ../src/daemon/abrt-auto-reporting.c:206
@@ -508,7 +509,7 @@ msgstr "Red Hat 支持用户名"
 # author Leah Liu
 #: ../src/daemon/abrt-auto-reporting.c:235
 msgid "Red Hat Support password, if not given, a prompt for it will be issued"
-msgstr "Red Hat 支持密码，如果不输入密码则会有提示。"
+msgstr "Red Hat 支持密码，如果不输入密码则会有提示"
 
 # translation auto-copied from project abrt, version rhel7, document abrt,
 # author Leah Liu
@@ -752,8 +753,8 @@ msgid ""
 msgstr ""
 "& [options] -d DIR\n"
 "\n"
-"在有问题的目录 DIR 中分析 C/C++ 回溯文件，生成副本哈希值，回溯评级，\n"
-"以及识别崩溃函数的功能。"
+"在有问题的目录 DIR 中分析 C/C++ 回溯文件，生成副本哈希值，\n"
+"回溯评级，以及识别崩溃函数的功能"
 
 #.
 #. * The parser failed. Compute the duphash from the executable
@@ -763,7 +764,7 @@ msgstr ""
 #: ../src/plugins/abrt-action-analyze-backtrace.c:92
 #, c-format
 msgid "Backtrace parsing failed for %s"
-msgstr " %s 回溯解析失败"
+msgstr "%s 回溯解析失败"
 
 #: ../src/plugins/abrt-action-analyze-backtrace.c:152
 msgid "Crash thread not found"
@@ -951,7 +952,7 @@ msgid ""
 msgstr ""
 "& [-v] [-r] -d DIR\n"
 "\n"
-"根据核心转储和对应二进制信息创建核心转储级回溯。"
+"根据核心转储和对应二进制信息创建核心转储级回溯"
 
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:53
 msgid "Do not hash fingerprints"
@@ -969,7 +970,7 @@ msgstr "错误： GDB 为返回"
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:95
 #, c-format
 msgid "Error: %s"
-msgstr "错误： %s"
+msgstr "错误：%s"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:61
 msgid "Can't open {0}: {1}"
@@ -998,7 +999,7 @@ msgstr "缺少 debuginfo 文件：{0}"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:176
 msgid "All debuginfo files are available"
-msgstr "所有调试信息文件均可用。"
+msgstr "所有调试信息文件均可用"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:190
 #, c-format
@@ -1174,7 +1175,7 @@ msgstr "已存在有关这个问题的 bug："
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/plugins/abrt-action-ureport:153
 msgid "uReport was already sent, not sending it again"
-msgstr "已发送 uReport，请不要再次发送。"
+msgstr "已发送 uReport，不再发送"
 
 #: ../src/plugins/abrt-action-ureport:174
 msgid "Problem comes from unpackaged executable. Unable to create uReport."
@@ -1284,12 +1285,9 @@ msgid "Jump to an invalid address"
 msgstr "跳转至无效地址"
 
 #: ../src/plugins/abrt-gdb-exploitable:669
-#, fuzzy
-#| msgid ""
-#| "Access past the end of mapped file, invalid address, unaligned access, etc"
 msgid ""
 "Access past the end of mapped file, invalid address, unaligned access, etc."
-msgstr "访问超过映射文件结尾，无效的地址，未对齐的访问或其他"
+msgstr "访问超过映射文件结尾，无效的地址，未对齐的访问或其他。"
 
 #: ../src/plugins/abrt-gdb-exploitable:688
 msgid "Can't get signal no and do exploitability analysis\n"
@@ -1297,15 +1295,15 @@ msgstr "无法获得信号编号并执行安全分析\n"
 
 #: ../src/plugins/abrt-gdb-exploitable:701
 msgid "Likely crash reason: "
-msgstr "可能的崩溃原因:"
+msgstr "可能的崩溃原因: "
 
 #: ../src/plugins/abrt-gdb-exploitable:702
 msgid "Exploitable rating (0-9 scale): "
-msgstr "可使用的等级 (0-9级)"
+msgstr "可使用的等级 (0-9级): "
 
 #: ../src/plugins/abrt-gdb-exploitable:704
 msgid "Current instruction: "
-msgstr "当前指令："
+msgstr "当前指令: "
 
 #: ../src/plugins/abrt-gdb-exploitable:706
 msgid "Exploitability analysis came up empty\n"
@@ -1361,7 +1359,7 @@ msgstr "在 DIR 中为每个发现的 oops 生成新问题目录"
 #: ../src/plugins/abrt-dump-journal-xorg.c:194
 #: ../src/plugins/abrt-dump-xorg.c:55
 msgid "Same as -d DumpLocation, DumpLocation is specified in abrt.conf"
-msgstr "与 -d DumpLocation 相同，是在 abrt.conf 中指定 DumpLocation。"
+msgstr "与 -d DumpLocation 相同，DumpLocation 在 abrt.conf 中指定"
 
 #: ../src/plugins/abrt-dump-oops.c:104
 msgid "Save the extracted information in PROBLEM"
@@ -1448,9 +1446,10 @@ msgstr ""
 "\n"
 "-c 和 -e 选项冲突，因为这两个选项指定首次读取的信息。\n"
 "\n"
-"-e 只用于 -f 选项，如果最后查看的位置不可用，-f 选项将读取整个日志。\n"
+"-e 只用于 -f 选项，如果最后查看位置不可用，\n"
+"则会读取整个日志。\n"
 "\n"
-"最后查看的位置保存在"
+"最后查看的位置保存在 "
 
 #: ../src/plugins/abrt-dump-journal-core.c:563
 msgid "Create new problem directory in DIR for every coredump"
@@ -1555,9 +1554,10 @@ msgstr ""
 "\n"
 "-c 和 -e 选项冲突，因为这两个选项指定首次读取的信息。\n"
 "\n"
-"-e 只用于 -f 选项，如果最后查看的位置不可用，-f 选项将读取整个日志。\n"
+"-e 只用于 -f 选项，如果最后查看位置不可用，\n"
+"则会读取整个日志。\n"
 "\n"
-"最后查看的位置保存在"
+"最后查看的位置保存在 "
 
 #: ../src/plugins/abrt-dump-journal-oops.c:291
 msgid "Cannot filter systemd-journal to kernel data only"
@@ -1594,16 +1594,17 @@ msgid ""
 msgstr ""
 "& [-vsoxtf] [-e]/[-c CURSOR] [-d DIR]/[-D]\n"
 "\n"
-"从systemd日志中获取Xorg的错误信息\n"
+"从 systemd日志中获取 Xorg 的错误信息\n"
 "\n"
 "-c 和 -e 选项有冲突，因为这两个选项指定首次读取信息\n"
 "\n"
-"-e 选项只有在使用-f选项时才会有用，如果最后查看的位置不可用，-f选项将会尝试读"
-"取整个日志。\n"
+"-e 只用于 -f 选项，如果最后查看位置不可用，\n"
+"则会读取整个日志。\n"
 "\n"
 "最后查看的位置保存在：%s\n"
 "\n"
-"日志过滤器所需的参数必须通过-j或%s配置文件中给出。\n"
+"日志过滤器是必须的参数，并且必须通过 -j 参数指定\n"
+"或在 %s 配置文件中给出。\n"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:192
 msgid "Print found crashes on standard output"
@@ -1711,7 +1712,7 @@ msgstr "由于崩溃数据过大，导致追溯服务器无法使用。请使用
 #: ../src/plugins/abrt-retrace-client.c:230
 #: ../src/plugins/abrt-retrace-client.c:234
 msgid "Can't create temporary file in "
-msgstr "无法创建临时文件"
+msgstr "无法创建临时文件于 "
 
 #: ../src/plugins/abrt-retrace-client.c:322
 #: ../src/plugins/abrt-retrace-client.c:498
@@ -1905,7 +1906,7 @@ msgstr "因轮询操作而推迟"
 
 #: ../src/plugins/abrt-retrace-client.c:1272
 msgid "(debug) do not delete temporary archive created from dump dir in "
-msgstr "（调试）不删除转储目录创建的临时档案，位于"
+msgstr "（调试）不要删除由转储目录创建的临时归档，位于 "
 
 #: ../src/plugins/abrt-retrace-client.c:1274
 msgid "For status, backtrace, and log operations"
@@ -2079,12 +2080,14 @@ msgid ""
 "A kernel problem occurred, but your kernel has been tainted (flags:%s). "
 "Explanation:\n"
 "%sKernel maintainers are unable to diagnose tainted reports."
-msgstr "发生了内核问题，但您的内核已被污染（标志：%s）。解释：%s内核维护人员无法诊断被污染的报告。"
+msgstr ""
+"发生了内核问题，但您的内核已被污染（标志：%s）。解释：\n"
+"%s 内核维护人员无法诊断被污染的报告。"
 
 #: ../src/plugins/oops-utils.c:254
 #, c-format
 msgid " Tainted modules: %s."
-msgstr "受污染的模块：%s。"
+msgstr " 受污染的模块：%s。"
 
 #: ../src/plugins/bodhi.c:498
 msgid "List of bug ids"
@@ -2326,7 +2329,7 @@ msgstr "ABRT 已检测到一个问题。了解更多信息，请运行：“abrt
 msgid ""
 "Send core dump to remote retrace server for analysis or perform local "
 "analysis if the remote analysis fails"
-msgstr "向远程回溯服务器发送核心转储供于分析，或在远程分析失败时执行本地分析。"
+msgstr "向远程回溯服务器发送核心转储供于分析，或在远程分析失败时执行本地分析"
 
 #: ../src/plugins/analyze_CCpp.xml.in.h:2
 msgid ""
@@ -2397,7 +2400,7 @@ msgstr "收集您的 vim 配置文件"
 
 #: ../src/plugins/collect_vimrc_user.xml.in.h:2
 msgid "Save .vimrc and .gvimrc from your home directory"
-msgstr "保存您主目录中的 .vimrc 和 .gvimrc 文件。"
+msgstr "保存您家目录中的 .vimrc 和 .gvimrc 文件"
 
 #: ../src/plugins/collect_vimrc_user.xml.in.h:3
 msgid ""
