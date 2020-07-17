@@ -37,7 +37,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
 "PO-Revision-Date: 2020-07-18 15:28+0000\n"
-"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
+"Last-Translator: Harry Chen <harrychen0314@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/abrt/abrt/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -115,7 +115,7 @@ msgstr "很抱歉, 这可能是由某个组件的错误导致的。该问题已�
 msgid ""
 "We're sorry, it looks like a problem occurred in a component. The problem "
 "will be reported when the internet is available."
-msgstr "很抱歉, 这可能是由某个组件的错误导致的. 当网络可用时, 问题将被报告."
+msgstr "很抱歉, 这可能是由某个组件的错误导致的。 当网络可用时, 问题将被报告。"
 
 #: ../src/applet/abrt-applet-application.c:710
 msgid ""
