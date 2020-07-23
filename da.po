@@ -1,19 +1,20 @@
-# scootergrisen <scootergrisen@gmail.com>, 2017. #zanata
-# scootergrisen <scootergrisen@gmail.com>, 2018. #zanata
+# scootergrisen <scootergrisen@gmail.com>, 2017. #zanata, 2020.
+# scootergrisen <scootergrisen@gmail.com>, 2018. #zanata, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2018-09-20 09:50+0000\n"
+"PO-Revision-Date: 2020-07-25 03:28+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish\n"
+"Language-Team: Danish <https://translate.fedoraproject.org/projects/abrt/"
+"retrace-server/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -143,11 +144,6 @@ msgid "Welcome to Retrace Server"
 msgstr "Velkommen til retrace-server"
 
 #: ../src/index.wsgi:23
-#, fuzzy
-#| msgid ""
-#| "Retrace Server is a service that provides the possibility to analyze "
-#| "coredump and generate backtrace over network. You can find further "
-#| "information at Retrace Server&apos;s wiki:"
 msgid ""
 "Retrace Server is a service that provides the possibility to analyze "
 "coredump and generate backtrace over network. You can find further "
@@ -155,7 +151,7 @@ msgid ""
 msgstr ""
 "Retrace-server er en tjeneste som giver mulighed for at analysere kernedump "
 "og generere backtrace over netværk. Du kan finde yderligere information på "
-"retrace-server&apos;s wiki:"
+"retrace-server&apos;s github:"
 
 #: ../src/index.wsgi:29
 msgid ""
