@@ -1,18 +1,19 @@
-# Andika Triwidada <andika@gmail.com>, 2017. #zanata
+# Andika Triwidada <andika@gmail.com>, 2017. #zanata, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2017-08-06 06:11+0000\n"
+"PO-Revision-Date: 2020-07-25 03:28+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: Indonesian\n"
+"Language-Team: Indonesian <https://translate.fedoraproject.org/projects/abrt/"
+"retrace-server/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -142,11 +143,6 @@ msgid "Welcome to Retrace Server"
 msgstr "Selamat Datang ke Server Retrace"
 
 #: ../src/index.wsgi:23
-#, fuzzy
-#| msgid ""
-#| "Retrace Server is a service that provides the possibility to analyze "
-#| "coredump and generate backtrace over network. You can find further "
-#| "information at Retrace Server&apos;s wiki:"
 msgid ""
 "Retrace Server is a service that provides the possibility to analyze "
 "coredump and generate backtrace over network. You can find further "
@@ -154,7 +150,7 @@ msgid ""
 msgstr ""
 "Server Retrace adalah sebuah layanan yang menyediakan kemungkinan untuk "
 "menganalisis coredump dan menghasilkan backtrace melalui jaringan. Anda "
-"dapat menemukan informasi lebih jauh pada wiki Server Retrace:"
+"dapat menemukan informasi lebih jauh pada github Server Retrace:"
 
 #: ../src/index.wsgi:29
 msgid ""
