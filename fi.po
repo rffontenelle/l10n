@@ -13,13 +13,14 @@
 # Toni Rantala <trantalafilo@gmail.com>, 2017. #zanata
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2018. #zanata
 # Ricky Tigg <ricky.tigg@gmail.com>, 2020.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
 "PO-Revision-Date: 2020-11-20 14:35+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
 "Language: fi\n"
@@ -39,7 +40,7 @@ msgstr "Katsele ja raportoi ohjelmien kaatumisia"
 
 #: ../src/applet/abrt-applet-application.c:157
 msgid "Be verbose"
-msgstr ""
+msgstr "Ole monisanaisempi"
 
 #: ../src/applet/abrt-applet-application.c:167
 msgid "Applet which notifies user when new problems are detected by ABRT"
