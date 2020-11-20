@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-11-20 14:35+0000\n"
+"PO-Revision-Date: 2020-11-21 20:35+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -454,7 +454,7 @@ msgstr "Kirjoita lokia syslogiin myös valitsimen -d kanssa"
 
 #: ../src/daemon/abrt-handle-event.c:362
 msgid "& [-v -i -n INCREMENT] -e|--event EVENT DIR..."
-msgstr ""
+msgstr "& [-v -i -n LISÄYS] -e|--event TAPAHTUMA KAN..."
 
 #: ../src/daemon/abrt-handle-event.c:371
 msgid "Run EVENT on DIR"
@@ -471,7 +471,7 @@ msgstr "Kasvata nice-arvoa INCREMENT:llä"
 #: ../src/daemon/abrt-upload-watch.c:118
 #, c-format
 msgid "No free workers and full buffer. Omitting archive '%s'"
-msgstr ""
+msgstr "Ei vapaita säikeitä ja bufferi täysi . Jätetään pois arkisto '%s'"
 
 #: ../src/daemon/abrt-upload-watch.c:258
 msgid ""
@@ -491,11 +491,11 @@ msgstr "Aseta daemon-prosessiksi"
 
 #: ../src/daemon/abrt-upload-watch.c:282
 msgid "Number of concurrent workers. Default is "
-msgstr ""
+msgstr "Yhtäaikaisten säikeiden lukumäärä. Oletus on "
 
 #: ../src/daemon/abrt-upload-watch.c:283
 msgid "Maximal cache size in MiB. Default is "
-msgstr ""
+msgstr "Cachen maksimikoko MiB. Oletus on "
 
 #: ../src/daemon/abrt-auto-reporting.c:198
 #: ../src/daemon/abrt-auto-reporting.c:206
@@ -554,15 +554,15 @@ msgstr "Jatkaminen ilman salasanaa ei ole mahdollista\n"
 #. Print only the part before ':' of a string like "username:password"
 #: ../src/daemon/abrt-auto-reporting.c:380
 msgid "HTTP Authenticated auto reporting"
-msgstr ""
+msgstr "HTTP-todennettu automaattinen raportointi"
 
 #: ../src/daemon/abrt-auto-reporting.c:382
 msgid "SSL Client Authenticated auto reporting"
-msgstr ""
+msgstr "SSL-asiakaan todennettu automaattinen raportointi"
 
 #: ../src/daemon/abrt-auto-reporting.c:384
 msgid "anonymous auto reporting"
-msgstr ""
+msgstr "anonyymi automaattinen raportointi"
 
 #: ../src/daemon/abrt-handle-upload.in:130
 #, c-format
@@ -611,7 +611,7 @@ msgstr "Tuntematon tiedostotyyppi: '{0}'"
 
 #: ../src/daemon/abrt-handle-upload.in:205
 msgid "Can't create working directory in '{0}'"
-msgstr ""
+msgstr "Työhakemistoa ei voi luoda kansioon {0}"
 
 #: ../src/daemon/abrt-handle-upload.in:216
 msgid "Can't move '{0}' to '{1}'"
@@ -664,21 +664,21 @@ msgstr "Ongelmhakemisto %s:n poisto epäonnistui"
 #: ../src/lib/problem_api_dbus.c:131
 #, c-format
 msgid "D-Bus GetInfo method call failed: %s"
-msgstr ""
+msgstr "D-Bus GetInfo -menetelmän kutsu epäonnistui: %s"
 
 #: ../src/lib/problem_api_dbus.c:166
 msgid "Can't get problem data from abrt-dbus"
-msgstr ""
+msgstr "Ei voida saada ongelmatietoja abrt-dbusilta"
 
 #: ../src/lib/problem_api_dbus.c:193
 #, c-format
 msgid "Can't get problem list from abrt-dbus: %s"
-msgstr ""
+msgstr "Ei voida saada ongelmatietoja abrt-dbusilta: %s"
 
 #: ../src/lib/problem_api_dbus.c:230 ../src/lib/problem_api_dbus.c:315
 #, c-format
 msgid "Can't get problem data from abrt-dbus: %s"
-msgstr ""
+msgstr "Ei voida saada ongelmatietoja abrt-dbusilta: %s"
 
 #: ../src/lib/problem_api_dbus.c:274
 #, c-format
