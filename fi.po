@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-11-20 13:35+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"PO-Revision-Date: 2020-11-26 14:35+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/fi/>\n"
 "Language: fi\n"
@@ -33,6 +33,10 @@ msgid ""
 "   or: & [-vspy] -d PROBLEM_DIR\n"
 "   or: & [-vspy] -x PROBLEM_DIR"
 msgstr ""
+"& [-vsp] -L[PREFIX] [PROBLEM_DIR]\n"
+"   or: & [-vspy] -e EVENT PROBLEM_DIR\n"
+"   or: & [-vspy] -d PROBLEM_DIR\n"
+"   or: & [-vspy] -x PROBLEM_DIR"
 
 #. short_name long_name  value    parameter_name  help
 #: ../src/cli/cli.c:89
@@ -123,7 +127,7 @@ msgstr "# os-release-määritystiedosto rootin ihakemistosta"
 
 #: ../src/cli/cli-report.c:175
 msgid "# Release string of the operating system from root dir"
-msgstr ""
+msgstr "# Vapauta käyttöjärjestelmän merkkijono juurihakemistosta"
 
 #: ../src/cli/cli-report.c:183
 msgid "# os-release configuration file"
@@ -2164,7 +2168,7 @@ msgstr "Tyhjennä ongelmahakemisto systemd-päiväkirjakenttiin"
 
 #: ../src/plugins/reporter-systemd-journal.c:254
 msgid "Define SYSLOG_IDENTIFIER systemd journal field"
-msgstr ""
+msgstr "Määritä SYSLOG_IDENTIFIER systemd -päiväkirjakenttä"
 
 #: ../src/plugins/reporter-upload.c:29
 msgid "Can't continue without URL"
@@ -2190,6 +2194,10 @@ msgid ""
 "Uploads compressed tarball of problem directory DIR to URL.\n"
 "If URL is not specified, creates tarball in "
 msgstr ""
+"& [-v] -d DIR [-c CONFFILE] [-u URL] [-b FILE] [-r FILE]\n"
+"\n"
+"Lataa ongelmahakemiston DIR pakatun paketin URL:een.\n"
+"Jos URL:ta ei ole määritetty, luo tarball-tiedosto tähän "
 
 #: ../src/plugins/reporter-upload.c:188
 msgid "Base URL to upload to"
@@ -2206,7 +2214,7 @@ msgstr "Yksityisen SSH-avaimen tiedosto"
 #: ../src/plugins/reporter-upload.c:219
 msgid ""
 "Please enter a URL (scp, ftp, etc.) where the problem data is to be exported:"
-msgstr ""
+msgstr "Anna URL (scp, ftp jne.), johon ongelmatiedot viedään:"
 
 #: ../src/plugins/reporter-mantisbt.c:80
 msgid "Please enter your MantisBT login:"
@@ -2218,7 +2226,7 @@ msgstr "Syötä salasana"
 
 #: ../src/plugins/reporter-mantisbt.c:95
 msgid "Credentials are not provided by configuration."
-msgstr ""
+msgstr "Kokoonpano ei tarjoa kirjautumistietoja."
 
 #: ../src/plugins/reporter-mantisbt.c:119
 msgid "Invalid password or login."
@@ -2266,6 +2274,48 @@ msgid ""
 "\n"
 "If not specified, CONFFILE defaults to "
 msgstr ""
+"\n"
+"& [-vf] [-c CONFFILE]... [-F FMTFILE] [-A FMTFILE2] -d DIR\n"
+"tai:\n"
+"& [-v] [-c CONFFILE]... [-d DIR] -t[ID] FILE...\n"
+"tai:\n"
+"& [-v] [-c CONFFILE]... [-d DIR] -t[ID] -w\n"
+"tai:\n"
+"& [-v] [-c CONFFILE]... -h DUPHASH\n"
+"\n"
+"Ilmoittaa ongelmasta MantisBT:lle.\n"
+"\n"
+"Työkalu lukee DIR. Sitten se yrittää löytää ongelman\n"
+"samalla abrt_hashilla mukautetussa kentässä 'abrt_hash'.\n"
+"\n"
+"Jos tällaista ongelmaa ei löydy, luodaan uusi numero. DIR:n elementit\n"
+"tallennetaan numeroon osana julkaisun kuvausta tai liitteinä,\n"
+"niiden tyypistä ja koosta riippuen.\n"
+"\n"
+"Muussa tapauksessa, jos tällainen ongelma löytyy ja se merkitään CLOSED "
+"DUPLICATE:ksi,\n"
+"työkalu seuraa kopioiden ketjua, kunnes se löytää ei-DUPLICATE-ongelman.\n"
+"Työkalu lisää uuden kommentin löydettyyn ongelmaan.\n"
+"\n"
+"Uuden tai muokatun numeron URL-osoite tulostetaan vakiona ja tallennetaan\n"
+"'report_to' -elementti.\n"
+"\n"
+"Valitsin '-t' lataa tiedostot jo luotuun numeroon MantisBT-sivustossa.\n"
+"Ongelman tunnus haetaan hakemistosta, jonka määrittelee '-d DIR'.\n"
+"Jos DIR: n ongelmatietoja ei koskaan ilmoitettu MantisBT:lle, lataus "
+"epäonnistuu.\n"
+"\n"
+"Valitsin '-tID' lataa FILE-tiedostot määritetyn tunnuksen sisältävään "
+"ongelmaan MantisBT-sivustossa.\n"
+"'-d DIR' ohitetaan.\n"
+"\n"
+"Vaihtoehto '-r' asettaa viimeisen URL-osoitteen reporter_to-elementille, "
+"johon on lisätty etuliite\n"
+"TRACKER_NAME URL-kenttään. Tätä vaihtoehtoa käytetään vain, kun uusi kysymys "
+"on tarkoitus\n"
+"jätetty. Oletusarvo on 'ABRT-palvelin'\n"
+"\n"
+"Jos sitä ei määritetä, CONFFILE-asetuksen oletusarvo on "
 
 #: ../src/plugins/reporter-mantisbt.c:287
 msgid "Attach FILEs [to issue with this ID]"
@@ -2285,6 +2335,8 @@ msgid ""
 "Can't get MantisBT ID because this problem has not yet been reported to "
 "MantisBT."
 msgstr ""
+"MantisBT-tunnusta ei saada, koska tätä ongelmaa ei ole vielä ilmoitettu "
+"MantisBT:lle."
 
 #: ../src/plugins/reporter-mantisbt.c:386
 #, c-format
@@ -2292,11 +2344,13 @@ msgid ""
 "This problem has been reported to MantisBT '%s' which differs from the "
 "configured MantisBT '%s'."
 msgstr ""
+"Tämä ongelma on raportoitu MantisBT:lle '%s', joka eroaa määritetystä "
+"MantisBT:sta '%s'."
 
 #: ../src/plugins/reporter-mantisbt.c:390
 #, c-format
 msgid "Malformed url to MantisBT '%s'."
-msgstr ""
+msgstr "Epämuodostunut URL MantisBT:iin '%s'."
 
 #: ../src/plugins/reporter-mantisbt.c:394
 #, c-format
@@ -2314,6 +2368,8 @@ msgid ""
 "This problem was already reported to MantisBT (see '%s'). Do you still want "
 "to create a new issue?"
 msgstr ""
+"Tämä ongelma ilmoitettiin jo MantisBT:lle (katso '%s'). Haluatko silti luoda "
+"uuden ongelman?"
 
 #. Create new issue
 #: ../src/plugins/reporter-mantisbt.c:545
@@ -2323,15 +2379,15 @@ msgstr "Luodaan uusi ongelma"
 #: ../src/plugins/reporter-mantisbt.c:550
 #, c-format
 msgid "Invalid format file: %s"
-msgstr ""
+msgstr "virheellinen tiedostomuoto: %s"
 
 #: ../src/plugins/reporter-mantisbt.c:554
 msgid "Failed to format problem data"
-msgstr ""
+msgstr "Ongelmatietojen alustaminen epäonnistui"
 
 #: ../src/plugins/reporter-mantisbt.c:581
 msgid "Adding External URL to issue"
-msgstr ""
+msgstr "Lisätään ulkoinen URL ongelmaan"
 
 #: ../src/plugins/reporter-mantisbt.c:593
 #, c-format
@@ -2341,11 +2397,11 @@ msgstr "Lisätään liitteet ongelmaan %i"
 #: ../src/plugins/reporter-mantisbt.c:648
 #, c-format
 msgid "Invalid duplicate format file: '%s"
-msgstr ""
+msgstr "Virheellinen kaksoiskappaletiedostomuoto: '%s"
 
 #: ../src/plugins/reporter-mantisbt.c:652
 msgid "Failed to format duplicate comment from problem data"
-msgstr ""
+msgstr "Kommentin kaksoiskappaleen alustaminen ongelmatiedoista epäonnistui"
 
 #: ../src/plugins/reporter-mantisbt.c:659
 #, c-format
@@ -2398,6 +2454,8 @@ msgstr "CentOS-vianseurantajärjestelmän tilin salasana"
 msgid ""
 "The issue will be accessible only to users with access to 'Private Issues'"
 msgstr ""
+"Ongelma on saatavilla vain käyttäjille, joilla on pääsy 'Yksityiset "
+"ongelmat':iin"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:10
 msgid "CentOS Bug Tracker URL"
@@ -2421,7 +2479,7 @@ msgstr ""
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:16
 msgid "CentOS Bug Tracker project version"
-msgstr ""
+msgstr "CentOS Bug Tracker -hankeversio"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:17
 msgid ""
@@ -2541,6 +2599,8 @@ msgid ""
 "Submit &lt;a href=\"https://access.redhat.com/articles/642323\"&gt;micro-"
 "report&lt;/a&gt; when creating a new case."
 msgstr ""
+"Lähetä &lt;a href=\"https://access.redhat.com/articles/642323\"&gt;micro-"
+"report&lt;/a&gt; kun luot uuden tapauksen."
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:9
 msgid "RH Portal URL"
@@ -2552,11 +2612,11 @@ msgstr "Red Hatin tukiportaalin osoite"
 
 #: ../src/plugins/report_RHTSupport_AddData.xml.in.h:2
 msgid "Attach the data to existing Red Hat support case"
-msgstr ""
+msgstr "Liitä tiedot olemassa olevaan Red Hat -tukitapaukseen"
 
 #: ../src/plugins/report_Uploader.xml.in.h:1
 msgid "Report Uploader"
-msgstr ""
+msgstr "Lähetyslatausraportti"
 
 #: ../src/plugins/report_Uploader.xml.in.h:2
 msgid "Upload as tar.gz file (via FTP/SCP/...)"
@@ -2578,14 +2638,17 @@ msgid ""
 "Examples:&#xA;ftp://[user[:pass]@]host/dir/[file.tar.gz]&#xA;scp://[user[:"
 "pass]@]host/dir/[file.tar.gz]&#xA;file:///dir/[file.tar.gz]"
 msgstr ""
+"Esimerkkejä:&#xA;ftp://[user[:pass]@]host/dir/[file.tar."
+"gz]&#xA;scp://[user[:pass]@]host/dir/[file.tar.gz]&#xA;file:///dir/[file.tar."
+"gz]"
 
 #: ../src/plugins/report_Uploader.xml.in.h:7
 msgid "Use this field if you do not want to have user name in URL"
-msgstr ""
+msgstr "Käytä tätä kenttää, jos et halua käyttäjänimen olevan URL:ssa"
 
 #: ../src/plugins/report_Uploader.xml.in.h:9
 msgid "Use this field if you do not want to have password in URL"
-msgstr ""
+msgstr "Käytä tätä kenttää, jos et halua salasanan olevan URL:ssa"
 
 #: ../src/plugins/report_Uploader.xml.in.h:14
 msgid "FTP Proxy"
@@ -2637,11 +2700,11 @@ msgstr "Lisää Bugzilla-tilisi jo ilmoitettujen ongelmien CC-listalle."
 
 #: ../src/plugins/report_uReport.xml.in.h:7
 msgid "Report unpackaged problems"
-msgstr ""
+msgstr "Ilmoita pakkaamattomista ongelmista"
 
 #: ../src/plugins/report_uReport.xml.in.h:8
 msgid "Report problems coming from unpackaged executables."
-msgstr ""
+msgstr "Ilmoita pakkaamattomista suoritustiedostoista johtuvista ongelmista."
 
 #: ../src/plugins/report_uReport.xml.in.h:9
 msgid "Contact email address"
@@ -2652,10 +2715,12 @@ msgid ""
 "Email address that can be used by ABRT server to inform you about news and "
 "updates"
 msgstr ""
+"Sähköpostiosoite, jota ABRT-palvelin voi käyttää ilmoittamaan sinulle "
+"uutisista ja päivityksistä"
 
 #: ../src/plugins/watch_Bugzilla.xml.in.h:1
 msgid "Watch Bugzilla Bug"
-msgstr ""
+msgstr "Katso Bugzilla-vika"
 
 #: ../src/plugins/watch_Bugzilla.xml.in.h:2
 msgid "Adds your e-mail to CC List of Bugzilla bug"
@@ -2683,6 +2748,9 @@ msgid ""
 "please see https://github.com/abrt/abrt/wiki/FAQ#creating-private-bugzilla-"
 "tickets for more info"
 msgstr ""
+"Yksityisen lipun luomista on pyydetty, mutta yhtään ryhmää ei ole "
+"määritelty. Lisätietoja on tässä https://github.com/abrt/abrt/wiki/FAQ"
+"#creating-private-bugzilla-tickets"
 
 #: ../src/plugins/rhbz.c:604
 #, c-format
@@ -2696,41 +2764,43 @@ msgstr "Bugzilla ei löytänyt ylemmän tason vikailmoitusta ilmoitukselle %d"
 
 #: ../src/plugins/rhbz.c:873
 msgid "Bug.search(quicksearch) return value did not contain member 'bugs'"
-msgstr ""
+msgstr "Bug.search(quicksearch):n palautusarvo ei sisältänyt jäsentä 'bugs'"
 
 #: ../src/plugins/mantisbt.c:123
 #, c-format
 msgid "MantisBT couldn't find parent of issue %d"
-msgstr ""
+msgstr "MantisBT ei löytänyt ongelman %d vanhempaa"
 
 #: ../src/plugins/mantisbt.c:180
 msgid "SOAP: Failed to get child element because of no parent."
-msgstr ""
+msgstr "SOAP: Lapsielementin saaminen epäonnistui vanhempien puuttuessa."
 
 #: ../src/plugins/mantisbt.c:189
 msgid "SOAP: Failed to get next element because of no node."
-msgstr ""
+msgstr "SOAP: Seuraavan elementin saaminen epäonnistui solmun puuttuessa."
 
 #: ../src/plugins/mantisbt.c:198
 msgid "SOAP: Failed to get child node because of no parent."
-msgstr ""
+msgstr "SOAP: Lapsisolmun saaminen epäonnistui vanhempien puuttuessa."
 
 #: ../src/plugins/mantisbt.c:219
 msgid "SOAP: Failed to parse xml during creating request."
-msgstr ""
+msgstr "SOAP: XML:n jäsentäminen epäonnistui pyynnön luomisen aikana."
 
 #: ../src/plugins/mantisbt.c:227
 msgid "SOAP: Failed to get xml root element."
-msgstr ""
+msgstr "SOAP: XML-juurielementin saaminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:240
 msgid ""
 "SOAP: Failed to add a new child node because of no node or no child name."
 msgstr ""
+"SOAP: Uuden lapsisolmun lisääminen epäonnistui solmun tai lapsen nimen "
+"puutteessa."
 
 #: ../src/plugins/mantisbt.c:245
 msgid "SOAP: Failed to create a new xml child item."
-msgstr ""
+msgstr "SOAP: Uuden XML-lapsikohteen luominen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:250
 msgid "SOAP: Failed to create a new property."
@@ -2738,55 +2808,60 @@ msgstr "SOAP: Uuden ominaisuuden luominen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:260
 msgid "SOAP: Failed to add method parametr."
-msgstr ""
+msgstr "SOAP: Menetelmäparametrin lisääminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:289
 msgid "SOAP: Failed to add new issue parametrs."
-msgstr ""
+msgstr "SOAP: Uusien ongelmaparametrien lisääminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:292
 msgid ""
 "SOAP: Failed to add new issue parameters because the required items are "
 "missing."
 msgstr ""
+"SOAP: Uusien ongelmaparametrien lisääminen epäonnistui, koska vaaditut "
+"kohteet puuttuvat."
 
 #: ../src/plugins/mantisbt.c:336
 msgid "SOAP: Failed to create a new property in custom fields."
-msgstr ""
+msgstr "SOAP: Uuden omaisuuden luominen mukautetuissa kentissä epäonnistui."
 
 #: ../src/plugins/mantisbt.c:354
 msgid ""
 "SOAP: Failed to create SOAP string because of invalid function arguments."
 msgstr ""
+"SOAP: SOAP-merkkijonon luominen epäonnistui virheellisten funktion "
+"argumenttien vuoksi."
 
 #: ../src/plugins/mantisbt.c:361
 msgid "SOAP: Failed to dump xml node."
-msgstr ""
+msgstr "SOAP: XML-solmun tyhjentäminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:375
 msgid "SOAP: Failed to print SOAP string."
-msgstr ""
+msgstr "SOAP: SOAP-merkkijonon tulostaminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:382
 msgid "Failed to dump xml node."
-msgstr ""
+msgstr "XML-solmun tyhjentäminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:458
 msgid "SOAP: Failed to parse xml (searching value at depth by name)."
 msgstr ""
+"SOAP: XML:n jäsentäminen epäonnistui (arvon haku syvyydestä nimen mukaan)."
 
 #: ../src/plugins/mantisbt.c:462 ../src/plugins/mantisbt.c:505
 #: ../src/plugins/mantisbt.c:534
 msgid "SOAP: Failed to create xml text reader."
-msgstr ""
+msgstr "SOAP: XML-tekstinlukijan luominen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:501
 msgid "SOAP: Failed to parse xml."
-msgstr ""
+msgstr "SOAP: XML:n jäsentäminen epäonnistui."
 
 #: ../src/plugins/mantisbt.c:530
 msgid "SOAP: Failed to parse xml (get related to issue)."
-msgstr ""
+msgstr "SOAP: XML:n jäsentäminen epäonnistui (liittyy aiheeseen)."
 
 #: ../src/plugins/mantisbt.c:647
 msgid "Url or request isn't specified."
@@ -2800,12 +2875,12 @@ msgstr "HTTP POST virhe, HTTP koodi: 404 (Ei löytynyt), URL:'%s'"
 #: ../src/plugins/mantisbt.c:699
 #, c-format
 msgid "Error in MantisBT request at '%s': %s"
-msgstr ""
+msgstr "Virhe MantisBT-pyynnössä '%s':ssa: %s"
 
 #: ../src/plugins/mantisbt.c:701
 #, c-format
 msgid "Error in MantisBT request at '%s'"
-msgstr ""
+msgstr "Virhe MantisBT-pyynnössä '%s':ssa"
 
 #: ../src/plugins/mantisbt.c:743
 #, c-format
@@ -2815,7 +2890,7 @@ msgstr "Liitteen lisääminen epäonnistui: '%s'"
 #: ../src/plugins/mantisbt.c:762
 #, c-format
 msgid "Can't lseek '%s'"
-msgstr ""
+msgstr "Ei voi lseek '%s'"
 
 #: ../src/plugins/mantisbt.c:768
 #, c-format
@@ -2835,12 +2910,12 @@ msgstr "Ei voida avata '%s'"
 #: ../src/plugins/mantisbt.c:861
 #, c-format
 msgid "Failed to search MantisBT issue by duphash: '%s'"
-msgstr ""
+msgstr "MantisBT-ongelman haku epäonnistui duphashin avulla: '%s'"
 
 #: ../src/plugins/mantisbt.c:906
 #, c-format
 msgid "Failed to search MantisBT duplicate issue: '%s'"
-msgstr ""
+msgstr "MantisBT-kaksoiskappaleongelman haku epäonnistui: '%s'"
 
 #: ../src/plugins/mantisbt.c:934
 #, c-format
@@ -2848,11 +2923,13 @@ msgid ""
 "MantisBT doesn't contain custom field '%s', which is required for full "
 "functionality of the reporter. Do you still want to create a new issue?"
 msgstr ""
+"MantisBT ei sisällä mukautettua kenttää '%s', jota vaaditaan toimittajan "
+"täydelliseen toimintaan. Haluatko silti luoda uuden ongelman?"
 
 #: ../src/plugins/mantisbt.c:958
 #, c-format
 msgid "Failed to get custom fields for '%s' project"
-msgstr ""
+msgstr "Mukautettujen kenttien noutaminen hankkeelle '%s' epäonnistui"
 
 #: ../src/plugins/mantisbt.c:1002
 #, c-format
@@ -2862,7 +2939,7 @@ msgstr "Uuden ongelman luominen epäonnistui: '%s'"
 #: ../src/plugins/mantisbt.c:1028
 #, c-format
 msgid "Failed to get MantisBT issue: '%s'"
-msgstr ""
+msgstr "MantisBT-ongelman saaminen epäonnistui: '%s'"
 
 #: ../src/plugins/mantisbt.c:1042
 #, c-format
@@ -2879,15 +2956,15 @@ msgstr ""
 #: ../src/plugins/mantisbt.c:1087
 #, c-format
 msgid "Failed to add MantisBT issue note: '%s'"
-msgstr ""
+msgstr "MantisBT-ongelmailmoituksen lisääminen epäonnistui: '%s'"
 
 #: ../src/plugins/mantisbt.c:1101
 msgid "The MantisBT project has not been deretmined."
-msgstr ""
+msgstr "MantisBT-hanketta ei ole määritelty."
 
 #: ../src/plugins/mantisbt.c:1113
 msgid "Failed to get project id from name"
-msgstr ""
+msgstr "Hanketunnuksen haku nimestä epäonnistui"
 
 #: ../src/plugins/reporter-ureport.c:75
 msgid "Specify server URL"
@@ -2907,63 +2984,77 @@ msgstr "Käytä HTTP-tunnistautumista"
 
 #: ../src/plugins/reporter-ureport.c:80
 msgid "Additional files included in 'auth' key"
-msgstr ""
+msgstr "'auth'-avaimeen sisältyvät lisätiedostot"
 
 #: ../src/plugins/reporter-ureport.c:83
 msgid "bthash of uReport to attach (conflicts with -A)"
-msgstr ""
+msgstr "liitettävän uReport bthash (ristiriidassa '-A':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:85
 msgid "attach to a bthash from reported_to (conflicts with -a)"
-msgstr ""
+msgstr "liitettävä bthash:iin 'reported_to':sta (ristiriidassa '-a':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:87
 msgid "contact e-mail address (requires -a|-A, conflicts with -E)"
 msgstr ""
+"yhteyshenkilön sähköpostiosoite (vaatii '-a' | '-A', ristiriidassa '-E':n "
+"kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:89
 msgid ""
 "contact e-mail address from environment or configuration file (requires -a|-"
 "A, conflicts with -e)"
 msgstr ""
+"yhteyshenkilön sähköpostiosoite ympäristö- tai määritystiedostosta (vaatii '-"
+"a' | '-A', ristiriidassa '-e':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:91
 msgid "attach RHBZ bug (requires -a|-A, conflicts with -B)"
-msgstr ""
+msgstr "liitä RHBZ-ongelma (vaatii '-a' | '-A', ristiriidassa '-B':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:93
 msgid ""
 "attach last RHBZ bug from reported_to (requires -a|-A, conflicts with -b)"
 msgstr ""
+"liitä viimeinen RHBZ-ongelma reported_to:sta (vaatii '-a' | '-A', "
+"ristiriidassa '-b':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:95
 msgid "attach short text (requires -a|-A, conflicts with -D)"
-msgstr ""
+msgstr "liitä lyhyt teksti (vaatii '-a' | '-A', ristiriidassa '-D':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:97
 msgid "attach short text from comment (requires -a|-A, conflicts with -d)"
 msgstr ""
+"liitä lyhyt teksti kommentista (vaatii '-a' | '-A', ristiriidassa '-d':n "
+"kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:101
 msgid "attach value (requires -a|-A and -T, conflicts with -L)"
-msgstr ""
+msgstr "liitä arvo (vaatii '-a' | '-A', '-T', ristiriidassa '-L':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:103
 msgid ""
 "attach data of FIELD [URL] of the last report result (requires -a|-A, -r and "
 "-T, conflicts with -l)"
 msgstr ""
+"liitä viimeisen raporttituloksen FIELD [URL] :n tiedot (vaatii '-a' | '-A', "
+"'-r ', '-T', ristiriidassa '-l':n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:106
 msgid ""
 "use REPORT_RESULT_TYPE when looking for FIELD in reported_to (used only with "
 "-L)"
 msgstr ""
+"käytä REPORT_RESULT_TYPE, kun etsit FIELD-kenttää reported_to:ssa (käytetään "
+"vain '-L': n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:108
 msgid ""
 "attach DATA as ureport attachment ATTACHMENT_TYPE (used only with -l|-L)"
 msgstr ""
+"liitä DATA ureport-liitetiedostona ATTACHMENT_TYPE (käytetään vain '-l '| "
+"'-L': n kanssa)"
 
 #: ../src/plugins/reporter-ureport.c:113
 msgid ""
@@ -2979,10 +3070,21 @@ msgid ""
 "\n"
 "Reads the default configuration from "
 msgstr ""
+"& [-v] [-c FILE] [-u URL] [-k] [-t SOURCE] [-h CREDENTIALS]\n"
+"  [-A -a bthash -B -b bug-id -E -e email -O -o comment] [-d DIR]\n"
+"  [-A -a bthash -T ATTACHMENT_TYPE -r REPORT_RESULT_TYPE -L RESULT_FIELD] [-"
+"d DIR]\n"
+"  [-A -a bthash -T ATTACHMENT_TYPE -l DATA] [-d DIR]\n"
+"& [-v] [-c FILE] [-u URL] [-k] [-t SOURCE] [-h CREDENTIALS] [-i AUTH_ITEMS] "
+"[-d DIR]\n"
+"\n"
+"Lähetä mikroraportti tai lisää liite mikroraporttiin\n"
+"\n"
+"Lukee oletusasetukset kohteesta "
 
 #: ../src/plugins/reporter-ureport.c:191
 msgid "This problem does not have an uReport assigned."
-msgstr ""
+msgstr "Tähän ongelmaan ei ole määritetty uReport:a."
 
 #: ../src/plugins/reporter-ureport.c:212
 msgid "This problem has not been reported to Bugzilla."
@@ -2991,12 +3093,12 @@ msgstr "Tätä ongelmaa ei ole raportoitu Bugzillaan."
 #: ../src/plugins/reporter-ureport.c:218
 #, c-format
 msgid "Unable to find bug ID in bugzilla URL '%s'"
-msgstr ""
+msgstr "Bugzillan URL:sta ei löydy virhetunnusta '%s'"
 
 #: ../src/plugins/reporter-ureport.c:223
 #, c-format
 msgid "Unable to parse bug ID from bugzilla URL '%s'"
-msgstr ""
+msgstr "Virheen tunnusta ei voi jäsentää Bugzillan URL:sta '%s'"
 
 #: ../src/plugins/reporter-ureport.c:230
 msgid "Cannot attach comment from 'comment' file"
@@ -3014,21 +3116,25 @@ msgstr "Tätä ongelmaa ei ole raportoitu '%s':een."
 #: ../src/plugins/reporter-ureport.c:251
 #, c-format
 msgid "The report result '%s' is missing URL."
-msgstr ""
+msgstr "Raporttituloksesta '%s' puuttuu URL."
 
 #: ../src/plugins/reporter-ureport.c:267
 msgid ""
 "Neither environment variable 'uReport_ContactEmail' nor configuration option "
 "'ContactEmail' is set"
 msgstr ""
+"Ympäristömuuttujaa 'uReport_ContactEmail' tai määritysvaihtoehtoa "
+"'ContactEmail' ei ole asetettu"
 
 #: ../src/plugins/reporter-ureport.c:273
 msgid "You need to specify bug ID, contact email, comment or all of them"
 msgstr ""
+"Sinun on määritettävä virheen tunnus, yhteyssähköposti, kommentti tai kaikki "
+"ne"
 
 #: ../src/plugins/reporter-ureport.c:303
 msgid "You need to specify bthash of the uReport to attach."
-msgstr ""
+msgstr "Sinun on määritettävä liitettävän uReportin bthash."
 
 #: ../src/plugins/reporter-ureport.c:332
 msgid "This problem has already been reported."
@@ -3071,6 +3177,9 @@ msgid ""
 "\n"
 "newt tool to report problem saved in specified DIR"
 msgstr ""
+"& [-d] DIR\n"
+"\n"
+"newt-työkalu ongelman ilmoittamiseen, tallennettu määritettyyn DIR:ään"
 
 #: ../src/report-newt/report-newt.c:396
 msgid "Remove DIR after reporting"
@@ -3107,39 +3216,39 @@ msgstr "Lähetä tiedot scp:n tai ftp:n välityksellä etäsijaintiin"
 
 #: ../src/workflows/workflow_CentOSCCpp.xml.in.h:2
 msgid "Process the C/C++ crash using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele C/C++ -katkos CentOS-infrastruktuurilla"
 
 #: ../src/workflows/workflow_CentOSJava.xml.in.h:2
 msgid "Process the Java exception using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele Java-poikkeus CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSJavaScript.xml.in.h:2
 msgid "Process the JavaScript exception using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele JavaScript-poikkeus CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSKerneloops.xml.in.h:2
 msgid "Process the kerneloops using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele kerneloops CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSLibreport.xml.in.h:2
 msgid "Process the problem using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele ongelma CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSPython.xml.in.h:2
 msgid "Process the python exception using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele python-poikkeus CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSPython3.xml.in.h:2
 msgid "Process the python 3 exception using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele python 3 -poikkeus CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSVmcore.xml.in.h:2
 msgid "Process the kernel crash using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele ytimen kaatuminen CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_CentOSXorg.xml.in.h:2
 msgid "Process the X Server problem using the CentOS infrastructure"
-msgstr ""
+msgstr "Käsittele X-palvelinongelma CentOS-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_FedoraCCpp.xml.in.h:1
 #: ../src/workflows/workflow_FedoraKerneloops.xml.in.h:1
@@ -3163,11 +3272,11 @@ msgstr "Käsittele ytimen silmukat käyttäen Fedoran infrastruktuuria"
 
 #: ../src/workflows/workflow_FedoraPython.xml.in.h:2
 msgid "Process the python exception using the Fedora infrastructure"
-msgstr ""
+msgstr "Käsittele python-poikkeus Fedora-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_FedoraPython3.xml.in.h:2
 msgid "Process the python 3 exception using the Fedora infrastructure"
-msgstr ""
+msgstr "Käsittele python 3 -poikkeus Fedora-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_FedoraVmcore.xml.in.h:2
 msgid "Process the kernel crash using the Fedora infrastructure"
@@ -3183,11 +3292,11 @@ msgstr "Käsittele ongelmai käyttäen Fedoran infrastruktuuria"
 
 #: ../src/workflows/workflow_FedoraJava.xml.in.h:2
 msgid "Process the Java exception using the Fedora infrastructure"
-msgstr ""
+msgstr "Käsittele Java-poikkeus Fedora-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_FedoraJavaScript.xml.in.h:2
 msgid "Process the JavaScript exception using the Fedora infrastructure"
-msgstr ""
+msgstr "Käsittele JavaScript-poikkeus Fedora-infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_LoggerCCpp.xml.in.h:1
 #: ../src/workflows/workflow_Logger.xml.in.h:1
@@ -3269,7 +3378,7 @@ msgstr ""
 #: ../src/workflows/workflow_RHELAddDataxorg.xml.in.h:1
 #: ../src/workflows/workflow_RHELAddDataJavaScript.xml.in.h:1
 msgid "Attach crash data to an existing Red Hat support case"
-msgstr ""
+msgstr "Liitä kaatumistiedot olemassa olevaan Red Hat -tukitapaukseen"
 
 #: ../src/workflows/workflow_RHELAddDataCCpp.xml.in.h:2
 #: ../src/workflows/workflow_RHELAddDataJava.xml.in.h:2
@@ -3303,7 +3412,7 @@ msgstr "Käsittele ytimen silmukat käyttäen Red Hatin infrastruktuuria"
 
 #: ../src/workflows/workflow_RHELBugzillaPython.xml.in.h:2
 msgid "Process the python exception using the Red Hat infrastructure"
-msgstr ""
+msgstr "Käsittele python-poikkeus Red Hat -infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_RHELBugzillaVmcore.xml.in.h:2
 msgid "Process the kernel crash using the Red Hat infrastructure"
@@ -3319,11 +3428,11 @@ msgstr "Käsittele ongelma käyttäen Red Hatin infrastruktuuria"
 
 #: ../src/workflows/workflow_RHELBugzillaJava.xml.in.h:2
 msgid "Process the Java exception using the Red Hat infrastructure"
-msgstr ""
+msgstr "Käsittele Java-poikkeus Red Hat -infrastruktuuria käyttäen"
 
 #: ../src/workflows/workflow_RHELBugzillaJavaScript.xml.in.h:2
 msgid "Process the JavaScript exception using the Red Hat infrastructure"
-msgstr ""
+msgstr "Käsittele JavaScript-poikkeus Red Hat -infrastruktuuria käyttäen"
 
 #~ msgid "Alternate GUI file"
 #~ msgstr "Vaihtoehtoinen GUI-tiedosto"
