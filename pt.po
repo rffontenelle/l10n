@@ -11,13 +11,14 @@
 # Lucas Perônico Barbotin <lucasperonicobarbotin@gmail.com>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020.
 # Caio Fontes de Castro <caiofcastro@usp.br>, 2020.
+# Gustavo Costa <gusta@null.net>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2020-07-05 17:27+0000\n"
-"Last-Translator: Caio Fontes de Castro <caiofcastro@usp.br>\n"
+"PO-Revision-Date: 2021-01-12 20:36+0000\n"
+"Last-Translator: Gustavo Costa <gusta@null.net>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -231,7 +232,6 @@ msgstr ""
 
 #. This takes some time, let user know what we are doing
 #: ../src/client-python/reportclient/debuginfo.py:310
-#, fuzzy
 msgid "Setting up repositories"
 msgstr "Configurando repositórios"
 
@@ -2411,7 +2411,7 @@ msgstr ""
 
 #: ../src/plugins/report_Uploader.xml.in.h:14
 msgid "FTP Proxy"
-msgstr "FTP Proxy"
+msgstr "Proxy FTP"
 
 #: ../src/plugins/report_Uploader.xml.in.h:15
 msgid "Sets the proxy server to use for FTP"
