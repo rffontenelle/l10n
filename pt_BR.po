@@ -24,13 +24,13 @@
 # Adolfo Ketzer <reztek@gmail.com>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
 # Arthur Nunes Corrêa <arthurnunes@tutanota.com>, 2020.
-# Gustavo Costa <gusta@null.net>, 2020.
+# Gustavo Costa <gusta@null.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2020-11-27 00:48+0000\n"
+"PO-Revision-Date: 2021-01-12 20:36+0000\n"
 "Last-Translator: Gustavo Costa <gusta@null.net>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/abrt/abrt/pt_BR/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -2012,8 +2012,7 @@ msgid ""
 "abrt-retrace-client <operation> [options]\n"
 "Operations: create/status/backtrace/log/batch/exploitable"
 msgstr ""
-"abrt-retrace-client <operation> [options]\n"
-"\n"
+"abrt-retrace-client <operação> [opções]\n"
 "Operações: create/status/backtrace/log/batch/exploitable"
 
 #: ../src/plugins/abrt-retrace-client.c:1324
