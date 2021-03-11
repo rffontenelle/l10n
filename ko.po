@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-03-09 17:01+0000\n"
+"PO-Revision-Date: 2021-03-12 05:25+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -2312,11 +2312,11 @@ msgstr "코어덤프와 같은 바이너리 파일 전송"
 #: ../src/plugins/report_RHTSupport.xml.in.h:1
 #: ../src/plugins/report_RHTSupport_AddData.xml.in.h:1
 msgid "Red Hat Customer Support"
-msgstr "레드햇 고객 지원"
+msgstr "Red Hat 고객 지원"
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:2
 msgid "Report to Red Hat support"
-msgstr "레드햇 지원에 대한 보고"
+msgstr "Red Hat 지원에 대한 보고"
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:3
 msgid "Username"
@@ -2324,11 +2324,11 @@ msgstr "사용자이름"
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:4
 msgid "Red Hat customer user name"
-msgstr "레드햇 고객 사용자 이름"
+msgstr "Red Hat 고객 사용자 이름"
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:6
 msgid "Red Hat customer password"
-msgstr "레드햇 고객 비밀번호"
+msgstr "Red Hat 고객 비밀번호"
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:7
 msgid "Submit uReport"
@@ -2342,11 +2342,11 @@ msgstr ""
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:9
 msgid "RH Portal URL"
-msgstr "레드햇 포털 URL"
+msgstr "Red Hat 포털 URL"
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:10
 msgid "Address of the Red Hat support portal"
-msgstr "레드햇 지원 포털 주소"
+msgstr "Red Hat지원 포털 주소"
 
 #: ../src/plugins/report_RHTSupport_AddData.xml.in.h:2
 msgid "Attach the data to existing Red Hat support case"
