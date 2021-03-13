@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-03-12 05:25+0000\n"
+"PO-Revision-Date: 2021-03-14 18:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -242,7 +242,7 @@ msgstr "{0} 디버그 정보 파일에 해당하는 꾸러미를 찾을 수 없�
 #: ../src/client-python/reportclient/debuginfo.py:350
 #, python-brace-format
 msgid "Packages to download: {0}"
-msgstr "다운로드할 패키지: {0}"
+msgstr "내려받기 할 꾸러미: {0}"
 
 #: ../src/client-python/reportclient/debuginfo.py:352
 #, python-brace-format
@@ -259,13 +259,13 @@ msgstr "사용자에 의해 다운로드가 취소되있습니다"
 #, python-brace-format
 msgid ""
 "Warning: Not enough free space in tmp dir '{0}' ({1:.2f}Mb left). Continue?"
-msgstr ""
+msgstr "경고: tmp dir '{0}' ({1:.2f}Mb left)에 여유 공간이 부족합니다. 진행할까요?"
 
 #: ../src/client-python/reportclient/debuginfo.py:375
 #, python-brace-format
 msgid ""
 "Warning: Not enough free space in cache dir '{0}' ({1:.2f}Mb left). Continue?"
-msgstr ""
+msgstr "경고: cache dir '{0}' ({1:.2f}Mb left)에 여유 공간이 없습니다. 진행할까요?"
 
 #: ../src/client-python/reportclient/debuginfo.py:398
 #, python-brace-format
@@ -283,6 +283,7 @@ msgid ""
 "'{0}' must be owned by abrt. Please run '# chown -R abrt.abrt {0}' to fix "
 "the issue."
 msgstr ""
+"abrt에 의해 '{0}'는 소유되어 집니다. 문제를 해결하기 위해 '# chown -R abrt.abrt {0}' 를 동작해 주세요."
 
 #. Was: "All downloaded packages have been extracted, removing..."
 #. but it was appearing even if no packages were in fact extracted
@@ -295,21 +296,21 @@ msgstr "{0} 제거 중"
 #: ../src/client-python/reportclient/debuginfo.py:431
 #, python-brace-format
 msgid "Can't remove {0}, probably contains an error log"
-msgstr ""
+msgstr "{0} 를 제거 할 수 없습니다, 아마도 오류 기록이 포함되어 있습니다"
 
 #: ../src/client-python/reportclient/dnfdebuginfo.py:89
 msgid "Error reading repository configuration: '{0!s}'"
-msgstr ""
+msgstr "저장소 구성 읽기 오류: '{0!s}'"
 
 #: ../src/client-python/reportclient/dnfdebuginfo.py:106
 msgid "Error setting up repositories: '{0!s}'"
-msgstr ""
+msgstr "저장소 설정 오류: '{0!s}'"
 
 #: ../src/client-python/reportclient/yumdebuginfo.py:66
 msgid ""
 "Problem '{0!s}' occured while downloading from mirror: '{1!s}'. Trying next "
 "one"
-msgstr ""
+msgstr "연결주소:' {1!s}'.에서 내려 받기 할 때에 문제 '{0!s}가 발생 하였습니다. 다음 시도"
 
 #: ../src/client-python/reportclient/yumdebuginfo.py:100
 msgid "Error initializing yum (YumBase.doConfigSetup): '{0!s}'"
@@ -317,15 +318,15 @@ msgstr "yum 초기화 오류 (YumBase.doConfigSetup): '{0!s}'"
 
 #: ../src/client-python/reportclient/yumdebuginfo.py:107
 msgid "Error: can't make cachedir, exiting"
-msgstr ""
+msgstr "오류: 캐쉬 디렉토리를 만들 수 없습니다, 나감"
 
 #: ../src/client-python/reportclient/yumdebuginfo.py:116
 msgid "Can't disable repository '{0!s}': {1!s}"
-msgstr ""
+msgstr "저장소를 사용 할 수 없습니다 '{0!s}': {1!s}"
 
 #: ../src/client-python/reportclient/yumdebuginfo.py:135
 msgid "Can't disable async download, the output might contain artifacts!"
-msgstr ""
+msgstr "비동기 내려받기를 비활성화 할 수 없으며, 출력은 인공적인 것이 포함 될 수 있습니다!"
 
 #: ../src/client-python/reportclient/yumdebuginfo.py:137
 #, python-brace-format
@@ -343,7 +344,7 @@ msgstr "파일 목록을 가져오는 도중 오류가 발생했습니다: '{0!s
 #: ../src/client-python/reportclient/yumdebuginfo.py:204
 #, python-brace-format
 msgid "Cannot copy file '{0}': {1}"
-msgstr ""
+msgstr "파일 '{0}': {1} 을 복사 할 수 없습니다"
 
 #. Follow GTK3's yes-no-buttons order:
 #. * [No] [Yes]
