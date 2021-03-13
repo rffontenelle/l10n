@@ -13,14 +13,14 @@
 # Toni Rantala <trantalafilo@gmail.com>, 2017. #zanata
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2018. #zanata
 # Ricky Tigg <ricky.tigg@gmail.com>, 2020, 2021.
-# Jan Kuparinen <copper_fin@hotmail.com>, 2020.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-03-06 14:01+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2021-03-16 06:01+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
 "Language: fi\n"
@@ -691,7 +691,7 @@ msgstr "Ei voida saada ongelmatietoja abrt-dbusilta: %s"
 #: ../src/lib/problem_api_dbus.c:274
 #, c-format
 msgid "Can't test whether the element exists over abrt-dbus: %s"
-msgstr ""
+msgstr "Ei voida testata, onko elementti olemassa abrt-dbus:n kautta: %s"
 
 #: ../src/lib/ignored_problems.c:233
 #, c-format
@@ -731,7 +731,7 @@ msgstr "Kohteen %s pinolistauksen jäsentäminen epäonnistui"
 
 #: ../src/plugins/abrt-action-analyze-backtrace.c:152
 msgid "Crash thread not found"
-msgstr ""
+msgstr "Kaatumissäiettä ei löytynyt"
 
 #: ../src/plugins/abrt-action-analyze-c.c:155
 msgid ""
@@ -743,7 +743,7 @@ msgstr ""
 #: ../src/plugins/abrt-action-analyze-core.in:67
 #, c-format
 msgid "Analyzing coredump '%s'"
-msgstr ""
+msgstr "Analysoin muistivedosta '%s'"
 
 #: ../src/plugins/abrt-action-analyze-core.in:105
 #, c-format
@@ -773,6 +773,11 @@ msgid ""
 "your computer. ABRT will not allow you to create a report in a bug tracking "
 "system but you can contact kernel maintainers via e-mail."
 msgstr ""
+"Backtrace ei sisällä tarpeeksi merkityksellisiä toimintokehyksiä "
+"raportoitavaksi. Se on ärsyttävää, mutta se ei välttämättä merkitse "
+"tietokoneen ongelmaa. ABRT ei salli sinun luoda raporttia "
+"virheenseurantajärjestelmässä, mutta voit ottaa yhteyttä ytimen ylläpitäjiin "
+"sähköpostitse."
 
 #: ../src/plugins/abrt-action-analyze-xorg.c:74
 msgid ""
@@ -803,7 +808,7 @@ msgstr "Tiedostoa {0} ei ole olemassa"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:77
 msgid "Extracting the oops text from core"
-msgstr ""
+msgstr "Puretaan oho-teksti ytimestä"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:82
 msgid ""
@@ -815,17 +820,19 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:90
 msgid "Can't extract the oops message: '{0}'"
-msgstr ""
+msgstr "Oho-viestin purkaminen ei onnistu: '{0}'"
 
 #: ../src/plugins/abrt-action-analyze-vmcore.in:93
 msgid "Oops text extracted successfully"
-msgstr ""
+msgstr "Oho-viesti purettu"
 
 #: ../src/plugins/abrt-action-check-oops-for-hw-error.in:100
 msgid ""
 "The kernel log indicates that hardware errors were detected.\n"
 "This is most likely not a software problem.\n"
 msgstr ""
+"Ytimen loki osoittaa, että laitteistovirheitä on havaittu.\n"
+"Tämä ei todennäköisesti ole ohjelmisto-ongelma.\n"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:73
 #: ../src/plugins/abrt-action-find-bodhi-update:106
@@ -834,11 +841,11 @@ msgstr "Ongelmahakemisto virhe: {0}"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:92
 msgid "cannot open problem directory '{0}'"
-msgstr ""
+msgstr "ei voi avata ongelmahakemistoa '{0}'"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:121
 msgid "Using product '{0}' from /etc/os-release."
-msgstr ""
+msgstr "Käytetään tuotetta '{0}' kohteesta /etc/os-release."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:123
 msgid "Using product {0}."
@@ -850,7 +857,7 @@ msgstr "Käytetään tuoteversiota {0}."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:137
 msgid "Duplicate bugzilla bug '#{0}' was found"
-msgstr ""
+msgstr "Kaksoiskappale bugzilla-virhe '#{0}' löytyi"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:139
 msgid "There is no bugzilla bug with 'abrt_hash:{0}'"
