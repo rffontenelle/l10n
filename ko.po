@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-03-08 12:01+0000\n"
+"PO-Revision-Date: 2021-03-16 06:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ko/>\n"
@@ -46,7 +46,7 @@ msgstr "ABRT가 새로운 문제를 감지할 경우 사용자에게 통지하�
 
 #: ../src/applet/abrt-applet-application.c:534
 msgid "Oops!"
-msgstr ""
+msgstr "어머나!"
 
 #: ../src/applet/abrt-applet-application.c:573
 msgid "Report"
@@ -144,10 +144,12 @@ msgid ""
 "linked to the value of the setting 'report-technical-problems' from the "
 "schema 'org.gnome.desktop.privacy'."
 msgstr ""
+"위의 환경구성 선택은 GSetting으로 옮겨졌으며, 선택는 조직 'org.gnome.desktop.privacy'에서 'report-"
+"technical-problems' 설정의 값으로 연결됩니다."
 
 #: ../src/configuration-gui/abrt-config-widget.c:496
 msgid "The configuration option above can be configured in"
-msgstr ""
+msgstr "위의 환경설정 선택은 구성되어 질 수 있습니다"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/configuration-gui/abrt-config-widget.glade.h:1
@@ -178,6 +180,10 @@ msgid ""
 "With option 'Never' the stack trace will be always generated locally. With "
 "option 'Ask' ABRT will always ask the user."
 msgstr ""
+"코어덤프 파일은 시간과 공간을 소모하는 동작과 같은 추적 더미를 생성하기 위해 필요합니다. ABRT는 코어덤프에서 추적더미를 생성하는 "
+"서비스를 제공합니다만 이 서비스를 위해 코어덤프를 업로드 해야 합니다. ABRT 선택 'Always'와 함께 항상 묻지 않고 코어덤프를 "
+"업로드 할 것입니다. 선택 'Never'와 함께 추적 더미는 내부에서만 발생 할 것입니다. 'Ask' ABRT 선택은 사용자에게 물어 볼 "
+"것입니다."
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/configuration-gui/abrt-config-widget.glade.h:6
@@ -253,15 +259,15 @@ msgstr "항상"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:15
 msgid "Never"
-msgstr ""
+msgstr "하지 않기"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:16
 msgid "Ask"
-msgstr ""
+msgstr "묻기"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:17
 msgid "Upload coredump for backtrace generation"
-msgstr ""
+msgstr "역추적 생성을 위한 코어덤프를 올립니다"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/configuration-gui/system-config-abrt.c:66
@@ -376,7 +382,7 @@ msgstr "권한이 없습니다"
 
 #: ../src/dbus/abrt-dbus.c:253
 msgid "Can't open the problem"
-msgstr ""
+msgstr "문제를 열 수 없습니다"
 
 #: ../src/dbus/abrt-dbus.c:285
 #, c-format
@@ -443,7 +449,7 @@ msgstr "-d를 사용하여 syslog에 로그"
 
 #: ../src/daemon/abrt-handle-event.c:362
 msgid "& [-v -i -n INCREMENT] -e|--event EVENT DIR..."
-msgstr ""
+msgstr "& [-v -i -n INCREMENT] -e|--event 사건 디렉토리..."
 
 #: ../src/daemon/abrt-handle-event.c:371
 msgid "Run EVENT on DIR"
@@ -455,7 +461,7 @@ msgstr "사용자에게 직접 통신"
 
 #: ../src/daemon/abrt-handle-event.c:373
 msgid "Increment the nice value by INCREMENT"
-msgstr ""
+msgstr "INCREMENT에 의해 nice 값을 증가시킵니다"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/daemon/abrt-upload-watch.c:118
@@ -693,11 +699,11 @@ msgstr "문제 디렉토리 삭제 실패: %s"
 #: ../src/lib/problem_api_dbus.c:131
 #, c-format
 msgid "D-Bus GetInfo method call failed: %s"
-msgstr ""
+msgstr "D-Bus Getinfo 방법 호출이 실패하였습니다: %s"
 
 #: ../src/lib/problem_api_dbus.c:166
 msgid "Can't get problem data from abrt-dbus"
-msgstr ""
+msgstr "abrt-dbus에서 문제 데이터를 가져올 수 없음"
 
 #: ../src/lib/problem_api_dbus.c:193
 #, c-format
@@ -809,6 +815,9 @@ msgid ""
 "your computer. ABRT will not allow you to create a report in a bug tracking "
 "system but you can contact kernel maintainers via e-mail."
 msgstr ""
+"역추적은 보고 될 수 있는 의미 있는 기능 프레임이 충분히 포함 될 수 없습니다. 귀찮긴 하지만 컴퓨터에 대한 문제를 알릴 필요는 "
+"없습니다. ABRT는 결점 추적 시스템에서 문제 생성하기를 허용하지 않을 수 있으며, 전자우편을 통해서 커널 관라자에게 연락 할 수 "
+"있습니다."
 
 #: ../src/plugins/abrt-action-analyze-xorg.c:74
 msgid ""
@@ -880,35 +889,35 @@ msgstr ""
 #: ../src/plugins/abrt-action-find-bodhi-update:73
 #: ../src/plugins/abrt-action-find-bodhi-update:106
 msgid "Problem directory error: {0}"
-msgstr ""
+msgstr "문제 디렉토리 오류: {0}"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:92
 msgid "cannot open problem directory '{0}'"
-msgstr ""
+msgstr "문제 디렉토리를 열 수 없습니다 '{0}'"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:121
 msgid "Using product '{0}' from /etc/os-release."
-msgstr ""
+msgstr "/etc/os-release 에서 물품 '{0}' 사용하기."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:123
 msgid "Using product {0}."
-msgstr ""
+msgstr "product {0} 사용."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:125
 msgid "Using product version {0}."
-msgstr ""
+msgstr "product version {0} 사용."
 
 #: ../src/plugins/abrt-action-find-bodhi-update:137
 msgid "Duplicate bugzilla bug '#{0}' was found"
-msgstr ""
+msgstr "중복 버그질라 결점 '#{0}'가 발견되었습니다"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:139
 msgid "There is no bugzilla bug with 'abrt_hash:{0}'"
-msgstr ""
+msgstr "'abrt_hash:{0}'에 버그질라 결점이 없습니다"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:144
 msgid "Warning: abrt-bodhi do not support Product version 'Rawhide'"
-msgstr ""
+msgstr "경고: abrt-bodhi는 Product 버전 'Rawhide'를 지원하지 않습니다"
 
 #: ../src/plugins/abrt-action-generate-backtrace.c:42
 msgid ""
@@ -1031,6 +1040,32 @@ msgid ""
 "    --releasever RELEASEVER\n"
 "                Pass this OS version to package managers.\n"
 msgstr ""
+"사용법: %s [-vy] [--ids=BUILD_IDS_FILE] [--pkgmgr=(yum|dnf)]\n"
+" [--tmpdir=TMPDIR] [--cache=CACHEDIR[:DEBUGINFODIR1:DEBUGINFODIR2...]] "
+"[--size_mb=SIZE]\n"
+" [-e, --exact=PATH[:PATH...]]\n"
+" [--releasever=RELEASEVER] [--repo=PATTERN]\n"
+"\n"
+"Build_IDS_FILE에서 목록화된 build-ids에서TMPDIR을 임시 준비영역을\n"
+"사용하여, CACHEDIR 까지 디버그정보를 설치합니다.\n"
+"CACHEDIR에 있는 오래된 파일은 SIZE보다 작아질 때까지 삭제됩니다.\n"
+"\n"
+"/etc/abrt/plugins/CCpp.conf 에서 설정파일을 읽습니다.\n"
+"\n"
+" -v  Be verbose\n"
+" -y  Noninteractive, assume 'Yes' to all questions\n"
+" --ids  Default: build_ids\n"
+" --tmpdir  Default: @LARGE_DATA_TMP_DIR@/abrt-tmp-debuginfo-RANDOM_SUFFIX\n"
+" --cache  Colon separated list of directories. The first one is used for\n"
+" saving installed debuginfos.\n"
+" Default: /var/cache/abrt-di\n"
+" --size_mb  Default: 4096\n"
+" --pkgmgr  Default: PackageManager from CCpp.conf or 'dnf'\n"
+" -e,--exact  Download only specified files\n"
+" --repo  Pattern to use when searching for repos.\n"
+" Default: *debug*\n"
+" --releasever RELEASEVER\n"
+" Pass this OS version to package managers.\n"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:290
 msgid "Exiting on user command"
@@ -1044,30 +1079,35 @@ msgid ""
 "Installs debuginfo packages for all build-ids listed in BUILD_IDS_FILE to\n"
 "ABRT system cache."
 msgstr ""
+"& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
+"\t[-r REPO]\n"
+"\n"
+"BUILD_IDS_FILE 에 목록화된 모든 build-id에서 ABRT 시스템 캐쉬까지\n"
+"디버그정보 꾸러미를 설치합니다."
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:68
 msgid "Noninteractive, assume 'Yes' to all questions"
-msgstr ""
+msgstr "비대화형, 모든 질문에 '예' 라고 가정합니다"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:69
 msgid "- means STDIN, default: build_ids"
-msgstr ""
+msgstr "- 방법 STDIN, 기본값: builds_ids"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:70
 msgid "Download only specified files"
-msgstr ""
+msgstr "지정한 파일만 내려받기"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:71
 msgid "Pattern to use when searching for repos, default: *debug*"
-msgstr ""
+msgstr "저장소를 찾을 때 사용하는 유형, 기본값: *debug*"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:72
 msgid "Ignored option"
-msgstr ""
+msgstr "선택 무시"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:73
 msgid "OS release version"
-msgstr ""
+msgstr "OS 출시 버전"
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:62
 msgid ""
@@ -1147,7 +1187,7 @@ msgstr "uReport가 이미 전송되어 있기때문에 다시 전송되지 않�
 
 #: ../src/plugins/abrt-action-ureport:174
 msgid "Problem comes from unpackaged executable. Unable to create uReport."
-msgstr ""
+msgstr "문제는 꾸러미 되지 않은 실행화일에서 발생합니다. uReport를 생성 할 수 없습니다."
 
 #: ../src/plugins/abrt-action-ureport:189
 msgid "Adding you to CC List of the existing bugzilla bug"
@@ -1334,7 +1374,7 @@ msgid ""
 msgstr ""
 "& [-vusoxm] [-d DIR]/[-D] [FILE]\n"
 "\n"
-"FILE (또는 표준 입력)에서 oops를 추출합니다"
+"FILE에서 oops를 추출합니다 (또는 표준 입력)"
 
 #: ../src/plugins/abrt-dump-oops.c:98
 #: ../src/plugins/abrt-dump-journal-core.c:572
@@ -1389,16 +1429,16 @@ msgstr "regex 컴파일에 실패했습니다"
 
 #: ../src/plugins/abrt-dump-oops.c:177
 msgid "Can't update the problem: no oops found"
-msgstr ""
+msgstr "문제를 최신화 할 수 없습니다: oops 찾지 못합니다"
 
 #: ../src/plugins/abrt-dump-oops.c:183
 msgid "More oopses found: process only the first one"
-msgstr ""
+msgstr "oopses를 더 찾았습니다: 첫번째 것만 처리합니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:378
 #, c-format
 msgid "UID=%9i; SIG=%2i (%4s); EXE=%s\n"
-msgstr ""
+msgstr "UID=%9i; SIG=%2i (%4s); EXE=%s\n"
 
 #: ../src/plugins/abrt-dump-journal-core.c:407
 #: ../src/plugins/abrt-dump-journal-core.c:446
@@ -1409,7 +1449,7 @@ msgstr "journald로부터 필요한 모든 정보를 얻는데 실패했습니�
 #: ../src/plugins/abrt-dump-journal-core.c:470
 #, c-format
 msgid "Not saving repeating crash after %ds (limit is %ds)"
-msgstr ""
+msgstr "%ds (limit is %ds) 후에 반복되는 충돌을 저장하지 않습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:478
 msgid "Failed to print detect problem data to stdout"
@@ -1423,7 +1463,7 @@ msgstr "abrt 데이터베이스에 문제 감지 데이터를 저장하는데에
 #: ../src/plugins/abrt-dump-journal-oops.c:168
 #: ../src/plugins/abrt-dump-journal-xorg.c:123
 msgid "Failed to initialize systemd-journal watch"
-msgstr ""
+msgstr "systemd-journal 시계 초기화에 실패하였습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:527
 msgid ""
@@ -1439,6 +1479,16 @@ msgid ""
 "\n"
 "The last seen position is saved in "
 msgstr ""
+"& [-vsf] [-e]/[-c CURSOR] [-t INT]/[-T] [-d DIR]/[-D]\n"
+"\n"
+"systemd-journal에서 코어덤프를 추출합니다\n"
+"\n"
+"-c and -e options conflicts because both specifies the first read message.\n"
+"\n"
+"-e is useful only for -f because the following of journal starts by reading\n"
+"the entire journal if the last seen possition is not available.\n"
+"\n"
+"마지막에 본 위치는 저장됩니다 "
 
 #: ../src/plugins/abrt-dump-journal-core.c:563
 msgid "Create new problem directory in DIR for every coredump"
@@ -1468,19 +1518,19 @@ msgstr "-t INT와 같이, INT는 plugins/CCpp.conf에 정의되어 있습니다"
 #: ../src/plugins/abrt-dump-journal-oops.c:233
 #: ../src/plugins/abrt-dump-journal-xorg.c:199
 msgid "Follow systemd-journal from the last seen position (if available)"
-msgstr ""
+msgstr "마지막 보여진 위치(가능하다면)에서 system-journal을 따릅니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:570
 #: ../src/plugins/abrt-dump-journal-oops.c:234
 #: ../src/plugins/abrt-dump-journal-xorg.c:200
 msgid "Read journal files from all machines"
-msgstr ""
+msgstr "모든 기기에서 저널 파일을 읽습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:571
 #: ../src/plugins/abrt-dump-journal-oops.c:235
 #: ../src/plugins/abrt-dump-journal-xorg.c:201
 msgid "Read all journal files from directory at PATH"
-msgstr ""
+msgstr "PATH에 디렉토리에서 모든 저널 파일을 읽습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:583
 #: ../src/plugins/abrt-dump-journal-oops.c:249
@@ -1493,7 +1543,7 @@ msgstr "-c CURSOR 또는 -e 중 하나를 지정해야 합니다"
 #: ../src/plugins/abrt-dump-journal-xorg.c:281
 #, c-format
 msgid "Cannot initialize systemd-journal in directory '%s'"
-msgstr ""
+msgstr "디렉토리 '%s'에 있는 systemd-journal을 초기화 할 수 없습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:632
 #: ../src/plugins/abrt-dump-journal-oops.c:287
@@ -1503,20 +1553,20 @@ msgstr "systemd-journal을 열 수 없습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:636
 msgid "Cannot filter systemd-journal to systemd-coredump data only"
-msgstr ""
+msgstr "systemd-journal에서 systemd-coredump 자료만 제거 할 수 없습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:641
 #: ../src/plugins/abrt-dump-journal-oops.c:296
 #: ../src/plugins/abrt-dump-journal-xorg.c:299
 msgid "Cannot seek to the end of journal"
-msgstr ""
+msgstr "저널 끝까지 찾을 수 없습니다"
 
 #: ../src/plugins/abrt-dump-journal-core.c:644
 #: ../src/plugins/abrt-dump-journal-oops.c:312
 #: ../src/plugins/abrt-dump-journal-xorg.c:315
 #, c-format
 msgid "Failed to set systemd-journal cursor '%s'"
-msgstr ""
+msgstr "systemd-journal 커서 '%s'를 설정하지 못했습니다"
 
 #: ../src/plugins/abrt-dump-journal-oops.c:40
 #: ../src/plugins/abrt-dump-journal-xorg.c:53
@@ -1537,20 +1587,30 @@ msgid ""
 "\n"
 "The last seen position is saved in "
 msgstr ""
+"& [-vsoxtf] [-e]/[-c CURSOR] [-d DIR]/[-D]\n"
+"\n"
+"systemd-journal에서 oops를 추출합니다\n"
+"\n"
+"-c and -e options conflicts because both specifies the first read message.\n"
+"\n"
+"-e is useful only for -f because the following of journal starts by reading\n"
+"the entire journal if the last seen possition is not available.\n"
+"\n"
+"마지막에 본 위치는 저장됩니다 "
 
 #: ../src/plugins/abrt-dump-journal-oops.c:291
 msgid "Cannot filter systemd-journal to kernel data only"
-msgstr ""
+msgstr "systemd-journal에서 커널 자료만 제거 할 수 없습니다"
 
 #: ../src/plugins/abrt-dump-journal-oops.c:303
 #: ../src/plugins/abrt-dump-journal-xorg.c:306
 #, c-format
 msgid "Failed to start watch from cursor '%s'"
-msgstr ""
+msgstr "커서 '%s'에서 시계를 시작 할 수 없습니다"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:62
 msgid "Failed to parse Backtrace from journal"
-msgstr ""
+msgstr "저널에서 역추적 구문분석을 실패하였습니다"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:145
 #, c-format
@@ -1571,28 +1631,41 @@ msgid ""
 "parameter\n"
 "-j or in %s conf file.\n"
 msgstr ""
+"& [-vsoxtf] [-e]/[-c CURSOR] [-d DIR]/[-D]\n"
+"\n"
+"systemd-journal에서 Xorg 충돌을 추출합니다\n"
+"\n"
+"-c and -e options conflicts because both specifies the first read message.\n"
+"\n"
+"-e is useful only for -f because the following of journal starts by reading\n"
+"the entire journal if the last seen position is not available.\n"
+"\n"
+"마지막 본 위치는 %s에 저장됩니다.\n"
+"\n"
+"저널 필터는 필수 매개변수 이며, 매개변수 -j 또는 %s\n"
+"환경 파일에 의해 지정되어야만 합니다.\n"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:192
 msgid "Print found crashes on standard output"
-msgstr ""
+msgstr "표준 출력에서 발견 된 충돌 인쇄"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:193
 msgid "Create new problem directory in DIR for every crash found"
-msgstr ""
+msgstr "발견된 모든 충돌을 위한 DIR에 새로운 문제 디렉토리를 생성"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:202
 msgid "Journal filter e.g. '_COMM=gdm-x-session' (may be given many times)"
-msgstr ""
+msgstr "저널 필터 e.g. '_COMM=gdm-x-session' (많이 주어질 수 있습니다)"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:273
 msgid ""
 "Journal filter must be specified either by parameter -j or stored in /etc/"
 "abrt/plugins/xorg.conf file"
-msgstr ""
+msgstr "저널 필터는 파라미터 -j 또는 저장된 /etc/abrt/plugins/xorg.conf 파일로 지정해줘야 합니다"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:290
 msgid "Cannot filter systemd-journal to Xorg data only"
-msgstr ""
+msgstr "systemd-journal에서 Xorg 자료만 제거 할 수 없습니다"
 
 #: ../src/plugins/abrt-dump-xorg.c:35
 msgid ""
@@ -1602,7 +1675,7 @@ msgid ""
 msgstr ""
 "& [-vsoxm] [-d DIR]/[-D] [FILE]\n"
 "\n"
-"FILE (또는 표준 입력)에서 Xorg 크래시를 추출합니다"
+"파일에서 Xorg 크래시를 추출합니다 (또는 표준 입력)"
 
 #: ../src/plugins/abrt-dump-xorg.c:53
 msgid "Print found crash data on standard output"
@@ -1614,55 +1687,55 @@ msgstr "발견된 모든 크래시에 대해 DIR에 문제 디렉토리를 생�
 
 #: ../src/plugins/abrt-dump-xorg.c:108
 msgid "Failed to parse Backtrace from log file"
-msgstr ""
+msgstr "로그파일에서 역추적 구문분석을 실패하였습니다"
 
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:274
 msgid "Cannot save journal watch's position"
-msgstr ""
+msgstr "저널 시계의 위치를 저장 할 수 없습니다"
 
 #: ../src/plugins/abrt-journal.c:284
 #, c-format
 msgid "Cannot save journal watch's position: open('%s')"
-msgstr ""
+msgstr "저널 시계의 위치를 저장 할 수 없습니다: 열기('%s')"
 
 #. Only notice because this is expected
 #: ../src/plugins/abrt-journal.c:302
 #, c-format
 msgid "Not restoring journal watch's position: file '%s' does not exist"
-msgstr ""
+msgstr "저널의 시계 위치를 복구 할 수 없습니다: 파일 '%s'가 존재하지 않습니다"
 
 #: ../src/plugins/abrt-journal.c:304
 #, c-format
 msgid "Cannot restore journal watch's position form file '%s'"
-msgstr ""
+msgstr "fil3 '%s'에서 저널 시계 위치를 복구 할 수 없습니다"
 
 #: ../src/plugins/abrt-journal.c:311
 #, c-format
 msgid "Cannot restore journal watch's position: path '%s' is not regular file"
-msgstr ""
+msgstr "저널 시계 위치를 복구 할 수 없습니다: 경로 '%s'는 정규 파일이 아닙니다"
 
 #: ../src/plugins/abrt-journal.c:317
 #, c-format
 msgid ""
 "Cannot restore journal watch's position: file '%s' exceeds %dB size limit"
-msgstr ""
+msgstr "저널 시계 위치를 복구 할 수 없습니다: 파일 '%s'는 %dB 크기 제한을 초과합니다"
 
 #: ../src/plugins/abrt-journal.c:325
 #, c-format
 msgid "Cannot restore journal watch's position: open('%s')"
-msgstr ""
+msgstr "저널 시계 위치를 복구 할 수 없습니다: 열기('%s')"
 
 #: ../src/plugins/abrt-journal.c:334
 #, c-format
 msgid "Cannot restore journal watch's position: cannot read entire file '%s'"
-msgstr ""
+msgstr "저널 시계 위치를 복구 할 수 없습니다: 전체 파일 '%s'를 읽을 수 없습니다"
 
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:346
 #, c-format
 msgid "Failed to move the journal to a cursor from file '%s'"
-msgstr ""
+msgstr "퍄일 '%s'에서 커서로 저널 옮기는데 실패하였습니다"
 
 #: ../src/plugins/abrt-retrace-client.c:79
 msgid ""
@@ -1733,7 +1806,7 @@ msgstr "역추적 서버를 사용하려면 '%s'은 일반 파일이어야 합�
 msgid ""
 "The size of your crash is %s, but the retrace server only accepts crashes "
 "smaller or equal to %s."
-msgstr ""
+msgstr "충돌의 크기는 %s이며, 재추적 서버는단지 %s 이하의 크기만 허용합니다."
 
 #: ../src/plugins/abrt-retrace-client.c:652
 msgid "The server does not support xz-compressed tarballs."
@@ -1761,12 +1834,12 @@ msgstr "적재 할 저장소 준비"
 msgid ""
 "The size of your archive is %s, but the retrace server only accepts archives "
 "smaller or equal to %s."
-msgstr ""
+msgstr "저장소 크기는 %s이며, 재추적 서버는 단지 %s 이하의 저장소만 허용합니다."
 
 #: ../src/plugins/abrt-retrace-client.c:752
 #, c-format
 msgid "You are going to upload %s. Continue?"
-msgstr ""
+msgstr "업로드 %s 합니다. 진행 할까요?"
 
 #: ../src/plugins/abrt-retrace-client.c:761
 msgid "Cancelled by user"
@@ -1775,7 +1848,7 @@ msgstr "사용자에 의해 취소됨"
 #: ../src/plugins/abrt-retrace-client.c:789
 #, c-format
 msgid "Uploading %s\n"
-msgstr ""
+msgstr "업로드 중 %s\n"
 
 #: ../src/plugins/abrt-retrace-client.c:814
 msgid "Upload successful"
@@ -1925,7 +1998,7 @@ msgstr "알 수 없는 작업: %s."
 
 #: ../src/plugins/analyze_BodhiUpdates.xml.in.h:1
 msgid "Search for updated packages that fixes the crash."
-msgstr ""
+msgstr "충돌 할 때에 수정된 꾸러미 최신화를 위하여 탐색합니다."
 
 #: ../src/plugins/analyze_BodhiUpdates.xml.in.h:2
 msgid ""
@@ -1933,6 +2006,8 @@ msgid ""
 "Whiteboar equal to 'UUID' of the crash. If such a bug found, search for "
 "Bodhi updates shipping fixes for the found Bugzilla bugs."
 msgstr ""
+"버그질라 결점 Whiteboar와 동일한 'UUID' 충돌에서 'abrt_hash' 값과 함께 버그질라 보고를 찾습니다. 만약 그런 "
+"결점을 찾으면, Bodhi 찾기를 통해 버그질라 결점에서 찾기 위한 수정된 내용 탑재를 최신화 합니다."
 
 #: ../src/plugins/analyze_LocalGDB.xml.in.h:1
 msgid "Local GNU Debugger"
@@ -2134,27 +2209,27 @@ msgstr "검색된 oopses가 있는 파일을 삭제합니다"
 
 #: ../src/cli/abrtcli/match.py:117
 msgid "No matching problems found"
-msgstr ""
+msgstr "일치하는 문제를 찾을 수 없음"
 
 #: ../src/cli/abrtcli/utils.py:79
 msgid "Not reportable"
-msgstr ""
+msgstr "보고 할 수 없음"
 
 #: ../src/cli/abrtcli/cli/__init__.py:30
 msgid "increase output verbosity"
-msgstr ""
+msgstr "출력 상세도 증가"
 
 #: ../src/cli/abrtcli/cli/__init__.py:50
 msgid "positive non-zero integer expected"
-msgstr ""
+msgstr "0이 아닌 정수가 예상됨"
 
 #: ../src/cli/abrtcli/cli/__init__.py:54
 msgid "filter last N problems"
-msgstr ""
+msgstr "마지막 N 문제를 제거합니다"
 
 #: ../src/cli/abrtcli/cli/__init__.py:57
 msgid "filter problems with matching component"
-msgstr ""
+msgstr "일치하는 구성과 함께 문제를 제거합니다"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/cli/abrtcli/cli/__init__.py:59
@@ -2173,15 +2248,15 @@ msgstr "지정된 시간 기록보다 오래된 문제만 제거됩니다"
 
 #: ../src/cli/abrtcli/cli/__init__.py:66
 msgid "filter problems with matching executable"
-msgstr ""
+msgstr "일치하는 실행파일과 함께 문제를 제거합니다"
 
 #: ../src/cli/abrtcli/cli/__init__.py:71
 msgid "output format"
-msgstr ""
+msgstr "출력 형식"
 
 #: ../src/cli/abrtcli/cli/__init__.py:74
 msgid "built-in output format"
-msgstr ""
+msgstr "내장 출력 형태"
 
 #: ../src/cli/abrtcli/cli/__init__.py:79
 msgid "path to the problem directory, problem ID or wildcard"
@@ -2189,11 +2264,11 @@ msgstr "문제 디렉토리, 문제 ID또는 와일드카드의 경로"
 
 #: ../src/cli/abrtcli/cli/backtrace.py:35
 msgid "Problem has no backtrace"
-msgstr ""
+msgstr "문제는 역추적하지 않습니다"
 
 #: ../src/cli/abrtcli/cli/backtrace.py:37
 msgid "Start retracing process?"
-msgstr ""
+msgstr "재추적 과정을 시작합니까?"
 
 #: ../src/cli/abrtcli/cli/gdb.py:25
 msgid "install debuginfo packages before launching GDB"
@@ -2201,7 +2276,7 @@ msgstr "GDB를 실행하기 전에 디버그정보 꾸러미를 설치하세요"
 
 #: ../src/cli/abrtcli/cli/gdb.py:38
 msgid "The problem is not of a C/C++ type. Can't run GDB"
-msgstr ""
+msgstr "문제는 C/C++ 유형이 아닙니다. GDB를 동작 할 수 없습니다"
 
 #: ../src/cli/abrtcli/cli/gdb.py:52
 #: ../src/cli/abrtcli/cli/install_debuginfo.py:45
@@ -2209,26 +2284,28 @@ msgid ""
 "Permission denied: '{}'\n"
 "If this is a system problem try running this command as root"
 msgstr ""
+"권한 거부: '{}'\n"
+"이 것이 시스템 문제라면 root 로써 이 명령 실행을 시도합니다"
 
 #: ../src/cli/abrtcli/cli/install_debuginfo.py:36
 msgid "The problem is not of a C/C++ type. Can't install debuginfo"
-msgstr ""
+msgstr "문제는 C/C++ 형태가 아닙니다. debuginfo를 설치 할 수 없습니다"
 
 #: ../src/cli/abrtcli/cli/list.py:34
 msgid "No problems"
-msgstr ""
+msgstr "문제없음"
 
 #: ../src/cli/abrtcli/cli/remove.py:22
 msgid "do not prompt before removal"
-msgstr ""
+msgstr "제거 전에 묻지 않음"
 
 #: ../src/cli/abrtcli/cli/remove.py:37
 msgid "Are you sure you want to delete this problem?"
-msgstr ""
+msgstr "정말로 이 문제를 삭제하시겠습니까?"
 
 #: ../src/cli/abrtcli/cli/remove.py:41
 msgid "Removed"
-msgstr ""
+msgstr "제거됨"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/cli/abrtcli/cli/report.py:23
@@ -2237,12 +2314,12 @@ msgstr "보고 후 제거"
 
 #: ../src/cli/abrtcli/cli/report.py:25
 msgid "ignore unreportable state"
-msgstr ""
+msgstr "보고 할 수 없는 상태를 무시합니다"
 
 #: ../src/cli/abrtcli/cli/report.py:41
 #, python-brace-format
 msgid "Problem '{0}' cannot be reported"
-msgstr ""
+msgstr "문제 '{0}'은 보고 될 것입니다"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/cli/abrtcli/cli/report.py:50
@@ -2252,7 +2329,7 @@ msgstr "'%s' 보고 문제\n"
 
 #: ../src/cli/abrtcli/cli/retrace.py:24
 msgid "perform retracing locally"
-msgstr ""
+msgstr "로컬에서 재추적을 수행합니다"
 
 #: ../src/cli/abrtcli/cli/retrace.py:26
 msgid "submit core dump for remote retracing"
@@ -2260,23 +2337,23 @@ msgstr "원격 재추적을 위한 코어 덤프 전송"
 
 #: ../src/cli/abrtcli/cli/retrace.py:29
 msgid "force retracing"
-msgstr ""
+msgstr "강제 추적"
 
 #: ../src/cli/abrtcli/cli/retrace.py:47
 msgid "Problem already has a backtrace"
-msgstr ""
+msgstr "문제는 이미 역추적이 있습니다"
 
 #: ../src/cli/abrtcli/cli/retrace.py:48
 msgid "Run abrt retrace with -f/--force to retrace again"
-msgstr ""
+msgstr "다시 재추적 -f/--force 과 함께 abrt 재추적을 실행합니다"
 
 #: ../src/cli/abrtcli/cli/retrace.py:49
 msgid "Show backtrace?"
-msgstr ""
+msgstr "역추적을 보여줄까요?"
 
 #: ../src/cli/abrtcli/cli/retrace.py:52
 msgid "No retracing possible for this problem type"
-msgstr ""
+msgstr "이 문제 유형을 위하여 추적할 가능성이 없습니다"
 
 #: ../src/cli/abrtcli/cli/retrace.py:56
 msgid ""
@@ -2285,14 +2362,16 @@ msgid ""
 "Local retracing requires downloading potentially large amount of debuginfo "
 "data"
 msgstr ""
+"코어덤프를 업로드하고 원격 재추적을 수행 할 까요? (예민한 자료가 포함 될 수 있습니다). 당신의 응답이 ' 아니요'라고 하면, 더미 "
+"추적은 내부에서만 발생 할 것입니다. 내부 추적은 잠재적으로 큰 용량의 디버그정보 자료를내려 받아야 합니다"
 
 #: ../src/cli/abrtcli/cli/retrace.py:71
 msgid "Remote retracing"
-msgstr ""
+msgstr "원격 재추적중"
 
 #: ../src/cli/abrtcli/cli/retrace.py:74
 msgid "Local retracing"
-msgstr ""
+msgstr "로컬 재추적중"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/cli/abrtcli/cli/status.py:17
@@ -2301,7 +2380,7 @@ msgstr "문제의 수만 표시됩니다"
 
 #: ../src/cli/abrtcli/cli/status.py:19
 msgid "only show output if at least one problem is found"
-msgstr ""
+msgstr "하나 이상의 문제가 발생된 경우에만 출력을 보여줍니다"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/cli/abrtcli/cli/status.py:40
@@ -2324,6 +2403,10 @@ msgid ""
 "you upload contains all the data from the crashed program, including your "
 "private data, if any."
 msgstr ""
+"서버에 코어덤프를 업로드하는 것은 역추적을 발생시키고 이를 반환합니다. 만약 사용자가 코어덤프를 업로드 하는 것을 원하지 않으면 "
+"사건(event)은 내부분석을 수행합니다. 내부 분석은 만약 원격분석이 실패하면 사건(event)을 실행합니다. 장점: 디버그정보를 내려 "
+"받을 필요가 없습니다. 디버그정보의 재추적 서버의 자료저장소는 더 완벽합니다. 재추적 서버는 더 좋은 역추적을 발생합니다.단점: 당신이 "
+"업로드한 코어덤프는 충돌된 프로그램에 개인적인 자료를 포함하여, 모든 자료가 포함됩니다."
 
 #: ../src/plugins/analyze_VMcore.xml.in.h:1
 msgid "Analyze VM core"
