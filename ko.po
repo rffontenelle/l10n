@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-03-16 06:01+0000\n"
+"PO-Revision-Date: 2021-03-17 17:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -546,7 +546,7 @@ msgstr "%llu 바이트, %u 파일"
 
 #: ../src/gui-wizard-gtk/wizard.c:1381
 msgid "Processing was canceled"
-msgstr ""
+msgstr "처리가 취소되었습니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:1561
 msgid ""
@@ -567,7 +567,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.c:1689
 msgid "Processing was interrupted because the problem is not reportable."
-msgstr ""
+msgstr "처리가 중단되었습니다 왜냐하면 문제가 보고 될 수 없기 때문입니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1699 ../src/gui-wizard-gtk/wizard.c:1773
 msgid "Processing failed."
@@ -576,11 +576,11 @@ msgstr ""
 #. No next event, go to progress page and finish.
 #: ../src/gui-wizard-gtk/wizard.c:1706 ../src/gui-wizard-gtk/wizard.c:2594
 msgid "Processing finished."
-msgstr ""
+msgstr "처리가 끝났습니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1707
 msgid "Processing finished, please proceed to the next step."
-msgstr ""
+msgstr "처리가 끝났으며, 다음 단계로 진행하기 바랍니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1770
 msgid "No commands could be found for processsing the crashdump.\n"
@@ -711,7 +711,7 @@ msgstr "_중지"
 #. else gtk_widget_hide won't work
 #: ../src/gui-wizard-gtk/wizard.c:3211
 msgid "Repeat"
-msgstr ""
+msgstr "반복"
 
 #. else gtk_widget_hide won't work
 #: ../src/gui-wizard-gtk/wizard.c:3213
@@ -739,7 +739,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:2
 msgid "Sensitive words"
-msgstr ""
+msgstr "민감한 말"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:3
 msgid "Custom"
@@ -755,7 +755,7 @@ msgstr "파일"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:6
 msgid "data"
-msgstr ""
+msgstr "자료"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:7
 msgid "Search"
@@ -1254,7 +1254,7 @@ msgstr "버그질라 계정 비밀번호"
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:8
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:8
 msgid "Restrict access"
-msgstr ""
+msgstr "접근 제한"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:9
 msgid ""
@@ -1296,7 +1296,7 @@ msgstr "SSL 키 유효성 확인"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:16
 msgid "Bugzilla product"
-msgstr ""
+msgstr "버그질라 물품"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:17
 msgid ""
@@ -1306,7 +1306,7 @@ msgstr ""
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:18
 msgid "Bugzilla product version"
-msgstr ""
+msgstr "버그질라 물품 버전"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:19
 msgid ""
