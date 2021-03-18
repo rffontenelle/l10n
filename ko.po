@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2021-03-08 13:01+0000\n"
+"PO-Revision-Date: 2021-03-19 03:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/ko/>\n"
@@ -96,7 +96,7 @@ msgstr "최초 감지"
 
 #: data/ui/oops-window.ui:280 src/gnome_abrt/views.py:836
 msgid "Reported"
-msgstr "보고됨"
+msgstr "보고됩니다"
 
 #: data/ui/oops-window.ui:322
 msgid "Show problem details"
