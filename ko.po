@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-03-17 17:01+0000\n"
+"PO-Revision-Date: 2021-03-21 06:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -37,7 +37,7 @@ msgstr ""
 #. short_name long_name  value    parameter_name  help
 #: ../src/cli/cli.c:89
 msgid "List possible events [which start with PREFIX]"
-msgstr "사용 가능한 이벤트를 나열 [이는 PREFIX로 시작됨]"
+msgstr "사용 가능한 이벤트를 나열합니다 [이는 PREFIX로 시작됩니다]"
 
 #: ../src/cli/cli.c:90 ../src/gui-wizard-gtk/main.c:170
 msgid "Run only these events"
@@ -515,16 +515,18 @@ msgid ""
 "please provide a comprehensive description of the problem you have "
 "encountered."
 msgstr ""
+"잘 알려지지 않은 재생장치 없이 충돌이 발생한 이후에 분석이 어려 울 수 있으며, 문제에 직면 했을 때의 이해하기 쉬운 설명을 제공해주기 "
+"바랍니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:881
 msgid ""
 "Please provide a short description of the problem and please include the "
 "steps you have used to reproduce the problem."
-msgstr ""
+msgstr "그 문제에 대해 간단한 설명을 제공해주고 문제를 재생산하기 위해 사용되어지는 단계를 포함해주기 바랍니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:888
 msgid "Please provide the steps you have used to reproduce the problem."
-msgstr ""
+msgstr "문제를 재생산하기 위한 단계를 제공해주기 바랍니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1009
 msgid "(click here to view/edit)"
@@ -556,6 +558,10 @@ msgid ""
 "\t▫ <b>corrupted problem data</b>\n"
 "\t▫ <b>invalid configuration</b>"
 msgstr ""
+"문제처리 중 실패하였습니다. 이는 많은 원인이 있을 수 있으며, 3가지 공통점이 있습니다:\n"
+"\t▫ <b>네트워크 연결 문제</b>\n"
+"\t▫ <b>손상된 자료 문제 </b>\n"
+"\t▫ <b>잘못된 환경설정</b>"
 
 #: ../src/gui-wizard-gtk/wizard.c:1567
 msgid ""
@@ -564,6 +570,8 @@ msgid ""
 "in the application menu and after applying the configuration changes click "
 "<b>Repeat</b> button."
 msgstr ""
+"설정을 최신화하기 원하면 다시 보고를 시도해 주세요, 응용프로그램 메뉴에서 <b>Preferences</b> 항목을\n"
+"열어주고, 설정을 변경 적용 후에 <b>Repeat</b> 누름단추를 변경해주세요."
 
 #: ../src/gui-wizard-gtk/wizard.c:1689
 msgid "Processing was interrupted because the problem is not reportable."
@@ -571,7 +579,7 @@ msgstr "처리가 중단되었습니다 왜냐하면 문제가 보고 될 수 �
 
 #: ../src/gui-wizard-gtk/wizard.c:1699 ../src/gui-wizard-gtk/wizard.c:1773
 msgid "Processing failed."
-msgstr ""
+msgstr "진행이 실패하였습니다."
 
 #. No next event, go to progress page and finish.
 #: ../src/gui-wizard-gtk/wizard.c:1706 ../src/gui-wizard-gtk/wizard.c:2594
@@ -584,11 +592,11 @@ msgstr "처리가 끝났으며, 다음 단계로 진행하기 바랍니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1770
 msgid "No commands could be found for processsing the crashdump.\n"
-msgstr ""
+msgstr "명령은 충돌덤프를 처리하기 위해 찾을 수 없습니다.\n"
 
 #: ../src/gui-wizard-gtk/wizard.c:1785
 msgid "Processing interrupted: can't continue without writable directory."
-msgstr ""
+msgstr "처리가 중단되었습니다: 쓰기가능한 디렉토리 없이 진행 할 수 없습니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1808
 #, c-format
@@ -597,6 +605,9 @@ msgid ""
 "No matching actions found for this event.\n"
 "\n"
 msgstr ""
+"--- 건너띄기 %s ---\n"
+"이 사건을 위해 일치하는 동작을 찾을 수 없습니다.\n"
+"\n"
 
 #: ../src/gui-wizard-gtk/wizard.c:1843
 msgid "Processing..."
@@ -606,16 +617,16 @@ msgstr "처리 중..."
 msgid ""
 "Possible sensitive data detected, feel free to edit the report and remove "
 "them."
-msgstr ""
+msgstr "민감한 자료가 감지 될 수 있으며, 이 보고를 자유롭게 편집하고 이를 제거합니다."
 
 #: ../src/gui-wizard-gtk/wizard.c:1968
 msgid "Cannot check backtrace rating because of invalid event name"
-msgstr ""
+msgstr "유효하지 않은 사건 이름으로 인하여 역추적 평가를 점검 할 수 없습니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:2418
 #, c-format
 msgid "Failed to save file '%s'"
-msgstr ""
+msgstr "파일 '%s' 저장에 실패하였습니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:2619
 #, c-format
@@ -623,11 +634,13 @@ msgid ""
 "Event '%s' requires permission to send possibly sensitive data.\n"
 "Do you want to continue?"
 msgstr ""
+"사건 '%s'는 아마도 민감함 자료 전송에 권한이 요구됩니다.\n"
+"계속 할까요?"
 
 #: ../src/gui-wizard-gtk/wizard.c:2665
 #, c-format
 msgid "This problem should not be reported (it is likely a known problem). %s"
-msgstr ""
+msgstr "이 문제는 보고되지 않을 것입니다(이는 알려진 문제 같습니다). %s"
 
 #: ../src/gui-wizard-gtk/wizard.c:2866
 msgid "_Open"
@@ -654,15 +667,15 @@ msgstr "항목 '%s'이 이미 존재하고 있기 때문에 변경 할 수 없�
 
 #: ../src/gui-wizard-gtk/wizard.c:3087
 msgid "I have experienced this problem for the first time"
-msgstr ""
+msgstr "나는 처음으로 이 문제를 경험하였습니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:3090
 msgid "I can reproduce this problem"
-msgstr ""
+msgstr "나는 이 문제를 재현 할 수 있습니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:3093
 msgid "This problem occurs repeatedly"
-msgstr ""
+msgstr "이 문제는 반복해서 발생합니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:3106
 msgid "Include"
@@ -682,7 +695,7 @@ msgstr "문제 설명"
 
 #: ../src/gui-wizard-gtk/wizard.c:3163
 msgid "Select how to report this problem"
-msgstr ""
+msgstr "이 문제를 보고하는 방법을 선택합니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:3164
 msgid "Provide additional information"
@@ -702,7 +715,7 @@ msgstr "처리중"
 
 #: ../src/gui-wizard-gtk/wizard.c:3168
 msgid "Processing done"
-msgstr ""
+msgstr "처리 완료"
 
 #: ../src/gui-wizard-gtk/wizard.c:3208
 msgid "_Stop"
@@ -716,7 +729,7 @@ msgstr "반복"
 #. else gtk_widget_hide won't work
 #: ../src/gui-wizard-gtk/wizard.c:3213
 msgid "_Forward"
-msgstr ""
+msgstr "_앞으로"
 
 #. else gtk_widget_hide won't work
 #: ../src/gui-wizard-gtk/wizard.c:3216 ../src/gui-wizard-gtk/wizard.glade.h:9
@@ -725,11 +738,11 @@ msgstr "상세 정보"
 
 #: ../src/gui-wizard-gtk/wizard.c:3263
 msgid "Restrict access to the report"
-msgstr ""
+msgstr "보고에 접근이 제한됩니다"
 
 #: ../src/gui-wizard-gtk/wizard.c:3268
 msgid "Learn more about restricted access in the configuration"
-msgstr ""
+msgstr "환경설정에 제한된 접근에 대해 알아봅니다"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:1
 msgid ""
@@ -831,7 +844,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:21
 msgid "Processing did not start yet"
-msgstr ""
+msgstr "처리가 아직 시작되지 않았습니다"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:22
 msgid "Show log"
@@ -866,11 +879,11 @@ msgstr "문제가 있는 디렉토리"
 #: ../src/lib/abrt_sock.c:161
 #, c-format
 msgid "Can't delete: '%s'"
-msgstr ""
+msgstr "삭제 할 수 없습니다: '%s'"
 
 #: ../src/lib/abrt_sock.c:197
 msgid "locked by another process"
-msgstr ""
+msgstr "다른 처리에 의해 잠겼습니다"
 
 #: ../src/lib/abrt_sock.c:206
 msgid "permission denied"
@@ -878,12 +891,12 @@ msgstr "권한이 거부되었습니다"
 
 #: ../src/lib/abrt_sock.c:209
 msgid "not a problem directory"
-msgstr ""
+msgstr "문제 디렉토리가 아닙니다"
 
 #: ../src/lib/abrt_sock.c:218
 #, c-format
 msgid "Can't delete '%s': %s"
-msgstr ""
+msgstr "'%s': %s 삭제 할 수 없습니다"
 
 #: ../src/lib/client.c:67 ../src/lib/client.c:99 ../src/lib/client.c:156
 msgid "y"
@@ -895,84 +908,84 @@ msgstr "N"
 
 #: ../src/lib/client.c:101 ../src/lib/client.c:158
 msgid "f"
-msgstr ""
+msgstr "f"
 
 #: ../src/lib/client.c:159
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #: ../src/lib/create_dump_dir.c:32
 #, c-format
 msgid "uid value is not valid: '%s'"
-msgstr ""
+msgstr "uid 값은 유효하지 않습니다: '%s'"
 
 #: ../src/lib/create_dump_dir.c:51
 #, c-format
 msgid "'%s' is not correct file name"
-msgstr ""
+msgstr "'%s' 는 올바른 파일 이름이 아닙니다"
 
 #: ../src/lib/create_dump_dir.c:195
 #, c-format
 msgid "Missing required item: '%s'"
-msgstr ""
+msgstr "필수 항목 누락: %s'"
 
 #: ../src/lib/curl.c:227
 #, c-format
 msgid "Uploaded: %llu of %llu kbytes"
-msgstr "업로드됨: %llu 중 %llu 킬로바이트"
+msgstr "업로드됩니다: %llu 중 %llu 킬로바이트"
 
 #: ../src/lib/curl.c:636
 msgid "Ignoring URL without scheme and hostname"
-msgstr ""
+msgstr "조직과 호스트이름 없는 URL 무시하기"
 
 #. Do not include the path part of the URL as it can contain sensitive data
 #. * in case of typos
 #: ../src/lib/curl.c:666
 #, c-format
 msgid "Sending %s to %s//%s"
-msgstr ""
+msgstr "%s를 %s//%s 로 전송하기"
 
 #: ../src/lib/curl.c:690
 #, c-format
 msgid "Please enter user name for '%s//%s':"
-msgstr ""
+msgstr "'%s//%s'를 위한 사용자 이름을 입력해 주세요:"
 
 #: ../src/lib/curl.c:696
 #, c-format
 msgid "Please enter password for '%s//%s@%s':"
-msgstr ""
+msgstr "'%s//%s@%s'를 위해 비밀번호를 입력해주세요:"
 
 #. This ends up a "reporting status message" in abrtd
 #: ../src/lib/curl.c:719
 #, c-format
 msgid "Successfully created %s"
-msgstr ""
+msgstr "성공적으로 생성되었습니다 %s"
 
 #: ../src/lib/dump_dir.c:2481
 msgid "Failed to open TAR writer"
-msgstr ""
+msgstr "TAR 작성기를 열 수 없습니다"
 
 #: ../src/lib/dump_dir.c:2507
 msgid "Failed to finalize TAR archive"
-msgstr ""
+msgstr "TAR 기록을 완료하지 못했습니다"
 
 #: ../src/lib/dump_dir.c:2517
 msgid "Failed to close TAR writer"
-msgstr ""
+msgstr "TAR 작성기 종료에 실패하였습니다"
 
 #: ../src/lib/dump_dir.c:2527
 #, c-format
 msgid "gzip killed with signal %d"
-msgstr ""
+msgstr "gzip은 신호 %d로 종료됩니다"
 
 #: ../src/lib/dump_dir.c:2533
 #, c-format
 msgid "gzip exited with %d"
-msgstr ""
+msgstr "gzip은 %d로 나갑니다"
 
 #: ../src/lib/dump_dir.c:2536
 msgid "gzip process failed"
-msgstr ""
+msgstr "gzip 처리가 실패하였습니다"
 
 #: ../src/lib/event_config.c:399
 msgid "Missing mandatory value"
@@ -1057,20 +1070,23 @@ msgid ""
 "\n"
 "%s\n"
 msgstr ""
+"당신의 문제는 %s에 의한 발생한 것 같습니다\n"
+"\n"
+"%s\n"
 
 #: ../src/lib/ureport.c:403
 msgid "Your problem seems to be caused by one of the following:\n"
-msgstr ""
+msgstr "당신의 문제는 다음 문제 중 하나의 원인으로 인하여 발생한 것으로 보입니다:\n"
 
 #: ../src/lib/ureport.c:575
 #, c-format
 msgid "Failed to upload uReport to the server '%s' with curl: %s"
-msgstr ""
+msgstr "curl: %s 와 함께 '%s' 서버에 uReport 업로드를 실패하였습니다"
 
 #: ../src/lib/ureport.c:579
 #, c-format
 msgid "Failed to upload uReport to the server '%s'"
-msgstr ""
+msgstr "서버 '%s'에 uReport 업로드를 실패하였습니다"
 
 #: ../src/lib/ureport.c:582
 #, c-format
@@ -1126,7 +1142,7 @@ msgstr ""
 
 #: ../src/lib/make_descr.c:149 ../src/lib/make_descr.c:160
 msgid "Reported:"
-msgstr "보고됨:"
+msgstr "보고합니다:"
 
 #: ../src/lib/make_descr.c:149
 msgid "cannot be reported"
@@ -1157,57 +1173,57 @@ msgstr ""
 
 #: ../src/lib/reporters.c:55
 msgid "Note does not contain rating"
-msgstr ""
+msgstr "기록은 등급을 포함하지 않습니다"
 
 #: ../src/lib/run_event.c:891
 #, c-format
 msgid "('%s' was killed by signal %u)\n"
-msgstr ""
+msgstr "('%s' 신호에 종료되었습니다 %u)\n"
 
 #: ../src/lib/run_event.c:893
 #, c-format
 msgid "('%s' completed successfully)\n"
-msgstr ""
+msgstr "('%s' 성공적으로 수행하였습니다)\n"
 
 #: ../src/lib/run_event.c:895
 #, c-format
 msgid "('%s' exited with %u)\n"
-msgstr ""
+msgstr "('%s'는 %u와 함께 나갑니다)\n"
 
 #: ../src/plugins/abrt_rh_support.c:356
 #, c-format
 msgid "Error in case creation at '%s': %s"
-msgstr ""
+msgstr "'%s': %s에 경우 생성에 오류가 발생하였습니다"
 
 #: ../src/plugins/abrt_rh_support.c:365
 #, c-format
 msgid "Error in case creation at '%s', HTTP code: %d, server says: '%s'"
-msgstr ""
+msgstr "'%s'에 경우 생성에 오류가 발생하였습니다, HTTP code: %d, 서버가 말합니다: '%s'"
 
 #: ../src/plugins/abrt_rh_support.c:369
 #, c-format
 msgid "Error in case creation at '%s', HTTP code: %d"
-msgstr ""
+msgstr "'%s', HTTP에 경우 생성에 오류가 발생하였습니다 code: %d"
 
 #: ../src/plugins/abrt_rh_support.c:420
 #, c-format
 msgid "Error in case creation at '%s': no Location URL, HTTP code: %d"
-msgstr ""
+msgstr "%s': no Location URL에 경우 생성에 오류가 발생하였습니다, HTTP code: %d"
 
 #: ../src/plugins/abrt_rh_support.c:524
 #, c-format
 msgid "Error in comment creation at '%s': %s"
-msgstr ""
+msgstr "'%s': %s 에 언급 생성에 오류가 발생하였습니다"
 
 #: ../src/plugins/abrt_rh_support.c:533
 #, c-format
 msgid "Error in comment creation at '%s', HTTP code: %d, server says: '%s'"
-msgstr ""
+msgstr "'%s', HTTP code: %d에 언급 생성에 오류가 발생하였습니다, 서버가 말합니다: '%s'"
 
 #: ../src/plugins/abrt_rh_support.c:537
 #, c-format
 msgid "Error in comment creation at '%s', HTTP code: %d"
-msgstr ""
+msgstr "'%s'에 언급 생성에 오류가 발생하였습니다, HTTP code: %d"
 
 #: ../src/plugins/abrt_rh_support.c:583
 #, c-format
@@ -1643,7 +1659,7 @@ msgstr "이미 버그가 보고되었음: %i"
 #: ../src/plugins/reporter-bugzilla.c:896
 #, c-format
 msgid "Adding %s to CC list"
-msgstr ""
+msgstr "%s를 CC 목록에 추가하기"
 
 #: ../src/plugins/reporter-bugzilla.c:917
 #, c-format
@@ -1703,22 +1719,22 @@ msgstr "설정 파일"
 msgid ""
 "Email address of %s was not specified. Would you like to do so now? If not, "
 "'%s' is to be used"
-msgstr ""
+msgstr "%s의 전자우편 주소는 지정되지 않았습니다. 지금 지정할까요? 만약 아니라면, %s는 사용될 것입니다"
 
 #: ../src/plugins/reporter-mailx.c:90
 #, c-format
 msgid "Please, type email address of %s:"
-msgstr ""
+msgstr "%s의 전자우편 주소를 입력해 주세요:"
 
 #: ../src/plugins/reporter-mailx.c:97
 #, c-format
 msgid "Can't continue without email address of %s"
-msgstr ""
+msgstr "%s의 전자우편 주소 없이 계속 할 수 없습니다"
 
 #: ../src/plugins/reporter-mailx.c:207
 #, c-format
 msgid "Sending a notification email to: %s"
-msgstr ""
+msgstr "알림 전자우편 주소: %s에 전송하기"
 
 #: ../src/plugins/reporter-mailx.c:209
 msgid "Sending an email..."
@@ -1744,7 +1760,7 @@ msgstr "설정 파일"
 
 #: ../src/plugins/reporter-mailx.c:290
 msgid "Formatting file for an email"
-msgstr ""
+msgstr "전자우편을 위해 파일 형식 지정하기"
 
 #: ../src/plugins/reporter-mailx.c:291
 msgid "Notify only (Do not mark the report as sent)"
@@ -1989,7 +2005,7 @@ msgstr ""
 #: ../src/plugins/reporter-upload.c:120
 #, c-format
 msgid "Archive is created: '%s'"
-msgstr "지정 저장소가 생성됨: '%s'"
+msgstr "지정 저장소가 생성합니다: '%s'"
 
 #: ../src/plugins/reporter-upload.c:156
 msgid ""
