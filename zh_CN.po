@@ -2,13 +2,14 @@
 # Charles Lee <lchopn@gmail.com>, 2017. #zanata, 2020.
 # Zamir SUN <sztsian@gmail.com>, 2017. #zanata
 # Tian Shixiong <tiansworld@gmail.com>, 2020.
+# Qiyu Yan <yanqiyu01@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2020-07-23 04:28+0000\n"
-"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
+"PO-Revision-Date: 2021-03-22 04:01+0000\n"
+"Last-Translator: Qiyu Yan <yanqiyu01@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/abrt/retrace-server/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -84,14 +85,11 @@ msgid "The directory specified in 'X-CoreFileDirectory' does not exist"
 msgstr "'X-CoreFileDirectory' 所指定的目录不存在"
 
 #: ../src/create.wsgi:127
-#, fuzzy, c-format
-#| msgid ""
-#| "There are %d files in the '%s' directory. Only a single archive is "
-#| "supported at the moment"
+#, c-format
 msgid ""
 "There are %d files in the '%s' directory. Only a single archive is supported "
 "at the moment"
-msgstr "'%s'  目录内有 %d 个文件。当前只支持单一归档"
+msgstr "有 %d 个文件在 '%s' 个目录内。当前只支持一份存档"
 
 #: ../src/create.wsgi:136
 #, c-format
@@ -146,18 +144,11 @@ msgid "Welcome to Retrace Server"
 msgstr "欢迎来到 Retrace 服务器"
 
 #: ../src/index.wsgi:23
-#, fuzzy
-#| msgid ""
-#| "Retrace Server is a service that provides the possibility to analyze "
-#| "coredump and generate backtrace over network. You can find further "
-#| "information at Retrace Server&apos;s wiki:"
 msgid ""
 "Retrace Server is a service that provides the possibility to analyze "
 "coredump and generate backtrace over network. You can find further "
 "information at Retrace Server&apos;s github:"
-msgstr ""
-"Retrace 服务器提供了在网络上分析核心转储和生成回溯的服务。 你可以在 Retrace "
-"服务器的维基页面找到更多信 : "
+msgstr "Retrace 服务器提供了在网络上分析核心转储和生成回溯的服务。 你可以在 Retrace 服务器的GitHub页面找到更多信息："
 
 #: ../src/index.wsgi:29
 msgid ""
