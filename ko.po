@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-03-21 06:01+0000\n"
+"PO-Revision-Date: 2021-03-22 18:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -748,7 +748,7 @@ msgstr "환경설정에 제한된 접근에 대해 알아봅니다"
 msgid ""
 "Please review the data before it gets reported. Depending on reporter "
 "chosen, it may end up publicly visible."
-msgstr ""
+msgstr "보고되기 전에 자료를 확인해 주시기 바랍니다. 선택된 보고에 따라서, 공개적으로 표시 될 수 있습니다."
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:2
 msgid "Sensitive words"
@@ -760,7 +760,7 @@ msgstr "사용자 정의"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:4
 msgid "Clear the search bar to see the list of security sensitive words."
-msgstr ""
+msgstr "보안에 민감한 단어 목록을 보려면 검색 표시 줄을 제거하세요."
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:5
 msgid "file"
@@ -795,17 +795,17 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:11
 msgid "How reproducible is this problem?"
-msgstr ""
+msgstr "이 문제를 얼마나 재현 할 수 있나요?"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:12
 msgid "How it can be reproduced (one step per line)?"
-msgstr ""
+msgstr "어떻게 재생산 할 수 있습니까(한 줄에 한 단계씩)?"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:13
 msgid ""
 "Please add a comprehensive description of the problem you have. This is a "
 "very long place holder."
-msgstr ""
+msgstr "당신이 갖고 있는 문제에 대해 이해 할 수 있는 설명을 추가해 주세요. 이는 매우 긴 자리 표시자입니다."
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:14
 msgid "You need to fill the how to before you can proceed..."
@@ -1015,11 +1015,11 @@ msgstr "지원되지 않는 선택 유형"
 msgid ""
 "The problem cannot be reported due to an invalid data. '%s' file does not "
 "contain a number."
-msgstr ""
+msgstr "이 문제는 유효하지 않은 자료로 인하여 보고 될 수 없습니다. '%s'파일은 숫자를 포함하지 않습니다."
 
 #: ../src/lib/event_config.c:520
 msgid "Please report this problem to ABRT project developers."
-msgstr ""
+msgstr "ABRT 프로젝트 개발자에게 이 문제를 보개해주세요."
 
 #: ../src/lib/event_config.c:526
 msgid ""
@@ -1029,7 +1029,7 @@ msgstr "백트레이스가 불완전합니다. 재현을 위해 올바른 단계
 
 #: ../src/lib/event_config.c:527
 msgid "The backtrace probably can't help developer to diagnose the bug."
-msgstr ""
+msgstr "역추적은 아마도 이 결점을 분석하는데 개발자에게 도움이 될 수 없습니다."
 
 #: ../src/lib/event_config.c:533
 msgid ""
@@ -1133,7 +1133,7 @@ msgstr ""
 
 #: ../src/lib/ureport.c:861 ../src/plugins/reporter-rhtsupport.c:235
 msgid "Failed on submitting the problem"
-msgstr ""
+msgstr "문제를 제출하는데 실패하였습니다"
 
 #: ../src/lib/ureport.c:903
 #, c-format
@@ -1160,7 +1160,7 @@ msgstr "필수 요소 '%s'가 누락되어 있습니다, 계속 진행 할 수 �
 #: ../src/lib/problem_report.c:517
 #, c-format
 msgid "Can't parse backtrace: %s"
-msgstr ""
+msgstr "역추적: %s를 구문 분석 할 수 없습니다"
 
 #: ../src/lib/problem_report.c:532
 msgid "Can't generate stacktrace description (no crash thread?)"
@@ -1346,7 +1346,7 @@ msgstr "HTTP 프록시"
 #: ../src/plugins/report_Uploader.xml.in.h:11
 #: ../src/plugins/report_uReport.xml.in.h:14
 msgid "Sets the proxy server to use for HTTP"
-msgstr ""
+msgstr "HTTP를 사용에 프락시 서버를 설정합니다"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:22
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:20
@@ -1364,7 +1364,7 @@ msgstr "HTTPS 프록시"
 #: ../src/plugins/report_Uploader.xml.in.h:13
 #: ../src/plugins/report_uReport.xml.in.h:16
 msgid "Sets the proxy server to use for HTTPS"
-msgstr ""
+msgstr "HTTPS를 사용에 프락시 서버를 설정합니다"
 
 #: ../src/plugins/report.c:37
 msgid ""
@@ -1406,7 +1406,7 @@ msgstr ""
 #: ../src/plugins/reporter-rhtsupport.c:384
 #: ../src/plugins/reporter-mantisbt.c:55
 msgid "Can't continue without login"
-msgstr ""
+msgstr "로그인 없이 계속 할 수 없습니다"
 
 #: ../src/plugins/reporter-bugzilla.c:207
 #: ../src/plugins/reporter-rhtsupport.c:397
@@ -1422,13 +1422,13 @@ msgstr "%s에 있는 버그질라에 로그인"
 #: ../src/plugins/reporter-bugzilla.c:223
 #, c-format
 msgid "Invalid password or login. Please enter your %s login:"
-msgstr ""
+msgstr "잘못된 비밀번호 또는 로그인. 당신의 %s 로그인을 입력해주세요:"
 
 #: ../src/plugins/reporter-bugzilla.c:228
 #: ../src/plugins/reporter-rhtsupport.c:411
 #, c-format
 msgid "Invalid password or login. Please enter the password for '%s':"
-msgstr ""
+msgstr "잘못된 비밀번호 또는 로그인. '%s'를 위해 비밀 번호를 입력해주세요:"
 
 #: ../src/plugins/reporter-bugzilla.c:247
 msgid ""
@@ -1485,12 +1485,12 @@ msgstr "설정 파일 (여러번 주어 질 수 있음)"
 #: ../src/plugins/reporter-bugzilla.c:325
 #: ../src/plugins/reporter-mantisbt.c:285
 msgid "Formatting file for initial comment"
-msgstr ""
+msgstr "초기 언급을 위해 파일을 초기화 합니다"
 
 #: ../src/plugins/reporter-bugzilla.c:326
 #: ../src/plugins/reporter-mantisbt.c:286
 msgid "Formatting file for duplicates"
-msgstr ""
+msgstr "복제를 위하여 파일을 초기화 합니다"
 
 #: ../src/plugins/reporter-bugzilla.c:327
 msgid "Attach FILEs [to bug with this ID]"
@@ -1526,7 +1526,7 @@ msgstr ""
 
 #: ../src/plugins/reporter-bugzilla.c:334
 msgid "Restrict access to this group only"
-msgstr ""
+msgstr "이 그룹에만 접근이 제한됩니다"
 
 #: ../src/plugins/reporter-bugzilla.c:335 ../src/plugins/reporter-mailx.c:292
 #: ../src/plugins/reporter-rhtsupport.c:555
@@ -1537,7 +1537,7 @@ msgstr "디버그"
 
 #: ../src/plugins/reporter-bugzilla.c:402
 msgid "Looking for similar problems in bugzilla"
-msgstr ""
+msgstr "버그질라에서 유사한 문제를 보기"
 
 #: ../src/plugins/reporter-bugzilla.c:431
 msgid "Failed to get 'REDHAT_BUGZILLA_PRODUCT' from '/etc/os-release'."
@@ -1550,7 +1550,7 @@ msgstr ""
 #: ../src/plugins/reporter-bugzilla.c:445
 #, c-format
 msgid "Using default product '%s'"
-msgstr ""
+msgstr "기본 제품 '%s' 사용"
 
 #: ../src/plugins/reporter-bugzilla.c:468
 #, c-format
@@ -1563,7 +1563,7 @@ msgstr ""
 msgid ""
 "Password is not provided by configuration. Please enter the password for "
 "'%s':"
-msgstr ""
+msgstr "설정에 의해 비밀번호는 제공되지 않을 것입니다. '%s'를 위해 비밀번호를 입력해주세요:"
 
 #: ../src/plugins/reporter-bugzilla.c:500
 msgid ""
@@ -1581,12 +1581,12 @@ msgstr ""
 #: ../src/plugins/reporter-bugzilla.c:509
 #, c-format
 msgid "Malformed url to Bugzilla '%s'."
-msgstr ""
+msgstr "버그질라 '%s'에 대한 잘못된 url."
 
 #: ../src/plugins/reporter-bugzilla.c:513
 #, c-format
 msgid "Using Bugzilla ID '%s'"
-msgstr ""
+msgstr "버그질라 ID '%s' 사용하기"
 
 #: ../src/plugins/reporter-bugzilla.c:547
 #: ../src/plugins/reporter-bugzilla.c:747
@@ -1599,11 +1599,11 @@ msgstr "로그 아웃"
 msgid ""
 "This problem was already reported to Bugzilla (see '%s'). Do you still want "
 "to create a new bug?"
-msgstr ""
+msgstr "이 문제는 버그질라에 이미 보고되었습니다 (참조 '%s'). 여전히 새로운 결점을 생성하고 싶은가요?"
 
 #: ../src/plugins/reporter-bugzilla.c:609
 msgid "Can't determine Bugzilla Product from problem data."
-msgstr ""
+msgstr "문제 자료에서 버그질라 제품을 확인 할 수 없습니다."
 
 #: ../src/plugins/reporter-bugzilla.c:671
 #: ../src/plugins/reporter-mantisbt.c:506
@@ -1628,7 +1628,7 @@ msgstr "새로운 버그 생성 중"
 
 #: ../src/plugins/reporter-bugzilla.c:782
 msgid "Failed to create a new bug."
-msgstr ""
+msgstr "새로운 결점 생성에 실패하였습니다."
 
 #: ../src/plugins/reporter-bugzilla.c:800
 #, c-format
@@ -1816,7 +1816,7 @@ msgstr ""
 #: ../src/plugins/reporter-ureport.c:340
 #, c-format
 msgid "Server responded with an error: '%s'"
-msgstr ""
+msgstr "서버가 오류: '%s'로 응답되었습니다"
 
 #: ../src/plugins/reporter-rhtsupport.c:361
 msgid "Do you still want to create a RHTSupport ticket?"
@@ -1824,7 +1824,7 @@ msgstr "RHTSupport 티켓을 정말로 생성하시겠습니까?"
 
 #: ../src/plugins/reporter-rhtsupport.c:409
 msgid "Invalid password or login. Please enter your Red Hat login:"
-msgstr ""
+msgstr "잘못된 비밀번호 또는 로그인. 당신의 Red Hat 로그인을 입력해주세요:"
 
 #: ../src/plugins/reporter-rhtsupport.c:473
 msgid "Please enter customer case number to which you want to attach the data:"
@@ -1860,7 +1860,7 @@ msgstr ""
 
 #: ../src/plugins/reporter-rhtsupport.c:554
 msgid "Formatting file for a new case"
-msgstr ""
+msgstr "새로운 경우를 위해 파일을 최화하기"
 
 #: ../src/plugins/reporter-rhtsupport.c:591
 msgid "Login is not provided by configuration. Please enter your RHTS login:"
@@ -1927,7 +1927,7 @@ msgstr ""
 
 #: ../src/plugins/reporter-rhtsupport.c:885
 msgid "Creating a new case"
-msgstr ""
+msgstr "새로운 경우 생성하기"
 
 #. How can we help user sorting out this problem?
 #: ../src/plugins/reporter-rhtsupport.c:896
@@ -1999,7 +1999,7 @@ msgstr ""
 #. may work somehow???
 #: ../src/plugins/reporter-upload.c:51
 msgid "Please enter password for uploading:"
-msgstr ""
+msgstr "업로드 하기 위해 비밀번호를 입력해주세요:"
 
 #. success
 #: ../src/plugins/reporter-upload.c:120
@@ -2021,11 +2021,11 @@ msgstr "업로드 할 기본 URL"
 
 #: ../src/plugins/reporter-upload.c:189
 msgid "SSH public key file"
-msgstr ""
+msgstr "SSH 공유 키 파일"
 
 #: ../src/plugins/reporter-upload.c:190
 msgid "SSH private key file"
-msgstr ""
+msgstr "SSH 개인 키 파일"
 
 #: ../src/plugins/reporter-upload.c:219
 msgid ""
@@ -2038,7 +2038,7 @@ msgstr ""
 
 #: ../src/plugins/reporter-mantisbt.c:84
 msgid "Please enter the password for"
-msgstr ""
+msgstr "비밀번호를 입력해주세요"
 
 #: ../src/plugins/reporter-mantisbt.c:95
 msgid "Credentials are not provided by configuration."
