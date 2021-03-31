@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-03-29 18:01+0000\n"
+"PO-Revision-Date: 2021-04-01 17:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.2\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -74,14 +74,14 @@ msgstr "# 읽기 전용 필드입니다\n"
 
 #: ../src/cli/cli-report.c:152
 msgid "# Describe the circumstances of this crash below"
-msgstr "# 이번 크래시가 발생한 환경을 아래에 설명하십시오"
+msgstr "# 이번 충돌이 발생한 환경을 아래에 설명하십시오"
 
 #: ../src/cli/cli-report.c:154
 msgid ""
 "# Backtrace\n"
 "# Check that it does not contain any sensitive data (passwords, etc.)"
 msgstr ""
-"# 백트레이스\n"
+"# 역추적\n"
 "# 개인에게 민감한 정보를 포함하지는 않았는지 검토하십시오(암호 등)"
 
 #: ../src/cli/cli-report.c:156
@@ -114,7 +114,7 @@ msgstr "# 꾸러미"
 
 #: ../src/cli/cli-report.c:163
 msgid "# Reason of crash"
-msgstr "# 크래시 원인"
+msgstr "# 충돌 원인"
 
 #: ../src/cli/cli-report.c:170
 msgid "# os-release configuration file from root dir"
@@ -130,7 +130,7 @@ msgstr "# os-release 구성 파일"
 
 #: ../src/cli/cli-report.c:188
 msgid "# Release string of the operating system"
-msgstr "# 운영 체제 릴리즈 문자열"
+msgstr "# 운영 체제 출시 문자열"
 
 #: ../src/cli/cli-report.c:319
 msgid "Cannot run vi: $TERM, $VISUAL and $EDITOR are not set"
@@ -193,7 +193,7 @@ msgstr "{0}에서 cpio 추출 중"
 #: ../src/client-python/reportclient/debuginfo.py:105
 #, python-brace-format
 msgid "Can't write to '{0}': {1}"
-msgstr "'{0}'에 작성할 수 없음: {1}"
+msgstr "'{0}'에 작성 할 수 없음: {1}"
 
 #: ../src/client-python/reportclient/debuginfo.py:116
 #, python-brace-format
@@ -203,7 +203,7 @@ msgstr "꾸러미 '{0}'을(를) 추출 할 수 없습니다"
 #: ../src/client-python/reportclient/debuginfo.py:124
 #, python-brace-format
 msgid "Caching files from {0} made from {1}"
-msgstr "{1}에서 만들어진 {0}에서 파일을 캐시 중"
+msgstr "{1}에서 만들어진 {0}에서 파일을 캐쉬 중"
 
 #: ../src/client-python/reportclient/debuginfo.py:148
 #, python-brace-format
@@ -213,7 +213,7 @@ msgstr "'{0}' 에서 파일을 풀 수 없습니다 . 보다 자세한 정보는
 #: ../src/client-python/reportclient/debuginfo.py:163
 #, python-brace-format
 msgid "Can't remove '{0}': {1}"
-msgstr "'{0}'을(를) 제거할 수 없음: {1}"
+msgstr "'{0}'을(를) 제거 할 수 없음: {1}"
 
 #: ../src/client-python/reportclient/debuginfo.py:205
 #: ../src/client-python/reportclient/debuginfo.py:214
@@ -283,7 +283,7 @@ msgid ""
 "'{0}' must be owned by abrt. Please run '# chown -R abrt.abrt {0}' to fix "
 "the issue."
 msgstr ""
-"abrt에 의해 '{0}'는 소유되어 집니다. 문제를 해결하기 위해 '# chown -R abrt.abrt {0}' 를 동작해 주세요."
+"abrt에 의해 '{0}'는 소유되어 집니다. 문제를 해결하기 위해 '# chown -R abrt.abrt {0}'를 동작해 주세요."
 
 #. Was: "All downloaded packages have been extracted, removing..."
 #. but it was appearing even if no packages were in fact extracted
@@ -1101,12 +1101,12 @@ msgstr "URL '%s'이 존재하지 않습니다 (서버에서 404 오류가 발생
 #: ../src/lib/ureport.c:595
 #, c-format
 msgid "The server at '%s' encountered an internal error (got error 500)"
-msgstr ""
+msgstr "'%s' 내부 오류에 빠진 서버 (오류 505 발생)"
 
 #: ../src/lib/ureport.c:601
 #, c-format
 msgid "The server at '%s' currently can't handle the request (got error 503)"
-msgstr ""
+msgstr "'%s' 현재 관리되지 않는 요청에 빠진 서버 (오류 503 발생)"
 
 #. can't print better error message
 #: ../src/lib/ureport.c:610
@@ -1117,7 +1117,7 @@ msgstr "%s: %d도중 예상치 못한 HTTP 응답"
 #: ../src/lib/ureport.c:619
 #, c-format
 msgid "Unable to parse response from ureport server at '%s'"
-msgstr ""
+msgstr "'%s'에 ureport 서버에서 응답 구문 분석 할 수 없습니다"
 
 #: ../src/lib/ureport.c:629
 #, c-format
@@ -1129,7 +1129,7 @@ msgstr "'%s'에서 응답은 유효하지 않은 형식입니다"
 #: ../src/lib/ureport.c:635
 #, c-format
 msgid "Type mismatch has been detected in the response from '%s'"
-msgstr ""
+msgstr "일치하지 않는 유형은 '%s'에서 응답으로 검출 되었습니다"
 
 #: ../src/lib/ureport.c:861 ../src/plugins/reporter-rhtsupport.c:235
 msgid "Failed on submitting the problem"
@@ -1138,7 +1138,7 @@ msgstr "문제를 제출하는데 실패하였습니다"
 #: ../src/lib/ureport.c:903
 #, c-format
 msgid "The server at '%s' responded with an error: '%s'"
-msgstr ""
+msgstr "'%s'에 서버가 오류와 함께 응답 되었습니다: '%s'"
 
 #: ../src/lib/make_descr.c:149 ../src/lib/make_descr.c:160
 msgid "Reported:"
@@ -1164,12 +1164,12 @@ msgstr "역추적: %s를 구문 분석 할 수 없습니다"
 
 #: ../src/lib/problem_report.c:532
 msgid "Can't generate stacktrace description (no crash thread?)"
-msgstr ""
+msgstr "스택추적 설명을 생산 할 수 없습니다 (충돌 쓰레드가 없습니까?)"
 
 #: ../src/lib/report_result.c:265
 #, c-format
 msgid "Ignored invalid ISO date of report result '%s'"
-msgstr ""
+msgstr "유효하지 않는 결과 '%s' 보고 ISO 날자를 무시합니다"
 
 #: ../src/lib/reporters.c:55
 msgid "Note does not contain rating"
@@ -1228,7 +1228,7 @@ msgstr "'%s'에 언급 생성에 오류가 발생하였습니다, HTTP code: %d"
 #: ../src/plugins/abrt_rh_support.c:583
 #, c-format
 msgid "Error in comment creation at '%s': no Location URL, HTTP code: %d"
-msgstr ""
+msgstr "'%s'에 댓글 생성에 오류가 발생했습니다: 위치 없는 URL, HTTP 코드: %d"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:1
 msgid "Bugzilla"
@@ -1276,7 +1276,7 @@ msgstr "접근 제한"
 msgid ""
 "Restrict access to the created bugzilla ticket allowing only users from "
 "specified groups to view it (see advanced settings for more details)"
-msgstr ""
+msgstr " "
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:10
 msgid "Groups"
@@ -1287,6 +1287,8 @@ msgid ""
 "Restrict the access to specified groups &lt;a href=\"https://github.com/abrt/"
 "abrt/wiki/FAQ#creating-private-bugzilla-tickets\"&gt;?&lt;/a&gt;"
 msgstr ""
+"지정된 그룹에 접근이 제한됩니다 &lt;a href=\"https://github.com/abrt/abrt/wiki/FAQ"
+"#creating-private-bugzilla-tickets\"&gt;?&lt;/a&gt;"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:12
 msgid "Bugzilla URL"
@@ -1318,7 +1320,7 @@ msgstr "버그질라 물품"
 msgid ""
 "Specify this only if you needed different product than specified in /etc/os-"
 "release"
-msgstr ""
+msgstr "만약 /etc/os-release에서 지정된 것 보다 다른 제품이 필요하다면 이것만 지정해주세요"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:18
 msgid "Bugzilla product version"
@@ -1328,7 +1330,7 @@ msgstr "버그질라 물품 버전"
 msgid ""
 "Specify this only if you needed different product version than specified in /"
 "etc/os-release"
-msgstr ""
+msgstr "만약 /etc/os-release에서 지정된 것보다 다른 제품 버전이 필요하다면 이것만 지정해주세요"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:20
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:18
@@ -1400,7 +1402,7 @@ msgstr "티켓/케이스 ID"
 msgid ""
 "Warning, private ticket groups already specified as cmdline argument, "
 "ignoring the env variable and configuration"
-msgstr ""
+msgstr "경고, 개인 티켓 그룹은 이미 cmdline 인수로서 지정되었으며, 환경 변수 또는 구성은 무시합니다"
 
 #: ../src/plugins/reporter-bugzilla.c:194
 #: ../src/plugins/reporter-rhtsupport.c:384
@@ -1475,6 +1477,48 @@ msgid ""
 "\n"
 "If not specified, CONFFILE defaults to "
 msgstr ""
+"\n"
+"[-vbf] [-g GROUP-NAME]... [-c CONFFILE]... [-F FMTFILE] [-A FMTFILE2] -d "
+"DIR\n"
+"or:\n"
+"& [-v] [-c CONFFILE]... [-d DIR] -t[ID] FILE...\n"
+"or:\n"
+"& [-v] [-c CONFFILE]... [-d DIR] -t[ID] -w\n"
+"or:\n"
+"& [-v] [-c CONFFILE]... -h DUPHASH [-p[PRODUCT]]\n"
+"\n"
+"Reports problem to Bugzilla.\n"
+"\n"
+"The tool reads DIR. Then it logs in to Bugzilla and tries to find a bug\n"
+"with the same abrt_hash:HEXSTRING in 'Whiteboard'.\n"
+"\n"
+"If such bug is not found, then a new bug is created. Elements of DIR\n"
+"are stored in the bug as part of bug description or as attachments,\n"
+"depending on their type and size.\n"
+"\n"
+"Otherwise, if such bug is found and it is marked as CLOSED DUPLICATE,\n"
+"the tool follows the chain of duplicates until it finds a non-DUPLICATE bug."
+"\n"
+"The tool adds a new comment to found bug.\n"
+"\n"
+"The URL to new or modified bug is printed to stdout and recorded in\n"
+"'reported_to' element.\n"
+"\n"
+"Option -t uploads FILEs to the already created bug on Bugzilla site.\n"
+"The bug ID is retrieved from directory specified by -d DIR.\n"
+"If problem data in DIR was never reported to Bugzilla, upload will fail.\n"
+"\n"
+"Option -tID uploads FILEs to the bug with specified ID on Bugzilla site.\n"
+"-d DIR is ignored.\n"
+"\n"
+"Option -w adds bugzilla user to bug's CC list.\n"
+"\n"
+"Option -r sets the last url from reporter_to element which is prefixed with\n"
+"TRACKER_NAME to URL field. This option is applied only when a new bug is to "
+"be\n"
+"filed. The default value is 'ABRT Server'\n"
+"\n"
+"If not specified, CONFFILE defaults to "
 
 #: ../src/plugins/reporter-bugzilla.c:324
 #: ../src/plugins/reporter-rhtsupport.c:549
@@ -1508,21 +1552,21 @@ msgstr "이 문제가 이미 보고되어 있는 경우에도 강제로 보고�
 
 #: ../src/plugins/reporter-bugzilla.c:330
 msgid "Add bugzilla user to CC list [of bug with this ID]"
-msgstr ""
+msgstr "버그질라 사용자를 CC 목록에 추가하기 [이 ID와 함께 결점(bug)]"
 
 #: ../src/plugins/reporter-bugzilla.c:331
 #: ../src/plugins/reporter-mantisbt.c:289
 msgid "Print BUG_ID which has given DUPHASH"
-msgstr ""
+msgstr "DUPHASH로 주어진 것과 같은 BUG_ID를 출력합니다"
 
 #: ../src/plugins/reporter-bugzilla.c:332
 msgid "Specify a Bugzilla product (ignored without -h)"
-msgstr ""
+msgstr "버그질라 제품을 상세화합니다 (-h 없이면 무시합니다)"
 
 #: ../src/plugins/reporter-bugzilla.c:333
 #: ../src/plugins/reporter-mantisbt.c:290
 msgid "A name of bug tracker for an additional URL from 'reported_to'"
-msgstr ""
+msgstr "'reported_to'에서 추가된 URL를 위한 결점(bug) 추적기의 이름"
 
 #: ../src/plugins/reporter-bugzilla.c:334
 msgid "Restrict access to this group only"
@@ -1541,11 +1585,11 @@ msgstr "버그질라에서 유사한 문제를 보기"
 
 #: ../src/plugins/reporter-bugzilla.c:431
 msgid "Failed to get 'REDHAT_BUGZILLA_PRODUCT' from '/etc/os-release'."
-msgstr ""
+msgstr "'/etc/os-release'에서 'REDHAT_BUGZILLA_PRODUCT' 얻기에 실패하였습니다."
 
 #: ../src/plugins/reporter-bugzilla.c:434
 msgid "Failed to read '/etc/os-release' to get Bugzilla product."
-msgstr ""
+msgstr "버그질라 제품 가져오기에서 '/etc/os-release'을 읽기에 실패하였습니다."
 
 #: ../src/plugins/reporter-bugzilla.c:445
 #, c-format
@@ -1555,7 +1599,7 @@ msgstr "기본 제품 '%s' 사용"
 #: ../src/plugins/reporter-bugzilla.c:468
 #, c-format
 msgid "Login is not provided by configuration. Please enter your %s login:"
-msgstr ""
+msgstr "로그인은 설정에서 제공되지 않습니다. 당신의 %s 로그인을 입력해주세요:"
 
 #: ../src/plugins/reporter-bugzilla.c:476
 #: ../src/plugins/reporter-rhtsupport.c:597
@@ -1569,14 +1613,14 @@ msgstr "설정에 의해 비밀번호는 제공되지 않을 것입니다. '%s'�
 msgid ""
 "Can't get Bugzilla ID because this problem has not yet been reported to "
 "Bugzilla."
-msgstr ""
+msgstr "이 문제는 버그질라에 아직까지 보고되지 않았기 때문에 버그질라 ID를 가져 올 수 없습니다."
 
 #: ../src/plugins/reporter-bugzilla.c:505
 #, c-format
 msgid ""
 "This problem has been reported to Bugzilla '%s' which differs from the "
 "configured Bugzilla '%s'."
-msgstr ""
+msgstr "이 문제는 설정된 버그질라에서 다른 것과 같은 버그질라 '%s'에 보고될 것입니다 '%s'."
 
 #: ../src/plugins/reporter-bugzilla.c:509
 #, c-format
@@ -1620,6 +1664,10 @@ msgid ""
 "report and close it as DUPLICATE of the original one? Otherwise, the bug "
 "reporting procedure will be terminated."
 msgstr ""
+"지정된 그룹에서 자료에만 자료를 접근 할 수 있게 만들어주는 것을 요청해야 하고 이 결점(bug): %s/%u은 중복된 결점(bug)"
+"입니다. 결점(bug) 중복의 경우에 새로운 언급은 결점(bug)보고에 추가되어지나 언급에서 접근은 지정된 그룹에서 제한되어 질 수 "
+"없습니다.새로운 결점(bug) 보고를 시작하고 원래 하나의 중복으로 이를 종료할까요? 그렇지 않으면, 결점(bug) 보고 절차는 끝날 "
+"것입니다."
 
 #. Create new bug
 #: ../src/plugins/reporter-bugzilla.c:763
@@ -1633,12 +1681,12 @@ msgstr "새로운 결점 생성에 실패하였습니다."
 #: ../src/plugins/reporter-bugzilla.c:800
 #, c-format
 msgid "Adding extra cc %s to bug report"
-msgstr ""
+msgstr "추가 CC %s를 결점(bug)보고에 추가히기"
 
 #: ../src/plugins/reporter-bugzilla.c:812
 #, c-format
 msgid "Adding External URL to bug %i"
-msgstr ""
+msgstr "외부 URL을 결점(bug)%i에 추가하기"
 
 #: ../src/plugins/reporter-bugzilla.c:819
 #, c-format
@@ -1648,7 +1696,7 @@ msgstr "버그 %i에 첨부 파일을 추가합니다"
 #: ../src/plugins/reporter-bugzilla.c:841
 #, c-format
 msgid "Closing bug %i as duplicate of bug %i"
-msgstr ""
+msgstr "중복된 결점(bug) %i로서 결점(bug) %i를 닫기"
 
 #: ../src/plugins/reporter-bugzilla.c:853
 #: ../src/plugins/reporter-mantisbt.c:622
@@ -1753,6 +1801,11 @@ msgid ""
 "\n"
 "If not specified, CONFFILE defaults to "
 msgstr ""
+"& [-v] -d DIR [-c CONFFILE] [-F FMTFILE]\n"
+"\n"
+"전자우편을 통해서 문제 디렉토리 DIR의 내용을 전송합니다\n"
+"\n"
+"만약 지정하지 않으면, CONFILE을 지정합니다 "
 
 #: ../src/plugins/reporter-mailx.c:289 ../src/plugins/reporter-upload.c:187
 msgid "Config file"
@@ -1764,7 +1817,7 @@ msgstr "전자우편을 위해 파일 형식 지정하기"
 
 #: ../src/plugins/reporter-mailx.c:291
 msgid "Notify only (Do not mark the report as sent)"
-msgstr ""
+msgstr "알림만 합니다(전송에 보고를 표시하지 않습니다)"
 
 #: ../src/plugins/reporter-print.c:42
 msgid ""
@@ -1810,7 +1863,7 @@ msgstr "보고서는 %s에 저장되어 있음"
 #: ../src/plugins/reporter-rhtsupport.c:280
 #: ../src/plugins/reporter-ureport.c:311
 msgid "Failed to generate microreport from the problem data"
-msgstr ""
+msgstr "문제 자료에서 간결보고 생성에 실패하였습니다"
 
 #: ../src/plugins/reporter-rhtsupport.c:301
 #: ../src/plugins/reporter-ureport.c:340
@@ -1828,11 +1881,11 @@ msgstr "잘못된 비밀번호 또는 로그인. 당신의 Red Hat 로그인을 
 
 #: ../src/plugins/reporter-rhtsupport.c:473
 msgid "Please enter customer case number to which you want to attach the data:"
-msgstr ""
+msgstr "자료 첨부를 원하는 것에 고객 해당 번호를 입력해주세요:"
 
 #: ../src/plugins/reporter-rhtsupport.c:479
 msgid "Can't continue without Red Hat Support case number"
-msgstr ""
+msgstr "Red Hat 지원 경우 번호 없이 계속 할 수 없습니다"
 
 #: ../src/plugins/reporter-rhtsupport.c:506
 msgid ""
@@ -1845,6 +1898,14 @@ msgid ""
 "\n"
 "If not specified, CONFFILE defaults to "
 msgstr ""
+"\n"
+"& [-v] [-c CONFFILE] [-F FMTFILE] -d DIR\n"
+"or:\n"
+"& [-v] [-c CONFFILE] [-d DIR] -t[ID] [-u -C UR_CONFFILE] FILE...\n"
+"\n"
+"RHTSupport예 문제를 보고합니다.\n"
+"\n"
+"만약 지정하지 않으면, CONFILE을 기본으로 합니다 "
 
 #: ../src/plugins/reporter-rhtsupport.c:550
 msgid "Upload FILEs [to case with this ID]"
@@ -1852,11 +1913,11 @@ msgstr "FILE 업로드 [이 ID를 갖는 사례에]"
 
 #: ../src/plugins/reporter-rhtsupport.c:552
 msgid "Submit uReport before creating a new case"
-msgstr ""
+msgstr "새로운 경우에 생성하기 전에 uReport를 제출합니다"
 
 #: ../src/plugins/reporter-rhtsupport.c:553
 msgid "Configuration file for uReport"
-msgstr ""
+msgstr "uReport를 위한 구성 파일"
 
 #: ../src/plugins/reporter-rhtsupport.c:554
 msgid "Formatting file for a new case"
@@ -1864,7 +1925,7 @@ msgstr "새로운 경우를 위해 파일을 최화하기"
 
 #: ../src/plugins/reporter-rhtsupport.c:591
 msgid "Login is not provided by configuration. Please enter your RHTS login:"
-msgstr ""
+msgstr "구성에 의해 로그인은 제공되어지지 않습니다. RHTS 로그인에 입력해주세요:"
 
 #: ../src/plugins/reporter-rhtsupport.c:647
 #, c-format
@@ -1873,6 +1934,8 @@ msgid ""
 "to the case? Otherwise, you will have to enter the existing Red Hat support "
 "case number."
 msgstr ""
+"우리는 유사한 Red Hat 지원 경우%s를 찾았습니다. 이 경우에 자료 첨부를 원하나요? 그렇다면, 존재하는 Red Hat 지원 경우 "
+"번호를 입력해야 합니다."
 
 #: ../src/plugins/reporter-rhtsupport.c:676
 #, c-format
@@ -1881,11 +1944,11 @@ msgstr "'%s'를 '%s' 경우에 추가 중"
 
 #: ../src/plugins/reporter-rhtsupport.c:720
 msgid "Sending ABRT crash statistics data"
-msgstr ""
+msgstr "ABRT 충돌 통계 자료를 전송하기"
 
 #: ../src/plugins/reporter-rhtsupport.c:741
 msgid "Can't create a temporary directory in "
-msgstr ""
+msgstr "임시 디렉토리를 생성 할 수 없습니다 "
 
 #: ../src/plugins/reporter-rhtsupport.c:766
 msgid ""
@@ -1893,13 +1956,15 @@ msgid ""
 "is unknown. Please ensure you will be able to provide detailed information "
 "to our Support Team. Would you like to continue and open a new support case?"
 msgstr ""
+"문제는 한번만 발생되어졌으며 그 문제 재생산 하는 능력은 알려지지 않았습니다. 우리 지원 팀에게 상세한 정보를 제공 할 수 있는지 "
+"확인해야 합니다. 계속해서 새로운 지원 경우를 시작 할 수 있을까요?"
 
 #: ../src/plugins/reporter-rhtsupport.c:779
 #, c-format
 msgid ""
 "The crashed program was released by '%s'. Would you like to report the "
 "problem to Red Hat Support?"
-msgstr ""
+msgstr "충돌된 프로그램은 '%s'에 의해 출시됩니다.Red Hat 지원에 그 문제를 보고하고 싶은가요?"
 
 #: ../src/plugins/reporter-rhtsupport.c:797
 #, c-format
@@ -1907,6 +1972,7 @@ msgid ""
 "The program '%s' does not appear to be provided by Red Hat. Would you like "
 "to report the problem to Red Hat Support?"
 msgstr ""
+"프로그램은 '%s'은 Red Hat에 의해 제공되어지는 것이 나타나지 않습니다.Red Hat 지원에 그 문제를 보고하고 싶은가요?"
 
 #. Gzipping e.g. 0.5gig coredump takes a while. Let user know what we are doing
 #. error msg is already logged by dd_opendir
@@ -1923,7 +1989,7 @@ msgstr "임시 파일을 생성할 수 없습니다 "
 #. Check for hints and show them if we have something
 #: ../src/plugins/reporter-rhtsupport.c:880
 msgid "Checking for hints"
-msgstr ""
+msgstr "암시를 점검하기"
 
 #: ../src/plugins/reporter-rhtsupport.c:885
 msgid "Creating a new case"
@@ -1932,27 +1998,27 @@ msgstr "새로운 경우 생성하기"
 #. How can we help user sorting out this problem?
 #: ../src/plugins/reporter-rhtsupport.c:896
 msgid "Can't determine RH Support Product from problem data."
-msgstr ""
+msgstr "문제 자료에서 RH 지원 제품을 설정 할 수 없습니다."
 
 #: ../src/plugins/reporter-rhtsupport.c:958
 msgid "Linking ABRT crash statistics record with the case"
-msgstr ""
+msgstr "그 경우와 함께 ABRT 충돌 통계 기록에 연결하기"
 
 #: ../src/plugins/reporter-rhtsupport.c:971
 #, c-format
 msgid "Linking ABRT crash statistics record with contact email: '%s'"
-msgstr ""
+msgstr "접촉 전자우편과 함께 ABRT 충돌 통계 기록에 연결하기: '%s'"
 
 #: ../src/plugins/reporter-rhtsupport.c:995
 #, c-format
 msgid "Adding comment to case '%s'"
-msgstr ""
+msgstr "경우 '%s'에서 언급 추가하기"
 
 #. Attach the tarball of -d DIR
 #: ../src/plugins/reporter-rhtsupport.c:1013
 #, c-format
 msgid "Attaching problem data to case '%s'"
-msgstr ""
+msgstr "경우 '%s'에서 문제 자료를 붙여넣기"
 
 #: ../src/plugins/reporter-rhtsupport-parse.c:202
 msgid "Documentation which might be relevant: "
@@ -1973,22 +2039,30 @@ msgid ""
 "into systemd journal as a message. If MESSAGEID is defined, the tool\n"
 "creates a catalog message as well.\n"
 msgstr ""
+"& [-v] [-d DIR] [-m MESSAGEID] [-F FMTFILE] [-p NONE|ESSENTIAL|FULL] [-s "
+"SYSLOGID]\n"
+"\n"
+"시스템 저널에서 문제 정보를 보고합니다.\n"
+"\n"
+"The tool reads problem directory DIR and sends its details\n"
+"into systemd journal as a message. If MESSAGEID is defined, the tool\n"
+"creates a catalog message as well.\n"
 
 #: ../src/plugins/reporter-systemd-journal.c:251
 msgid "Catalog message id"
-msgstr ""
+msgstr "출판목록 메시지ID"
 
 #: ../src/plugins/reporter-systemd-journal.c:252
 msgid "Formatting file for catalog message"
-msgstr ""
+msgstr "출판목록 메시지를 위한 파일 구성화"
 
 #: ../src/plugins/reporter-systemd-journal.c:253
 msgid "Dump problem dir into systemd journal fields"
-msgstr ""
+msgstr "systemd 저널 부분에 문제 디렉토리를 덤프합니다"
 
 #: ../src/plugins/reporter-systemd-journal.c:254
 msgid "Define SYSLOG_IDENTIFIER systemd journal field"
-msgstr ""
+msgstr "SYSLOG_IDENTIFIER systemd 저널 부분을 정의합니다"
 
 #: ../src/plugins/reporter-upload.c:29
 msgid "Can't continue without URL"
@@ -2014,6 +2088,10 @@ msgid ""
 "Uploads compressed tarball of problem directory DIR to URL.\n"
 "If URL is not specified, creates tarball in "
 msgstr ""
+"& [-v] -d DIR [-c CONFFILE] [-u URL] [-b FILE] [-r FILE]\n"
+"\n"
+"URL에서 문제 디렉토리 DIR의 압축된 tarball을 업로드 합니다.\n"
+"만약 URL이 지정하지 않으면, tarball을 생성합니다. "
 
 #: ../src/plugins/reporter-upload.c:188
 msgid "Base URL to upload to"
@@ -2030,7 +2108,7 @@ msgstr "SSH 개인 키 파일"
 #: ../src/plugins/reporter-upload.c:219
 msgid ""
 "Please enter a URL (scp, ftp, etc.) where the problem data is to be exported:"
-msgstr ""
+msgstr "문제 자료가 보내지는 곳에 URL(scp, ftp, etc.)을 입력해주세요:"
 
 #: ../src/plugins/reporter-mantisbt.c:80
 msgid "Please enter your MantisBT login:"
@@ -2042,7 +2120,7 @@ msgstr "비밀번호를 입력해주세요"
 
 #: ../src/plugins/reporter-mantisbt.c:95
 msgid "Credentials are not provided by configuration."
-msgstr ""
+msgstr "구성에 의해 인증은 제공되어질 수 없습니다."
 
 #: ../src/plugins/reporter-mantisbt.c:119
 msgid "Invalid password or login."
@@ -2090,6 +2168,45 @@ msgid ""
 "\n"
 "If not specified, CONFFILE defaults to "
 msgstr ""
+"\n"
+"& [-vf] [-c CONFFILE]... [-F FMTFILE] [-A FMTFILE2] -d DIR\n"
+"or:\n"
+"& [-v] [-c CONFFILE]... [-d DIR] -t[ID] FILE...\n"
+"or:\n"
+"& [-v] [-c CONFFILE]... [-d DIR] -t[ID] -w\n"
+"or:\n"
+"& [-v] [-c CONFFILE]... -h DUPHASH\n"
+"\n"
+"Reports problem to MantisBT.\n"
+"\n"
+"The tool reads DIR. Then it tries to find an issue\n"
+"with the same abrt_hash in custom field 'abrt_hash'.\n"
+"\n"
+"If such issue is not found, then a new issue is created. Elements of DIR\n"
+"are stored in the issue as part of issue description or as attachments,\n"
+"depending on their type and size.\n"
+"\n"
+"Otherwise, if such issue is found and it is marked as CLOSED DUPLICATE,\n"
+"the tool follows the chain of duplicates until it finds a non-DUPLICATE "
+"issue.\n"
+"The tool adds a new comment to found issue.\n"
+"\n"
+"The URL to new or modified issue is printed to stdout and recorded in\n"
+"'reported_to' element.\n"
+"\n"
+"Option -t uploads FILEs to the already created issue on MantisBT site.\n"
+"The issue ID is retrieved from directory specified by -d DIR.\n"
+"If problem data in DIR was never reported to MantisBT, upload will fail.\n"
+"\n"
+"Option -tID uploads FILEs to the issue with specified ID on MantisBT site.\n"
+"-d DIR is ignored.\n"
+"\n"
+"Option -r sets the last url from reporter_to element which is prefixed with\n"
+"TRACKER_NAME to URL field. This option is applied only when a new issue is "
+"to be\n"
+"filed. The default value is 'ABRT Server'\n"
+"\n"
+"If not specified, CONFFILE defaults to "
 
 #: ../src/plugins/reporter-mantisbt.c:287
 msgid "Attach FILEs [to issue with this ID]"
@@ -2108,19 +2225,19 @@ msgstr "MantisBT에서 유사한 문제 찾기"
 msgid ""
 "Can't get MantisBT ID because this problem has not yet been reported to "
 "MantisBT."
-msgstr ""
+msgstr "이 문제는 MantisBT에서 아직 보고 되지 않았기 때문에 MantisBT ID를 가져 올 수 없습니다."
 
 #: ../src/plugins/reporter-mantisbt.c:386
 #, c-format
 msgid ""
 "This problem has been reported to MantisBT '%s' which differs from the "
 "configured MantisBT '%s'."
-msgstr ""
+msgstr "이 문제는 구성된 MantisBT에서 차이나는 MantisBT에서 보고되어집니다 '%s'."
 
 #: ../src/plugins/reporter-mantisbt.c:390
 #, c-format
 msgid "Malformed url to MantisBT '%s'."
-msgstr ""
+msgstr "MantisBT '%s'에서 잘못된 url."
 
 #: ../src/plugins/reporter-mantisbt.c:394
 #, c-format
@@ -2137,7 +2254,7 @@ msgstr "파일 '%s'을 사건 %s에 부착하기"
 msgid ""
 "This problem was already reported to MantisBT (see '%s'). Do you still want "
 "to create a new issue?"
-msgstr ""
+msgstr "이 문제는 MantisBT('%s'를 참고하세요)에 이미 보고되었습니다. 여전히 새로운 사건을 생성하기를 원하나요?"
 
 #. Create new issue
 #: ../src/plugins/reporter-mantisbt.c:545
@@ -2169,7 +2286,7 @@ msgstr "잘못된 중복 형식 파일: '%s"
 
 #: ../src/plugins/reporter-mantisbt.c:652
 msgid "Failed to format duplicate comment from problem data"
-msgstr ""
+msgstr "문제 자료에서 중복된 언급을 구성하는데 실패하였습니다"
 
 #: ../src/plugins/reporter-mantisbt.c:659
 #, c-format
@@ -2183,7 +2300,7 @@ msgstr "문제 기록에 동일한 주석이 발견된 경우, 새로운 주석�
 #: ../src/plugins/reporter-mantisbt.c:702
 #, c-format
 msgid "Status: %s%s%s %s/view.php?id=%u"
-msgstr ""
+msgstr "상태: %s%s%s %s/view.php?id=%u"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:1
 msgid "CentOS Bug Tracker"
@@ -2211,43 +2328,45 @@ msgid ""
 "You can create bugs.centos.org account &lt;a href=\"https://bugs.centos.org/"
 "signup_page.php\"&gt;here&lt;/a&gt;"
 msgstr ""
+"bugs.centos.org 계정은 생성 할 수 있습니다 &lt;a href=\"https://bugs.centos.org/"
+"signup_page.php\"&gt;here&lt;/a&gt;"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:7
 msgid "CentOS Bug Tracker account password"
-msgstr ""
+msgstr "CentOS 결점(Bug) 추적 계정 비밀번호"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:9
 msgid ""
 "The issue will be accessible only to users with access to 'Private Issues'"
-msgstr ""
+msgstr "이 문제은 '사적인 문제'에 접근과 함께 사용자에게서만 접근 할 수 있습니다"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:10
 msgid "CentOS Bug Tracker URL"
-msgstr ""
+msgstr "CentOS 결점(Bug) 추적 URL"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:11
 msgid "Address of CentOS Bug Tracker server"
-msgstr ""
+msgstr "CentOS 결점(bug)추적 서버 주소"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:14
 msgid "CentOS Bug Tracker project"
-msgstr ""
+msgstr "CentOS 결점(Bug) 추적 프로젝트"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:15
 msgid ""
 "Specify this only if you needed different project than specified in /etc/os-"
 "release"
-msgstr ""
+msgstr "만약 /etc/os-release에서 지정된 것보다 다른 프로젝트가 필요로 한다면 이를 지정합니다"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:16
 msgid "CentOS Bug Tracker project version"
-msgstr ""
+msgstr "Centos 결점(Bug) 추적 프로젝트 버전"
 
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:17
 msgid ""
 "Specify this only if you needed different project version than specified in /"
 "etc/os-release"
-msgstr ""
+msgstr "만약 /etc/os-release 에서 지정된 것보다 다른 프로젝트 버전이 필요하다면 이를 지정합니다"
 
 #: ../src/plugins/report_Kerneloops.xml.in.h:1
 msgid "Kerneloops.org"
@@ -2359,6 +2478,8 @@ msgid ""
 "Submit &lt;a href=\"https://access.redhat.com/articles/642323\"&gt;micro-"
 "report&lt;/a&gt; when creating a new case."
 msgstr ""
+"새로운 경우를 생성 할 때에 &lt;a href=\"https://access.redhat.com/articles/642323\"&gt"
+";micro-report&lt;/a&gt; 를 제출합니다."
 
 #: ../src/plugins/report_RHTSupport.xml.in.h:9
 msgid "RH Portal URL"
@@ -2370,11 +2491,11 @@ msgstr "Red Hat지원 포털 주소"
 
 #: ../src/plugins/report_RHTSupport_AddData.xml.in.h:2
 msgid "Attach the data to existing Red Hat support case"
-msgstr ""
+msgstr "자료를 기존 Red Hat 지원 경우에 덧붙입니다"
 
 #: ../src/plugins/report_Uploader.xml.in.h:1
 msgid "Report Uploader"
-msgstr ""
+msgstr "보고 업로더"
 
 #: ../src/plugins/report_Uploader.xml.in.h:2
 msgid "Upload as tar.gz file (via FTP/SCP/...)"
@@ -2395,14 +2516,16 @@ msgid ""
 "Examples:&#xA;ftp://[user[:pass]@]host/dir/[file.tar.gz]&#xA;scp://[user[:"
 "pass]@]host/dir/[file.tar.gz]&#xA;file:///dir/[file.tar.gz]"
 msgstr ""
+"예제:&#xA;ftp://[user[:pass]@]host/dir/[file.tar.gz]&#xA;scp://[user[:pass]@]"
+"host/dir/[file.tar.gz]&#xA;file:///dir/[file.tar.gz]"
 
 #: ../src/plugins/report_Uploader.xml.in.h:7
 msgid "Use this field if you do not want to have user name in URL"
-msgstr ""
+msgstr "만약 URL에서 사용자 이름을 사용하지 않고자 한다면 이 부분을 사용합니다"
 
 #: ../src/plugins/report_Uploader.xml.in.h:9
 msgid "Use this field if you do not want to have password in URL"
-msgstr ""
+msgstr "만약 URL에서 비밀번호를 가지지 않으려면 이 부분을 사용합니다"
 
 #: ../src/plugins/report_Uploader.xml.in.h:14
 msgid "FTP Proxy"
@@ -2410,23 +2533,23 @@ msgstr "FTP 프록시"
 
 #: ../src/plugins/report_Uploader.xml.in.h:15
 msgid "Sets the proxy server to use for FTP"
-msgstr ""
+msgstr "FTP를 위한 사용에 프락시 서버를 설정합니다"
 
 #: ../src/plugins/report_Uploader.xml.in.h:16
 msgid "SSH Public key file"
-msgstr ""
+msgstr "SSH 공개 키 파일"
 
 #: ../src/plugins/report_Uploader.xml.in.h:17
 msgid "Use this field to specify SSH public keyfile"
-msgstr ""
+msgstr "SSH 공용 키파일을 상세화에 이 부분을 사용합니다"
 
 #: ../src/plugins/report_Uploader.xml.in.h:18
 msgid "SSH Private key file"
-msgstr ""
+msgstr "SSH 개인 키 파일"
 
 #: ../src/plugins/report_Uploader.xml.in.h:19
 msgid "Use this field to specify SSH private keyfile"
-msgstr ""
+msgstr "SSH 개인 키파일을 상세화에 이 부분을 사용합니다"
 
 #: ../src/plugins/report_uReport.xml.in.h:1
 msgid "uReport"
@@ -2434,49 +2557,49 @@ msgstr "보고"
 
 #: ../src/plugins/report_uReport.xml.in.h:2
 msgid "Sends ureports to FAF server"
-msgstr ""
+msgstr "FAF 서버에 ureports를 전송합니다"
 
 #: ../src/plugins/report_uReport.xml.in.h:3
 msgid "uReport Server URL"
-msgstr ""
+msgstr "uReport 서버 URL"
 
 #: ../src/plugins/report_uReport.xml.in.h:4
 msgid "Address of uReport webservice"
-msgstr ""
+msgstr "uReport 웹서비스 주소"
 
 #: ../src/plugins/report_uReport.xml.in.h:5
 msgid "Watch already reported bugs"
-msgstr ""
+msgstr "이미 보고된 결점(bugs)를 봅니다"
 
 #: ../src/plugins/report_uReport.xml.in.h:6
 msgid "Adds your Bugzilla login to CC List of already reported bugs."
-msgstr ""
+msgstr "버그질라 로그인을 이미 보고된 결점(bugs) CC 목록에 추가합니다."
 
 #: ../src/plugins/report_uReport.xml.in.h:7
 msgid "Report unpackaged problems"
-msgstr ""
+msgstr "포장되지 않은 문제를 보고합니다"
 
 #: ../src/plugins/report_uReport.xml.in.h:8
 msgid "Report problems coming from unpackaged executables."
-msgstr ""
+msgstr "포장되지 않은 실행에서 발생하는 문제를 보고합니다."
 
 #: ../src/plugins/report_uReport.xml.in.h:9
 msgid "Contact email address"
-msgstr ""
+msgstr "접촉 전자우편 주소"
 
 #: ../src/plugins/report_uReport.xml.in.h:10
 msgid ""
 "Email address that can be used by ABRT server to inform you about news and "
 "updates"
-msgstr ""
+msgstr "당신에게 새로운 부분과 최신화에 대하여 알려주는 ABRT 서버에 의하여 사용 될 수 있는 전자우편 주소"
 
 #: ../src/plugins/watch_Bugzilla.xml.in.h:1
 msgid "Watch Bugzilla Bug"
-msgstr ""
+msgstr "버그질라 결점(bug)를 봅니다"
 
 #: ../src/plugins/watch_Bugzilla.xml.in.h:2
 msgid "Adds your e-mail to CC List of Bugzilla bug"
-msgstr ""
+msgstr "버그질라 결점(bug)의 CC 목록에 당신의 전자우편을 추가합니다"
 
 #: ../src/plugins/rhbz.c:382
 #, c-format
@@ -2499,6 +2622,9 @@ msgid ""
 "please see https://github.com/abrt/abrt/wiki/FAQ#creating-private-bugzilla-"
 "tickets for more info"
 msgstr ""
+"개인 표(private ticket) 생성이 요청되어졌으며, 어떤 그룹도 지정되지 않았습니다. 상세한 정보를 위하여 "
+"https://github.com/abrt/abrt/wiki/FAQ#creating-private-bugzilla-tickets를 참고해 "
+"주세요"
 
 #: ../src/plugins/rhbz.c:604
 #, c-format
@@ -2512,151 +2638,151 @@ msgstr "버그질라는 버그 %d의 원인 버그를 찾을 수 없습니다"
 
 #: ../src/plugins/rhbz.c:873
 msgid "Bug.search(quicksearch) return value did not contain member 'bugs'"
-msgstr ""
+msgstr "Bug.search(빠른 검색) 반환 값은 구성 '결점(bug)'에 포함되지 않습니다"
 
 #: ../src/plugins/mantisbt.c:123
 #, c-format
 msgid "MantisBT couldn't find parent of issue %d"
-msgstr ""
+msgstr "MantisBT는 사건 %d의 부모를 찾을 수 없습니다"
 
 #: ../src/plugins/mantisbt.c:180
 msgid "SOAP: Failed to get child element because of no parent."
-msgstr ""
+msgstr "SOAP: 부모가 없기 때문에 하위 요소 얻기에 실패했습니다."
 
 #: ../src/plugins/mantisbt.c:189
 msgid "SOAP: Failed to get next element because of no node."
-msgstr ""
+msgstr "SOAP: 노드가 없기 때문에 다음 요소 얻기에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:198
 msgid "SOAP: Failed to get child node because of no parent."
-msgstr ""
+msgstr "SOAP: 부모가 없기 때문에 하위 노드 가져오기에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:219
 msgid "SOAP: Failed to parse xml during creating request."
-msgstr ""
+msgstr "SOAP: 요청 생성 할 때 xml 구문 분석에 실패했습니다."
 
 #: ../src/plugins/mantisbt.c:227
 msgid "SOAP: Failed to get xml root element."
-msgstr ""
+msgstr "SOAP: xml root 요소를 가져오기에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:240
 msgid ""
 "SOAP: Failed to add a new child node because of no node or no child name."
-msgstr ""
+msgstr "SOAP: 노드가 없거나 하위 이름 없기 때문에 새로운 하위 노드를 추가 할 수 없습니다."
 
 #: ../src/plugins/mantisbt.c:245
 msgid "SOAP: Failed to create a new xml child item."
-msgstr ""
+msgstr "SOAP: 새로운 xml 하위 항목을 생성 할 수 없습니다."
 
 #: ../src/plugins/mantisbt.c:250
 msgid "SOAP: Failed to create a new property."
-msgstr ""
+msgstr "SOAP: 새로운 특성 생성에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:260
 msgid "SOAP: Failed to add method parametr."
-msgstr ""
+msgstr "SOAP: 방법 매개변수 추가에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:289
 msgid "SOAP: Failed to add new issue parametrs."
-msgstr ""
+msgstr "SOAP: 새로운 사건 매개변수 추가에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:292
 msgid ""
 "SOAP: Failed to add new issue parameters because the required items are "
 "missing."
-msgstr ""
+msgstr "SOAP: 요구된 항목 누락 때문에 새로운 사건 매개변수 추가에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:336
 msgid "SOAP: Failed to create a new property in custom fields."
-msgstr ""
+msgstr "SOAP: 사용자 정의 부분에 새로운 소유권 생성에 실패했습니다."
 
 #: ../src/plugins/mantisbt.c:354
 msgid ""
 "SOAP: Failed to create SOAP string because of invalid function arguments."
-msgstr ""
+msgstr "SOAP: 유효하지 않은 기능 인수 때문에 SOAP 문자열 생성에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:361
 msgid "SOAP: Failed to dump xml node."
-msgstr ""
+msgstr "SOAP: xml 노드 덤프에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:375
 msgid "SOAP: Failed to print SOAP string."
-msgstr ""
+msgstr "SOAP: SOAP 문자열 출력에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:382
 msgid "Failed to dump xml node."
-msgstr ""
+msgstr "xml 노드 덤프에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:458
 msgid "SOAP: Failed to parse xml (searching value at depth by name)."
-msgstr ""
+msgstr "SOAP: xml 구문 분석에 실패하였습니다 (이름으로 깊이에 값을 찾기)."
 
 #: ../src/plugins/mantisbt.c:462 ../src/plugins/mantisbt.c:505
 #: ../src/plugins/mantisbt.c:534
 msgid "SOAP: Failed to create xml text reader."
-msgstr ""
+msgstr "SOAP: xml 문자 읽기에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:501
 msgid "SOAP: Failed to parse xml."
-msgstr ""
+msgstr "SOAP: xml 구문 분석에 실패했습니다."
 
 #: ../src/plugins/mantisbt.c:530
 msgid "SOAP: Failed to parse xml (get related to issue)."
-msgstr ""
+msgstr "SOAP: xml 구문 분석에 실패하였습니다(사건에 연관하여 가져옵니다)."
 
 #: ../src/plugins/mantisbt.c:647
 msgid "Url or request isn't specified."
-msgstr ""
+msgstr "Url 또는 요청이 지정되지 않았습니다."
 
 #: ../src/plugins/mantisbt.c:675
 #, c-format
 msgid "Error in HTTP POST, HTTP code: 404 (Not found), URL:'%s'"
-msgstr ""
+msgstr "HTTP POST에서 오류, HTTP 코드 : 404 (찾지 못함), URL:'%s'"
 
 #: ../src/plugins/mantisbt.c:699
 #, c-format
 msgid "Error in MantisBT request at '%s': %s"
-msgstr ""
+msgstr "'%s': %s에 요청된 MainsBT에서 오류가 발생하였습니다"
 
 #: ../src/plugins/mantisbt.c:701
 #, c-format
 msgid "Error in MantisBT request at '%s'"
-msgstr ""
+msgstr "'%s'에 요청된 MaintisBT에서 오류가 발생하였습니다"
 
 #: ../src/plugins/mantisbt.c:743
 #, c-format
 msgid "Failed to attach file: '%s'"
-msgstr ""
+msgstr "파일 추가에 실패하였습니다: '%s'"
 
 #: ../src/plugins/mantisbt.c:762
 #, c-format
 msgid "Can't lseek '%s'"
-msgstr ""
+msgstr "'%s'를 찾을 수 없습니다"
 
 #: ../src/plugins/mantisbt.c:768
 #, c-format
 msgid "Can't upload '%s', it's too large (%llu bytes)"
-msgstr ""
+msgstr "'%s'를 업로드 할 수 없으며, 이는 너무 큽니다 (%llu bytes)"
 
 #: ../src/plugins/mantisbt.c:778
 #, c-format
 msgid "Can't read '%s'"
-msgstr ""
+msgstr "'%s'를 읽을 수 없습니다"
 
 #: ../src/plugins/mantisbt.c:794
 #, c-format
 msgid "Can't open '%s'"
-msgstr ""
+msgstr "'%s'를 열 수 없습니다"
 
 #: ../src/plugins/mantisbt.c:861
 #, c-format
 msgid "Failed to search MantisBT issue by duphash: '%s'"
-msgstr ""
+msgstr "dubhash에 의해 MantisBT 사건 검색에 실패하였습니다: ' %s'"
 
 #: ../src/plugins/mantisbt.c:906
 #, c-format
 msgid "Failed to search MantisBT duplicate issue: '%s'"
-msgstr ""
+msgstr "MantisBT 중복 사건 검색에 실패하였습니다: '%s'"
 
 #: ../src/plugins/mantisbt.c:934
 #, c-format
@@ -2664,21 +2790,23 @@ msgid ""
 "MantisBT doesn't contain custom field '%s', which is required for full "
 "functionality of the reporter. Do you still want to create a new issue?"
 msgstr ""
+"MantisBT는 보고자의 모든 기능성을 위하여 필요한 사용자 정의 부분'%s'을 포함하지 않습니다. 아직 새로운 사건을 생성하기를 "
+"원하나요?"
 
 #: ../src/plugins/mantisbt.c:958
 #, c-format
 msgid "Failed to get custom fields for '%s' project"
-msgstr ""
+msgstr "'%s' 프로젝트를 위해 사용자 정의 부분 얻기에 실패하였습니다"
 
 #: ../src/plugins/mantisbt.c:1002
 #, c-format
 msgid "Failed to create a new issue: '%s'"
-msgstr ""
+msgstr "새로운 사건 생성에 실패하였습니다: '%s'"
 
 #: ../src/plugins/mantisbt.c:1028
 #, c-format
 msgid "Failed to get MantisBT issue: '%s'"
-msgstr ""
+msgstr "MantisBT 사건 얻기에 실패하였습니다: '%s'"
 
 #: ../src/plugins/mantisbt.c:1042
 #, c-format
@@ -2693,19 +2821,19 @@ msgstr "문제 %i가 중복으로 종료 되었지만, DUP_ID가 없습니다"
 #: ../src/plugins/mantisbt.c:1087
 #, c-format
 msgid "Failed to add MantisBT issue note: '%s'"
-msgstr ""
+msgstr "MantisBT 사건 기록 추가하기에 실패하였습니다: '%s'"
 
 #: ../src/plugins/mantisbt.c:1101
 msgid "The MantisBT project has not been deretmined."
-msgstr ""
+msgstr "MantisBT 프로젝트는 결정 되어지지 않았습니다."
 
 #: ../src/plugins/mantisbt.c:1113
 msgid "Failed to get project id from name"
-msgstr ""
+msgstr "이름에서 프로젝트 id 가져오기에 실패하였습니다"
 
 #: ../src/plugins/reporter-ureport.c:75
 msgid "Specify server URL"
-msgstr ""
+msgstr "서버 URL 지정합니다"
 
 #: ../src/plugins/reporter-ureport.c:77
 msgid "Allow insecure connection to ureport server"
@@ -2713,71 +2841,71 @@ msgstr "ureport 서버에 대한 비보호 연결을 허용합니다"
 
 #: ../src/plugins/reporter-ureport.c:78
 msgid "Use client authentication"
-msgstr ""
+msgstr "클라이언트 인증을 사용합니다"
 
 #: ../src/plugins/reporter-ureport.c:79
 msgid "Use HTTP Authentication"
-msgstr ""
+msgstr "HTTP 인증을 사용합니다"
 
 #: ../src/plugins/reporter-ureport.c:80
 msgid "Additional files included in 'auth' key"
-msgstr ""
+msgstr "추가 파일은 'auth' 키에서 포함되어 있습니다"
 
 #: ../src/plugins/reporter-ureport.c:83
 msgid "bthash of uReport to attach (conflicts with -A)"
-msgstr ""
+msgstr "첨부하기에 uReport의 bthash (-A와 함께 충돌합니다)"
 
 #: ../src/plugins/reporter-ureport.c:85
 msgid "attach to a bthash from reported_to (conflicts with -a)"
-msgstr ""
+msgstr "보고된_to (-a와 충돌합니다)에서 bthash에 첨부합니다"
 
 #: ../src/plugins/reporter-ureport.c:87
 msgid "contact e-mail address (requires -a|-A, conflicts with -E)"
-msgstr ""
+msgstr "전자 우편 주소로 연락합니다 (-a|-A가 필요하며, -E와 충돌합니다)"
 
 #: ../src/plugins/reporter-ureport.c:89
 msgid ""
 "contact e-mail address from environment or configuration file (requires -a|-"
 "A, conflicts with -e)"
-msgstr ""
+msgstr "환경 또는 구성에서 전자우편 주소로 연락합니다(-a|-A가 필요하며, -e와 충돌합니다)"
 
 #: ../src/plugins/reporter-ureport.c:91
 msgid "attach RHBZ bug (requires -a|-A, conflicts with -B)"
-msgstr ""
+msgstr "RHBZ 결점(bug) 첨부하기(-a| -A가 필요하며, -B와 충돌합니다)"
 
 #: ../src/plugins/reporter-ureport.c:93
 msgid ""
 "attach last RHBZ bug from reported_to (requires -a|-A, conflicts with -b)"
-msgstr ""
+msgstr "보고되어진 (-a| -A가 필요하며, -b와 충돌합니다)에서 마지막 RHBZ 결점(bug)를 첨부합니다"
 
 #: ../src/plugins/reporter-ureport.c:95
 msgid "attach short text (requires -a|-A, conflicts with -D)"
-msgstr ""
+msgstr "짧은 문서를 첨부합니다.(-a| -A가 필요하며, -D와 충돌합니다)"
 
 #: ../src/plugins/reporter-ureport.c:97
 msgid "attach short text from comment (requires -a|-A, conflicts with -d)"
-msgstr ""
+msgstr "언급 (-a| -A가 필요하며, -d와 충돌합니다)에서 짧은 문서를 첨부합니다"
 
 #: ../src/plugins/reporter-ureport.c:101
 msgid "attach value (requires -a|-A and -T, conflicts with -L)"
-msgstr ""
+msgstr "값 (-a| -A와 -T 필요하며, -L와 충돌합니다)을 첨부합니다"
 
 #: ../src/plugins/reporter-ureport.c:103
 msgid ""
 "attach data of FIELD [URL] of the last report result (requires -a|-A, -r and "
 "-T, conflicts with -l)"
-msgstr ""
+msgstr "마지막 보고 결과의 FIELD [URL] 자료를 첨부합니다 (-a|-A, -r과 -T가 필요하며, -l와 충돌합니다)"
 
 #: ../src/plugins/reporter-ureport.c:106
 msgid ""
 "use REPORT_RESULT_TYPE when looking for FIELD in reported_to (used only with "
 "-L)"
-msgstr ""
+msgstr "(-L과 함께만 사용됩니다)에 보고된 부분을 찾을 때에 REPORT_RESULT_TYPE를 사용합니다"
 
 #: ../src/plugins/reporter-ureport.c:108
 msgid ""
 "attach DATA as ureport attachment ATTACHMENT_TYPE (used only with -l|-L)"
-msgstr ""
+msgstr "ureport 첨부 ATTACHMENT_TYPE (-L과 함께만 사용됩니다)로써 DATA를 첨부합니다"
 
 #: ../src/plugins/reporter-ureport.c:113
 msgid ""
@@ -2793,60 +2921,71 @@ msgid ""
 "\n"
 "Reads the default configuration from "
 msgstr ""
+"& [-v] [-c FILE] [-u URL] [-k] [-t SOURCE] [-h CREDENTIALS]\n"
+" [-A -a bthash -B -b bug-id -E -e email -O -o comment] [-d DIR]\n"
+" [-A -a bthash -T ATTACHMENT_TYPE -r REPORT_RESULT_TYPE -L RESULT_FIELD] [-d "
+"DIR]\n"
+" [-A -a bthash -T ATTACHMENT_TYPE -l DATA] [-d DIR]\n"
+"& [-v] [-c FILE] [-u URL] [-k] [-t SOURCE] [-h CREDENTIALS] [-i AUTH_ITEMS] "
+"[-d DIR]\n"
+"\n"
+"간소한 보고를 올리거나 간소한 보고에 첨부를 추가합니다\n"
+"\n"
+"기본 구성을 읽습니다 "
 
 #: ../src/plugins/reporter-ureport.c:191
 msgid "This problem does not have an uReport assigned."
-msgstr ""
+msgstr "이 문제는 uReport가 할당되지 않습니다."
 
 #: ../src/plugins/reporter-ureport.c:212
 msgid "This problem has not been reported to Bugzilla."
-msgstr ""
+msgstr "이 문제는 버그질라에 보고되어지지 않습니다."
 
 #: ../src/plugins/reporter-ureport.c:218
 #, c-format
 msgid "Unable to find bug ID in bugzilla URL '%s'"
-msgstr ""
+msgstr "버그질라 URL '%s'에서 결점(bug) ID를 찾을 수 없습니다"
 
 #: ../src/plugins/reporter-ureport.c:223
 #, c-format
 msgid "Unable to parse bug ID from bugzilla URL '%s'"
-msgstr ""
+msgstr "버그질라 URL '%s'에서 결점(bug) ID 구문 분석 할 수 없습니다"
 
 #: ../src/plugins/reporter-ureport.c:230
 msgid "Cannot attach comment from 'comment' file"
-msgstr ""
+msgstr "'comment' 파일에서 언급 첨부 할 수 없습니다"
 
 #: ../src/plugins/reporter-ureport.c:232
 msgid "'comment' file is empty"
-msgstr ""
+msgstr "'comment' 파일이 비워져 있습니다"
 
 #: ../src/plugins/reporter-ureport.c:243
 #, c-format
 msgid "This problem has not been reported to '%s'."
-msgstr ""
+msgstr "이 질문은 '%s'에 보고 되어지지 않을 것입니다."
 
 #: ../src/plugins/reporter-ureport.c:251
 #, c-format
 msgid "The report result '%s' is missing URL."
-msgstr ""
+msgstr "결과 '%s' 보고는 URL이 누락되었습니다."
 
 #: ../src/plugins/reporter-ureport.c:267
 msgid ""
 "Neither environment variable 'uReport_ContactEmail' nor configuration option "
 "'ContactEmail' is set"
-msgstr ""
+msgstr "환경 변수 'uReport_ContactEmail'도 구성 선택 'ContactEmail'도 아닌 설정입니다"
 
 #: ../src/plugins/reporter-ureport.c:273
 msgid "You need to specify bug ID, contact email, comment or all of them"
-msgstr ""
+msgstr "결점(bug) ID, 문의 전자우편, 언급 또는 그 것들 모두 지정하는데 필요합니다"
 
 #: ../src/plugins/reporter-ureport.c:303
 msgid "You need to specify bthash of the uReport to attach."
-msgstr ""
+msgstr "당신은 첨부하는데 uReport의 bthash를 지정하는데 필요합니다."
 
 #: ../src/plugins/reporter-ureport.c:332
 msgid "This problem has already been reported."
-msgstr ""
+msgstr "이 문제는 이미 보고되었습니다."
 
 #: ../src/report-newt/report-newt.c:55
 msgid "How would you like to report the problem?"
@@ -2885,6 +3024,9 @@ msgid ""
 "\n"
 "newt tool to report problem saved in specified DIR"
 msgstr ""
+"& [-d] DIR\n"
+"\n"
+"문제가 보고된 newt 도구는 지정된 DIR에 저장되었습니다"
 
 #: ../src/report-newt/report-newt.c:396
 msgid "Remove DIR after reporting"
@@ -2892,68 +3034,68 @@ msgstr "보고 후 DIR 삭제"
 
 #: ../src/workflows/workflow_AnacondaFedora.xml.in.h:1
 msgid "Report a bug to Fedora maintainers"
-msgstr ""
+msgstr "페도라 관리자에게 결점(bug)를 보고합니다"
 
 #: ../src/workflows/workflow_AnacondaFedora.xml.in.h:2
 msgid "Process the report using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처 사용하여 보고를 처리합니다"
 
 #: ../src/workflows/workflow_AnacondaRHEL.xml.in.h:1
 msgid "Report a bug to Red Hat Customer Portal"
-msgstr ""
+msgstr "Red Hat 고객 포털에 결점(bug)를 보고합니다"
 
 #: ../src/workflows/workflow_AnacondaRHEL.xml.in.h:2
 #: ../src/workflows/workflow_AnacondaRHELBugzilla.xml.in.h:2
 msgid "Process the report using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처 사용하여 보고를 처리합니다"
 
 #: ../src/workflows/workflow_AnacondaRHELBugzilla.xml.in.h:1
 msgid "Report a bug to Red Hat Bugzilla"
-msgstr ""
+msgstr "Red Hat 버그질라에 결점(bug)를 보고합니다"
 
 #: ../src/workflows/workflow_AnacondaUpload.xml.in.h:1
 msgid "Export the problem data for manual reporting"
-msgstr ""
+msgstr "사용자 보고하기를 위해 문제 자료를 내보냅니다"
 
 #: ../src/workflows/workflow_AnacondaUpload.xml.in.h:2
 msgid "Upload the data via scp or ftp to a remote destination"
-msgstr ""
+msgstr "원격 대상에 scp 또는 ftp를 통해서 자료를 올립니다"
 
 #: ../src/workflows/workflow_CentOSCCpp.xml.in.h:2
 msgid "Process the C/C++ crash using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 C/C++ 충돌을 처리합니다"
 
 #: ../src/workflows/workflow_CentOSJava.xml.in.h:2
 msgid "Process the Java exception using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 자바 예외를 처리합니다"
 
 #: ../src/workflows/workflow_CentOSJavaScript.xml.in.h:2
 msgid "Process the JavaScript exception using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 자바스크립트 예외를 처리합니다"
 
 #: ../src/workflows/workflow_CentOSKerneloops.xml.in.h:2
 msgid "Process the kerneloops using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 커널루프를 처리합니다"
 
 #: ../src/workflows/workflow_CentOSLibreport.xml.in.h:2
 msgid "Process the problem using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 문제를 처리합니다"
 
 #: ../src/workflows/workflow_CentOSPython.xml.in.h:2
 msgid "Process the python exception using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 파이썬 예외를 처리합니다"
 
 #: ../src/workflows/workflow_CentOSPython3.xml.in.h:2
 msgid "Process the python 3 exception using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 파이썬 3 예외를 처리합니다"
 
 #: ../src/workflows/workflow_CentOSVmcore.xml.in.h:2
 msgid "Process the kernel crash using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 커널 충돌을 처리합니다"
 
 #: ../src/workflows/workflow_CentOSXorg.xml.in.h:2
 msgid "Process the X Server problem using the CentOS infrastructure"
-msgstr ""
+msgstr "CentOS 인프라스트럭처를 사용하여 X 서버 문제를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraCCpp.xml.in.h:1
 #: ../src/workflows/workflow_FedoraKerneloops.xml.in.h:1
@@ -2965,85 +3107,85 @@ msgstr ""
 #: ../src/workflows/workflow_FedoraJava.xml.in.h:1
 #: ../src/workflows/workflow_FedoraJavaScript.xml.in.h:1
 msgid "Report to Fedora"
-msgstr ""
+msgstr "페도라에 보고"
 
 #: ../src/workflows/workflow_FedoraCCpp.xml.in.h:2
 msgid "Process the C/C++ crash using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 이용하여 C/C++ 충돌을 처리합니다"
 
 #: ../src/workflows/workflow_FedoraKerneloops.xml.in.h:2
 msgid "Process the kerneloops using the Fedora infrastructure"
-msgstr ""
+msgstr "페로라 인프라스트럭처를 사용하여 커널루프를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraPython.xml.in.h:2
 msgid "Process the python exception using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 파이썬 예외를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraPython3.xml.in.h:2
 msgid "Process the python 3 exception using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 파이썬 3 예외를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraVmcore.xml.in.h:2
 msgid "Process the kernel crash using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 커널 충돌을 처리합니다"
 
 #: ../src/workflows/workflow_FedoraXorg.xml.in.h:2
 msgid "Process the X Server problem using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 X 서버 문제를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraLibreport.xml.in.h:2
 msgid "Process the problem using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 문제를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraJava.xml.in.h:2
 msgid "Process the Java exception using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 자바 예외를 처리합니다"
 
 #: ../src/workflows/workflow_FedoraJavaScript.xml.in.h:2
 msgid "Process the JavaScript exception using the Fedora infrastructure"
-msgstr ""
+msgstr "페도라 인프라스트럭처를 사용하여 자바스크립트 예외를 처리합니다"
 
 #: ../src/workflows/workflow_LoggerCCpp.xml.in.h:1
 #: ../src/workflows/workflow_Logger.xml.in.h:1
 msgid "Export the problem data information to a text file"
-msgstr ""
+msgstr "텍스트 파일에 문제 자료 정보를 내보냅니다"
 
 #: ../src/workflows/workflow_LoggerCCpp.xml.in.h:2
 #: ../src/workflows/workflow_Logger.xml.in.h:2
 msgid ""
 "Analyze the problem locally and export the problem data information to a "
 "text file"
-msgstr ""
+msgstr "로컬에 문제를 분석하거나 텍스트 파일에 문제 자료 정보를 내보냅니다"
 
 #: ../src/workflows/workflow_MailxCCpp.xml.in.h:1
 #: ../src/workflows/workflow_Mailx.xml.in.h:1
 msgid "Send the problem data via email"
-msgstr ""
+msgstr "전자우편을 통해서 문제 자료를 전송합니다"
 
 #: ../src/workflows/workflow_MailxCCpp.xml.in.h:2
 #: ../src/workflows/workflow_Mailx.xml.in.h:2
 msgid "Analyze the problem locally and send information via email"
-msgstr ""
+msgstr "로컬에서 문제를 분석하고 전자우편을 통해서 정보를 전송합니다"
 
 #: ../src/workflows/workflow_UploadCCpp.xml.in.h:1
 #: ../src/workflows/workflow_Upload.xml.in.h:1
 msgid "Upload the problem data to a server"
-msgstr ""
+msgstr "문제 자료를 서버에 올립니다"
 
 #: ../src/workflows/workflow_UploadCCpp.xml.in.h:2
 #: ../src/workflows/workflow_Upload.xml.in.h:2
 msgid "Analyze the problem locally and upload the data via scp or ftp"
-msgstr ""
+msgstr "로컬에서 문제를 분석하고 scp나 ftp를 통해서 자료를 올립니다"
 
 #: ../src/workflows/workflow_uReport.xml.in.h:1
 msgid "Submit anonymous crash report"
-msgstr ""
+msgstr "익명 충돌 보고서를 제출합니다"
 
 #: ../src/workflows/workflow_uReport.xml.in.h:2
 msgid ""
 "Submit anonymous crash report - I do not want to be contacted by Red Hat "
 "Support"
-msgstr ""
+msgstr "익명 충돌 보고를 제출합니다 - Red Hat 지원에서 연락하는 것을 원하지 않습니다"
 
 #: ../src/workflows/workflow_RHELCCpp.xml.in.h:1
 #: ../src/workflows/workflow_RHELKerneloops.xml.in.h:1
@@ -3054,7 +3196,7 @@ msgstr ""
 #: ../src/workflows/workflow_RHELJava.xml.in.h:1
 #: ../src/workflows/workflow_RHELJavaScript.xml.in.h:1
 msgid "Ask Red Hat Support for help"
-msgstr ""
+msgstr "도움을 위해서 Red Hat 지원을 요청합니다"
 
 #: ../src/workflows/workflow_RHELCCpp.xml.in.h:2
 #: ../src/workflows/workflow_RHELKerneloops.xml.in.h:2
@@ -3067,7 +3209,7 @@ msgstr ""
 msgid ""
 "Create new Red Hat Support case - I would like to be contacted by Red Hat "
 "Support"
-msgstr ""
+msgstr "새로운 Red Hat 지원 경우를 생성합니다 - Red Hat 지원에서 연락 할 수 있습니다"
 
 #: ../src/workflows/workflow_RHELAddDataCCpp.xml.in.h:1
 #: ../src/workflows/workflow_RHELAddDataJava.xml.in.h:1
@@ -3078,7 +3220,7 @@ msgstr ""
 #: ../src/workflows/workflow_RHELAddDataxorg.xml.in.h:1
 #: ../src/workflows/workflow_RHELAddDataJavaScript.xml.in.h:1
 msgid "Attach crash data to an existing Red Hat support case"
-msgstr ""
+msgstr "기존 Red Hate 지원 경우에서 충돌 자료를 첨부합니다"
 
 #: ../src/workflows/workflow_RHELAddDataCCpp.xml.in.h:2
 #: ../src/workflows/workflow_RHELAddDataJava.xml.in.h:2
@@ -3089,7 +3231,7 @@ msgstr ""
 #: ../src/workflows/workflow_RHELAddDataxorg.xml.in.h:2
 #: ../src/workflows/workflow_RHELAddDataJavaScript.xml.in.h:2
 msgid "Provide Red Hat Support with crash details"
-msgstr ""
+msgstr "충돌 상세화를 Red Hat에 제공합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaCCpp.xml.in.h:1
 #: ../src/workflows/workflow_RHELBugzillaKerneloops.xml.in.h:1
@@ -3100,39 +3242,39 @@ msgstr ""
 #: ../src/workflows/workflow_RHELBugzillaJava.xml.in.h:1
 #: ../src/workflows/workflow_RHELBugzillaJavaScript.xml.in.h:1
 msgid "Report to Red Hat Bugzilla"
-msgstr ""
+msgstr "Red Hat 버그질라에 보고"
 
 #: ../src/workflows/workflow_RHELBugzillaCCpp.xml.in.h:2
 msgid "Process the C/C++ crash using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 C/C++을 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaKerneloops.xml.in.h:2
 msgid "Process the kerneloops using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 커널루프를 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaPython.xml.in.h:2
 msgid "Process the python exception using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 파이썬 예외를 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaVmcore.xml.in.h:2
 msgid "Process the kernel crash using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 커널 충돌을 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaXorg.xml.in.h:2
 msgid "Process the X Server problem using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 X 서버 문제를 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaLibreport.xml.in.h:2
 msgid "Process the problem using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 문제를 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaJava.xml.in.h:2
 msgid "Process the Java exception using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 자바 예외를 처리합니다"
 
 #: ../src/workflows/workflow_RHELBugzillaJavaScript.xml.in.h:2
 msgid "Process the JavaScript exception using the Red Hat infrastructure"
-msgstr ""
+msgstr "Red Hat 인프라스트럭처를 사용하여 자바스크립트 예외를 처리합니다"
 
 #~ msgid "Alternate GUI file"
 #~ msgstr "대체 GUI 파일 "
