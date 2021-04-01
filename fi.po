@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-03-16 06:01+0000\n"
+"PO-Revision-Date: 2021-04-02 19:01+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -583,6 +583,14 @@ msgid ""
 "   UPLOAD_DIR     - Directory where uploaded archives are stored\n"
 "   FILENAME       - Uploaded archive file name\n"
 msgstr ""
+"Käyttö: %s [-vd] ABRT_VÄLIAIKAIS_HAKEMISTO LÄHETYS_HAKEMISTO TIEDOSTONIMI\n"
+"\n"
+"    -v - monisanainen\n"
+"    -d - Poista ladattu arkisto\n"
+"    ABRT_VÄLIAIKAIS_HAKEMISTO - Hakemisto, johon kelvolliset ladatut "
+"arkistot puretaan\n"
+"    LÄHETYS_HAKEMISTO - Hakemisto, johon ladatut arkistot tallennetaan\n"
+"    TIEDOSTONIMI - Ladatun arkistotiedoston nimi\n"
 
 #: ../src/daemon/abrt-handle-upload.in:166
 #: ../src/daemon/abrt-handle-upload.in:169
@@ -704,12 +712,16 @@ msgid ""
 "Can't write to '%s'. Problem '%s' will not be removed from the ignored "
 "problems '%s'"
 msgstr ""
+"Ei voi kirjoittaa kohteeseen '%s'. Ongelmaa '%s' ei poisteta ohitetuista "
+"ongelmista '%s'"
 
 #. Something nefarious happened
 #: ../src/lib/ignored_problems.c:264
 #, c-format
 msgid "Can't rename '%s' to '%s'. Failed to remove problem '%s'"
 msgstr ""
+"Kohdetta '%s' ei voi nimetä uudelleen nimellä '%s'. Ongelman '%s' "
+"poistaminen epäonnistui"
 
 #: ../src/plugins/abrt-action-analyze-backtrace.c:41
 msgid ""
@@ -718,6 +730,11 @@ msgid ""
 "Analyzes C/C++ backtrace, generates duplication hash, backtrace rating,\n"
 "and identifies crash function in problem directory DIR"
 msgstr ""
+"& [vaihtoehdot] -d HAKEMISTO\n"
+"\n"
+"Analysoi C/C ++ pinolistauksen, luo päällekkäisen hajautusarvon, "
+"pinolistauksen luokituksen\n"
+"ja tunnistaa kaatuvan funktion ongelmahakemistossa HAKEMISTO"
 
 #.
 #. * The parser failed. Compute the duphash from the executable
