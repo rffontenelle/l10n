@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-04-01 17:01+0000\n"
+"PO-Revision-Date: 2021-04-04 08:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../src/cli/cli-report.c:156
 msgid "# Architecture"
-msgstr "# 아키텍처"
+msgstr "# 구조"
 
 #: ../src/cli/cli-report.c:157
 msgid "# Command line"
@@ -2643,11 +2643,11 @@ msgstr "Bug.search(빠른 검색) 반환 값은 구성 '결점(bug)'에 포함�
 #: ../src/plugins/mantisbt.c:123
 #, c-format
 msgid "MantisBT couldn't find parent of issue %d"
-msgstr "MantisBT는 사건 %d의 부모를 찾을 수 없습니다"
+msgstr "MantisBT는 사건 %d의 원인를 찾을 수 없습니다"
 
 #: ../src/plugins/mantisbt.c:180
 msgid "SOAP: Failed to get child element because of no parent."
-msgstr "SOAP: 부모가 없기 때문에 하위 요소 얻기에 실패했습니다."
+msgstr "SOAP: 원인이 없기 때문에 하위 요소 얻기에 실패했습니다."
 
 #: ../src/plugins/mantisbt.c:189
 msgid "SOAP: Failed to get next element because of no node."
@@ -2655,7 +2655,7 @@ msgstr "SOAP: 노드가 없기 때문에 다음 요소 얻기에 실패하였습
 
 #: ../src/plugins/mantisbt.c:198
 msgid "SOAP: Failed to get child node because of no parent."
-msgstr "SOAP: 부모가 없기 때문에 하위 노드 가져오기에 실패하였습니다."
+msgstr "SOAP: 원인이 없기 때문에 하위 노드 가져오기에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:219
 msgid "SOAP: Failed to parse xml during creating request."
