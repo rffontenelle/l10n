@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-04-04 08:01+0000\n"
+"PO-Revision-Date: 2021-04-11 17:02+0000\n"
 "Last-Translator: Abu Huraira <abuhuraira@tutamail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -186,6 +186,12 @@ msgid ""
 "With option 'Never' the stack trace will be always generated locally. With "
 "option 'Ask' ABRT will always ask the user."
 msgstr ""
+"স্ট্যাক ট্রেস উৎপন্ন করার জন্য coredump ফাইলটি প্রয়োজনীয় যা সময় এবং স্থান "
+"দখলকারী অপারেশন। এবিআরটি একটি সার্ভিস সরবরাহ করে যা coredump থেকে স্ট্যাক "
+"ট্রেস তৈরি করে তবে আপনাকে এই সার্ভিসে coredump টি আপলোড করতে হবে। 'সর্বদা' "
+"অপশনটির মাধ্যমে এবিআরটি সর্বদা জিজ্ঞাসা ব্যাতিরেকেই coredump ফাইল আপলোড করবে।"
+" বিকল্প 'কখনই নয়' দিয়ে স্ট্যাক ট্রেস সর্বদা স্থানীয়ভাবে উৎপন্ন হবে। "
+"'জিজ্ঞাসা করুন' বিকল্পের সাহায্যে এবিআরটি সর্বদা ব্যবহারকারীকে জিজ্ঞাসা করবে।"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:6
 msgid ""
@@ -194,6 +200,10 @@ msgid ""
 "directory. With this option disabled ABRT will move the problem directory "
 "without asking."
 msgstr ""
+"এবিআরটি ডিরেক্টরিগুলিতে সমস্যার ডেটা সঞ্চয় করে। যখনই এবিআরটি'র কোন লিখনযোগ্"
+"য ডিরেক্টরি প্রয়োজন হয়, ডিরেক্টরিটি সিস্টেম লোকেশন থেকে আপনার ইউজার "
+"ডিরেক্টরিতে স্থানান্তরিত হয়। এই অপশনটি নিষ্ক্রিয় করে রাখলে এবিআরটি জিজ্ঞাসা "
+"ছাড়াই সমস্যা ডিরেক্টরিটি সরিয়ে ফেলবে।"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:7
 msgid ""
@@ -202,6 +212,11 @@ msgid ""
 "uReport is sent at beginning of reporting process. With this option enabled "
 "uReports are sent automatically immediately after problem detection."
 msgstr ""
+"uReport কোনো সমস্যার সংক্ষিপ্ত এবং সম্পূর্ণ বেনামী বিবরণ। দ্রুত গ্লোবাল সদৃশ "
+"সনাক্তকরণের জন্য এবিআরটি ইউরিপোর্টসমূহ ব্যবহার করে। ডিফল্ট কনফিগারেশনে "
+"ইউরিপোর্ট রিপোর্টিং প্রক্রিয়ার শুরুতে প্রেরণ করা হয়। এই অপশনটি সক্রিয় করা "
+"থাকলে সমস্যা সনাক্তকরণের সাথে সাথেই ইউরিপোর্টগুলি স্বয়ংক্রিয়ভাবে প্রেরণ করা"
+" হয়।"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:8
 msgid ""
@@ -209,26 +224,33 @@ msgid ""
 "in problem notification bubble will be interrupted after uReport is sent. "
 "You can always use the default problem browser to make complete report."
 msgstr ""
+"এই অপশনটি সক্রিয় থাকলে রিপোর্ট বোতামে ক্লিক করলে রিপোর্টিং প্রসেসটি শুরু হবে"
+", অন্যথায় বিজ্ঞপ্তি বুদবুদ ইউরিপোর্ট প্রেরণের পরে নষ্ট হয়ে যাবে। সম্পূর্ণ "
+"প্রতিবেদন তৈরি করতে আপনি সর্বদা ডিফল্ট সমস্যা ব্রাউজার ব্যবহার করতে পারেন।"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:9
 msgid ""
 " With this option enabled ABRT never shows notifications of reported "
 "problems. Takes effect only if Shortened reporting is enabled."
 msgstr ""
+" এই অপশনটি সক্রিয় থাকলে এবিআরটি প্রতিবেদনকৃত সমস্যাটির জন্য আর বিজ্ঞপ্তি "
+"দেখাবে না। শুধুমাত্র সংক্ষিপ্ত রিপোর্টিং সক্রিয় থাকলে এটি কাজ করবে।"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:10
 msgid ""
 " With this option enabled ABRT always create bug ticket with restricted "
 "access if possibly sensitive data are detected."
 msgstr ""
+" এই অপশনটি সক্রিয় থাকলে এবিআরটি সর্বদা সীমাবদ্ধ অ্যাক্সেস সহ বাগ টিকিট তৈরি "
+"করে যদি কোনো সংবেদনশীল ডেটা সনাক্ত হয়।"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:11
 msgid "Request private ticket for sensitive information"
-msgstr ""
+msgstr "সংবেদনশীল তথ্যের জন্য ব্যক্তিগত টিকিট অনুরোধ করুন"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:12
 msgid "Notify incomplete problems"
-msgstr ""
+msgstr "অসম্পূর্ণ সমস্যাগুলি অবহিত করুন"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:13
 msgid ""
