@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2021-04-07 05:01+0000\n"
+"PO-Revision-Date: 2021-04-13 06:02+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/ko/>\n"
@@ -87,7 +87,7 @@ msgstr "이름"
 
 #: data/ui/oops-window.ui:226
 msgid "Version"
-msgstr "상태번호"
+msgstr "버전"
 
 #. Translators: A label for a date when the bug happened for the first time. Please keep this label short, below 156px if possible.
 #: data/ui/oops-window.ui:253
