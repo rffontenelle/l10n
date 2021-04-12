@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-04-07 07:01+0000\n"
+"PO-Revision-Date: 2021-04-13 07:02+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ko/>\n"
@@ -307,7 +307,7 @@ msgid ""
 msgstr ""
 "& [-v] [-c CONFFILE] [-r CHROOT] -d DIR\n"
 "\n"
-"꾸러미 자료저장소(database)를 문의(query)하고 꾸러미 및 구성 요소의 이름을 저장합니다"
+"꾸러미 데이타베이스를 문의하고 꾸러미 및 구성 요소의 이름을 저장합니다"
 
 #: ../src/daemon/abrt-action-save-package-data.c:469
 #: ../src/daemon/abrt-action-save-container-data.c:265
@@ -916,7 +916,7 @@ msgstr "'abrt_hash:{0}'에 버그질라 결점이 없습니다"
 
 #: ../src/plugins/abrt-action-find-bodhi-update:144
 msgid "Warning: abrt-bodhi do not support Product version 'Rawhide'"
-msgstr "경고: abrt-bodhi는 제품 상태번호 'Rawhide'를 지원하지 않습니다"
+msgstr "경고: abrt-bodhi는 제품 버전 'Rawhide'를 지원하지 않습니다"
 
 #: ../src/plugins/abrt-action-generate-backtrace.c:42
 msgid ""
@@ -1106,7 +1106,7 @@ msgstr "선택 무시"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:73
 msgid "OS release version"
-msgstr "OS 출시 상태번호"
+msgstr "OS 출시 버전"
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:62
 msgid ""
@@ -2170,7 +2170,7 @@ msgstr "이 꾸러미에 대한 최신화를 찾을 수 없음"
 #. strbuf_free(q);
 #: ../src/plugins/bodhi.c:607
 msgid "Local version of the package is newer than available updates"
-msgstr "꾸러미의 로컬 상태번호는 사용 가능한 최신화 보다 새로운 상태번호입니다"
+msgstr "꾸러미의 로컬 버전은 사용 가능한 최신화 보다 새로운 버전입니다"
 
 #: ../src/plugins/bodhi.c:635
 #, c-format
@@ -2401,7 +2401,7 @@ msgid ""
 msgstr ""
 "서버에 코어덤프를 업로드하는 것은 역추적을 발생시키고 이를 반환합니다. 만약 사용자가 코어덤프를 업로드 하는 것을 원하지 않으면 "
 "사건(event)은 내부분석을 수행합니다. 내부 분석은 만약 원격분석이 실패하면 사건(event)을 실행합니다. 장점: 디버그정보를 내려 "
-"받을 필요가 없습니다. 디버그정보의 재추적 서버의 자료저장소는 더 완벽합니다. 재추적 서버는 더 좋은 역추적을 발생합니다.단점: 당신이 "
+"받을 필요가 없습니다. 디버그정보의 재추적 서 버데이타 베스소는 더 완벽합니다. 재추적 서버는 더 좋은 역추적을 발생합니다.단점: 당신이 "
 "업로드한 코어덤프는 충돌된 프로그램에 개인적인 자료를 포함하여, 모든 자료가 포함됩니다."
 
 #: ../src/plugins/analyze_VMcore.xml.in.h:1
