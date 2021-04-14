@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-04-13 06:02+0000\n"
+"PO-Revision-Date: 2021-04-15 16:02+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -259,13 +259,13 @@ msgstr "사용자에 의해 내려받기가 취소되었습니다"
 #, python-brace-format
 msgid ""
 "Warning: Not enough free space in tmp dir '{0}' ({1:.2f}Mb left). Continue?"
-msgstr "경고: tmp dir '{0}' ({1:.2f}Mb left)에 여유 공간이 부족합니다. 진행할까요?"
+msgstr "경고: tmp 디렉토리에 '{0}' ({1:.2f}Mb left)에 여유 공간이 부족합니다. 진행할까요?"
 
 #: ../src/client-python/reportclient/debuginfo.py:375
 #, python-brace-format
 msgid ""
 "Warning: Not enough free space in cache dir '{0}' ({1:.2f}Mb left). Continue?"
-msgstr "경고: cache dir '{0}' ({1:.2f}Mb left)에 여유 공간이 없습니다. 진행할까요?"
+msgstr "경고: 캐쉬 디렉토리 '{0}' ({1:.2f}Mb left)에 여유 공간이 없습니다. 진행할까요?"
 
 #: ../src/client-python/reportclient/debuginfo.py:398
 #, python-brace-format
@@ -466,7 +466,7 @@ msgstr "비밀 값 '%s': %s 가져 올 수 없습니다"
 #: ../src/gtk-helpers/problem_details_widget.c:198
 #, c-format
 msgid "$DATA_DIRECTORY/%s (binary file, %s)"
-msgstr "$DATA_DIRECTORY/%s (이진 파일, %s)"
+msgstr "$DATA_DIRECTORY/%s (바이너리 파일, %s)"
 
 #: ../src/gtk-helpers/problem_details_dialog.c:30
 msgid "Problem details"
