@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: libreport 2.11.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-04-04 08:01+0000\n"
+"PO-Revision-Date: 2021-04-15 16:02+0000\n"
 "Last-Translator: Abu Huraira <abuhuraira@tutamail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/bn/>\n"
@@ -376,7 +376,7 @@ msgstr ""
 
 #: ../src/gtk-helpers/config_dialog.c:368 ../src/gui-wizard-gtk/wizard.c:3206
 msgid "_Close"
-msgstr ""
+msgstr "_বন্ধ করুন"
 
 #: ../src/gtk-helpers/event_config_dialog.c:140
 msgid "Show password"
@@ -466,7 +466,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/main.c:109
 msgid "Quit"
-msgstr ""
+msgstr "ছেড়ে যান"
 
 #: ../src/gui-wizard-gtk/main.c:153
 msgid ""
