@@ -8,13 +8,14 @@
 # Luca Ciavatta <luca.ciavatta@gmail.com>, 2016. #zanata
 # Milo Casagrande <milo@milo.name>, 2019. #zanata
 # Nathan <nathan95@live.it>, 2020.
+# Agostino Montanaro <telometto@protonmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2020-12-26 19:36+0000\n"
-"Last-Translator: Nathan <nathan95@live.it>\n"
+"PO-Revision-Date: 2021-05-26 19:02+0000\n"
+"Last-Translator: Agostino Montanaro <telometto@protonmail.com>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/it/>\n"
 "Language: it\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: data/ui/oops-menus.ui:8 data/ui/oops-window.ui:59
 msgid "_Report"
@@ -61,7 +62,7 @@ msgstr "_Informazioni report problema"
 #: src/org.freedesktop.GnomeAbrt.desktop.in:3
 #: src/org.freedesktop.GnomeAbrt.appdata.xml.in:6
 msgid "Problem Reporting"
-msgstr "Segnalazione problemi"
+msgstr "Segnalazione errori"
 
 #: data/ui/oops-window.ui:30
 msgid "Select multiple problems"
@@ -112,7 +113,7 @@ msgstr "Nessun sorgente selezionato."
 #. displayed when a user runs: `gnome-abrt --help'
 #: src/gnome-abrt:96
 msgid "Be verbose"
-msgstr "Prolisso"
+msgstr "Sii prolisso"
 
 #. Translators: This is a description of --problem command line option
 #. displayed when a user runs: `gnome-abrt --help'
@@ -136,7 +137,7 @@ msgstr "Sistema"
 #: src/org.freedesktop.GnomeAbrt.desktop.in:4
 #: src/org.freedesktop.GnomeAbrt.appdata.xml.in:7
 msgid "View and report application crashes"
-msgstr "Visualizza e notifica i crash dell'applicazione"
+msgstr "Visualizza e segnala i crash dell'applicazione"
 
 #: src/org.freedesktop.GnomeAbrt.desktop.in:5
 msgid "abrt;bug reporting;crash logger;"
