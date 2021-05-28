@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-05-12 12:10+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"PO-Revision-Date: 2021-05-30 07:02+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
 "Language: fi\n"
@@ -503,7 +503,7 @@ msgstr "Yhtäaikaisten säikeiden lukumäärä. Oletus on "
 
 #: ../src/daemon/abrt-upload-watch.c:283
 msgid "Maximal cache size in MiB. Default is "
-msgstr "Cachen maksimikoko MiB. Oletus on "
+msgstr "Välimuistin enimmäiskoko Mit:na. Oletus on "
 
 #: ../src/daemon/abrt-auto-reporting.c:198
 #: ../src/daemon/abrt-auto-reporting.c:206
