@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-04-15 16:02+0000\n"
+"PO-Revision-Date: 2021-06-14 11:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -2232,7 +2232,7 @@ msgstr "이 문제는 MantisBT에서 아직 보고 되지 않았기 때문에 Ma
 msgid ""
 "This problem has been reported to MantisBT '%s' which differs from the "
 "configured MantisBT '%s'."
-msgstr "이 문제는 구성된 MantisBT에서 차이나는 MantisBT에서 보고되어집니다 '%s'."
+msgstr "이 문제는 MantisBT '%s'(구성된 MantisBT'%s' 에서 다른 것 같은)에게 보고되어집니다'."
 
 #: ../src/plugins/reporter-mantisbt.c:390
 #, c-format
@@ -2707,7 +2707,7 @@ msgstr "SOAP: xml 노드 덤프에 실패하였습니다."
 
 #: ../src/plugins/mantisbt.c:375
 msgid "SOAP: Failed to print SOAP string."
-msgstr "SOAP: SOAP 문자열 출력에 실패하였습니다."
+msgstr "SOAP: 다음 SOAP 문자열 출력 실패."
 
 #: ../src/plugins/mantisbt.c:382
 msgid "Failed to dump xml node."
