@@ -13,13 +13,14 @@
 # Caio Fontes de Castro <caiofcastro@usp.br>, 2020.
 # Gustavo Costa <gusta@null.net>, 2021.
 # EDIVAN CARVALHO <edivancarvalho2008@hotmail.com>, 2021.
+# Marcus Gabaldo <gabaldo@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-02-17 02:40+0000\n"
-"Last-Translator: EDIVAN CARVALHO <edivancarvalho2008@hotmail.com>\n"
+"PO-Revision-Date: 2021-06-20 23:04+0000\n"
+"Last-Translator: Marcus Gabaldo <gabaldo@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.7\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -125,7 +126,7 @@ msgstr "# Motivo da falha"
 
 #: ../src/cli/cli-report.c:170
 msgid "# os-release configuration file from root dir"
-msgstr ""
+msgstr "# arquivo de configuração os-release do diretório raiz"
 
 #: ../src/cli/cli-report.c:175
 msgid "# Release string of the operating system from root dir"
