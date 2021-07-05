@@ -6,13 +6,14 @@
 # Andika Triwidada <andika@gmail.com>, 2017. #zanata, 2020.
 # Andika Triwidada <andika@gmail.com>, 2018. #zanata, 2020.
 # Andika Triwidada <andika@gmail.com>, 2019. #zanata, 2020.
+# Didik Supriadi <didiksupriadi41@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2020-01-28 16:16+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"PO-Revision-Date: 2021-07-06 02:04+0000\n"
+"Last-Translator: Didik Supriadi <didiksupriadi41@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/id/>\n"
 "Language: id\n"
@@ -20,11 +21,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #: data/ui/oops-menus.ui:8 data/ui/oops-window.ui:59
 msgid "_Report"
-msgstr "Lapo_rkan"
+msgstr "_Laporkan"
 
 #: data/ui/oops-menus.ui:12 data/ui/oops-menus.ui:36 data/ui/oops-window.ui:76
 msgid "_Delete"
@@ -32,11 +33,11 @@ msgstr "_Hapus"
 
 #: data/ui/oops-menus.ui:16 data/ui/oops-window.ui:321
 msgid "D_etails"
-msgstr "Rin_cian"
+msgstr "_Rincian"
 
 #: data/ui/oops-menus.ui:20
 msgid "_Open the problem data directory"
-msgstr "Buka direkt_ori data masalah"
+msgstr "_Buka direktori data masalah"
 
 #: data/ui/oops-menus.ui:24
 msgid "_Copy the problem ID to Clipboard"
@@ -134,7 +135,7 @@ msgstr "Sistem"
 #: src/org.freedesktop.GnomeAbrt.desktop.in:4
 #: src/org.freedesktop.GnomeAbrt.appdata.xml.in:7
 msgid "View and report application crashes"
-msgstr "Lihat dan laporkan crash aplikasi"
+msgstr "Lihat dan laporkan kerusakan aplikasi"
 
 #: src/org.freedesktop.GnomeAbrt.desktop.in:5
 msgid "abrt;bug reporting;crash logger;"
