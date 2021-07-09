@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Andika Triwidada <andika@gmail.com>, 2017. #zanata, 2020.
-# Andika Triwidada <andika@gmail.com>, 2018. #zanata, 2020.
-# Andika Triwidada <andika@gmail.com>, 2019. #zanata, 2020.
+# Andika Triwidada <andika@gmail.com>, 2017. #zanata, 2020, 2021.
+# Andika Triwidada <andika@gmail.com>, 2018. #zanata, 2020, 2021.
+# Andika Triwidada <andika@gmail.com>, 2019. #zanata, 2020, 2021.
 # Didik Supriadi <didiksupriadi41@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-abrt 1.2.9.3.g80d2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2021-07-06 02:04+0000\n"
-"Last-Translator: Didik Supriadi <didiksupriadi41@gmail.com>\n"
+"PO-Revision-Date: 2021-07-10 03:04+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/id/>\n"
 "Language: id\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: data/ui/oops-menus.ui:8 data/ui/oops-window.ui:59
 msgid "_Report"
-msgstr "_Laporkan"
+msgstr "Lapo_rkan"
 
 #: data/ui/oops-menus.ui:12 data/ui/oops-menus.ui:36 data/ui/oops-window.ui:76
 msgid "_Delete"
