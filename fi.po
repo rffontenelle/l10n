@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-07-29 18:04+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"PO-Revision-Date: 2021-10-01 06:05+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
 "Language: fi\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -796,8 +796,8 @@ msgid ""
 "your computer. ABRT will not allow you to create a report in a bug tracking "
 "system but you can contact kernel maintainers via e-mail."
 msgstr ""
-"Backtrace ei sisällä tarpeeksi merkityksellisiä toimintokehyksiä "
-"raportoitavaksi. Se on ärsyttävää, mutta se ei välttämättä merkitse "
+"Takaisin jäljitys ei sisällä tarpeeksi merkityksellisiä toimintokehyksiä "
+"raportoitavaksi. Se on kiusallista, mutta se ei välttämättä merkitse "
 "tietokoneen ongelmaa. ABRT ei salli sinun luoda raporttia "
 "virheenseurantajärjestelmässä, mutta voit ottaa yhteyttä ytimen ylläpitäjiin "
 "sähköpostitse."
@@ -928,12 +928,12 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:53
 msgid "Do not hash fingerprints"
-msgstr ""
+msgstr "Älä hajauta sormenjälkiä"
 
 #. Let user know what's going on
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:64
 msgid "Generating core_backtrace"
-msgstr "Luodaan core_backtrace"
+msgstr "Luodaan core_backtrace (ytimen takaisin jäljitys)"
 
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:81
 msgid "Error: GDB did not return any data"
@@ -955,7 +955,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:104
 msgid "{0} of debuginfo files are not installed"
-msgstr ""
+msgstr "{0} debuginfo-tiedostoista eivät ole asennettu"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:114
 #, c-format
@@ -1006,6 +1006,38 @@ msgid ""
 "    --releasever RELEASEVER\n"
 "                Pass this OS version to package managers.\n"
 msgstr ""
+"Käyttö: %s [-vy] [--ids=BUILD_IDS_TIEDOSTO] [--pkgmgr=(yum|dnf)]\n"
+"       [--tmpdir=TMPDIR] [--cache=CACHEDIR[:DEBUGINFODIR1:DEBUGINFODIR2...]] "
+"[--size_mb=KOKO]\n"
+"       [-e, --exact=PATH[:PATH...]]\n"
+"       [--releasever=RELEASEVER] [--repo=PATTERN]\n"
+"\n"
+"Asenna vianetsintätiedot kaikille BUILD_IDS_TIEDOSTO:ssa luetelluille "
+"rakennustunnuksille\n"
+"CACHEDIRiin käyttämällä TMPDIR: tä väliaikaisena pysähdysalueena.\n"
+"CACHEDIRin vanhat tiedostot poistetaan, kunnes ne ovat pienempiä kuin KOKO.\n"
+"\n"
+"Lukee määritykset /etc/abrt/plugins/CCpp.conf\n"
+"\n"
+"    -v                  Runsas\n"
+"    -y                  Ei-vuorovaikutteinen; oleta \"kyllä\" kaikkiin "
+"kysymyksiin\n"
+"    --ids             Oletus: build_ids\n"
+"    --tmpdir     Default: @LARGE_DATA_TMP_DIR@/abrt-tmp-debuginfo-"
+"RANDOM_SUFFIX\n"
+"    --cache       Kaksoispiste-erotettu luettelo hakemistoista. Ensimmäistä "
+"käytetään\n"
+"                          asennettujen virheenkorjaustietojen tallentamiseen."
+"\n"
+"                          Default: /var/cache/abrt-di\n"
+"    --size_mb   Oletus: 4096\n"
+"    --pkgmgr    Oletus: PackageManager CCpp.conf:sta tai 'dnf':sta\n"
+"    -e,--exact    Lataa vain määritetyt tiedostot\n"
+"    --repo           Malli, jota käytetään ohjelmistolähteitä etsittäessä.\n"
+"                            Oletus: *debug*\n"
+"    --releasever JULKAISUVER\n"
+"                              Välitä tämä käyttöjärjestelmän versio "
+"pakettien ylläpitäjille\n"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:290
 msgid "Exiting on user command"
@@ -1022,7 +1054,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:68
 msgid "Noninteractive, assume 'Yes' to all questions"
-msgstr ""
+msgstr "Ei-vuorovaikutteinen; oleta \"kyllä\" kaikkiin kysymyksiin"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:69
 msgid "- means STDIN, default: build_ids"
@@ -1042,7 +1074,7 @@ msgstr "huomiotta jätetty valinta"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:73
 msgid "OS release version"
-msgstr ""
+msgstr "Käyttöjärjestelmän julkaisuversio"
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:62
 msgid ""
@@ -1050,12 +1082,17 @@ msgid ""
 "'No', a stack trace will be generated locally. (It may download a huge "
 "amount of data)."
 msgstr ""
+"Sopiiko ydinjätteen lataaminen? Se voi sisältää arkaluonteisia tietoja. Jos "
+"vastauksesi on 'Ei', pinojälki luodaan paikallisesti. Se voi ladata valtavan "
+"määrän dataa."
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:71
 msgid ""
 "Do you want to generate a stack trace locally? (It may download a huge "
 "amount of data but reporting can't continue without stack trace)."
 msgstr ""
+"Haluatko luoda pinonjäljen paikallisesti? Se voi ladata valtavan määrän "
+"dataa, mutta raportointi ei voi jatkua ilman pinonjälkeä."
 
 #: ../src/plugins/abrt-action-trim-files.c:222
 msgid ""
@@ -1096,6 +1133,8 @@ msgstr "Käyttö: %s [-v]"
 #: ../src/plugins/abrt-action-ureport:114
 msgid "Unable to get current working directory as it was probably deleted"
 msgstr ""
+"Nykyisen työhakemiston hakeminen epäonnistui, koska se on todennäköisesti "
+"poistettu"
 
 #: ../src/plugins/abrt-action-ureport:143
 msgid "A bug was already filed about this problem:"
@@ -1108,10 +1147,12 @@ msgstr "uReport lähetettiin jo, ei lähetetä uudelleen"
 #: ../src/plugins/abrt-action-ureport:174
 msgid "Problem comes from unpackaged executable. Unable to create uReport."
 msgstr ""
+"Ongelma johtuu pakkaamattomasta suoritettavasta tiedostosta. uReportin "
+"luominen epäonnistui."
 
 #: ../src/plugins/abrt-action-ureport:189
 msgid "Adding you to CC List of the existing bugzilla bug"
-msgstr ""
+msgstr "Lisätään sinut CC-luetteloon olemassa olevaa bugzilla-virhettä"
 
 #: ../src/plugins/abrt-action-ureport:203
 #, c-format
@@ -1120,11 +1161,11 @@ msgstr "reporter-ureport epäonnistui poistumiskoodilla %d"
 
 #: ../src/plugins/abrt-gdb-exploitable:524
 msgid "Signal sent by userspace code"
-msgstr ""
+msgstr "Käyttäjätilan koodin lähettämä signaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:528
 msgid "Signal sent by timer/IO/async event"
-msgstr ""
+msgstr "timer/IO/async event:n lähettämä signaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:536
 msgid "Signal has siginfo.si_code = SI_USER"
@@ -1142,7 +1183,7 @@ msgstr "näppäimistön lähettämä signaali"
 #: ../src/plugins/abrt-gdb-exploitable:549
 #: ../src/plugins/abrt-gdb-exploitable:574
 msgid "Job control signal sent by kernel"
-msgstr ""
+msgstr "Ytimen lähettämä työohjaussignaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:553
 #: ../src/plugins/abrt-gdb-exploitable:582
@@ -1152,7 +1193,7 @@ msgstr "ikkunan koon muuttamisen lähettämä signaali"
 #: ../src/plugins/abrt-gdb-exploitable:557
 #: ../src/plugins/abrt-gdb-exploitable:586
 msgid "Signal sent by alarm(N) expiration"
-msgstr ""
+msgstr "alarm(N) vanhenemisen lähettämä signaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:578
 msgid "Signal due to write to broken pipe"
@@ -1192,11 +1233,11 @@ msgstr ""
 
 #: ../src/plugins/abrt-gdb-exploitable:642
 msgid "Non-crash related signal"
-msgstr ""
+msgstr "Ei kaatumiseen liittyvä signaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:647
 msgid "Stack overflow"
-msgstr ""
+msgstr "Pinon ylivuoto"
 
 #: ../src/plugins/abrt-gdb-exploitable:651
 msgid "Write to an invalid address"
@@ -1204,7 +1245,7 @@ msgstr "Kirjoitus virheelliseen osoitteeseen"
 
 #: ../src/plugins/abrt-gdb-exploitable:655
 msgid "Subroutine return to an invalid address (corrupted stack?)"
-msgstr ""
+msgstr "Alirutiini palaa virheelliseen osoitteeseen (vioittunut pino?)"
 
 #: ../src/plugins/abrt-gdb-exploitable:661
 #: ../src/plugins/abrt-gdb-exploitable:665
@@ -1215,10 +1256,12 @@ msgstr "Hyppy virheelliseen osoitteeseen"
 msgid ""
 "Access past the end of mapped file, invalid address, unaligned access, etc."
 msgstr ""
+"Pääsy kartoitetun tiedoston lopussa, virheellinen osoite, kohdistamaton "
+"pääsy, jne."
 
 #: ../src/plugins/abrt-gdb-exploitable:688
 msgid "Can't get signal no and do exploitability analysis\n"
-msgstr ""
+msgstr "Ei voi saada signaalia 'ei' ja tehdä hyväksikäyttöanalyysi\n"
 
 #: ../src/plugins/abrt-gdb-exploitable:701
 msgid "Likely crash reason: "
@@ -1234,7 +1277,7 @@ msgstr "Tämänhetkiset ohjeet: "
 
 #: ../src/plugins/abrt-gdb-exploitable:706
 msgid "Exploitability analysis came up empty\n"
-msgstr ""
+msgstr "Hyödyllisyysanalyysi tuli tyhjäksi\n"
 
 #: ../src/plugins/abrt-watch-log.c:129 ../src/plugins/abrt-retrace-client.c:159
 #: ../src/plugins/abrt-retrace-client.c:213
@@ -1273,6 +1316,7 @@ msgstr "Tulosta löydetyt oopsit vakiotulosteeseen"
 #: ../src/plugins/abrt-dump-journal-oops.c:227
 msgid "Create new problem directory in DIR for every oops found"
 msgstr ""
+"Luo uusi ongelmahakemisto DIR:iin jokaiselle löydetylle \"oho\"-merkinnälle"
 
 #: ../src/plugins/abrt-dump-oops.c:103
 #: ../src/plugins/abrt-dump-journal-core.c:564
@@ -1285,7 +1329,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-dump-oops.c:104
 msgid "Save the extracted information in PROBLEM"
-msgstr ""
+msgstr "Tallenna talteen otetut tiedot PROBLEM:iin"
 
 #: ../src/plugins/abrt-dump-oops.c:105
 #: ../src/plugins/abrt-dump-journal-oops.c:229
@@ -1311,11 +1355,11 @@ msgstr "regex:n kokoaminen epäonnistui"
 
 #: ../src/plugins/abrt-dump-oops.c:177
 msgid "Can't update the problem: no oops found"
-msgstr ""
+msgstr "Ongelmaa ei voi päivittää; ei \"oho\":ta löytynyt"
 
 #: ../src/plugins/abrt-dump-oops.c:183
 msgid "More oopses found: process only the first one"
-msgstr ""
+msgstr "Löytyi lisää \"oho\":ja: käsittele vain ensimmäinen"
 
 #: ../src/plugins/abrt-dump-journal-core.c:378
 #, c-format
@@ -1325,7 +1369,7 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-core.c:407
 #: ../src/plugins/abrt-dump-journal-core.c:446
 msgid "Failed to obtain all required information from journald"
-msgstr ""
+msgstr "Kaikkien vaadittujen tietojen saaminen journaldilta epäonnistui"
 
 #. We don't want to update the counter here.
 #: ../src/plugins/abrt-dump-journal-core.c:470
@@ -1335,17 +1379,17 @@ msgstr ""
 
 #: ../src/plugins/abrt-dump-journal-core.c:478
 msgid "Failed to print detect problem data to stdout"
-msgstr ""
+msgstr "Tunnistusongelmatietojen tulostaminen stdout:een epäonnistui"
 
 #: ../src/plugins/abrt-dump-journal-core.c:486
 msgid "Failed to save detect problem data in abrt database"
-msgstr ""
+msgstr "Tunnistusongelmatietojen tulostaminen abrt-tietokantaan epäonnistui"
 
 #: ../src/plugins/abrt-dump-journal-core.c:507
 #: ../src/plugins/abrt-dump-journal-oops.c:168
 #: ../src/plugins/abrt-dump-journal-xorg.c:123
 msgid "Failed to initialize systemd-journal watch"
-msgstr ""
+msgstr "Systemd-journal-kellon alustaminen epäonnistui"
 
 #: ../src/plugins/abrt-dump-journal-core.c:527
 msgid ""
@@ -1361,10 +1405,22 @@ msgid ""
 "\n"
 "The last seen position is saved in "
 msgstr ""
+"& [-vsf] [-e]/[-c CURSOR] [-t INT]/[-T] [-d DIR]/[-D]\n"
+"\n"
+"Pura coredumpit systemd-journalista\n"
+"\n"
+"Asetukset '-c'- ja '-e' ovat ristiriidassa, koska molemmat määrittävät "
+"ensimmäisen luetun viestin.\n"
+"\n"
+"'-e' on hyödyllinen vain '-f': lle, koska päiväkirjan seuraaminen alkaa "
+"lukemalla\n"
+"koko päiväkirja, jos viimeksi nähtyä omaisuutta ei ole saatavilla.\n"
+"\n"
+"Tähän tallennetaan viimeksi nähty sijainti "
 
 #: ../src/plugins/abrt-dump-journal-core.c:563
 msgid "Create new problem directory in DIR for every coredump"
-msgstr ""
+msgstr "Luo uusi ongelmahakemisto DIR: lle jokaiselle ydinjätteelle"
 
 #: ../src/plugins/abrt-dump-journal-core.c:565
 #: ../src/plugins/abrt-dump-journal-oops.c:231
@@ -1390,13 +1446,13 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-oops.c:233
 #: ../src/plugins/abrt-dump-journal-xorg.c:199
 msgid "Follow systemd-journal from the last seen position (if available)"
-msgstr ""
+msgstr "Seuraa systemd-journalia viimeksi nähtystä sijainnista (jos saatavilla)"
 
 #: ../src/plugins/abrt-dump-journal-core.c:570
 #: ../src/plugins/abrt-dump-journal-oops.c:234
 #: ../src/plugins/abrt-dump-journal-xorg.c:200
 msgid "Read journal files from all machines"
-msgstr ""
+msgstr "Lue päiväkirjan tiedostoja kaikista koneista"
 
 #: ../src/plugins/abrt-dump-journal-core.c:571
 #: ../src/plugins/abrt-dump-journal-oops.c:235
@@ -1421,7 +1477,7 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-oops.c:287
 #: ../src/plugins/abrt-dump-journal-xorg.c:286
 msgid "Cannot open systemd-journal"
-msgstr ""
+msgstr "Systemd-journalia ei voi avata"
 
 #: ../src/plugins/abrt-dump-journal-core.c:636
 msgid "Cannot filter systemd-journal to systemd-coredump data only"
@@ -1431,7 +1487,7 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-oops.c:296
 #: ../src/plugins/abrt-dump-journal-xorg.c:299
 msgid "Cannot seek to the end of journal"
-msgstr ""
+msgstr "Ei voi hakea päiväkirjan loppuun"
 
 #: ../src/plugins/abrt-dump-journal-core.c:644
 #: ../src/plugins/abrt-dump-journal-oops.c:312
@@ -1443,7 +1499,7 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-oops.c:40
 #: ../src/plugins/abrt-dump-journal-xorg.c:53
 msgid "Cannot read journal data."
-msgstr ""
+msgstr "Päiväkirjan tietoja ei voi lukea."
 
 #: ../src/plugins/abrt-dump-journal-oops.c:189
 msgid ""
@@ -1472,7 +1528,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:62
 msgid "Failed to parse Backtrace from journal"
-msgstr ""
+msgstr "Päiväkirjan taaksepäin jäljityksen jäsentäminen epäonnistui"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:145
 #, c-format
@@ -1500,7 +1556,7 @@ msgstr "Tulosta löydetyt kaatumiset vakiotulosteeseen"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:193
 msgid "Create new problem directory in DIR for every crash found"
-msgstr ""
+msgstr "Luo uusi ongelmahakemisto DIR:iin jokaisesta löydetystä kaatumisesta"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:202
 msgid "Journal filter e.g. '_COMM=gdm-x-session' (may be given many times)"
@@ -2031,14 +2087,18 @@ msgid ""
 "\n"
 "Scans files for split oops message. Can print and/or delete them."
 msgstr ""
+"& [-v] [-od] TIEDOSTO...\n"
+"\n"
+"Etsii tiedostoja jaettu 'oho' -viestin löytämiseksi. Voi tulostaa ja/tai "
+"poistaa ne."
 
 #: ../src/hooks/abrt-merge-pstoreoops.c:97
 msgid "Print found oopses"
-msgstr ""
+msgstr "Tulosta löydetyt 'oho':t"
 
 #: ../src/hooks/abrt-merge-pstoreoops.c:98
 msgid "Delete files with found oopses"
-msgstr ""
+msgstr "Poista tiedostot, joilla on löydettyjä 'oho':ja"
 
 #: ../src/cli/abrtcli/match.py:117
 msgid "No matching problems found"
@@ -2050,11 +2110,11 @@ msgstr "Ei ilmoitettavissa"
 
 #: ../src/cli/abrtcli/cli/__init__.py:30
 msgid "increase output verbosity"
-msgstr ""
+msgstr "lisää tulosteen runsautta"
 
 #: ../src/cli/abrtcli/cli/__init__.py:50
 msgid "positive non-zero integer expected"
-msgstr ""
+msgstr "positiivista nollasta poikkeavaa kokonaislukua odotettu"
 
 #: ../src/cli/abrtcli/cli/__init__.py:54
 msgid "filter last N problems"
@@ -2062,7 +2122,7 @@ msgstr "suodata viimeiset N ongelmaa"
 
 #: ../src/cli/abrtcli/cli/__init__.py:57
 msgid "filter problems with matching component"
-msgstr ""
+msgstr "suodata ongelmia vastaavan komponentin kanssa"
 
 #: ../src/cli/abrtcli/cli/__init__.py:59
 msgid "filter unreported problems"
@@ -2070,23 +2130,23 @@ msgstr "suodata ilmoittamattomat ongelmat"
 
 #: ../src/cli/abrtcli/cli/__init__.py:61
 msgid "filter problems older than the specified timestamp"
-msgstr ""
+msgstr "suodata määritettyä aikaleimaa vanhemmat ongelmat"
 
 #: ../src/cli/abrtcli/cli/__init__.py:63
 msgid "filter problems newer than the specified timestamp"
-msgstr ""
+msgstr "suodata ongelmia, jotka ovat uudempia kuin määritetty aikaleima"
 
 #: ../src/cli/abrtcli/cli/__init__.py:66
 msgid "filter problems with matching executable"
-msgstr ""
+msgstr "suodata ongelmia suoritettavan tiedoston kanssa"
 
 #: ../src/cli/abrtcli/cli/__init__.py:71
 msgid "output format"
-msgstr ""
+msgstr "tulostusmuoto"
 
 #: ../src/cli/abrtcli/cli/__init__.py:74
 msgid "built-in output format"
-msgstr ""
+msgstr "sisäänrakennettu tulostusmuoto"
 
 #: ../src/cli/abrtcli/cli/__init__.py:79
 msgid "path to the problem directory, problem ID or wildcard"
@@ -2094,11 +2154,11 @@ msgstr "polku ongelman hakemistoon, ongelman tunnukseen tai jokeriin"
 
 #: ../src/cli/abrtcli/cli/backtrace.py:35
 msgid "Problem has no backtrace"
-msgstr ""
+msgstr "Ongelmalla ei ole taaksepäin jäljitystä"
 
 #: ../src/cli/abrtcli/cli/backtrace.py:37
 msgid "Start retracing process?"
-msgstr ""
+msgstr "Aloitetaanko taaksepäin jäljitys?"
 
 #: ../src/cli/abrtcli/cli/gdb.py:25
 msgid "install debuginfo packages before launching GDB"
@@ -2106,7 +2166,7 @@ msgstr "asenna virheenkorjauspaketit ennen GDB:n käynnistämistä"
 
 #: ../src/cli/abrtcli/cli/gdb.py:38
 msgid "The problem is not of a C/C++ type. Can't run GDB"
-msgstr ""
+msgstr "Ongelma ei ole C/C++-tyyppinen. GDB:ta ei voi ajaa"
 
 #: ../src/cli/abrtcli/cli/gdb.py:52
 #: ../src/cli/abrtcli/cli/install_debuginfo.py:45
@@ -2114,10 +2174,12 @@ msgid ""
 "Permission denied: '{}'\n"
 "If this is a system problem try running this command as root"
 msgstr ""
+"Lupa evätty: '{}'\n"
+"Jos tämä on järjestelmäongelma, kokeile suorittaa tämä komento root:na"
 
 #: ../src/cli/abrtcli/cli/install_debuginfo.py:36
 msgid "The problem is not of a C/C++ type. Can't install debuginfo"
-msgstr ""
+msgstr "Ongelma ei ole C/C++-tyyppinen. debuginfo:ta ei voi asentaa"
 
 #: ../src/cli/abrtcli/cli/list.py:34
 msgid "No problems"
@@ -2155,7 +2217,7 @@ msgstr "Ilmoita ongelmasta %s\n"
 
 #: ../src/cli/abrtcli/cli/retrace.py:24
 msgid "perform retracing locally"
-msgstr ""
+msgstr "suorita taaksepäin jäljitys paikallisesti"
 
 #: ../src/cli/abrtcli/cli/retrace.py:26
 msgid "submit core dump for remote retracing"
@@ -2163,23 +2225,25 @@ msgstr "lähetä muistivedos etäjäljitystä varten"
 
 #: ../src/cli/abrtcli/cli/retrace.py:29
 msgid "force retracing"
-msgstr ""
+msgstr "pakota taaksepäin jäljitys"
 
 #: ../src/cli/abrtcli/cli/retrace.py:47
 msgid "Problem already has a backtrace"
-msgstr ""
+msgstr "Ongelmalla on jo taaksepäin jäljitys"
 
 #: ../src/cli/abrtcli/cli/retrace.py:48
 msgid "Run abrt retrace with -f/--force to retrace again"
 msgstr ""
+"Suorita ’abrt retrace’ ’-f/--force’:lla uudelleen taaksepäin jäljittämistä "
+"varten"
 
 #: ../src/cli/abrtcli/cli/retrace.py:49
 msgid "Show backtrace?"
-msgstr ""
+msgstr "Näytetäänkö taaksepäin jäljitys?"
 
 #: ../src/cli/abrtcli/cli/retrace.py:52
 msgid "No retracing possible for this problem type"
-msgstr ""
+msgstr "Tämän ongelmatyypin uudelleenjäljitys ei ole mahdollista"
 
 #: ../src/cli/abrtcli/cli/retrace.py:56
 msgid ""
@@ -2188,32 +2252,39 @@ msgid ""
 "Local retracing requires downloading potentially large amount of debuginfo "
 "data"
 msgstr ""
+"Ladataanko ydinsuoritus ja suoritetaan etäällä uudelleenjäljitys? Se voi "
+"sisältää arkaluonteisia tietoja. Jos vastauksesi on ’Ei’, pinojälki luodaan "
+"paikallisesti. Paikallinen uudelleenjäljitys edellyttää mahdollisesti suuren "
+"määrän virheenkorjaustiedon lataamista"
 
 #: ../src/cli/abrtcli/cli/retrace.py:71
 msgid "Remote retracing"
-msgstr ""
+msgstr "Etäinen uudelleenjäljitys"
 
 #: ../src/cli/abrtcli/cli/retrace.py:74
 msgid "Local retracing"
-msgstr ""
+msgstr "Paikallinen uudelleenjäljitys"
 
 #: ../src/cli/abrtcli/cli/status.py:17
 msgid "show only the number of problems"
-msgstr ""
+msgstr "näytä vain ongelmien määrä"
 
 #: ../src/cli/abrtcli/cli/status.py:19
 msgid "only show output if at least one problem is found"
-msgstr ""
+msgstr "näytä tulostus vain, jos vähintään yksi ongelma löytyy"
 
 #: ../src/cli/abrtcli/cli/status.py:40
 msgid "ABRT has detected a problem. For more information, run “abrt list{}”"
 msgstr ""
+"ABRT on havainnut ongelman. Saat lisätietoja suorittamalla \"abrt list {}\""
 
 #: ../src/plugins/analyze_CCpp.xml.in.h:1
 msgid ""
 "Send core dump to remote retrace server for analysis or perform local "
 "analysis if the remote analysis fails"
 msgstr ""
+"Lähetä ydinvedos etäiselle uudelleenjäljityspalvelimelle analysoitavaksi tai "
+"suorita paikallinen analyysi, jos etäanalyysi epäonnistuu"
 
 #: ../src/plugins/analyze_CCpp.xml.in.h:2
 msgid ""
@@ -2225,6 +2296,14 @@ msgid ""
 "you upload contains all the data from the crashed program, including your "
 "private data, if any."
 msgstr ""
+"Lataa ydinvedoksen palvelimelle, joka luo taaksepäin jäljityksen ja "
+"palauttaa sen. Jos käyttäjä ei halua ladata ydinvedostaan minne tahansa, "
+"tapahtuma suorittaa paikallisen analyysin. Paikallinen analyysi suoritetaan, "
+"jos etäanalyysi epäonnistuu. Plussat: debuginfo-latauksia ei tarvita. "
+"Uudelleenjäljityspalvelimen virheenkorjaustietokanta on täydellisempi. "
+"Uudelleenjäljityspalvelin voi luoda parempia jälkiä. Miinukset: lataamasi "
+"ydinvedos sisältää kaikki kaatuneen ohjelman tiedot, myös mahdolliset "
+"yksityiset tietosi."
 
 #: ../src/plugins/analyze_VMcore.xml.in.h:1
 msgid "Analyze VM core"
@@ -2292,11 +2371,11 @@ msgstr ""
 
 #: ../src/plugins/post_report.xml.in.h:1
 msgid "Post report"
-msgstr ""
+msgstr "Lähetä raportti"
 
 #: ../src/plugins/post_report.xml.in.h:2
 msgid "Executed after the reporting is finished"
-msgstr ""
+msgstr "Suoritetaan raportoinnin päätyttyä"
 
 #: ../src/plugins/post_report.xml.in.h:3
 msgid "Used for updating of the databases"
