@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-10-02 16:05+0000\n"
+"PO-Revision-Date: 2021-10-07 20:05+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -1059,6 +1059,12 @@ msgid ""
 "Installs debuginfo packages for all build-ids listed in BUILD_IDS_FILE to\n"
 "ABRT system cache."
 msgstr ""
+"& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
+"\t[-r REPO]\n"
+"\n"
+"Asentaa debuginfo-paketit kaikille rakennustunnuksille, jotka on lueteltu "
+"tiedostossa BUILD_IDS_FILE\n"
+"ABRT-järjestelmän välimuistiin."
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:68
 msgid "Noninteractive, assume 'Yes' to all questions"
@@ -1066,7 +1072,7 @@ msgstr "Ei-vuorovaikutteinen; oleta \"kyllä\" kaikkiin kysymyksiin"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:69
 msgid "- means STDIN, default: build_ids"
-msgstr ""
+msgstr "- tarkoittaa STDIN, oletus: build_ids"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:70
 msgid "Download only specified files"
@@ -1074,7 +1080,7 @@ msgstr "Lataa vain määritellyt tiedostot"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:71
 msgid "Pattern to use when searching for repos, default: *debug*"
-msgstr ""
+msgstr "Kaava, jota käytetään etsittäessä repoja, oletus: *debug *"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:72
 msgid "Ignored option"
@@ -1110,6 +1116,11 @@ msgid ""
 "SIZE.\n"
 "FILEs are preserved (never deleted)."
 msgstr ""
+"& [-v] [-d SIZE:DIR]... [-f SIZE:DIR]... [-p DIR] [FILE]...\n"
+"\n"
+"Poistaa DIR-tiedostoista ongelmatiedot (-d) tai tiedostot (-f), kunnes ne "
+"ovat pienempiä kuin SIZE.\n"
+"TIEDOSTOT säilytetään (ei koskaan poisteta)."
 
 #: ../src/plugins/abrt-action-trim-files.c:236
 msgid "Delete whole problem directories"
