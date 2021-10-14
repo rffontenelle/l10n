@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-10-07 20:05+0000\n"
+"PO-Revision-Date: 2021-10-15 10:05+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -1534,6 +1534,18 @@ msgid ""
 "\n"
 "The last seen position is saved in "
 msgstr ""
+"& [-vsoxtf] [-e]/[-c CURSOR] [-d DIR]/[-D]\n"
+"\n"
+"Pura coredumpit systemd-journalista\n"
+"\n"
+"Asetukset '-c'- ja '-e' ovat ristiriidassa, koska molemmat määrittävät "
+"ensimmäisen luetun viestin.\n"
+"\n"
+"'-e' on hyödyllinen vain '-f': lle, koska päiväkirjan seuraaminen alkaa "
+"lukemalla\n"
+"koko päiväkirja, jos viimeksi nähtyä omaisuutta ei ole saatavilla.\n"
+"\n"
+"Tähän tallennetaan viimeksi nähty sijainti "
 
 #: ../src/plugins/abrt-dump-journal-oops.c:291
 msgid "Cannot filter systemd-journal to kernel data only"
@@ -1604,11 +1616,11 @@ msgstr "Tulosta löydetyt kaatumiset vakiotulosteeseen"
 
 #: ../src/plugins/abrt-dump-xorg.c:54
 msgid "Create problem directory in DIR for every crash found"
-msgstr ""
+msgstr "Luo uusi ongelmahakemisto DIR:iin jokaisesta löydetystä kaatumisesta"
 
 #: ../src/plugins/abrt-dump-xorg.c:108
 msgid "Failed to parse Backtrace from log file"
-msgstr ""
+msgstr "Päiväkirjan taaksepäin jäljityksen jäsentäminen epäonnistui"
 
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:274
