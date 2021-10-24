@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-10-15 10:05+0000\n"
+"PO-Revision-Date: 2021-10-25 18:05+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -1142,7 +1142,7 @@ msgstr "'%s' ei voida käynnistää, virheilmoitus: '%s'"
 #: ../src/plugins/abrt-action-ureport:65
 #, c-format
 msgid "Not a number in file '%s'"
-msgstr ""
+msgstr "Ei numero tiedostossa '%s'"
 
 #: ../src/plugins/abrt-action-ureport:93
 #, c-format
@@ -1188,11 +1188,11 @@ msgstr "timer/IO/async event:n lähettämä signaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:536
 msgid "Signal has siginfo.si_code = SI_USER"
-msgstr ""
+msgstr "Signaalilla on siginfo.si_code = SI_USER"
 
 #: ../src/plugins/abrt-gdb-exploitable:539
 msgid "Signal due to write to closed pipe"
-msgstr ""
+msgstr "Signaali kirjoittaa suljettuun putkeen"
 
 #: ../src/plugins/abrt-gdb-exploitable:545
 #: ../src/plugins/abrt-gdb-exploitable:570
@@ -1216,11 +1216,11 @@ msgstr "alarm(N) vanhenemisen lähettämä signaali"
 
 #: ../src/plugins/abrt-gdb-exploitable:578
 msgid "Signal due to write to broken pipe"
-msgstr ""
+msgstr "Signaali kirjoittaa rikkinäiseen putkeen"
 
 #: ../src/plugins/abrt-gdb-exploitable:602
 msgid "ABRT signal (abort() was called?)"
-msgstr ""
+msgstr "ABRT-signaali (kutsuttiinko abort()?)"
 
 #: ../src/plugins/abrt-gdb-exploitable:611
 msgid "XCPU signal (over CPU time limit)"
