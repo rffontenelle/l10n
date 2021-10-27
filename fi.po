@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-10-25 18:05+0000\n"
+"PO-Revision-Date: 2021-10-28 12:32+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -1232,11 +1232,11 @@ msgstr "XFSZ singaali(yli tiedostokoon rajan)"
 
 #: ../src/plugins/abrt-gdb-exploitable:619
 msgid "TRAP signal (can be a bug in a debugger/tracer)"
-msgstr ""
+msgstr "TRAP-signaali (voi olla virhe debuggerissa/jäljittäjässä)"
 
 #: ../src/plugins/abrt-gdb-exploitable:623
 msgid "SYS signal (unknown syscall was called?)"
-msgstr ""
+msgstr "SYS-signaali (kutsuttiinko tuntematonta syscall:ia?)"
 
 #: ../src/plugins/abrt-gdb-exploitable:628
 msgid "Arithmetic exception"
@@ -1248,7 +1248,7 @@ msgstr "Jako nollalla"
 
 #: ../src/plugins/abrt-gdb-exploitable:636
 msgid "Illegal instruction (jump to a random address?)"
-msgstr ""
+msgstr "Laiton ohje (hyppäys satunnaiseen osoitteeseen?)"
 
 #: ../src/plugins/abrt-gdb-exploitable:642
 msgid "Non-crash related signal"
@@ -1310,10 +1310,13 @@ msgid ""
 "\n"
 "Watch log file FILE, run PROG when it grows or is replaced"
 msgstr ""
+"& [-vs] [-F STR]... FILE PROG [ARGS]\n"
+"\n"
+"Katso lokitiedosto FILE, suorita PROG, kun se kasvaa tai korvataan"
 
 #: ../src/plugins/abrt-watch-log.c:177
 msgid "Don't run PROG if STRs aren't found"
-msgstr ""
+msgstr "Älä suorita PROG:ta, jos STR:itä ei löydy"
 
 #: ../src/plugins/abrt-dump-oops.c:77
 msgid ""
@@ -1321,6 +1324,9 @@ msgid ""
 "\n"
 "Extract oops from FILE (or standard input)"
 msgstr ""
+"& [-vusoxm] [-d DIR]/[-D] [FILE]\n"
+"\n"
+"Poimi ohot tiedostosta FILE (tai vakiosyötteestä)"
 
 #: ../src/plugins/abrt-dump-oops.c:98
 #: ../src/plugins/abrt-dump-journal-core.c:572
@@ -1361,11 +1367,11 @@ msgstr "Tee ongelmahakemistosta kaikkien luettava"
 #: ../src/plugins/abrt-dump-journal-oops.c:230
 #: ../src/plugins/abrt-dump-journal-xorg.c:196
 msgid "Throttle problem directory creation to 1 per second"
-msgstr ""
+msgstr "Nosta ongelmahakemiston luonti 1:teen sekunnissa"
 
 #: ../src/plugins/abrt-dump-oops.c:107 ../src/plugins/abrt-dump-xorg.c:57
 msgid "Print search string(s) to stdout and exit"
-msgstr ""
+msgstr "Tulosta hakumerkkijono(t) vakiotulosteeseen ja poistu"
 
 #: ../src/plugins/abrt-dump-oops.c:127
 #: ../src/plugins/abrt-dump-journal-oops.c:128
@@ -1383,7 +1389,7 @@ msgstr "Löytyi lisää \"oho\":ja: käsittele vain ensimmäinen"
 #: ../src/plugins/abrt-dump-journal-core.c:378
 #, c-format
 msgid "UID=%9i; SIG=%2i (%4s); EXE=%s\n"
-msgstr ""
+msgstr "UID=%9i; SIG=%2i (%4s); EXE=%s\n"
 
 #: ../src/plugins/abrt-dump-journal-core.c:407
 #: ../src/plugins/abrt-dump-journal-core.c:446
@@ -1394,7 +1400,7 @@ msgstr "Kaikkien vaadittujen tietojen saaminen journaldilta epäonnistui"
 #: ../src/plugins/abrt-dump-journal-core.c:470
 #, c-format
 msgid "Not saving repeating crash after %ds (limit is %ds)"
-msgstr ""
+msgstr "Ei tallenneta toistuvaa kaatumista %ds:n jälkeen (raja on %ds)"
 
 #: ../src/plugins/abrt-dump-journal-core.c:478
 msgid "Failed to print detect problem data to stdout"
@@ -1445,21 +1451,21 @@ msgstr "Luo uusi ongelmahakemisto DIR: lle jokaiselle ydinjätteelle"
 #: ../src/plugins/abrt-dump-journal-oops.c:231
 #: ../src/plugins/abrt-dump-journal-xorg.c:197
 msgid "Start reading systemd-journal from the CURSOR position"
-msgstr ""
+msgstr "Aloita systemd-journalin lukeminen kursorin paikasta"
 
 #: ../src/plugins/abrt-dump-journal-core.c:566
 #: ../src/plugins/abrt-dump-journal-oops.c:232
 #: ../src/plugins/abrt-dump-journal-xorg.c:198
 msgid "Start reading systemd-journal from the end"
-msgstr ""
+msgstr "Aloita systemd-journalin lukeminen lopusta"
 
 #: ../src/plugins/abrt-dump-journal-core.c:567
 msgid "Throttle problem directory creation to 1 per INT second"
-msgstr ""
+msgstr "Nosta ongelmahakemiston luonti 1:teen jokaista INT sekuntia kohden"
 
 #: ../src/plugins/abrt-dump-journal-core.c:568
 msgid "Same as -t INT, INT is specified in plugins/CCpp.conf"
-msgstr ""
+msgstr "Sama kuin -t INT, INT on määritetty tiedostossa plugins/CCpp.conf"
 
 #: ../src/plugins/abrt-dump-journal-core.c:569
 #: ../src/plugins/abrt-dump-journal-oops.c:233
@@ -1477,7 +1483,7 @@ msgstr "Lue päiväkirjan tiedostoja kaikista koneista"
 #: ../src/plugins/abrt-dump-journal-oops.c:235
 #: ../src/plugins/abrt-dump-journal-xorg.c:201
 msgid "Read all journal files from directory at PATH"
-msgstr ""
+msgstr "Lue kaikki journalitiedostot hakemistosta PATH"
 
 #: ../src/plugins/abrt-dump-journal-core.c:583
 #: ../src/plugins/abrt-dump-journal-oops.c:249
