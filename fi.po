@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-10-28 12:32+0000\n"
+"PO-Revision-Date: 2021-10-30 19:05+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/fi/>\n"
@@ -1489,14 +1489,14 @@ msgstr "Lue kaikki journalitiedostot hakemistosta PATH"
 #: ../src/plugins/abrt-dump-journal-oops.c:249
 #: ../src/plugins/abrt-dump-journal-xorg.c:216
 msgid "You need to specify either -c CURSOR or -e"
-msgstr ""
+msgstr "Sinun on määritettävä joko -c CURSOR tai -e"
 
 #: ../src/plugins/abrt-dump-journal-core.c:627
 #: ../src/plugins/abrt-dump-journal-oops.c:282
 #: ../src/plugins/abrt-dump-journal-xorg.c:281
 #, c-format
 msgid "Cannot initialize systemd-journal in directory '%s'"
-msgstr ""
+msgstr "Ei voi alustaa systemd-journalia hakemistossa %s"
 
 #: ../src/plugins/abrt-dump-journal-core.c:632
 #: ../src/plugins/abrt-dump-journal-oops.c:287
@@ -1506,7 +1506,7 @@ msgstr "Systemd-journalia ei voi avata"
 
 #: ../src/plugins/abrt-dump-journal-core.c:636
 msgid "Cannot filter systemd-journal to systemd-coredump data only"
-msgstr ""
+msgstr "Systemd-journalia ei voi suodattaa vain systemd-coredump-tietoihin"
 
 #: ../src/plugins/abrt-dump-journal-core.c:641
 #: ../src/plugins/abrt-dump-journal-oops.c:296
@@ -1519,7 +1519,7 @@ msgstr "Ei voi hakea päiväkirjan loppuun"
 #: ../src/plugins/abrt-dump-journal-xorg.c:315
 #, c-format
 msgid "Failed to set systemd-journal cursor '%s'"
-msgstr ""
+msgstr "Systemd-journal-kohdistimen %s asettaminen epäonnistui"
 
 #: ../src/plugins/abrt-dump-journal-oops.c:40
 #: ../src/plugins/abrt-dump-journal-xorg.c:53
@@ -1555,13 +1555,13 @@ msgstr ""
 
 #: ../src/plugins/abrt-dump-journal-oops.c:291
 msgid "Cannot filter systemd-journal to kernel data only"
-msgstr ""
+msgstr "Systemd-journalia ei voi suodattaa vain ytimen tietoihin"
 
 #: ../src/plugins/abrt-dump-journal-oops.c:303
 #: ../src/plugins/abrt-dump-journal-xorg.c:306
 #, c-format
 msgid "Failed to start watch from cursor '%s'"
-msgstr ""
+msgstr "Katselun käynnistäminen osoittimesta %s epäonnistui"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:62
 msgid "Failed to parse Backtrace from journal"
@@ -1586,6 +1586,22 @@ msgid ""
 "parameter\n"
 "-j or in %s conf file.\n"
 msgstr ""
+"& [-vsoxtf] [-e]/[-c CURSOR] [-d DIR]/[-D]\n"
+"\n"
+"Pura Xorgin kaatuminen systemd-journalista\n"
+"\n"
+"Vaihtoehdot -c ja -e ovat ristiriidassa, koska molemmat määrittelevät "
+"ensimmäisen luetun viestin.\n"
+"\n"
+"-e on hyödyllinen vain -f:lle, koska päiväkirjan seuraaminen alkaa "
+"lukemalla\n"
+"koko päiväkirja, jos viimeksi nähty paikka ei ole käytettävissä.\n"
+"\n"
+"Viimeksi nähty sijainti tallennetaan %s\n"
+"\n"
+"Päiväkirjasuodatin on pakollinen parametri, ja se on määritettävä "
+"jommallakummalla parametrilla\n"
+"-j tai %s conf-tiedostossa.\n"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:192
 msgid "Print found crashes on standard output"
@@ -1598,16 +1614,19 @@ msgstr "Luo uusi ongelmahakemisto DIR:iin jokaisesta löydetystä kaatumisesta"
 #: ../src/plugins/abrt-dump-journal-xorg.c:202
 msgid "Journal filter e.g. '_COMM=gdm-x-session' (may be given many times)"
 msgstr ""
+"Päiväkirjasuodatin esim. '_COMM=gdm-x-session' (voidaan antaa monta kertaa)"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:273
 msgid ""
 "Journal filter must be specified either by parameter -j or stored in /etc/"
 "abrt/plugins/xorg.conf file"
 msgstr ""
+"Päiväkirjasuodatin on määritettävä joko parametrilla -j tai tallennettava /"
+"etc/abrt/plugins/xorg.conf tiedostoon"
 
 #: ../src/plugins/abrt-dump-journal-xorg.c:290
 msgid "Cannot filter systemd-journal to Xorg data only"
-msgstr ""
+msgstr "Systemd-journalia ei voi suodattaa vain Xorg tietoihin"
 
 #: ../src/plugins/abrt-dump-xorg.c:35
 msgid ""
@@ -1615,6 +1634,9 @@ msgid ""
 "\n"
 "Extract Xorg crash from FILE (or standard input)"
 msgstr ""
+"& [-vsoxm] [-d DIR]/[-D] [TIEDOSTO]\n"
+"\n"
+"Pura Xorgin kaatuminen TIEDOSTO:sta (tai vakiosyötteestä)"
 
 #: ../src/plugins/abrt-dump-xorg.c:53
 msgid "Print found crash data on standard output"
@@ -1631,50 +1653,57 @@ msgstr "Päiväkirjan taaksepäin jäljityksen jäsentäminen epäonnistui"
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:274
 msgid "Cannot save journal watch's position"
-msgstr ""
+msgstr "Päiväkirjatarkastelun sijaintia ei voi tallentaa"
 
 #: ../src/plugins/abrt-journal.c:284
 #, c-format
 msgid "Cannot save journal watch's position: open('%s')"
-msgstr ""
+msgstr "Päiväkirjatarkastelun sijaintia ei voi tallentaa: open('%s')"
 
 #. Only notice because this is expected
 #: ../src/plugins/abrt-journal.c:302
 #, c-format
 msgid "Not restoring journal watch's position: file '%s' does not exist"
 msgstr ""
+"Ei palauteta päiväkirjakatselun sijaintia: tiedostoa '%s' ei ole olemassa"
 
 #: ../src/plugins/abrt-journal.c:304
 #, c-format
 msgid "Cannot restore journal watch's position form file '%s'"
-msgstr ""
+msgstr "Päiväkirjatarkastelun sijaintia ei voi palauttaa tiedostosta %s"
 
 #: ../src/plugins/abrt-journal.c:311
 #, c-format
 msgid "Cannot restore journal watch's position: path '%s' is not regular file"
 msgstr ""
+"Päiväkirjatarkastelun sijaintia ei voi palauttaa: polku %s ei ole tavallinen "
+"tiedosto"
 
 #: ../src/plugins/abrt-journal.c:317
 #, c-format
 msgid ""
 "Cannot restore journal watch's position: file '%s' exceeds %dB size limit"
 msgstr ""
+"Päiväkirjatarkastelun sijaintia ei voi palauttaa: tiedosto '%s' ylittää %dB "
+"kokorajan"
 
 #: ../src/plugins/abrt-journal.c:325
 #, c-format
 msgid "Cannot restore journal watch's position: open('%s')"
-msgstr ""
+msgstr "Päiväkirjatarkastelun sijaintia ei voi palauttaa: open('%s')"
 
 #: ../src/plugins/abrt-journal.c:334
 #, c-format
 msgid "Cannot restore journal watch's position: cannot read entire file '%s'"
 msgstr ""
+"Päiväkirjatarkastelun sijaintia ei voi palauttaa: koko tiedostoa \"%s\" ei "
+"voi lukea"
 
 #. abrt_journal_set_cursor() prints error message in verbose mode
 #: ../src/plugins/abrt-journal.c:346
 #, c-format
 msgid "Failed to move the journal to a cursor from file '%s'"
-msgstr ""
+msgstr "Päiväkirjaa ei voitu siirtää kursoriin tiedostosta %s"
 
 #: ../src/plugins/abrt-retrace-client.c:79
 msgid ""
@@ -1714,6 +1743,8 @@ msgid ""
 "Retrace server is unable to process package '%s.%s'.\n"
 "Is it a part of official '%s' repositories?"
 msgstr ""
+"Jäljityspalvelin ei pysty käsittelemään pakettia '%s.%s'.\n"
+"Onko se osa virallisia '%s' ohjelmistolähteitä?"
 
 #: ../src/plugins/abrt-retrace-client.c:541
 #, c-format
@@ -1737,6 +1768,7 @@ msgstr "Palvelin hylkäsi pyynnön."
 #, c-format
 msgid "'%s' must be a regular file in order to use Retrace server."
 msgstr ""
+"'%s' on oltava tavallinen tiedosto, jotta voidaan käyttää Retrace-palvelinta."
 
 #: ../src/plugins/abrt-retrace-client.c:632
 #, c-format
@@ -1744,6 +1776,8 @@ msgid ""
 "The size of your crash is %s, but the retrace server only accepts crashes "
 "smaller or equal to %s."
 msgstr ""
+"Kaatumisesi koko on %s, mutta jäljityspalvelin hyväksyy vain kaatumiset, "
+"jotka ovat pienempiä tai yhtä suuria kuin %s."
 
 #: ../src/plugins/abrt-retrace-client.c:652
 msgid "The server does not support xz-compressed tarballs."
@@ -1772,6 +1806,8 @@ msgid ""
 "The size of your archive is %s, but the retrace server only accepts archives "
 "smaller or equal to %s."
 msgstr ""
+"Arkistosi koko on %s, mutta jäljityspalvelin hyväksyy vain arkistot, jotka "
+"ovat pienempiä tai yhtä suuria kuin %s."
 
 #: ../src/plugins/abrt-retrace-client.c:752
 #, c-format
@@ -1892,6 +1928,8 @@ msgstr "Pollaavien toimintojen viive"
 #: ../src/plugins/abrt-retrace-client.c:1272
 msgid "(debug) do not delete temporary archive created from dump dir in "
 msgstr ""
+"(debug) älä poista väliaikaista arkistoa, joka on luotu dump dir in -"
+"kansiosta "
 
 #: ../src/plugins/abrt-retrace-client.c:1274
 msgid "For status, backtrace, and log operations"
@@ -1910,6 +1948,8 @@ msgid ""
 "abrt-retrace-client <operation> [options]\n"
 "Operations: create/status/backtrace/log/batch/exploitable"
 msgstr ""
+"abrt-retrace-client <toiminto> [valinnat]\n"
+"Toiminnot: create/status/backtrace/log/batch/exploitable"
 
 #: ../src/plugins/abrt-retrace-client.c:1324
 #: ../src/plugins/abrt-retrace-client.c:1330
@@ -1937,7 +1977,7 @@ msgstr "Tuntematon toiminto: %s."
 
 #: ../src/plugins/analyze_BodhiUpdates.xml.in.h:1
 msgid "Search for updated packages that fixes the crash."
-msgstr ""
+msgstr "Etsi päivitettyjä paketteja, jotka korjaavat kaatumisen."
 
 #: ../src/plugins/analyze_BodhiUpdates.xml.in.h:2
 msgid ""
@@ -1945,6 +1985,9 @@ msgid ""
 "Whiteboar equal to 'UUID' of the crash. If such a bug found, search for "
 "Bodhi updates shipping fixes for the found Bugzilla bugs."
 msgstr ""
+"Etsii Bugzilla-raportteja, joiden abrt_hash-arvo Bugzilla Bug Whiteboarissa "
+"on yhtä suuri kuin kaatumisen UUID. Jos tällainen virhe löytyy, etsi Bodhi "
+"päivityksiä, joissa on korjauksia löydetyille Bugzillan bugeille."
 
 #: ../src/plugins/analyze_LocalGDB.xml.in.h:1
 msgid "Local GNU Debugger"
@@ -2054,12 +2097,16 @@ msgid ""
 "A kernel problem occurred because of broken BIOS. Unfortunately, such "
 "problems are not fixable by kernel maintainers."
 msgstr ""
+"Ydinongelma ilmeni rikkinäisen BIOSin vuoksi. Valitettavasti ytimen "
+"ylläpitäjät eivät voi korjata tällaisia ongelmia."
 
 #: ../src/plugins/oops-utils.c:232
 msgid ""
 "A kernel problem occurred, but your hardware is unsupported, therefore "
 "kernel maintainers are unable to fix this problem."
 msgstr ""
+"Tapahtui ydinongelma, mutta laitteistoasi ei tueta, joten ytimen ylläpitäjät "
+"eivät pysty korjaamaan tätä ongelmaa."
 
 #: ../src/plugins/oops-utils.c:246
 #, c-format
@@ -2074,11 +2121,11 @@ msgstr ""
 #: ../src/plugins/oops-utils.c:254
 #, c-format
 msgid " Tainted modules: %s."
-msgstr ""
+msgstr " Rikkinäiset moduulit: %s."
 
 #: ../src/plugins/bodhi.c:498
 msgid "List of bug ids"
-msgstr ""
+msgstr "Luettelo bugitunnuksista"
 
 #: ../src/plugins/bodhi.c:499
 msgid "Specify a bodhi server url"
@@ -2094,6 +2141,9 @@ msgid ""
 "\n"
 "Search for updates on bodhi server"
 msgstr ""
+"& [-v] [-r[RELEASE]] (-b ID1[,ID2,...] | PKG-NAME) [PKG-NAME]...\n"
+"\n"
+"Etsi päivityksiä bodhi-palvelimelta"
 
 #: ../src/plugins/bodhi.c:572
 msgid "Searching for updates"
