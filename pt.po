@@ -14,13 +14,14 @@
 # Gustavo Costa <gusta@null.net>, 2021.
 # EDIVAN CARVALHO <edivancarvalho2008@hotmail.com>, 2021.
 # Marcus Gabaldo <gabaldo@gmail.com>, 2021.
+# Daimar Stein <daimarstein@pm.me>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-06-20 23:04+0000\n"
-"Last-Translator: Marcus Gabaldo <gabaldo@gmail.com>\n"
+"PO-Revision-Date: 2021-10-31 18:05+0000\n"
+"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -28,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -605,7 +606,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.c:1843
 msgid "Processing..."
-msgstr ""
+msgstr "Processando..."
 
 #: ../src/gui-wizard-gtk/wizard.c:1925
 msgid ""
