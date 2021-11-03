@@ -1,0 +1,55 @@
+name: Create upstream pull requests
+on:
+  schedule:
+    # At 6:00 AM on the fifth of every month.
+    - cron: '0 6 5 * *'
+  # Allow triggering the workflow manually.
+  workflow_dispatch:
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        component:
+          - abrt
+          - gnome-abrt
+          - libreport
+          - retrace-server
+    steps:
+      - name: Check out ${{ matrix.component }} translations
+        uses: actions/checkout@v2
+        with:
+          path: translations
+          ref: ${{ matrix.component }}
+
+      - name: Check out upstream ${{ matrix.component }} repository
+        uses: actions/checkout@v2
+        with:
+          path: upstream
+          repository: abrt/${{ matrix.component }}
+          token: ${{ secrets.ABRT_BOT_TOKEN }}
+
+      - name: Update translation files
+        run: |
+          cp --update --verbose --preserve=all translations/* upstream/po/
+          cd upstream
+
+          # Fail if no files were changed.
+          [[ -z $(git status --porcelain) ]] && \
+            echo 'No translation files changed' && \
+            exit 1
+
+      - name: Create pull request in upstream repository
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: translations-update
+          path: upstream/
+          delete-branch: true
+          commit-message: Update translations
+          committer: 'abrt-bot <11092244+abrt-bot@users.noreply.github.com>'
+          title: Update translations
+          body: >
+            Updating translations from Weblate contributors from the
+            [localization repository](https://github.com/abrt/l10n).
+          labels: localization
+          token: ${{ secrets.ABRT_BOT_TOKEN }}
