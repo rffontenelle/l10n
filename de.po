@@ -23,13 +23,14 @@
 # Thomas Spura <thomas.spura@googlemail.com>, 2020.
 # KrishnaBabu K <k.meetme@gmail.com>, 2021.
 # Sundeep Anand <suanand@redhat.com>, 2021.
+# Ettore Atalan <atalanttore@googlemail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-10-13 14:09+0000\n"
-"Last-Translator: KrishnaBabu K <k.meetme@gmail.com>\n"
+"PO-Revision-Date: 2021-11-08 00:52+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/de/>\n"
 "Language: de\n"
@@ -2301,7 +2302,7 @@ msgstr "Löschen Dateien mit gefundenen Oopses"
 
 #: ../src/cli/abrtcli/match.py:117
 msgid "No matching problems found"
-msgstr ""
+msgstr "Keine passenden Probleme gefunden"
 
 #: ../src/cli/abrtcli/utils.py:79
 msgid "Not reportable"
@@ -2309,7 +2310,7 @@ msgstr "Kann nicht gemeldet werden"
 
 #: ../src/cli/abrtcli/cli/__init__.py:30
 msgid "increase output verbosity"
-msgstr ""
+msgstr "Ausführlichkeit der Ausgabe erhöhen"
 
 #: ../src/cli/abrtcli/cli/__init__.py:50
 msgid "positive non-zero integer expected"
@@ -2321,13 +2322,11 @@ msgstr "Letzte N Probleme auflisten"
 
 #: ../src/cli/abrtcli/cli/__init__.py:57
 msgid "filter problems with matching component"
-msgstr ""
+msgstr "Probleme mit übereinstimmender Komponente filtern"
 
 #: ../src/cli/abrtcli/cli/__init__.py:59
-#, fuzzy
-#| msgid "List only not-reported problems"
 msgid "filter unreported problems"
-msgstr "Nur noch nicht berichtete Probleme anzeigen"
+msgstr "Nicht berichtete Probleme filtern"
 
 #: ../src/cli/abrtcli/cli/__init__.py:61
 #, fuzzy
@@ -2348,16 +2347,12 @@ msgid "filter problems with matching executable"
 msgstr ""
 
 #: ../src/cli/abrtcli/cli/__init__.py:71
-#, fuzzy
-#| msgid "Output format"
 msgid "output format"
 msgstr "Ausgabeformat"
 
 #: ../src/cli/abrtcli/cli/__init__.py:74
-#, fuzzy
-#| msgid "Built-in output format"
 msgid "built-in output format"
-msgstr "Eingebautes Ausgabeformat"
+msgstr "eingebautes Ausgabeformat"
 
 #: ../src/cli/abrtcli/cli/__init__.py:79
 #, fuzzy
@@ -2502,14 +2497,12 @@ msgid "Local retracing"
 msgstr "Lokale Rückverfolgung"
 
 #: ../src/cli/abrtcli/cli/status.py:17
-#, fuzzy
-#| msgid "List only not-reported problems"
 msgid "show only the number of problems"
-msgstr "Nur noch nicht berichtete Probleme anzeigen"
+msgstr "nur die Anzahl der Probleme anzeigen"
 
 #: ../src/cli/abrtcli/cli/status.py:19
 msgid "only show output if at least one problem is found"
-msgstr ""
+msgstr "Ausgabe nur anzeigen, wenn mindestens ein Problem gefunden wurde"
 
 #: ../src/cli/abrtcli/cli/status.py:40
 #, fuzzy
