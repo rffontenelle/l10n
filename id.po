@@ -5,13 +5,14 @@
 # Translators:
 # Andika Triwidada <andika@gmail.com>, 2020.
 # Didik Supriadi <didiksupriadi41@gmail.com>, 2021.
+# Parasian Panjaitan <ssparasianpanjaitan@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-07-09 13:04+0000\n"
-"Last-Translator: Didik Supriadi <didiksupriadi41@gmail.com>\n"
+"PO-Revision-Date: 2021-11-20 18:16+0000\n"
+"Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/id/>\n"
 "Language: id\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.9\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -36,27 +37,27 @@ msgstr ""
 #. short_name long_name  value    parameter_name  help
 #: ../src/cli/cli.c:89
 msgid "List possible events [which start with PREFIX]"
-msgstr ""
+msgstr "Buat daftar kemungkinan peristiwa [yang dimulai dengan PREFIX]"
 
 #: ../src/cli/cli.c:90 ../src/gui-wizard-gtk/main.c:170
 msgid "Run only these events"
-msgstr ""
+msgstr "Jalankan hanya acara ini"
 
 #: ../src/cli/cli.c:91 ../src/gui-wizard-gtk/main.c:169
 msgid "Remove PROBLEM_DIR after reporting"
-msgstr ""
+msgstr "Hapus PROBLEM_DIR setelah melaporkan"
 
 #: ../src/cli/cli.c:92
 msgid "Expert mode"
-msgstr ""
+msgstr "Mode ahli"
 
 #: ../src/cli/cli.c:93 ../src/report-newt/report-newt.c:397
 msgid "Display version and exit"
-msgstr ""
+msgstr "Tampilkan versi dan keluar"
 
 #: ../src/cli/cli.c:94
 msgid "Noninteractive: don't ask questions, assume 'yes'"
-msgstr ""
+msgstr "Noninteraktif: jangan bertanya, anggap 'ya'"
 
 #: ../src/cli/cli.c:96
 msgid "Log to syslog"
@@ -69,17 +70,19 @@ msgstr "Menambahkan nama program untuk log"
 #: ../src/cli/cli-report.c:132
 #, c-format
 msgid "# This field is read only\n"
-msgstr ""
+msgstr "# Bidang ini hanya dapat dibaca\n"
 
 #: ../src/cli/cli-report.c:152
 msgid "# Describe the circumstances of this crash below"
-msgstr ""
+msgstr "# Jelaskan keadaan kecelakaan ini di bawah ini"
 
 #: ../src/cli/cli-report.c:154
 msgid ""
 "# Backtrace\n"
 "# Check that it does not contain any sensitive data (passwords, etc.)"
 msgstr ""
+"# Backtrace\n"
+"# Periksa apakah itu tidak mengandung data sensitif (kata sandi, dll.)"
 
 #: ../src/cli/cli-report.c:156
 msgid "# Architecture"
@@ -87,72 +90,76 @@ msgstr "# Arsitektur"
 
 #: ../src/cli/cli-report.c:157
 msgid "# Command line"
-msgstr ""
+msgstr "# Command line"
 
 #: ../src/cli/cli-report.c:158
 msgid "# Component"
-msgstr ""
+msgstr "# Komponen"
 
 #: ../src/cli/cli-report.c:159
 msgid "# Core dump"
-msgstr ""
+msgstr "# Tempat pembuangan inti"
 
 #: ../src/cli/cli-report.c:160
 msgid "# Executable"
-msgstr ""
+msgstr "# Dapat dieksekusi"
 
 #: ../src/cli/cli-report.c:161
 msgid "# Kernel version"
-msgstr ""
+msgstr "# Versi kernel"
 
 #: ../src/cli/cli-report.c:162
 msgid "# Package"
-msgstr ""
+msgstr "# Package"
 
 #: ../src/cli/cli-report.c:163
 msgid "# Reason of crash"
-msgstr ""
+msgstr "# Alasan kecelakaan"
 
 #: ../src/cli/cli-report.c:170
 msgid "# os-release configuration file from root dir"
-msgstr ""
+msgstr "# os-rilis file konfigurasi dari direktori root"
 
 #: ../src/cli/cli-report.c:175
 msgid "# Release string of the operating system from root dir"
-msgstr ""
+msgstr "# Lepaskan string sistem operasi dari direktori root"
 
 #: ../src/cli/cli-report.c:183
 msgid "# os-release configuration file"
-msgstr ""
+msgstr "# os-rilis file konfigurasi"
 
 #: ../src/cli/cli-report.c:188
 msgid "# Release string of the operating system"
-msgstr ""
+msgstr "# Lepaskan string sistem operasi"
 
 #: ../src/cli/cli-report.c:319
 msgid "Cannot run vi: $TERM, $VISUAL and $EDITOR are not set"
-msgstr ""
+msgstr "Tidak dapat menjalankan vi: $TERM, $VISUAL dan $EDITOR tidak disetel"
 
 #: ../src/cli/cli-report.c:403
 msgid ""
 "\n"
 "The report has been updated"
 msgstr ""
+"\n"
+"Laporan telah diperbarui"
 
 #: ../src/cli/cli-report.c:405
 msgid ""
 "\n"
 "No changes were detected in the report"
 msgstr ""
+"\n"
+"Tidak ada perubahan yang terdeteksi dalam laporan"
 
 #: ../src/cli/cli-report.c:466
 msgid "Your input is not valid, because of:"
-msgstr ""
+msgstr "Masukan Anda tidak valid, karena:"
 
 #: ../src/cli/cli-report.c:470
 #, c-format
 msgid "Bad value for '%s': %s"
-msgstr ""
+msgstr "Nilai buruk untuk '%s': %s"
 
 #: ../src/cli/cli-report.c:671
 #, c-format
@@ -160,86 +167,90 @@ msgid ""
 "Event '%s' requires permission to send possibly sensitive data. Do you want "
 "to continue?"
 msgstr ""
+"Event '%s' memerlukan izin untuk mengirim data yang mungkin sensitif. Apakah "
+"Anda ingin melanjutkan?"
 
 #: ../src/cli/cli-report.c:718
 msgid "You have chosen number out of range"
-msgstr ""
+msgstr "Anda telah memilih nomor di luar jangkauan"
 
 #: ../src/cli/cli-report.c:723
 msgid "Invalid input, exiting."
-msgstr ""
+msgstr "Masukan tidak valid, keluar."
 
 #: ../src/cli/cli-report.c:744
 msgid "Select an event to run: "
-msgstr ""
+msgstr "Pilih event yang akan dijalankan: "
 
 #: ../src/cli/cli-report.c:878
 msgid "Select a workflow to run: "
-msgstr ""
+msgstr "Pilih alur kerja yang akan dijalankan: "
 
 #: ../src/client-python/reportclient/debuginfo.py:100
 #, python-brace-format
 msgid "Extracting cpio from {0}"
-msgstr ""
+msgstr "Mengekstrak cpio dari {0}"
 
 #: ../src/client-python/reportclient/debuginfo.py:105
 #, python-brace-format
 msgid "Can't write to '{0}': {1}"
-msgstr ""
+msgstr "Tidak dapat menulis ke '{0}': {1}"
 
 #: ../src/client-python/reportclient/debuginfo.py:116
 #, python-brace-format
 msgid "Can't extract package '{0}'"
-msgstr ""
+msgstr "Tidak dapat mengekstrak paket '{0}'"
 
 #: ../src/client-python/reportclient/debuginfo.py:124
 #, python-brace-format
 msgid "Caching files from {0} made from {1}"
-msgstr ""
+msgstr "Menyimpan file dari {0} yang dibuat dari {1}"
 
 #: ../src/client-python/reportclient/debuginfo.py:148
 #, python-brace-format
 msgid "Can't extract files from '{0}'. For more information see '{1}'"
 msgstr ""
+"Tidak dapat mengekstrak file dari '{0}'. Untuk informasi lebih lanjut lihat "
+"'{1}'"
 
 #: ../src/client-python/reportclient/debuginfo.py:163
 #, python-brace-format
 msgid "Can't remove '{0}': {1}"
-msgstr ""
+msgstr "Tidak dapat menghapus '{0}': {1}"
 
 #: ../src/client-python/reportclient/debuginfo.py:205
 #: ../src/client-python/reportclient/debuginfo.py:214
 #, python-brace-format
 msgid "Downloading ({0} of {1}) {2}: {3:3}%"
-msgstr ""
+msgstr "Mengunduh ({0} dari {1}) {2}: {3:3}%"
 
 #: ../src/client-python/reportclient/debuginfo.py:306
 msgid "Initializing package manager"
-msgstr ""
+msgstr "Menginisialisasi manajer paket"
 
 #. This takes some time, let user know what we are doing
 #: ../src/client-python/reportclient/debuginfo.py:310
 msgid "Setting up repositories"
-msgstr ""
+msgstr "Menyiapkan repositori"
 
 #: ../src/client-python/reportclient/debuginfo.py:313
 msgid "Looking for needed packages in repositories"
-msgstr ""
+msgstr "Mencari paket yang dibutuhkan di repositori"
 
 #: ../src/client-python/reportclient/debuginfo.py:347
 #, python-brace-format
 msgid "Can't find packages for {0} debuginfo files"
-msgstr ""
+msgstr "Tidak dapat menemukan paket untuk {0} file debuginfo"
 
 #: ../src/client-python/reportclient/debuginfo.py:350
 #, python-brace-format
 msgid "Packages to download: {0}"
-msgstr ""
+msgstr "Paket untuk diunduh: {0}"
 
 #: ../src/client-python/reportclient/debuginfo.py:352
 #, python-brace-format
 msgid "Downloading {0:.2f}Mb, installed size: {1:.2f}Mb. Continue?"
-msgstr ""
+msgstr "Mengunduh {0:.2f}Mb, ukuran terpasang: {1:.2f}Mb. Melanjutkan?"
 
 #: ../src/client-python/reportclient/debuginfo.py:357
 #: ../src/client-python/reportclient/debuginfo.py:369
