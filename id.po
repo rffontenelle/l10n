@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-11-22 01:16+0000\n"
+"PO-Revision-Date: 2021-11-26 14:16+0000\n"
 "Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/id/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -615,15 +615,17 @@ msgstr "Pemrosesan selesai."
 
 #: ../src/gui-wizard-gtk/wizard.c:1707
 msgid "Processing finished, please proceed to the next step."
-msgstr ""
+msgstr "Pemrosesan selesai, silakan lanjutkan ke langkah berikutnya."
 
 #: ../src/gui-wizard-gtk/wizard.c:1770
 msgid "No commands could be found for processsing the crashdump.\n"
-msgstr ""
+msgstr "Tidak ada perintah yang dapat ditemukan untuk memproses crash dump.\n"
 
 #: ../src/gui-wizard-gtk/wizard.c:1785
 msgid "Processing interrupted: can't continue without writable directory."
 msgstr ""
+"Pemrosesan terputus: tidak dapat melanjutkan tanpa direktori yang dapat "
+"ditulis."
 
 #: ../src/gui-wizard-gtk/wizard.c:1808
 #, c-format
@@ -632,20 +634,27 @@ msgid ""
 "No matching actions found for this event.\n"
 "\n"
 msgstr ""
+"--- Melewati %s ---\n"
+"Tidak ditemukan tindakan yang cocok untuk acara ini.\n"
+"\n"
 
 #: ../src/gui-wizard-gtk/wizard.c:1843
 msgid "Processing..."
-msgstr ""
+msgstr "Pengolahan..."
 
 #: ../src/gui-wizard-gtk/wizard.c:1925
 msgid ""
 "Possible sensitive data detected, feel free to edit the report and remove "
 "them."
 msgstr ""
+"Kemungkinan data sensitif terdeteksi, jangan ragu untuk mengedit laporan dan "
+"menghapusnya."
 
 #: ../src/gui-wizard-gtk/wizard.c:1968
 msgid "Cannot check backtrace rating because of invalid event name"
 msgstr ""
+"Tidak dapat memeriksa peringkat penelusuran balik karena nama acara tidak "
+"valid"
 
 #: ../src/gui-wizard-gtk/wizard.c:2418
 #, c-format
