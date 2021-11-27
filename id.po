@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-11-26 14:16+0000\n"
+"PO-Revision-Date: 2021-11-27 20:15+0000\n"
 "Last-Translator: Parasian Panjaitan <ssparasianpanjaitan@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/id/>\n"
@@ -659,7 +659,7 @@ msgstr ""
 #: ../src/gui-wizard-gtk/wizard.c:2418
 #, c-format
 msgid "Failed to save file '%s'"
-msgstr ""
+msgstr "Gagal menyimpan file '%s'"
 
 #: ../src/gui-wizard-gtk/wizard.c:2619
 #, c-format
@@ -667,20 +667,23 @@ msgid ""
 "Event '%s' requires permission to send possibly sensitive data.\n"
 "Do you want to continue?"
 msgstr ""
+"Acara '%s' memerlukan izin untuk mengirim data yang mungkin sensitif.\n"
+"Apakah Anda ingin melanjutkan?"
 
 #: ../src/gui-wizard-gtk/wizard.c:2665
 #, c-format
 msgid "This problem should not be reported (it is likely a known problem). %s"
 msgstr ""
+"Masalah ini tidak boleh dilaporkan (kemungkinan masalah yang diketahui). %s"
 
 #: ../src/gui-wizard-gtk/wizard.c:2866
 msgid "_Open"
-msgstr ""
+msgstr "_Buka"
 
 #: ../src/gui-wizard-gtk/wizard.c:2888
 #, c-format
 msgid "'%s' is not an ordinary file"
-msgstr ""
+msgstr "'%s' bukan file biasa"
 
 #: ../src/gui-wizard-gtk/wizard.c:2901
 msgid "You are trying to copy a file onto itself"
