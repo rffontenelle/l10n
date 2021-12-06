@@ -31,7 +31,7 @@ jobs:
 
       - name: Update translation files
         run: |
-          cp --update --verbose --preserve=all translations/* upstream/po/
+          cp --verbose --preserve=all translations/* upstream/po/
           cd upstream
 
           # Fail if no files were changed.
