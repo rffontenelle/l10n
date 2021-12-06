@@ -30,17 +30,20 @@ jobs:
           token: ${{ secrets.ABRT_BOT_TOKEN }}
 
       - name: Update translation files
+        id: update-translations
         run: |
           cp --verbose --preserve=all translations/* upstream/po/
 
           # Fail if no files were changed.
           [[ -z $(git -C upstream status --porcelain) ]] && \
             echo 'No translation files changed' && \
-            exit 1
+            exit 0
 
           echo 'Translation files updated'
+          echo '::set-output name=create-pr::1'
 
       - name: Create pull request in upstream repository
+        if: ${{ steps.update-translations.outputs.create-pr }}
         uses: peter-evans/create-pull-request@v3
         with:
           branch: translations-update
