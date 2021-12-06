@@ -32,12 +32,13 @@ jobs:
       - name: Update translation files
         run: |
           cp --verbose --preserve=all translations/* upstream/po/
-          cd upstream
 
           # Fail if no files were changed.
-          [[ -z $(git status --porcelain) ]] && \
+          [[ -z $(git -C upstream status --porcelain) ]] && \
             echo 'No translation files changed' && \
             exit 1
+
+          echo 'Translation files updated'
 
       - name: Create pull request in upstream repository
         uses: peter-evans/create-pull-request@v3
