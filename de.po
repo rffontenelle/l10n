@@ -23,13 +23,13 @@
 # Thomas Spura <thomas.spura@googlemail.com>, 2020.
 # KrishnaBabu K <k.meetme@gmail.com>, 2021.
 # Sundeep Anand <suanand@redhat.com>, 2021.
-# Ettore Atalan <atalanttore@googlemail.com>, 2021.
+# Ettore Atalan <atalanttore@googlemail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2021-12-28 21:16+0000\n"
+"PO-Revision-Date: 2022-01-02 21:16+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/de/>\n"
@@ -2478,11 +2478,10 @@ msgid "only show output if at least one problem is found"
 msgstr "Ausgabe nur anzeigen, wenn mindestens ein Problem gefunden wurde"
 
 #: ../src/cli/abrtcli/cli/status.py:40
-#, fuzzy
-#| msgid "ABRT has detected {} problem(s). For more info run: abrt list{}"
 msgid "ABRT has detected a problem. For more information, run “abrt list{}”"
 msgstr ""
-"ABRT hat {} Problem(e) entdeckt. Für weitere Infos führen Sie abrt list{} aus"
+"ABRT hat ein Problem entdeckt. Für weitere Informationen führen Sie „abrt "
+"list{}“ aus"
 
 #: ../src/plugins/analyze_CCpp.xml.in.h:1
 msgid ""
