@@ -15,13 +15,14 @@
 # EDIVAN CARVALHO <edivancarvalho2008@hotmail.com>, 2021.
 # Marcus Gabaldo <gabaldo@gmail.com>, 2021.
 # Daimar Stein <daimarstein@pm.me>, 2021.
+# Daniel Russo Fernandes <drusso86@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-10-31 18:05+0000\n"
-"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
+"PO-Revision-Date: 2022-02-12 20:19+0000\n"
+"Last-Translator: Daniel Russo Fernandes <drusso86@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -29,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -176,6 +177,8 @@ msgid ""
 "Event '%s' requires permission to send possibly sensitive data. Do you want "
 "to continue?"
 msgstr ""
+"Evento '%s' requer permissão para enviar dados possivelmente sensíveis. Você "
+"quer continuar?"
 
 #: ../src/cli/cli-report.c:718
 msgid "You have chosen number out of range"
