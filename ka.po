@@ -4,33 +4,34 @@
 #
 # Translators:
 # George Machitidze <giomac@gmail.com>, 2012,2014
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2014-12-21 11:51+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Georgian (http://www.transifex.com/projects/p/fedora-abrt/"
-"language/ka/)\n"
+"PO-Revision-Date: 2022-06-15 15:18+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
+"abrt/ka/>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 4.6.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
-msgstr ""
+msgstr "პრობლემის გადაგზავნა"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:2
 msgid "View and report application crashes"
-msgstr ""
+msgstr "აპლიკაციების ავარიული დასრულების ნახვა და გადაგზავნა"
 
 #: ../src/applet/abrt-applet-application.c:157
 msgid "Be verbose"
-msgstr ""
+msgstr "დამატებითი შეტყობინებები"
 
 #: ../src/applet/abrt-applet-application.c:167
 msgid "Applet which notifies user when new problems are detected by ABRT"
@@ -46,7 +47,7 @@ msgstr "ანგარიში"
 
 #: ../src/applet/abrt-applet-application.c:590
 msgid "Restart"
-msgstr ""
+msgstr "გადატვრთვა"
 
 #: ../src/applet/abrt-applet-application.c:663
 #, c-format
@@ -212,15 +213,15 @@ msgstr ""
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:14
 msgid "Always"
-msgstr ""
+msgstr "ყოველთვის"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:15
 msgid "Never"
-msgstr ""
+msgstr "არასდროს"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:16
 msgid "Ask"
-msgstr ""
+msgstr "კითხვა"
 
 #: ../src/configuration-gui/abrt-config-widget.glade.h:17
 msgid "Upload coredump for backtrace generation"
@@ -228,7 +229,7 @@ msgstr ""
 
 #: ../src/configuration-gui/system-config-abrt.c:66
 msgid "_Close"
-msgstr ""
+msgstr "_დახურვა"
 
 #: ../src/configuration-gui/system-config-abrt.c:75
 msgid "_Defaults"
@@ -245,11 +246,11 @@ msgstr ""
 
 #: ../src/configuration-gui/main.c:105
 msgid "About"
-msgstr ""
+msgstr "შესახებ"
 
 #: ../src/configuration-gui/main.c:106
 msgid "Quit"
-msgstr ""
+msgstr "გასვლა"
 
 #: ../src/daemon/abrt-action-save-package-data.c:456
 msgid ""
@@ -477,7 +478,7 @@ msgstr ""
 
 #: ../src/daemon/abrt-auto-reporting.c:336
 msgid "Password:"
-msgstr ""
+msgstr "პაროლი:"
 
 #: ../src/daemon/abrt-auto-reporting.c:339
 msgid "Cannot continue without password\n"
@@ -828,7 +829,7 @@ msgstr ""
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:95
 #, c-format
 msgid "Error: %s"
-msgstr ""
+msgstr "შეცდომა: %s"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:61
 msgid "Can't open {0}: {1}"
@@ -1759,7 +1760,7 @@ msgstr ""
 
 #: ../src/plugins/analyze_RetraceServer.xml.in.h:5
 msgid "Insecure"
-msgstr ""
+msgstr "დაუცველი"
 
 #: ../src/plugins/analyze_RetraceServer.xml.in.h:6
 msgid "Whether or not to use insecure connection"
@@ -1981,7 +1982,7 @@ msgstr ""
 
 #: ../src/cli/abrtcli/cli/remove.py:41
 msgid "Removed"
-msgstr ""
+msgstr "ამოღებულია"
 
 #: ../src/cli/abrtcli/cli/report.py:23
 msgid "remove after reporting"
