@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2022-06-19 16:33+0000\n"
+"PO-Revision-Date: 2022-07-01 17:50+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ka/>\n"
@@ -47,7 +47,7 @@ msgstr "ანგარიში"
 
 #: ../src/applet/abrt-applet-application.c:590
 msgid "Restart"
-msgstr "გადატვრთვა"
+msgstr "გადატვირთვა"
 
 #: ../src/applet/abrt-applet-application.c:663
 #, c-format
@@ -306,7 +306,7 @@ msgstr ""
 #: ../src/plugins/abrt-dump-journal-xorg.c:191
 #: ../src/plugins/abrt-dump-xorg.c:52
 msgid "Log to syslog"
-msgstr "ჟურნალირება syslog-ში"
+msgstr "სისტემურ ჟურნალში ჩაწერა"
 
 #: ../src/daemon/abrt-server.c:1113 ../src/daemon/abrtd.c:754
 msgid "Add program names to log"
@@ -621,7 +621,7 @@ msgstr ""
 #: ../src/lib/ignored_problems.c:233
 #, c-format
 msgid "Can't create temporary file '%s'"
-msgstr ""
+msgstr "დროებითი ფაილის შექმნის შეცდომა: %s"
 
 #: ../src/lib/ignored_problems.c:250
 #, c-format
@@ -1510,7 +1510,7 @@ msgstr ""
 
 #: ../src/plugins/abrt-retrace-client.c:554
 msgid "Querying server settings"
-msgstr ""
+msgstr "სერვერის პარამეტრების გამოთხოვა"
 
 #: ../src/plugins/abrt-retrace-client.c:564
 msgid "The server is fully occupied. Try again later."
