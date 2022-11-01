@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2022-10-15 13:19+0000\n"
+"PO-Revision-Date: 2022-11-02 15:19+0000\n"
 "Last-Translator: Mahmudul Hasan <ptcmahmudulhasa@gmail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -567,7 +567,7 @@ msgstr "পাসওয়ার্ড ছাড়া চালিয়ে য
 #. Print only the part before ':' of a string like "username:password"
 #: ../src/daemon/abrt-auto-reporting.c:380
 msgid "HTTP Authenticated auto reporting"
-msgstr ""
+msgstr "HTTP প্রমাণীকৃত স্বয়ংক্রিয় প্রতিবেদন করবে"
 
 #: ../src/daemon/abrt-auto-reporting.c:382
 msgid "SSL Client Authenticated auto reporting"
@@ -624,11 +624,11 @@ msgstr ""
 
 #: ../src/daemon/abrt-handle-upload.in:205
 msgid "Can't create working directory in '{0}'"
-msgstr ""
+msgstr "'{0}' এ কাজের ডিরেক্টরি তৈরি করা যাবে না"
 
 #: ../src/daemon/abrt-handle-upload.in:216
 msgid "Can't move '{0}' to '{1}'"
-msgstr ""
+msgstr "'{0}' থেকে '{1}' এ সরানো যাচ্ছে না"
 
 #: ../src/daemon/abrt-handle-upload.in:221
 msgid "Can't copy '{0}' to '{1}'"
