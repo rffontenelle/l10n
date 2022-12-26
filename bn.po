@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2022-12-25 13:20+0000\n"
+"PO-Revision-Date: 2022-12-27 09:20+0000\n"
 "Last-Translator: Mahmudul Hasan <ptcmahmudulhasa@gmail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -570,15 +570,17 @@ msgid "HTTP Authenticated auto reporting"
 msgstr "HTTP প্রমাণীকৃত স্বয়ংক্রিয় প্রতিবেদন করবে"
 
 #: ../src/daemon/abrt-auto-reporting.c:382
+#, fuzzy
 msgid "SSL Client Authenticated auto reporting"
-msgstr ""
+msgstr "SSL ক্লায়েন্ট প্রমাণীকৃত স্বয়ংক্রিয় প্রতিবেদন"
 
 #: ../src/daemon/abrt-auto-reporting.c:384
+#, fuzzy
 msgid "anonymous auto reporting"
 msgstr "বেনামে স্বয়ংক্রিয় প্রতিবেদন করবে"
 
 #: ../src/daemon/abrt-handle-upload.in:130
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Usage: %s [-vd] ABRT_SPOOL_DIR UPLOAD_DIR FILENAME\n"
 "\n"
@@ -588,31 +590,45 @@ msgid ""
 "   UPLOAD_DIR     - Directory where uploaded archives are stored\n"
 "   FILENAME       - Uploaded archive file name\n"
 msgstr ""
+"ব্যবহার: %s [-vd] ABRT_SPOOL_DIR UPLOAD_DIR নথিরনাম\n"
+"\n"
+"   -v             - ভার্বোস\n"
+"   -d             - আপলোড করা সংরক্ষণাগার মুছুন\n"
+"   ABRT_SPOOL_DIR - ডিরেক্টরি যেখানে বৈধ আপলোড করা সংরক্ষণাগারগুলি আনপ্যাক "
+"করা হয়\n"
+"   UPLOAD_DIR     - ডিরেক্টরি যেখানে আপলোড করা সংরক্ষণাগার সংরক্ষণ করা হয়\n"
+"   FILENAME       - আপলোড করা সংরক্ষণাগার ফাইলের নাম\n"
 
 #: ../src/daemon/abrt-handle-upload.in:166
 #: ../src/daemon/abrt-handle-upload.in:169
+#, fuzzy
 msgid "Not a directory: '{0}'"
-msgstr ""
+msgstr "এটি ডিরেক্টরি নয়: '{0}'"
 
 #: ../src/daemon/abrt-handle-upload.in:172
+#, fuzzy
 msgid "Skipping: '{0}' (starts with slash)"
-msgstr ""
+msgstr "এড়িয়ে যাওয়া: '{0}' (স্ল্যাশ দিয়ে শুরু হয়)"
 
 #: ../src/daemon/abrt-handle-upload.in:175
+#, fuzzy
 msgid "Skipping: '{0}' (starts with dot)"
-msgstr ""
+msgstr "এড়িয়ে যাওয়া: '{0}' (ডট দিয়ে শুরু হয়)"
 
 #: ../src/daemon/abrt-handle-upload.in:178
+#, fuzzy
 msgid "Skipping: '{0}' (contains ..)"
-msgstr ""
+msgstr "এড়িয়ে যাওয়া: '{0}' (ধারণ করে ..)"
 
 #: ../src/daemon/abrt-handle-upload.in:181
+#, fuzzy
 msgid "Skipping: '{0}' (contains space)"
-msgstr ""
+msgstr "এড়িয়ে যাওয়া: '{0}' (ধারণ করার ফাঁকা স্থান রয়েছে)"
 
 #: ../src/daemon/abrt-handle-upload.in:184
+#, fuzzy
 msgid "Skipping: '{0}' (contains tab)"
-msgstr ""
+msgstr "এড়িয়ে যাওয়া: '{0}' (ট্যাব রয়েছে)"
 
 #: ../src/daemon/abrt-handle-upload.in:189
 msgid "Can't change directory to '{0}'"
@@ -639,16 +655,19 @@ msgid "Verification error on '{0}'"
 msgstr "'{0}' এ যাচাইকরণ ত্রুটি"
 
 #: ../src/daemon/abrt-handle-upload.in:227
+#, fuzzy
 msgid "Unpacking '{0}'"
-msgstr ""
+msgstr "'{0}' আনপ্যাক করা হচ্ছে"
 
 #: ../src/daemon/abrt-handle-upload.in:231
+#, fuzzy
 msgid "Can't create '{0}' directory"
-msgstr ""
+msgstr "'{0}' ডিরেক্টরি তৈরি করা যাচ্ছে না"
 
 #: ../src/daemon/abrt-handle-upload.in:235
+#, fuzzy
 msgid "Can't unpack '{0}'"
-msgstr ""
+msgstr "'{0}' আনপ্যাক করা যাচ্ছে না"
 
 #: ../src/daemon/abrt-handle-upload.in:255
 msgid "'{0}' processed successfully"
@@ -660,9 +679,9 @@ msgid "Generating backtrace"
 msgstr "ব্যাক-ট্রেস সৃষ্টি করা হচ্ছে"
 
 #: ../src/lib/problem_api_dbus.c:42
-#, c-format
+#, c-format, fuzzy
 msgid "Can't connect to system DBus: %s"
-msgstr ""
+msgstr "সিস্টেম DBus এর সাথে সংযোগ করা যাচ্ছে না: %s"
 
 #: ../src/lib/problem_api_dbus.c:68
 #, c-format
@@ -670,18 +689,19 @@ msgid "Can't chown '%s': %s"
 msgstr ""
 
 #: ../src/lib/problem_api_dbus.c:97
-#, c-format
+#, c-format, fuzzy
 msgid "Deleting problem directory failed: %s"
-msgstr ""
+msgstr "সমস্যাকৃত ডিরেক্টরি মুছতে ব্যর্থ হয়েছে: %s"
 
 #: ../src/lib/problem_api_dbus.c:131
-#, c-format
+#, c-format, fuzzy
 msgid "D-Bus GetInfo method call failed: %s"
-msgstr ""
+msgstr "D-Bus GetInfo পদ্ধতি কল ব্যর্থ হয়েছে: %s"
 
 #: ../src/lib/problem_api_dbus.c:166
+#, fuzzy
 msgid "Can't get problem data from abrt-dbus"
-msgstr ""
+msgstr "abrt-dbus থেকে সমস্যা তথ্য পাওয়া যাচ্ছে না"
 
 #: ../src/lib/problem_api_dbus.c:193
 #, c-format
