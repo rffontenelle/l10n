@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-01-01 17:20+0000\n"
+"PO-Revision-Date: 2023-01-07 04:20+0000\n"
 "Last-Translator: Mahmudul Hasan <ptcmahmudulhasa@gmail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -976,16 +976,17 @@ msgstr "আঙ্গুলের ছাপ হ্যাশ করবেন ন�
 #. Let user know what's going on
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:64
 msgid "Generating core_backtrace"
-msgstr ""
+msgstr "ব্যাক-ট্রেস সৃষ্টি করা হচ্ছে"
 
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:81
+#, fuzzy
 msgid "Error: GDB did not return any data"
-msgstr ""
+msgstr "ত্রুটি: GDB কোনো ডেটা ফেরত দেয়নি"
 
 #: ../src/plugins/abrt-action-generate-core-backtrace.c:95
-#, c-format
+#, c-format, fuzzy
 msgid "Error: %s"
-msgstr ""
+msgstr "ত্রুটি: %s"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:61
 msgid "Can't open {0}: {1}"
@@ -998,17 +999,19 @@ msgstr ""
 "হয়নি"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:104
+#, fuzzy
 msgid "{0} of debuginfo files are not installed"
-msgstr ""
+msgstr "debuginfo ফাইলগুলির মধ্যে {0}টি ইনস্টল করা নেই৷"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:114
-#, c-format
+#, c-format, fuzzy
 msgid "Invalid configuration of CCpp addon, unsupported Package manager: '%s'"
-msgstr ""
+msgstr "CCpp অ্যাডঅনের অবৈধ কনফিগারেশন, অসমর্থিত প্যাকেজ ম্যানেজার: '%s'"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:168
+#, fuzzy
 msgid "Missing requested file: {0}"
-msgstr ""
+msgstr "অনুপস্থিত অনুরোধ করা ফাইল: {0}"
 
 #: ../src/plugins/abrt-action-install-debuginfo.in:173
 msgid "Missing debuginfo file: {0}"
