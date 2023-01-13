@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-01-12 14:20+0000\n"
+"PO-Revision-Date: 2023-01-14 17:20+0000\n"
 "Last-Translator: Mahmudul Hasan <ptcmahmudulhasa@gmail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -1087,6 +1087,7 @@ msgid "Exiting on user command"
 msgstr "ব্যবহারকারী দ্বারা উল্লিখিত কমান্ডের ফলে প্রস্থান করা হচ্ছে"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:43
+#, fuzzy
 msgid ""
 "& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
 "\t[-r REPO]\n"
@@ -1094,10 +1095,17 @@ msgid ""
 "Installs debuginfo packages for all build-ids listed in BUILD_IDS_FILE to\n"
 "ABRT system cache."
 msgstr ""
+"& [-y] [-i BUILD_IDS_FILE|-i -] [-e PATH[:PATH]...]\n"
+"\t[-r REPO]\n"
+"\n"
+"BUILD_IDS_FILE এ তালিকাভুক্ত সমস্ত বিল্ড-আইডির জন্য ডিবাগিনফো প্যাকেজ ইনস্টল "
+"করে\n"
+"ABRT সিস্টেম ক্যাশে।"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:68
+#, fuzzy
 msgid "Noninteractive, assume 'Yes' to all questions"
-msgstr ""
+msgstr "মিথস্ক্রিয়াহীন, সমস্ত প্রশ্নের জন্য 'হ্যাঁ' ধরে নিন"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:69
 msgid "- means STDIN, default: build_ids"
