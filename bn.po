@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-01-14 17:20+0000\n"
+"PO-Revision-Date: 2023-01-16 10:20+0000\n"
 "Last-Translator: Mahmudul Hasan <ptcmahmudulhasa@gmail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -451,9 +451,8 @@ msgid "Log to syslog even with -d"
 msgstr "-d সহযোগেও syslog-এ লগ করা হবে"
 
 #: ../src/daemon/abrt-handle-event.c:362
-#, fuzzy
 msgid "& [-v -i -n INCREMENT] -e|--event EVENT DIR..."
-msgstr "& [-v -i -n INCREMENT] -e|--event EVENT DIR..."
+msgstr ""
 
 #: ../src/daemon/abrt-handle-event.c:371
 msgid "Run EVENT on DIR"
@@ -508,9 +507,8 @@ msgstr "MiB তে সর্বোচ্চ ক্যাশের আকার�
 
 #: ../src/daemon/abrt-auto-reporting.c:198
 #: ../src/daemon/abrt-auto-reporting.c:206
-#, fuzzy
 msgid "& [ "
-msgstr "& [ "
+msgstr ""
 
 #: ../src/daemon/abrt-auto-reporting.c:233
 msgid "Turns the authentication off"
