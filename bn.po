@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-01-16 10:20+0000\n"
+"PO-Revision-Date: 2023-01-24 15:20+0000\n"
 "Last-Translator: Mahmudul Hasan <ptcmahmudulhasa@gmail.com>\n"
 "Language-Team: Bengali <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/bn/>\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Weblate 4.15.1\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -1110,33 +1110,46 @@ msgid "- means STDIN, default: build_ids"
 msgstr ""
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:70
+#, fuzzy
 msgid "Download only specified files"
-msgstr ""
+msgstr "শুধুমাত্র নির্দিষ্ট ফাইল ডাউনলোড হবে"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:71
+#, fuzzy
 msgid "Pattern to use when searching for repos, default: *debug*"
 msgstr ""
+"যখন repos অনুসন্ধান করার জন্য প্যাটার্ন ব্যবহার করা হয় , ডিফল্ট: *debug*"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:72
+#, fuzzy
 msgid "Ignored option"
-msgstr ""
+msgstr "উপেক্ষা করা বিকল্প"
 
 #: ../src/plugins/abrt-action-install-debuginfo-to-abrt-cache.c:73
+#, fuzzy
 msgid "OS release version"
-msgstr ""
+msgstr "ওএস রিলিজ সংস্করণ"
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:62
+#, fuzzy
 msgid ""
 "Ok to upload core dump? (It may contain sensitive data). If your answer is "
 "'No', a stack trace will be generated locally. (It may download a huge "
 "amount of data)."
 msgstr ""
+"কোর ডাম্প আপলোড করা ঠিক আছে? (এতে সংবেদনশীল তথ্য থাকতে পারে)। আপনার উত্তর 'না"
+"' হলে, স্থানীয়ভাবে একটি স্ট্যাক ট্রেস তৈরি করা হবে। (এটি বিপুল পরিমাণ ডেটা ডা"
+"উনলড করতে পারে)।"
 
 #: ../src/plugins/abrt-action-perform-ccpp-analysis.in:71
+#, fuzzy
 msgid ""
 "Do you want to generate a stack trace locally? (It may download a huge "
 "amount of data but reporting can't continue without stack trace)."
 msgstr ""
+"আপনি কি স্থানীয়ভাবে একটি স্ট্যাক ট্রেস তৈরি করতে চান? (এটি প্রচুর পরিমাণে "
+"ডেটা ডাউনলোড করতে পাবে; তবে স্ট্যাক ট্রেস ছাড়া রিপোর্টিং চালিয়ে যেতে পারে "
+"না)।"
 
 #: ../src/plugins/abrt-action-trim-files.c:222
 msgid ""
@@ -1146,11 +1159,6 @@ msgid ""
 "SIZE.\n"
 "FILEs are preserved (never deleted)."
 msgstr ""
-"& [-v] [-d SIZE:DIR]... [-f SIZE:DIR]... [-p DIR] [FILE]...\n"
-"\n"
-"Deletes problem dirs (-d) or files (-f) in DIRs until they are smaller than "
-"SIZE.\n"
-"FILEs are preserved (never deleted)."
 
 #: ../src/plugins/abrt-action-trim-files.c:236
 msgid "Delete whole problem directories"
