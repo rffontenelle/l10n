@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2023-01-22 23:20+0000\n"
+"PO-Revision-Date: 2023-01-27 20:20+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://translate.fedoraproject.org/"
 "projects/abrt/retrace-server/en_GB/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -216,6 +216,7 @@ msgstr ""
 msgid ""
 "At the moment the server is loaded for %d%% (running %d out of %d jobs)."
 msgstr ""
+"At the moment the server is loaded for %d%% (running %d out of %d jobs)."
 
 #: ../src/log.wsgi:38
 msgid "There is no log for the specified task"
@@ -223,76 +224,76 @@ msgstr "There is no log for the specified task"
 
 #: ../src/stats.wsgi:36
 msgid "Architecture"
-msgstr ""
+msgstr "Architecture"
 
 #: ../src/stats.wsgi:37
 msgid "Architectures"
-msgstr ""
+msgstr "Architectures"
 
 #: ../src/stats.wsgi:38
 msgid "Build-id"
-msgstr ""
+msgstr "Build-id"
 
 #: ../src/stats.wsgi:39
 msgid "Count"
-msgstr ""
+msgstr "Count"
 
 #: ../src/stats.wsgi:40
 msgid "Denied jobs"
-msgstr ""
+msgstr "Denied jobs"
 
 #: ../src/stats.wsgi:41
 msgid "Failed"
-msgstr ""
+msgstr "Failed"
 
 #: ../src/stats.wsgi:42
 msgid "First retrace"
-msgstr ""
+msgstr "First retrace"
 
 #: ../src/stats.wsgi:43
 msgid "Global statistics"
-msgstr ""
+msgstr "Global statistics"
 
 #: ../src/stats.wsgi:44
 msgid "Missing build-ids"
-msgstr ""
+msgstr "Missing build-ids"
 
 #: ../src/stats.wsgi:45
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: ../src/stats.wsgi:46
 msgid "Release"
-msgstr ""
+msgstr "Release"
 
 #: ../src/stats.wsgi:47
 msgid "Releases"
-msgstr ""
+msgstr "Releases"
 
 #: ../src/stats.wsgi:48
 msgid "Required packages"
-msgstr ""
+msgstr "Required packages"
 
 #: ../src/stats.wsgi:49
 msgid "Retraced packages"
-msgstr ""
+msgstr "Retraced packages"
 
 #: ../src/stats.wsgi:50
 msgid "Retrace Server statistics"
-msgstr ""
+msgstr "Retrace Server statistics"
 
 #: ../src/stats.wsgi:51
 msgid "Shared object name"
-msgstr ""
+msgstr "Shared object name"
 
 #: ../src/stats.wsgi:52
 msgid "Successful"
-msgstr ""
+msgstr "Successful"
 
 #: ../src/stats.wsgi:53
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: ../src/stats.wsgi:54
 msgid "Versions"
-msgstr ""
+msgstr "Versions"
