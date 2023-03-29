@@ -21,13 +21,14 @@
 # Michal Konečný <michal.konecny@packetseekers.eu>, 2020.
 # Josef Hruska <hrusjos@gmail.com>, 2021.
 # Zdenek Chmelar <chmelarz@gmail.com>, 2023.
+# Pavel Borecki <pavel.borecki@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-03-12 20:20+0000\n"
-"Last-Translator: Zdenek Chmelar <chmelarz@gmail.com>\n"
+"PO-Revision-Date: 2023-03-30 19:20+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/abrt/abrt/"
 "cs/>\n"
 "Language: cs\n"
@@ -1848,8 +1849,8 @@ msgid ""
 "Task Id: %s\n"
 "Task Password: %s\n"
 msgstr ""
-"Task Id: %s\n"
-"Task Password: %s\n"
+"Identif. úlohy: %s\n"
+"Heslo k úloze: %s\n"
 
 #: ../src/plugins/abrt-retrace-client.c:929
 msgid "Invalid response from server: missing X-Task-Status."
@@ -1861,7 +1862,7 @@ msgid ""
 "Task Status: %s\n"
 "%s\n"
 msgstr ""
-"Task Status: %s\n"
+"Stav úlohy: %s\n"
 "%s\n"
 
 #: ../src/plugins/abrt-retrace-client.c:1208
