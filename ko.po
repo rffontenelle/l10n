@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2023-06-14 14:20+0000\n"
+"PO-Revision-Date: 2023-06-20 05:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -103,7 +103,7 @@ msgstr "# 코어 덤프"
 
 #: ../src/cli/cli-report.c:160
 msgid "# Executable"
-msgstr "# 실행파일"
+msgstr "# 실행 가능"
 
 #: ../src/cli/cli-report.c:161
 msgid "# Kernel version"
