@@ -1,12 +1,13 @@
 # Manuela Silva <mmsrs@sky.com>, 2019. #zanata
 # Tiago João Mateus de Almeida <tjamadeira@gmail.com>, 2020.
+# Marcelo Moreira <marcelomoreira1905@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2020-02-24 23:38+0000\n"
-"Last-Translator: Tiago João Mateus de Almeida <tjamadeira@gmail.com>\n"
+"PO-Revision-Date: 2023-08-02 13:21+0000\n"
+"Last-Translator: Marcelo Moreira <marcelomoreira1905@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/pt/>\n"
 "Language: pt\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -35,7 +36,7 @@ msgstr "Palavra-passe inválida"
 
 #: ../src/backtrace.wsgi:38
 msgid "There is no backtrace for the specified task"
-msgstr ""
+msgstr "Não há backtrace para a tarefa específica"
 
 #: ../src/create.wsgi:60 ../src/create.wsgi:116
 msgid "Retrace server is fully loaded at the moment"
@@ -67,11 +68,11 @@ msgstr ""
 
 #: ../src/create.wsgi:97
 msgid "Unable to obtain disk free space"
-msgstr ""
+msgstr "Não é possível obter espaço livre em disco"
 
 #: ../src/create.wsgi:101 ../src/create.wsgi:172
 msgid "There is not enough storage space on the server"
-msgstr ""
+msgstr "Não há espaço de armazenamento suficiente no servidor"
 
 #: ../src/create.wsgi:109
 msgid "Unable to create new task"
