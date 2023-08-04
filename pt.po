@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2023-08-02 13:21+0000\n"
+"PO-Revision-Date: 2023-08-05 03:21+0000\n"
 "Last-Translator: Marcelo Moreira <marcelomoreira1905@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/pt/>\n"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../src/create.wsgi:76
 msgid "Specified archive is too large"
-msgstr ""
+msgstr "arquivo especificado é muito grande"
 
 #: ../src/create.wsgi:81
 msgid "X-CoreFileDirectory header has been disabled by server administrator"
