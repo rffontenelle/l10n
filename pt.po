@@ -14,7 +14,7 @@
 # Gustavo Costa <gusta@null.net>, 2021.
 # EDIVAN CARVALHO <edivancarvalho2008@hotmail.com>, 2021.
 # Marcus Gabaldo <gabaldo@gmail.com>, 2021.
-# Daimar Stein <daimarstein@pm.me>, 2021, 2022.
+# Daimar Stein <daimarstein@pm.me>, 2021, 2022, 2023.
 # Daniel Russo Fernandes <drusso86@gmail.com>, 2022.
 # Gabriel Aguas <gabriel.alex.aguas@gmail.com>, 2023.
 msgid ""
@@ -23,7 +23,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
 "PO-Revision-Date: 2023-08-17 21:21+0000\n"
-"Last-Translator: Gabriel Aguas <gabriel.alex.aguas@gmail.com>\n"
+"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -469,6 +469,8 @@ msgid ""
 "Do you want to stop waiting and continue in reporting without properly "
 "loaded configuration?"
 msgstr ""
+"Deseja parar de esperar e continuar o relatório sem a configuração "
+"propriamente carregada?"
 
 #: ../src/gtk-helpers/secrets.c:862
 #, c-format
@@ -543,6 +545,8 @@ msgid ""
 "Please provide a short description of the problem and please include the "
 "steps you have used to reproduce the problem."
 msgstr ""
+"Por favor descreva de maneira resumida o problema e inclua os passos que "
+"você usou para reproduzir o problema."
 
 #: ../src/gui-wizard-gtk/wizard.c:888
 msgid "Please provide the steps you have used to reproduce the problem."
