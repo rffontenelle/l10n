@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-08-17 21:21+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"PO-Revision-Date: 2023-08-22 12:21+0000\n"
+"Last-Translator: Gabriel Aguas <gabriel.alex.aguas@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/pt/>\n"
 "Language: pt\n"
@@ -1281,21 +1281,24 @@ msgstr "Escrever para um endereço inválido"
 
 #: ../src/plugins/abrt-gdb-exploitable:655
 msgid "Subroutine return to an invalid address (corrupted stack?)"
-msgstr ""
+msgstr "Retorno da sub-rotina para um endereço inválido (pilha corrompida?)"
 
 #: ../src/plugins/abrt-gdb-exploitable:661
 #: ../src/plugins/abrt-gdb-exploitable:665
 msgid "Jump to an invalid address"
-msgstr ""
+msgstr "Saltar para um endereço inválido"
 
 #: ../src/plugins/abrt-gdb-exploitable:669
 msgid ""
 "Access past the end of mapped file, invalid address, unaligned access, etc."
 msgstr ""
+"Acesso para além do fim do ficheiro mapeado, endereço inválido, acesso não "
+"alinhado, etc."
 
 #: ../src/plugins/abrt-gdb-exploitable:688
 msgid "Can't get signal no and do exploitability analysis\n"
 msgstr ""
+"Não é possível obter o sinal não e efetuar uma análise de explorabilidade\n"
 
 #: ../src/plugins/abrt-gdb-exploitable:701
 msgid "Likely crash reason: "
