@@ -17,13 +17,13 @@ jobs:
           - retrace-server
     steps:
       - name: Check out ${{ matrix.component }} translations
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: translations
           ref: ${{ matrix.component }}
 
       - name: Check out upstream ${{ matrix.component }} repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: upstream
           repository: abrt/${{ matrix.component }}
@@ -40,11 +40,11 @@ jobs:
             exit 0
 
           echo 'Translation files updated'
-          echo '::set-output name=create-pr::1'
+          echo 'create-pr=1' >> $GITHUB_OUTPUT
 
       - name: Create pull request in upstream repository
         if: ${{ steps.update-translations.outputs.create-pr }}
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v5
         with:
           branch: translations-update
           path: upstream/
