@@ -17,13 +17,13 @@ jobs:
           - retrace-server
     steps:
       - name: Check out ${{ matrix.component }} translations
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: translations
           ref: ${{ matrix.component }}
 
       - name: Check out upstream ${{ matrix.component }} repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: upstream
           repository: abrt/${{ matrix.component }}
