@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2024-01-05 15:36+0000\n"
+"PO-Revision-Date: 2024-01-18 05:51+0000\n"
 "Last-Translator: Mariam Low-Ghelaghutashvili <mariamlow@zusmail.xyz>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ka/>\n"
@@ -23,16 +23,19 @@ msgstr ""
 "X-Generator: Weblate 5.3.1\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
+#, fuzzy
 msgid "Problem Reporting"
 msgstr "პრობლემის გადაგზავნა"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:2
+#, fuzzy
 msgid "View and report application crashes"
 msgstr "აპლიკაციების ავარიული დასრულების ნახვა და გადაგზავნა"
 
 #: ../src/applet/abrt-applet-application.c:157
+#, fuzzy
 msgid "Be verbose"
-msgstr "დამატებითი შეტყობინებები"
+msgstr "დეტალური შეტყობინებები"
 
 #: ../src/applet/abrt-applet-application.c:167
 msgid "Applet which notifies user when new problems are detected by ABRT"
