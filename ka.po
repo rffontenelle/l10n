@@ -4,15 +4,15 @@
 #
 # Translators:
 # George Machitidze <giomac@gmail.com>, 2012,2014
-# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022, 2023.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2022, 2023, 2024.
 # Mariam Low-Ghelaghutashvili <mariamlow@zusmail.xyz>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2024-01-18 05:51+0000\n"
-"Last-Translator: Mariam Low-Ghelaghutashvili <mariamlow@zusmail.xyz>\n"
+"PO-Revision-Date: 2024-01-19 06:36+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ka/>\n"
 "Language: ka\n"
@@ -33,7 +33,6 @@ msgid "View and report application crashes"
 msgstr "აპლიკაციების ავარიული დასრულების ნახვა და გადაგზავნა"
 
 #: ../src/applet/abrt-applet-application.c:157
-#, fuzzy
 msgid "Be verbose"
 msgstr "დეტალური შეტყობინებები"
 
