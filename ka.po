@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2024-01-19 06:36+0000\n"
+"PO-Revision-Date: 2024-02-09 14:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ka/>\n"
@@ -366,7 +366,7 @@ msgstr "გამართვა"
 #: ../src/gtk-helpers/config_dialog.c:358
 #: ../src/gtk-helpers/config_dialog.c:417
 msgid "Workflows"
-msgstr ""
+msgstr "მუშაობს დინებები"
 
 #: ../src/gtk-helpers/config_dialog.c:360
 #: ../src/gtk-helpers/config_dialog.c:362
@@ -724,7 +724,7 @@ msgstr ""
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:2
 msgid "Sensitive words"
-msgstr ""
+msgstr "არასასურველი სიტყვები"
 
 #: ../src/gui-wizard-gtk/wizard.glade.h:3
 msgid "Custom"
@@ -1229,7 +1229,7 @@ msgstr "Bugzilla-ის ანგარიშის პაროლი"
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:8
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:8
 msgid "Restrict access"
-msgstr ""
+msgstr "წვდომის შეზღუდვა"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:9
 msgid ""
@@ -1344,7 +1344,7 @@ msgstr "'strata' ან 'bugzilla'"
 
 #: ../src/plugins/report.c:60
 msgid "Ticket/case ID"
-msgstr ""
+msgstr "ბილეთის/შემთხვევის ID"
 
 #: ../src/plugins/reporter-bugzilla.c:183
 msgid ""
@@ -2204,7 +2204,7 @@ msgstr "Oops სერვერის url"
 
 #: ../src/plugins/report_Logger.xml.in.h:1
 msgid "Logger"
-msgstr ""
+msgstr "ჟურნალი"
 
 #: ../src/plugins/report_Logger.xml.in.h:2
 msgid "Save as text file"
@@ -2240,7 +2240,7 @@ msgstr "თემა"
 
 #: ../src/plugins/report_Mailx.xml.in.h:4
 msgid "Message subject"
-msgstr ""
+msgstr "შეტყობინების სათაური"
 
 #: ../src/plugins/report_Mailx.xml.in.h:5
 msgid "Sender"
@@ -2332,6 +2332,9 @@ msgid ""
 "Examples:&#xA;ftp://[user[:pass]@]host/dir/[file.tar.gz]&#xA;scp://[user[:"
 "pass]@]host/dir/[file.tar.gz]&#xA;file:///dir/[file.tar.gz]"
 msgstr ""
+"მაგალითად:&#xA;ftp://[user[:pass]@]host/dir/[file.tar."
+"gz]&#xA;scp://[user[:pass]@]host/dir/[file.tar.gz]&#xA;file:///dir/[file.tar."
+"gz]"
 
 #: ../src/plugins/report_Uploader.xml.in.h:7
 msgid "Use this field if you do not want to have user name in URL"
@@ -2805,7 +2808,7 @@ msgstr "შეცდომა"
 
 #: ../src/report-newt/report-newt.c:255
 msgid "Reporting"
-msgstr ""
+msgstr "ანგარიში"
 
 #: ../src/report-newt/report-newt.c:275
 #, c-format
