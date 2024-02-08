@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2024-01-19 06:36+0000\n"
+"PO-Revision-Date: 2024-02-09 14:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ka/>\n"
@@ -1913,7 +1913,7 @@ msgstr ""
 
 #: ../src/cli/abrtcli/utils.py:79
 msgid "Not reportable"
-msgstr ""
+msgstr "გადაგზავნადი არაა"
 
 #: ../src/cli/abrtcli/cli/__init__.py:30
 msgid "increase output verbosity"
