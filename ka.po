@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2024-02-09 14:36+0000\n"
+"PO-Revision-Date: 2024-02-12 05:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/ka/>\n"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../src/index.wsgi:20
 msgid "Retrace Server"
-msgstr ""
+msgstr "Retrace სერვერი"
 
 #: ../src/index.wsgi:21
 msgid "Welcome to Retrace Server"
@@ -217,7 +217,7 @@ msgstr "რაოდენობა"
 
 #: ../src/stats.wsgi:40
 msgid "Denied jobs"
-msgstr ""
+msgstr "უარყოფილი დავალებები"
 
 #: ../src/stats.wsgi:41
 msgid "Failed"
@@ -225,15 +225,15 @@ msgstr "შეცდომა"
 
 #: ../src/stats.wsgi:42
 msgid "First retrace"
-msgstr ""
+msgstr "პირველი ტრასირება"
 
 #: ../src/stats.wsgi:43
 msgid "Global statistics"
-msgstr ""
+msgstr "გლობალური სტატისტიკა"
 
 #: ../src/stats.wsgi:44
 msgid "Missing build-ids"
-msgstr ""
+msgstr "ვერ ვიპოვე build-id-ები"
 
 #: ../src/stats.wsgi:45
 msgid "Name"
@@ -249,11 +249,11 @@ msgstr "გამოცემები"
 
 #: ../src/stats.wsgi:48
 msgid "Required packages"
-msgstr ""
+msgstr "საჭიროა პაკეტები"
 
 #: ../src/stats.wsgi:49
 msgid "Retraced packages"
-msgstr ""
+msgstr "ტრასირებული პაკეტები"
 
 #: ../src/stats.wsgi:50
 msgid "Retrace Server statistics"
