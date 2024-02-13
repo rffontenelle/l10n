@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2024-02-12 05:36+0000\n"
+"PO-Revision-Date: 2024-02-14 19:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ka/>\n"
@@ -27,7 +27,6 @@ msgid "Problem Reporting"
 msgstr "პრობლემის გადაგზავნა"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:2
-#, fuzzy
 msgid "View and report application crashes"
 msgstr "აპლიკაციების ავარიული დასრულების ნახვა და გადაგზავნა"
 
