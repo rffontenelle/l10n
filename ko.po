@@ -12,13 +12,13 @@
 # MinWoo Joh <igtzhsou@naver.com>, 2015. #zanata
 # woosuk park <bjh13579@gmail.com>, 2020.
 # simmon <simmon@nplob.com>, 2021.
-# 김인수 <simmon@nplob.com>, 2022, 2023.
+# 김인수 <simmon@nplob.com>, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-08-06 18:21+0000\n"
+"PO-Revision-Date: 2024-02-16 16:35+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/ko/>\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.4\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -560,7 +560,7 @@ msgstr "비밀번호:"
 
 #: ../src/daemon/abrt-auto-reporting.c:339
 msgid "Cannot continue without password\n"
-msgstr "암호없이 계속 진행할 수 없습니다\n"
+msgstr "비밀번호 없이 계속 진행 할 수 없습니다\n"
 
 #. Print only the part before ':' of a string like "username:password"
 #: ../src/daemon/abrt-auto-reporting.c:380
@@ -1958,7 +1958,7 @@ msgstr "서버 상의 작업 id"
 
 #: ../src/plugins/abrt-retrace-client.c:1278
 msgid "password of your task on server"
-msgstr "서버 상의 작업 암호"
+msgstr "서버에서 작업 비밀번호"
 
 # translation auto-copied from project abrt, version rhel7, document abrt
 #: ../src/plugins/abrt-retrace-client.c:1282
@@ -1986,7 +1986,7 @@ msgstr "작업 id가 필요합니다."
 #: ../src/plugins/abrt-retrace-client.c:1354
 #: ../src/plugins/abrt-retrace-client.c:1362
 msgid "Task password is needed."
-msgstr "작업 암호가 필요합니다."
+msgstr "작업 비밀번호가 필요합니다."
 
 #: ../src/plugins/abrt-retrace-client.c:1366
 #, c-format
