@@ -5,13 +5,14 @@
 # Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2016. #zanata, 2020.
 # José Fournier <jaaf64@zoraldia.com>, 2016. #zanata
 # Julien Humbert <julroy67@gmail.com>, 2020.
+# Léane GRASSER <leane.grasser@proton.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2020-07-31 15:29+0000\n"
-"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
+"PO-Revision-Date: 2024-10-17 10:38+0000\n"
+"Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/fr/>\n"
 "Language: fr\n"
@@ -19,12 +20,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
 msgid "You must use HTTPS"
-msgstr "Vous devez utiliser l’HTTPS"
+msgstr "Vous devez utiliser HTTPS"
 
 #: ../src/backtrace.wsgi:23 ../src/log.wsgi:24 ../src/status.wsgi:24
 msgid "Invalid URL"
@@ -40,11 +41,11 @@ msgstr "Mot de passe invalide"
 
 #: ../src/backtrace.wsgi:38
 msgid "There is no backtrace for the specified task"
-msgstr "Il n’y a pas de trace arrière pour la tâche indiquée"
+msgstr "Il n’y a pas de trace d’appels pour la tâche indiquée"
 
 #: ../src/create.wsgi:60 ../src/create.wsgi:116
 msgid "Retrace server is fully loaded at the moment"
-msgstr "Le serveur de retraçage est complètement chargé en ce moment"
+msgstr "Le serveur Retrace est actuellement à pleine charge"
 
 #: ../src/create.wsgi:64
 msgid "You must use POST method"
@@ -56,16 +57,16 @@ msgstr "Le format d’archive indiqué n’est pas pris en charge"
 
 #: ../src/create.wsgi:72
 msgid "You need to set Content-Length header properly"
-msgstr "Vous devez renseigner correctement l’entête Content-Length"
+msgstr "Vous devez renseigner correctement l’en-tête Content-Length"
 
 #: ../src/create.wsgi:76
 msgid "Specified archive is too large"
-msgstr "L’archive indiquée est trop volumineuse"
+msgstr "L’archive spécifiée est trop volumineuse"
 
 #: ../src/create.wsgi:81
 msgid "X-CoreFileDirectory header has been disabled by server administrator"
 msgstr ""
-"L'entête X-CoreFileDirectory a été désactivée par l'administrateur du serveur"
+"L'en-tête X-CoreFileDirectory a été désactivé par l'administrateur du serveur"
 
 #: ../src/create.wsgi:91
 msgid "Unable to create working directory"
@@ -73,7 +74,7 @@ msgstr "Impossible de créer le dossier de travail"
 
 #: ../src/create.wsgi:97
 msgid "Unable to obtain disk free space"
-msgstr "Impossible d’obtenir de l’espace libre sur le disque"
+msgstr "Impossible d’obtenir l’espace libre du disque"
 
 #: ../src/create.wsgi:101 ../src/create.wsgi:172
 msgid "There is not enough storage space on the server"
@@ -85,7 +86,7 @@ msgstr "Impossible de créer une nouvelle tâche"
 
 #: ../src/create.wsgi:121
 msgid "The directory specified in 'X-CoreFileDirectory' does not exist"
-msgstr "Le dossier renseigné dans « X-CoreFileDirectory » n'existe pas"
+msgstr "Le répertoire spécifié dans « X-CoreFileDirectory » n’existe pas"
 
 #: ../src/create.wsgi:127
 #, c-format
@@ -93,19 +94,19 @@ msgid ""
 "There are %d files in the '%s' directory. Only a single archive is supported "
 "at the moment"
 msgstr ""
-"Il y a %d fichiers dans le dossier « %s ». Seule une archive unique est "
-"prise en charge pour l'instant"
+"Il y a %d fichiers dans le répertoire « %s ». Seule une archive unique est "
+"actuellement prise en charge"
 
 #: ../src/create.wsgi:136
 #, c-format
 msgid "You header specifies '%s' type, but the file type does not match"
 msgstr ""
-"Votre entête indique le type « %s », mais ce type de fichier ne correspond "
+"Votre en-tête spécifie le type « %s », mais le type du fichier ne correspond "
 "pas"
 
 #: ../src/create.wsgi:154
 msgid "Unable to save archive"
-msgstr "Impossible de sauvegarder l’archive"
+msgstr "Impossible d’enregistrer l’archive"
 
 #: ../src/create.wsgi:162
 msgid "Unable to obtain unpacked size"
@@ -113,7 +114,7 @@ msgstr "Impossible d’obtenir la taille décompressée"
 
 #: ../src/create.wsgi:167
 msgid "Specified archive's content is too large"
-msgstr "Le contenu de l’archive indiquée est trop volumineux"
+msgstr "Le contenu de l’archive spécifiée est trop volumineux"
 
 #: ../src/create.wsgi:184
 msgid "Unable to unpack archive"
@@ -145,11 +146,11 @@ msgstr "Le fichier requis « %s » est manquant"
 
 #: ../src/index.wsgi:20
 msgid "Retrace Server"
-msgstr "Serveur de retraçage"
+msgstr "Retrace Server"
 
 #: ../src/index.wsgi:21
 msgid "Welcome to Retrace Server"
-msgstr "Bienvenue sur le serveur de retraçage"
+msgstr "Bienvenue sur Retrace Server"
 
 #: ../src/index.wsgi:23
 msgid ""
@@ -158,9 +159,9 @@ msgid ""
 "information at Retrace Server&apos;s github:"
 msgstr ""
 "Retrace Server est un service offrant la possibilité d’analyser des "
-"instantanés de la mémoire (coredump) et de générer des traces arrière depuis "
-"le réseau (backtrace). Vous pouvez trouver plus d’informations sur le dépôt "
-"Github de Retrace Server :"
+"instantanés de la mémoire (coredump) et de générer des traces d’appels "
+"depuis le réseau (backtrace). Vous pouvez trouver plus d’informations sur le "
+"dépôt Github de Retrace Server :"
 
 #: ../src/index.wsgi:29
 msgid ""
@@ -195,15 +196,16 @@ msgid ""
 "(including backtrace) is deleted after %d hours of inactivity. No possibly "
 "private data are kept on the server any longer."
 msgstr ""
-"L’instantané de la mémoire n’est conservé sur le serveur que le temps de "
-"réaliser le travail de retraçage. Une fois terminé, le serveur conserve le "
-"journal du retraçage et de la trace arrière. Toutes les autres données "
-"(incluant l’instantané) sont supprimées. Le fichier journal du retraçage et "
-"de la trace arrière sont uniquement accessibles par un identifiant unique de "
-"tâche et un mot de passe, que personne (à l’exception de l’auteur) n’est "
-"autorisé à voir. Toutes les informations du plantage (incluant la trace "
-"arrière) sont supprimées après %d heures sans activité. À partir de ce "
-"moment, aucune donnée potentiellement privée n’est conservée sur le serveur."
+"Votre coredump n'est conservé sur le serveur uniquement pour la durée de "
+"l'exécution de la tâche de retraçage. Une fois la tâche terminée, le serveur "
+"conserve seulement le journal de retraçage ainsi que la trace d’appels. "
+"Toutes les autres données (dont le coredump) sont supprimées. Le journal de "
+"retraçage et la trace d’appels ne sont accessibles qu'à l'aide d'un ID de "
+"tâche unique et d'un mot de passe. De fait, personne (à part l'auteur) ne "
+"peut y accéder. L'ensemble des informations relatives aux plantages (dont la "
+"trace d’appels) sont supprimées après %d heures d'inactivité. Aucune donnée "
+"pouvant être considérée comme personnelle n'est conservée à l'issue de la "
+"durée de traitement."
 
 #: ../src/index.wsgi:43
 msgid ""
@@ -213,19 +215,19 @@ msgid ""
 "administrators are not responsible for the problems related to the usage of "
 "an insecure channel (such as HTTP)."
 msgstr ""
-"Votre instantané de la mémoire est utilisé uniquement à des fins de "
-"retraçage. Les administrateurs du serveur ne sont pas en train d’essayer de "
-"prendre vos données privées avec vos instantanés ou traces arrière. Utiliser "
-"un canal de communication sécurisé (HTTPS) est fortement recommandé. Les "
-"administrateurs système ne sont pas responsables des problèmes liés à "
-"l’usage d’un canal non sécurisé (tel que HTTP)."
+"Votre coredump est utilisé uniquement à des fins de retraçage. Les "
+"administrateurs du serveur ne cherchent pas à obtenir vos données "
+"personnelles à partir des coredumps ou des traces d’appels. L'utilisation "
+"d'un canal de communication sécurisé (HTTPS) est fortement recommandée. Les "
+"administrateurs du serveur ne sont pas responsables des problèmes engendrés "
+"par l'utilisation d'un canal non sécurisé (comme HTTP)."
 
 #: ../src/index.wsgi:34
 #, c-format
 msgid ""
 "At the moment the server is loaded for %d%% (running %d out of %d jobs)."
 msgstr ""
-"En ce moment, le serveur est chargé pour %d%% (%d travaux en cours sur %d)."
+"Actuellement, le serveur est chargé à %d%% (%d travaux en cours sur %d)."
 
 #: ../src/log.wsgi:38
 msgid "There is no log for the specified task"
@@ -241,7 +243,7 @@ msgstr "Architectures"
 
 #: ../src/stats.wsgi:38
 msgid "Build-id"
-msgstr "Id-construction"
+msgstr "Build-id"
 
 #: ../src/stats.wsgi:39
 msgid "Count"
@@ -265,7 +267,7 @@ msgstr "Statistiques globales"
 
 #: ../src/stats.wsgi:44
 msgid "Missing build-ids"
-msgstr "Id-construction manquants"
+msgstr "Build-ids manquants"
 
 #: ../src/stats.wsgi:45
 msgid "Name"
@@ -285,11 +287,11 @@ msgstr "Paquets requis"
 
 #: ../src/stats.wsgi:49
 msgid "Retraced packages"
-msgstr "Paquets retraçés"
+msgstr "Paquets retracés"
 
 #: ../src/stats.wsgi:50
 msgid "Retrace Server statistics"
-msgstr "Statistiques du serveur de retraçage"
+msgstr "Statistiques Retrace Server"
 
 #: ../src/stats.wsgi:51
 msgid "Shared object name"
@@ -297,7 +299,7 @@ msgstr "Nom de l’objet partagé"
 
 #: ../src/stats.wsgi:52
 msgid "Successful"
-msgstr "Avec succès"
+msgstr "Réussi"
 
 #: ../src/stats.wsgi:53
 msgid "Total"
