@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2024-12-22 15:16+0000\n"
+"PO-Revision-Date: 2024-12-24 03:20+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/it/>\n"
@@ -2366,7 +2366,7 @@ msgstr ""
 "configurato  '%s'."
 
 #: ../src/plugins/reporter-mantisbt.c:390
-#, fuzzy, c-format
+#, c-format
 msgid "Malformed url to MantisBT '%s'."
 msgstr "URL malformato per MantisBT '%s'."
 
