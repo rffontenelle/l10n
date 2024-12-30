@@ -17,13 +17,14 @@
 # Daimar Stein <daimarstein@pm.me>, 2021, 2022, 2023, 2024.
 # Daniel Russo Fernandes <drusso86@gmail.com>, 2022.
 # Gabriel Aguas <gabriel.alex.aguas@gmail.com>, 2023.
+# NotMy Name <first.thunder@protonmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2024-12-30 11:17+0000\n"
-"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
+"PO-Revision-Date: 2024-12-30 18:16+0000\n"
+"Last-Translator: NotMy Name <first.thunder@protonmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/pt/>\n"
 "Language: pt\n"
@@ -300,7 +301,7 @@ msgid ""
 "'{0}' must be owned by abrt. Please run '# chown -R abrt.abrt {0}' to fix "
 "the issue."
 msgstr ""
-"ABRT precisa ser dono de '{0}'. Por favor, rode '# chown -R abrt.abrt {0}' "
+"ABRT precisa ser dono de '{0}'. Por favor, corra '# chown -R abrt.abrt {0}' "
 "para resolver o problema."
 
 #. Was: "All downloaded packages have been extracted, removing..."
