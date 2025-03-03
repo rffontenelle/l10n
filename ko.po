@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the retrace-server package.
 # Michal Toman <mtoman@redhat.com>, 2011.
 # simmon <simmon@nplob.com>, 2021.
-# 김인수 <simmon@nplob.com>, 2022, 2023.
+# 김인수 <simmon@nplob.com>, 2022, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: retrace-server 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2023-05-19 06:20+0000\n"
+"PO-Revision-Date: 2025-03-03 18:06+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/ko/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -90,7 +90,7 @@ msgstr "'X-코어파일디렉토리'에 지정한 디렉토리가 존재하지 �
 msgid ""
 "There are %d files in the '%s' directory. Only a single archive is supported "
 "at the moment"
-msgstr "%d 파일들이('%s' 디렉토리에) 있습니다. 현재 단일 지정 저장소만 지원합니다"
+msgstr "이 %d('%s' 디렉토리에) 파일이 있습니다. 현재 단일 지정 저장소만 지원합니다"
 
 #: ../src/create.wsgi:136
 #, c-format
