@@ -6,13 +6,13 @@
 # eukim <eukim@redhat.com>, 2011, 2012
 # fedoracat <raypotassium@gmail.com>, 2011, 2012
 # simmon <simmon@nplob.com>, 2021.
-# 김인수 <simmon@nplob.com>, 2022, 2023, 2024.
+# 김인수 <simmon@nplob.com>, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2024-09-24 09:10+0000\n"
+"PO-Revision-Date: 2025-03-17 22:35+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/ko/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -1254,8 +1254,8 @@ msgid ""
 "You can create bugzilla.redhat.com account &lt;a href=\"https://bugzilla."
 "redhat.com/createaccount.cgi\"&gt;here&lt;/a&gt;"
 msgstr ""
-"&lt;a href=\"https://bugzilla.redhat.com/createaccount.cgi\"&gt;여기&lt;/a&gt;"
-"에서 bugzilla.redhat.com 계정을 생성할 수 있습니다"
+"bugzilla.redhat.com 계정을 생성 할 수 있습니다 &lt;a href="
+"\"https://bugzilla.redhat.com/createaccount.cgi\"&gt;here&lt;/a&gt;"
 
 #: ../src/plugins/report_Bugzilla.xml.in.in.h:6
 #: ../src/plugins/report_CentOSBugTracker.xml.in.h:6
