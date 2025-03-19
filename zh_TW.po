@@ -1,11 +1,12 @@
 # Cheng-Chia Tseng <pswo10680@gmail.com>, 2017. #zanata, 2023.
+# hsu zangmen <chzang55@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2023-11-10 11:30+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2025-03-20 02:48+0000\n"
+"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/abrt/retrace-server/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -13,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1.1\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -214,7 +215,7 @@ msgstr "架構"
 
 #: ../src/stats.wsgi:38
 msgid "Build-id"
-msgstr "Build-id"
+msgstr "建置-id"
 
 #: ../src/stats.wsgi:39
 msgid "Count"
