@@ -12,13 +12,14 @@
 # Jakub Filak <jfilak@redhat.com>, 2016. #zanata
 # 張仁傑 <s9727453@gmail.com>, 2016. #zanata
 # Cheng-Chia Tseng <pswo10680@gmail.com>, 2017. #zanata, 2023.
+# hsu zangmen <chzang55@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
-"PO-Revision-Date: 2023-11-10 11:29+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2025-03-19 22:17+0000\n"
+"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/abrt/abrt/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1.1\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: ../src/applet/org.freedesktop.problems.applet.desktop.in.h:1
 msgid "Problem Reporting"
@@ -1967,6 +1968,8 @@ msgid ""
 "Whiteboar equal to 'UUID' of the crash. If such a bug found, search for "
 "Bodhi updates shipping fixes for the found Bugzilla bugs."
 msgstr ""
+"在 Bugzilla Bug Whiteboar 中尋找「abrt_hash」值等於崩潰的「UUID」的 Bugzilla "
+"報告。如果發現這樣的錯誤，請搜尋 Bodhi 更新以修復發現的 Bugzilla 錯誤。"
 
 #: ../src/plugins/analyze_LocalGDB.xml.in.h:1
 msgid "Local GNU Debugger"
