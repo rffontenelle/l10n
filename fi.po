@@ -8,14 +8,14 @@
 # Ville Skyttä <ville.skytta@iki.fi>, 2011
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2017. #zanata
 # Toni Rantala <trantalafilo@gmail.com>, 2017. #zanata
-# Ricky Tigg <ricky.tigg@gmail.com>, 2020, 2024.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2020, 2024, 2025.
 # Jan Kuparinen <copper_fin@hotmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2024-12-20 12:38+0000\n"
+"PO-Revision-Date: 2025-03-20 18:30+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/fi/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.1\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -3148,7 +3148,7 @@ msgstr "Miten haluat raportoida ongelman?"
 #: ../src/report-newt/report-newt.c:168 ../src/report-newt/report-newt.c:258
 #: ../src/report-newt/report-newt.c:334 ../src/report-newt/report-newt.c:356
 msgid "Ok"
-msgstr "Ok"
+msgstr "Hyvä on"
 
 #: ../src/report-newt/report-newt.c:68 ../src/report-newt/report-newt.c:145
 msgid "Cancel"
