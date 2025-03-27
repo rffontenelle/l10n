@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Hela Basa <r45xveza@pm.me>, 2021.
+# Malaka Tharumuthu <malakat100@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: libreport 2.11.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2021-08-18 19:04+0000\n"
-"Last-Translator: Hela Basa <r45xveza@pm.me>\n"
+"PO-Revision-Date: 2025-03-27 15:26+0000\n"
+"Last-Translator: Malaka Tharumuthu <malakat100@gmail.com>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/si/>\n"
 "Language: si\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: ../src/cli/cli.c:66
 msgid ""
@@ -29,15 +30,15 @@ msgstr ""
 #. short_name long_name  value    parameter_name  help
 #: ../src/cli/cli.c:89
 msgid "List possible events [which start with PREFIX]"
-msgstr ""
+msgstr "සිදුවිය හැකි සිදුවීම් [PREFIX සමඟ ආරම්භ වන]"
 
 #: ../src/cli/cli.c:90 ../src/gui-wizard-gtk/main.c:170
 msgid "Run only these events"
-msgstr ""
+msgstr "මෙම සිදුවීම් පමණක් ධාවනය කරන්න"
 
 #: ../src/cli/cli.c:91 ../src/gui-wizard-gtk/main.c:169
 msgid "Remove PROBLEM_DIR after reporting"
-msgstr ""
+msgstr "වාර්තා කිරීමෙන් පසු PROBLEM_DIR ඉවත් කරන්න"
 
 #: ../src/cli/cli.c:92
 msgid "Expert mode"
