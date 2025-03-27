@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2025-03-27 15:26+0000\n"
+"PO-Revision-Date: 2025-03-28 05:54+0000\n"
 "Last-Translator: Malaka Tharumuthu <malakat100@gmail.com>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/si/>\n"
@@ -38,11 +38,11 @@ msgstr "වලංගු නොවන මුරපදයක්"
 
 #: ../src/backtrace.wsgi:38
 msgid "There is no backtrace for the specified task"
-msgstr ""
+msgstr "නියමිත කාර්යය සඳහා පිටුහරස් අනුවාදය නොමැත"
 
 #: ../src/create.wsgi:60 ../src/create.wsgi:116
 msgid "Retrace server is fully loaded at the moment"
-msgstr ""
+msgstr "Retrace සේවාදායකය දැනට සම්පුර්ණයෙන්ම පූරණය වී ඇත"
 
 #: ../src/create.wsgi:64
 msgid "You must use POST method"
