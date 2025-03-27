@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gnome-abrt package.
 # Hela Basa <r45xveza@pm.me>, 2021.
 # Malaka Jayasinghe <malakat100@gmail.com>, 2025.
+# Malaka Tharumuthu <malakat100@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-abrt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2025-03-26 15:09+0000\n"
-"Last-Translator: Malaka Jayasinghe <malakat100@gmail.com>\n"
+"PO-Revision-Date: 2025-03-28 05:54+0000\n"
+"Last-Translator: Malaka Tharumuthu <malakat100@gmail.com>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/si/>\n"
 "Language: si\n"
@@ -155,7 +156,7 @@ msgstr ""
 #: src/gnome_abrt/dbus_problems.py:107
 #, python-brace-format
 msgid "Can't get interface '{0}' on path '{1}' in bus '{2}': {3}"
-msgstr "අතුරුමුහුණත ලබා ගත නොහැක.'{0}'මාර්ගයේ'1'බස් තුළ'{2}':'{3}'"
+msgstr "අතුරුමුහුණත ලබා ගත නොහැක.'{0}'මාර්ගයේ'{1}'බස් තුළ'{2}':'{3}'"
 
 #: src/gnome_abrt/tools.py:42
 msgid "Future"
