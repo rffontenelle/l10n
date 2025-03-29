@@ -6,13 +6,14 @@
 # José Fournier <jaaf64@zoraldia.com>, 2016. #zanata
 # Julien Humbert <julroy67@gmail.com>, 2020.
 # Léane GRASSER <leane.grasser@proton.me>, 2024.
+# Tom FRANZO <tom@franzo.fr>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2024-10-17 10:38+0000\n"
-"Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
+"PO-Revision-Date: 2025-03-29 20:07+0000\n"
+"Last-Translator: Tom FRANZO <tom@franzo.fr>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/fr/>\n"
 "Language: fr\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: ../src/backtrace.wsgi:18 ../src/create.wsgi:55 ../src/log.wsgi:19
 #: ../src/status.wsgi:19
@@ -41,7 +42,7 @@ msgstr "Mot de passe invalide"
 
 #: ../src/backtrace.wsgi:38
 msgid "There is no backtrace for the specified task"
-msgstr "Il n’y a pas de trace d’appels pour la tâche indiquée"
+msgstr "Aucune trace de pile n’est disponible pour la tâche spécifiée"
 
 #: ../src/create.wsgi:60 ../src/create.wsgi:116
 msgid "Retrace server is fully loaded at the moment"
@@ -158,10 +159,9 @@ msgid ""
 "coredump and generate backtrace over network. You can find further "
 "information at Retrace Server&apos;s github:"
 msgstr ""
-"Retrace Server est un service offrant la possibilité d’analyser des "
-"instantanés de la mémoire (coredump) et de générer des traces d’appels "
-"depuis le réseau (backtrace). Vous pouvez trouver plus d’informations sur le "
-"dépôt Github de Retrace Server :"
+"Retrace Server est un service qui permet d’analyser les fichiers coredump et "
+"de générer des traces de pile à distance via le réseau. Vous pouvez trouver "
+"plus d’informations sur le GitHub de Retrace Server :"
 
 #: ../src/index.wsgi:29
 msgid ""
@@ -196,16 +196,16 @@ msgid ""
 "(including backtrace) is deleted after %d hours of inactivity. No possibly "
 "private data are kept on the server any longer."
 msgstr ""
-"Votre coredump n'est conservé sur le serveur uniquement pour la durée de "
-"l'exécution de la tâche de retraçage. Une fois la tâche terminée, le serveur "
-"conserve seulement le journal de retraçage ainsi que la trace d’appels. "
-"Toutes les autres données (dont le coredump) sont supprimées. Le journal de "
-"retraçage et la trace d’appels ne sont accessibles qu'à l'aide d'un ID de "
-"tâche unique et d'un mot de passe. De fait, personne (à part l'auteur) ne "
-"peut y accéder. L'ensemble des informations relatives aux plantages (dont la "
-"trace d’appels) sont supprimées après %d heures d'inactivité. Aucune donnée "
-"pouvant être considérée comme personnelle n'est conservée à l'issue de la "
-"durée de traitement."
+"Votre coredump n’est conservé sur le serveur que pendant l’exécution de la "
+"tâche d’analyse (retrace). Une fois cette tâche terminée, seules les traces "
+"de l’analyse (retrace log) et la trace de pile (backtrace) sont conservées. "
+"Toutes les autres données (y compris le coredump) sont supprimées. Le "
+"journal d’analyse et la trace de pile ne sont accessibles qu’avec un "
+"identifiant de tâche unique et un mot de passe ; personne d’autre que l’"
+"auteur ne peut y accéder. Toutes les informations liées au plantage (y "
+"compris la trace de pile) sont supprimées après %d heures d’inactivité. "
+"Aucune donnée potentiellement privée n’est conservée sur le serveur au-delà "
+"de ce délai."
 
 #: ../src/index.wsgi:43
 msgid ""
@@ -215,12 +215,12 @@ msgid ""
 "administrators are not responsible for the problems related to the usage of "
 "an insecure channel (such as HTTP)."
 msgstr ""
-"Votre coredump est utilisé uniquement à des fins de retraçage. Les "
-"administrateurs du serveur ne cherchent pas à obtenir vos données "
-"personnelles à partir des coredumps ou des traces d’appels. L'utilisation "
-"d'un canal de communication sécurisé (HTTPS) est fortement recommandée. Les "
-"administrateurs du serveur ne sont pas responsables des problèmes engendrés "
-"par l'utilisation d'un canal non sécurisé (comme HTTP)."
+"Votre coredump est uniquement utilisé à des fins d’analyse (retrace). Les "
+"administrateurs du serveur ne cherchent en aucun cas à accéder à vos données "
+"privées via les coredumps ou les traces de pile (backtraces). L’utilisation "
+"d’un canal de communication sécurisé (HTTPS) est fortement recommandée. Les "
+"administrateurs du serveur ne sont pas responsables des problèmes liés à l’"
+"utilisation d’un canal non sécurisé (comme HTTP)."
 
 #: ../src/index.wsgi:34
 #, c-format
