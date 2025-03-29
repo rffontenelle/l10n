@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-27 21:44+0200\n"
-"PO-Revision-Date: 2025-03-28 05:54+0000\n"
+"PO-Revision-Date: 2025-03-29 15:49+0000\n"
 "Last-Translator: Malaka Tharumuthu <malakat100@gmail.com>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/abrt/"
 "retrace-server/si/>\n"
@@ -46,55 +46,55 @@ msgstr "Retrace සේවාදායකය දැනට සම්පුර්�
 
 #: ../src/create.wsgi:64
 msgid "You must use POST method"
-msgstr ""
+msgstr "ඔබ POST ක්‍රමය භාවිතා කළ යුතුය"
 
 #: ../src/create.wsgi:68
 msgid "Specified archive format is not supported"
-msgstr ""
+msgstr "නිශ්චිත සංරක්ෂණ ආකෘතිය සහාය නොදක්වයි"
 
 #: ../src/create.wsgi:72
 msgid "You need to set Content-Length header properly"
-msgstr ""
+msgstr "ඔබ Content-Length ශීර්ෂය නිවැරදිව සකසා යුතුය"
 
 #: ../src/create.wsgi:76
 msgid "Specified archive is too large"
-msgstr ""
+msgstr "නිශ්චිත සංරක්ෂණ ගොනුව ඉතා විශාලයි"
 
 #: ../src/create.wsgi:81
 msgid "X-CoreFileDirectory header has been disabled by server administrator"
-msgstr ""
+msgstr "සේවාදායක පරිපාලක විසින් X-CoreFileDirectory ශීර්ෂය අක්‍රීය කර ඇත"
 
 #: ../src/create.wsgi:91
 msgid "Unable to create working directory"
-msgstr ""
+msgstr "ක්‍රියාකාරී නාමාවලියක් නිර්මාණය කිරීමට නොහැකි විය"
 
 #: ../src/create.wsgi:97
 msgid "Unable to obtain disk free space"
-msgstr ""
+msgstr "තැටියේ නිදහස් ඉඩ ලබා ගැනීමට නොහැකි විය"
 
 #: ../src/create.wsgi:101 ../src/create.wsgi:172
 msgid "There is not enough storage space on the server"
-msgstr ""
+msgstr "සේවාදායකයේ ප්‍රමාණවත් ගබඩා ඉඩක් නොමැත"
 
 #: ../src/create.wsgi:109
 msgid "Unable to create new task"
-msgstr ""
+msgstr "නව කාර්යයක් නිර්මාණය කළ නොහැක"
 
 #: ../src/create.wsgi:121
 msgid "The directory specified in 'X-CoreFileDirectory' does not exist"
-msgstr ""
+msgstr "'X-CoreFileDirectory' හි නිශ්චිතව දක්වා ඇති නාමාවලිය නොපවතී"
 
 #: ../src/create.wsgi:127
 #, c-format
 msgid ""
 "There are %d files in the '%s' directory. Only a single archive is supported "
 "at the moment"
-msgstr ""
+msgstr "'%s' නාමාවලියේ %d ගොනු තිබේ. දැනට එකම සංරක්ෂණයක් පමණක් සහාය දක්වයි"
 
 #: ../src/create.wsgi:136
 #, c-format
 msgid "You header specifies '%s' type, but the file type does not match"
-msgstr ""
+msgstr "ඔබගේ ශීර්ෂය '%s' වර්ගය පෙන්වයි, නමුත් ගොනු වර්ගය එකඟ නොවේ"
 
 #: ../src/create.wsgi:154
 msgid "Unable to save archive"
