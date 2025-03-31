@@ -33,7 +33,7 @@
 # Eduard Lucena <x3mboy@fedoraproject.org>, 2017. #zanata
 # Kevin Puertas <kevin01010@gmail.com>, 2017. #zanata
 # Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2017. #zanata
-# Juan Antonio Burgos López <suriem@surkum.com>, 2020.
+# Juan Antonio Burgos López <suriem@surkum.com>, 2020, 2025.
 # Adolfo Jayme Barrientos <fitoschido@gmail.com>, 2020.
 # Emilio Herrera <ehespinosa57@gmail.com>, 2020.
 # Facundo <facevedo@disroot.org>, 2020.
@@ -44,7 +44,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: crash-catcher@lists.fedoraproject.org\n"
 "POT-Creation-Date: 2020-01-23 15:47+0100\n"
 "PO-Revision-Date: 2025-03-31 22:23+0000\n"
-"Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
+"Last-Translator: Juan Antonio Burgos López <suriem@surkum.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/abrt/"
 "abrt/es/>\n"
 "Language: es\n"
@@ -68,8 +68,7 @@ msgstr "Ser minucioso"
 
 #: ../src/applet/abrt-applet-application.c:167
 msgid "Applet which notifies user when new problems are detected by ABRT"
-msgstr ""
-"Miniaplicación que notifica al usuario cuando ABRT detecta nuevos problemas"
+msgstr "Applet que notifica al usuario cuando ABRT detecta nuevos problemas"
 
 #: ../src/applet/abrt-applet-application.c:534
 msgid "Oops!"
