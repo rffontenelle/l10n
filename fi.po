@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2025-04-04 08:29+0000\n"
+"PO-Revision-Date: 2025-04-04 10:27+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/fi/>\n"
@@ -2618,11 +2618,11 @@ msgstr "Liitä tiedot olemassa olevaan Red Hat -tukitapaukseen"
 
 #: ../src/plugins/report_Uploader.xml.in.h:1
 msgid "Report Uploader"
-msgstr "Lähetyslatausraportti"
+msgstr "Raportin ulospäin-lataaja"
 
 #: ../src/plugins/report_Uploader.xml.in.h:2
 msgid "Upload as tar.gz file (via FTP/SCP/...)"
-msgstr "Lähetä tar.gz-tiedostona (FTP:llä/SCP:llä…)"
+msgstr "Lataa ulospäin tar.gz-tiedostona (FTP/SCP:n välityksellä…)"
 
 #: ../src/plugins/report_Uploader.xml.in.h:3
 msgid "URL"
@@ -2633,7 +2633,8 @@ msgid ""
 "Where do you want to upload the tarball with report in form login:"
 "password@url"
 msgstr ""
-"Minne haluat lähettää pakatun raportin? Muoto: käyttäjätunnus:salasana@url"
+"Mihin haluat ladata ulospäin tarballin raportin muodossa "
+"sisäänkirjautuminen:salasana@url"
 
 #: ../src/plugins/report_Uploader.xml.in.h:5
 msgid ""
@@ -2897,7 +2898,7 @@ msgstr "Ei voi lseek '%s'"
 #: ../src/plugins/mantisbt.c:768
 #, c-format
 msgid "Can't upload '%s', it's too large (%llu bytes)"
-msgstr "Ei voida lähettää '%s', se on liian suuri (%llu tavua)"
+msgstr "Ei voida ladata ulospäin '%s':ta; se on liian suuri (%llu tavua)"
 
 #: ../src/plugins/mantisbt.c:778
 #, c-format
@@ -3072,17 +3073,17 @@ msgid ""
 "\n"
 "Reads the default configuration from "
 msgstr ""
-"& [-v] [-c FILE] [-u URL] [-k] [-t SOURCE] [-h CREDENTIALS]\n"
-"  [-A -a bthash -B -b bug-id -E -e email -O -o comment] [-d DIR]\n"
-"  [-A -a bthash -T ATTACHMENT_TYPE -r REPORT_RESULT_TYPE -L RESULT_FIELD] [-"
-"d DIR]\n"
-"  [-A -a bthash -T ATTACHMENT_TYPE -l DATA] [-d DIR]\n"
-"& [-v] [-c FILE] [-u URL] [-k] [-t SOURCE] [-h CREDENTIALS] [-i AUTH_ITEMS] "
-"[-d DIR]\n"
+"& [-v] [-c TIEDOSTO] [-u URL] [-k] [-t LÄHDE] [-h VALTUUSTIEDOT]\n"
+"  [-A -a bthash -B -b vikatunnus -E -e s-posti -O -o comment] [-d HAK]\n"
+"  [-A -a bthash -T LIITTEEN_TYYPPI -r REPORT_RESULT_TYPE -L RESULT_FIELD] "
+"[-d HAK]\n"
+"  [-A -a bthash -T LIITTEEN_TYYPPI -l DATA] [-d HAK]\n"
+"& [-v] [-c TIEDOSTO] [-u URL] [-k] [-t LÄHDE] [-h VALTUUSTIEDOT] "
+"[-i AUTH_ITEMS] [-d HAK]\n"
 "\n"
-"Lähetä mikroraportti tai lisää liite mikroraporttiin\n"
+"Lataa ulospäin mikroraportti tai lisää liite mikroraporttiin\n"
 "\n"
-"Lukee oletusasetukset kohteesta "
+"Lukee oletuskokoonpano kohteesta "
 
 #: ../src/plugins/reporter-ureport.c:191
 msgid "This problem does not have an uReport assigned."
@@ -3214,7 +3215,7 @@ msgstr "Vie ongelman tiedot manuaaliraportointia varten"
 
 #: ../src/workflows/workflow_AnacondaUpload.xml.in.h:2
 msgid "Upload the data via scp or ftp to a remote destination"
-msgstr "Lähetä tiedot scp:n tai ftp:n välityksellä etäsijaintiin"
+msgstr "Lataa ulospäin tiedot scp:n tai ftp:n välityksellä etäsijaintiin"
 
 #: ../src/workflows/workflow_CentOSCCpp.xml.in.h:2
 msgid "Process the C/C++ crash using the CentOS infrastructure"
@@ -3325,13 +3326,14 @@ msgstr "Analysoi ongelma paikallisesti ja lähetä tiedot sähköpostitse"
 #: ../src/workflows/workflow_UploadCCpp.xml.in.h:1
 #: ../src/workflows/workflow_Upload.xml.in.h:1
 msgid "Upload the problem data to a server"
-msgstr "Lähetä ongelman tiedot palvelimelle"
+msgstr "Lataa ulospäin ongelman tiedot palvelimelle"
 
 #: ../src/workflows/workflow_UploadCCpp.xml.in.h:2
 #: ../src/workflows/workflow_Upload.xml.in.h:2
 msgid "Analyze the problem locally and upload the data via scp or ftp"
 msgstr ""
-"Analysoi ongelma paikallisesti ja lähetä tiedot scp:n tai ftp:n välityksellä"
+"Analysoi ongelma paikallisesti ja lataa ulospäin tiedot scp:n tai ftp:n "
+"välityksellä"
 
 #: ../src/workflows/workflow_uReport.xml.in.h:1
 msgid "Submit anonymous crash report"
