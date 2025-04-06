@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-abrt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 19:29+0200\n"
-"PO-Revision-Date: 2025-03-28 05:54+0000\n"
+"PO-Revision-Date: 2025-04-07 00:48+0000\n"
 "Last-Translator: Malaka Tharumuthu <malakat100@gmail.com>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/abrt/"
 "gnome-abrt/si/>\n"
@@ -205,8 +205,8 @@ msgstr "පසුගිය අවුරුද්ද"
 #, python-brace-format
 msgid "{0:d} year ago"
 msgid_plural "{0:d} years ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{0:d} අවුරුදුකට පෙර"
+msgstr[1] "{0:d} අවුරුදු පෙර"
 
 #. Translators: if the kernel crashed we display the word "System"
 #. instead of "kernel". In this context "System" is like a proper
@@ -220,35 +220,35 @@ msgstr "පද්ධතිය"
 #. list under the application name
 #: src/gnome_abrt/views.py:139
 msgid "Application Crash"
-msgstr ""
+msgstr "යෙදුම කඩා වැටීමක්"
 
 #: src/gnome_abrt/views.py:141
 msgid "System Crash"
-msgstr ""
+msgstr "පද්ධතිය කඩා වැටීම"
 
 #: src/gnome_abrt/views.py:143
 msgid "System Failure"
-msgstr ""
+msgstr "පද්ධති දෝෂය"
 
 #: src/gnome_abrt/views.py:145
 msgid "Misbehavior"
-msgstr ""
+msgstr "අනුචිත ක්‍රියාකාරීත්වය"
 
 #: src/gnome_abrt/views.py:777
 msgid "Unexpected system error"
-msgstr ""
+msgstr "අපේක්ෂිත නොවූ පද්ධති දෝෂයක්"
 
 #: src/gnome_abrt/views.py:779
 msgid "The system has encountered a problem and recovered."
-msgstr ""
+msgstr "පද්ධතියට ගැටළුවක් හමුවුණද, එය සාර්ථකව ප්‍රතිසාධනය කර ඇත."
 
 #: src/gnome_abrt/views.py:782
 msgid "Fatal system failure"
-msgstr ""
+msgstr "ගැඹුරු පද්ධති අසාර්ථකත්වය"
 
 #: src/gnome_abrt/views.py:784
 msgid "The system has encountered a problem and could not continue."
-msgstr ""
+msgstr "පද්ධතියට ගැටළුවක් හමුවී ඇති අතර, එය ඉදිරියට ක්‍රියාත්මක විය නොහැක."
 
 #. Translators: If Application's name is unknown,
 #. display neutral header
@@ -263,16 +263,16 @@ msgstr ""
 #: src/gnome_abrt/views.py:798
 #, python-brace-format
 msgid "{0} problem has been detected"
-msgstr ""
+msgstr "{0} ගැටළුවක් හඳුනාගෙන ඇත"
 
 #: src/gnome_abrt/views.py:802
 #, python-brace-format
 msgid "{0} quit unexpectedly"
-msgstr ""
+msgstr "{0} අපේක්ෂිත නොවූ ලෙස අත්හරි ඇත"
 
 #: src/gnome_abrt/views.py:805
 msgid "The application encountered a problem and could not continue."
-msgstr ""
+msgstr "යෙදුමට ගැටළුවක් හමුවී ඇති අතර, එය ඉදිරියට ක්‍රියාත්මක විය නොහැක."
 
 #. Translators: package name not available
 #. Translators: package version not available
@@ -282,7 +282,7 @@ msgstr "අ/නොවේ"
 
 #: src/gnome_abrt/views.py:839
 msgid "cannot be reported"
-msgstr ""
+msgstr "වාර්තා කර නොහැක"
 
 #: src/gnome_abrt/views.py:844
 msgid "Reports"
@@ -295,6 +295,10 @@ msgid ""
 "Please consider also <b>reporting it</b> to Bugzilla in order to provide "
 "that. Thank you."
 msgstr ""
+"මෙම ගැටළුව වාර්තා කර ඇති අතර, <i>Bugzilla දෝෂ නිරාකරණ පද්ධතිය</i> ටිකට්පතක් විවෘත කර නැ"
+"ත. අපගේ සංවර්ධකයින්ට ගැටළුව විසඳීමට තවත් තොරතුරු අවශ්‍ය විය හැක. \n"
+"කරුණාකර එය <b>Bugzilla දෝෂ නිරාකරණ පද්ධතිය</b> වෙත වාර්තා කිරීමට මැනවින් සැළකිල්ලෙන් බලන්"
+"න. ස්තූතියි."
 
 #. Translators: Displayed after 'Reported' if a problem
 #. has been reported but we don't know where and when.
@@ -302,10 +306,10 @@ msgstr ""
 #. reported we display a list of reports here.
 #: src/gnome_abrt/views.py:859
 msgid "yes"
-msgstr ""
+msgstr "ඔව්"
 
 #. Translators: Displayed after 'Reported' if a problem
 #. has not been reported.
 #: src/gnome_abrt/views.py:863
 msgid "no"
-msgstr ""
+msgstr "නැහැ"
