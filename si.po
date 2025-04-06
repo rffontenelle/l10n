@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libreport 2.11.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-09 10:42+0100\n"
-"PO-Revision-Date: 2025-03-29 15:49+0000\n"
+"PO-Revision-Date: 2025-04-07 00:48+0000\n"
 "Last-Translator: Malaka Tharumuthu <malakat100@gmail.com>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/abrt/"
 "libreport/si/>\n"
@@ -1104,7 +1104,7 @@ msgstr ""
 
 #: ../src/lib/make_descr.c:149
 msgid "cannot be reported"
-msgstr ""
+msgstr "වාර්තා කර නොහැක"
 
 #: ../src/lib/parse_options.c:63
 msgid "Usage: "
