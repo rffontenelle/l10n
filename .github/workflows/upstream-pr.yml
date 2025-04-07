@@ -5,10 +5,12 @@ on:
     - cron: '0 6 5 * *'
   # Allow triggering the workflow manually.
   workflow_dispatch:
+  pull_request:
 jobs:
   pr:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         component:
           - abrt
@@ -43,7 +45,8 @@ jobs:
           echo 'create-pr=1' >> $GITHUB_OUTPUT
 
       - name: Create pull request in upstream repository
-        if: ${{ steps.update-translations.outputs.create-pr }}
+        if: ${{ steps.update-translations.outputs.create-pr }} && \
+            ${{ github.repository == "abrt-l10n" }}
         uses: peter-evans/create-pull-request@v5
         with:
           branch: translations-update
@@ -57,3 +60,40 @@ jobs:
             [localization repository](https://github.com/abrt/l10n).
           labels: localization
           token: ${{ secrets.ABRT_BOT_TOKEN }}
+      
+      - name: Rebuild POT files
+        run: |
+          meson setup upstream build
+          meson compile -C build ${{ matrix.component }}-pot
+
+      # Update POT file in abrt/l10n repository to be used by Weblate.
+      - name: Update template file
+        id: update-pot
+        run: |
+          cp --verbose --preserve=all \
+            upstream/po/${{ matrix.component }}.pot ${{ matrix.component }}.pot
+
+          # Fail if no files were changed.
+          [[ -z $(git status --porcelain) ]] && \
+            echo 'Template translation file did not changed' && \
+            exit 0
+
+          echo 'Template translation file updated'
+          echo 'create-pot-pr=1' >> $GITHUB_OUTPUT
+          echo "sha_short=$(git -C upstream rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Create pull request in this repository
+        if: ${{ steps.update-pot.outputs.create-pot-pr }} && \
+            ${{ github.repository == "abrt-l10n" }}
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: pot-update
+          delete-branch: true
+          commit-message: Update ${{ matrix.component }}.pot
+          committer: 'abrt-bot <11092244+abrt-bot@users.noreply.github.com>'
+          title: Update ${{ matrix.component }}.pot
+          body: >
+            Updating ${{ matrix.component }}.pot from
+            [upstream repository](https://github.com/abrt/${{ matrix.component }})
+            to be used by Weblate.
+          labels: localization
