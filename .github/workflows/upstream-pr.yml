@@ -45,8 +45,8 @@ jobs:
           echo 'create-pr=1' >> $GITHUB_OUTPUT
 
       - name: Create pull request in upstream repository
-        if: ${{ steps.update-translations.outputs.create-pr }} && \
-            ${{ github.repository == "abrt-l10n" }}
+        if: steps.update-translations.outputs.create-pr && \
+            github.repository == "abrt-l10n"
         uses: peter-evans/create-pull-request@v5
         with:
           branch: translations-update
@@ -83,8 +83,8 @@ jobs:
           echo "sha_short=$(git -C upstream rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
       - name: Create pull request in this repository
-        if: ${{ steps.update-pot.outputs.create-pot-pr }} && \
-            ${{ github.repository == "abrt-l10n" }}
+        if: steps.update-pot.outputs.create-pot-pr && \
+            github.repository == "abrt-l10n"
         uses: peter-evans/create-pull-request@v5
         with:
           branch: pot-update
