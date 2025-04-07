@@ -9,12 +9,12 @@ jobs:
   pr:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         component:
           - abrt
           - gnome-abrt
           - libreport
-          - retrace-server
     steps:
       - name: Check out ${{ matrix.component }} translations
         uses: actions/checkout@v4
